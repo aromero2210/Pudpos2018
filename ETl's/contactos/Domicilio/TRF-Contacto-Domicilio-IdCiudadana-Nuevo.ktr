@@ -1,0 +1,4804 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<transformation>
+  <info>
+    <name>TRF-Contacto-Domicilio-IdCiudadana-Nuevo</name>
+    <description />
+    <extended_description />
+    <trans_version />
+    <trans_type>Normal</trans_type>
+    <trans_status>0</trans_status>
+    <directory>/</directory>
+    <parameters>
+    </parameters>
+    <log>
+      <trans-log-table>
+        <connection>ETL_LOG</connection>
+        <schema>main</schema>
+        <table>etl_spoon_transf</table>
+        <size_limit_lines />
+        <interval />
+        <timeout_days />
+        <field>
+          <id>ID_BATCH</id>
+          <enabled>Y</enabled>
+          <name>ID_BATCH</name>
+        </field>
+        <field>
+          <id>CHANNEL_ID</id>
+          <enabled>Y</enabled>
+          <name>CHANNEL_ID</name>
+        </field>
+        <field>
+          <id>TRANSNAME</id>
+          <enabled>Y</enabled>
+          <name>TRANSNAME</name>
+        </field>
+        <field>
+          <id>STATUS</id>
+          <enabled>Y</enabled>
+          <name>STATUS</name>
+        </field>
+        <field>
+          <id>LINES_READ</id>
+          <enabled>Y</enabled>
+          <name>LINES_READ</name>
+          <subject />
+        </field>
+        <field>
+          <id>LINES_WRITTEN</id>
+          <enabled>Y</enabled>
+          <name>LINES_WRITTEN</name>
+          <subject />
+        </field>
+        <field>
+          <id>LINES_UPDATED</id>
+          <enabled>Y</enabled>
+          <name>LINES_UPDATED</name>
+          <subject />
+        </field>
+        <field>
+          <id>LINES_INPUT</id>
+          <enabled>Y</enabled>
+          <name>LINES_INPUT</name>
+          <subject />
+        </field>
+        <field>
+          <id>LINES_OUTPUT</id>
+          <enabled>Y</enabled>
+          <name>LINES_OUTPUT</name>
+          <subject />
+        </field>
+        <field>
+          <id>LINES_REJECTED</id>
+          <enabled>Y</enabled>
+          <name>LINES_REJECTED</name>
+          <subject />
+        </field>
+        <field>
+          <id>ERRORS</id>
+          <enabled>Y</enabled>
+          <name>ERRORS</name>
+        </field>
+        <field>
+          <id>STARTDATE</id>
+          <enabled>Y</enabled>
+          <name>STARTDATE</name>
+        </field>
+        <field>
+          <id>ENDDATE</id>
+          <enabled>Y</enabled>
+          <name>ENDDATE</name>
+        </field>
+        <field>
+          <id>LOGDATE</id>
+          <enabled>Y</enabled>
+          <name>LOGDATE</name>
+        </field>
+        <field>
+          <id>DEPDATE</id>
+          <enabled>Y</enabled>
+          <name>DEPDATE</name>
+        </field>
+        <field>
+          <id>REPLAYDATE</id>
+          <enabled>Y</enabled>
+          <name>REPLAYDATE</name>
+        </field>
+        <field>
+          <id>LOG_FIELD</id>
+          <enabled>Y</enabled>
+          <name>LOG_FIELD</name>
+        </field>
+        <field>
+          <id>EXECUTING_SERVER</id>
+          <enabled>N</enabled>
+          <name>EXECUTING_SERVER</name>
+        </field>
+        <field>
+          <id>EXECUTING_USER</id>
+          <enabled>N</enabled>
+          <name>EXECUTING_USER</name>
+        </field>
+        <field>
+          <id>CLIENT</id>
+          <enabled>N</enabled>
+          <name>CLIENT</name>
+        </field>
+      </trans-log-table>
+      <perf-log-table>
+        <connection />
+        <schema />
+        <table />
+        <interval />
+        <timeout_days />
+        <field>
+          <id>ID_BATCH</id>
+          <enabled>Y</enabled>
+          <name>ID_BATCH</name>
+        </field>
+        <field>
+          <id>SEQ_NR</id>
+          <enabled>Y</enabled>
+          <name>SEQ_NR</name>
+        </field>
+        <field>
+          <id>LOGDATE</id>
+          <enabled>Y</enabled>
+          <name>LOGDATE</name>
+        </field>
+        <field>
+          <id>TRANSNAME</id>
+          <enabled>Y</enabled>
+          <name>TRANSNAME</name>
+        </field>
+        <field>
+          <id>STEPNAME</id>
+          <enabled>Y</enabled>
+          <name>STEPNAME</name>
+        </field>
+        <field>
+          <id>STEP_COPY</id>
+          <enabled>Y</enabled>
+          <name>STEP_COPY</name>
+        </field>
+        <field>
+          <id>LINES_READ</id>
+          <enabled>Y</enabled>
+          <name>LINES_READ</name>
+        </field>
+        <field>
+          <id>LINES_WRITTEN</id>
+          <enabled>Y</enabled>
+          <name>LINES_WRITTEN</name>
+        </field>
+        <field>
+          <id>LINES_UPDATED</id>
+          <enabled>Y</enabled>
+          <name>LINES_UPDATED</name>
+        </field>
+        <field>
+          <id>LINES_INPUT</id>
+          <enabled>Y</enabled>
+          <name>LINES_INPUT</name>
+        </field>
+        <field>
+          <id>LINES_OUTPUT</id>
+          <enabled>Y</enabled>
+          <name>LINES_OUTPUT</name>
+        </field>
+        <field>
+          <id>LINES_REJECTED</id>
+          <enabled>Y</enabled>
+          <name>LINES_REJECTED</name>
+        </field>
+        <field>
+          <id>ERRORS</id>
+          <enabled>Y</enabled>
+          <name>ERRORS</name>
+        </field>
+        <field>
+          <id>INPUT_BUFFER_ROWS</id>
+          <enabled>Y</enabled>
+          <name>INPUT_BUFFER_ROWS</name>
+        </field>
+        <field>
+          <id>OUTPUT_BUFFER_ROWS</id>
+          <enabled>Y</enabled>
+          <name>OUTPUT_BUFFER_ROWS</name>
+        </field>
+      </perf-log-table>
+      <channel-log-table>
+        <connection />
+        <schema />
+        <table />
+        <timeout_days />
+        <field>
+          <id>ID_BATCH</id>
+          <enabled>Y</enabled>
+          <name>ID_BATCH</name>
+        </field>
+        <field>
+          <id>CHANNEL_ID</id>
+          <enabled>Y</enabled>
+          <name>CHANNEL_ID</name>
+        </field>
+        <field>
+          <id>LOG_DATE</id>
+          <enabled>Y</enabled>
+          <name>LOG_DATE</name>
+        </field>
+        <field>
+          <id>LOGGING_OBJECT_TYPE</id>
+          <enabled>Y</enabled>
+          <name>LOGGING_OBJECT_TYPE</name>
+        </field>
+        <field>
+          <id>OBJECT_NAME</id>
+          <enabled>Y</enabled>
+          <name>OBJECT_NAME</name>
+        </field>
+        <field>
+          <id>OBJECT_COPY</id>
+          <enabled>Y</enabled>
+          <name>OBJECT_COPY</name>
+        </field>
+        <field>
+          <id>REPOSITORY_DIRECTORY</id>
+          <enabled>Y</enabled>
+          <name>REPOSITORY_DIRECTORY</name>
+        </field>
+        <field>
+          <id>FILENAME</id>
+          <enabled>Y</enabled>
+          <name>FILENAME</name>
+        </field>
+        <field>
+          <id>OBJECT_ID</id>
+          <enabled>Y</enabled>
+          <name>OBJECT_ID</name>
+        </field>
+        <field>
+          <id>OBJECT_REVISION</id>
+          <enabled>Y</enabled>
+          <name>OBJECT_REVISION</name>
+        </field>
+        <field>
+          <id>PARENT_CHANNEL_ID</id>
+          <enabled>Y</enabled>
+          <name>PARENT_CHANNEL_ID</name>
+        </field>
+        <field>
+          <id>ROOT_CHANNEL_ID</id>
+          <enabled>Y</enabled>
+          <name>ROOT_CHANNEL_ID</name>
+        </field>
+      </channel-log-table>
+      <step-log-table>
+        <connection>ETL_LOG</connection>
+        <schema>main</schema>
+        <table>etl_spoon_tstep</table>
+        <timeout_days />
+        <field>
+          <id>ID_BATCH</id>
+          <enabled>Y</enabled>
+          <name>ID_BATCH</name>
+        </field>
+        <field>
+          <id>CHANNEL_ID</id>
+          <enabled>Y</enabled>
+          <name>CHANNEL_ID</name>
+        </field>
+        <field>
+          <id>LOG_DATE</id>
+          <enabled>Y</enabled>
+          <name>LOG_DATE</name>
+        </field>
+        <field>
+          <id>TRANSNAME</id>
+          <enabled>Y</enabled>
+          <name>TRANSNAME</name>
+        </field>
+        <field>
+          <id>STEPNAME</id>
+          <enabled>Y</enabled>
+          <name>STEPNAME</name>
+        </field>
+        <field>
+          <id>STEP_COPY</id>
+          <enabled>Y</enabled>
+          <name>STEP_COPY</name>
+        </field>
+        <field>
+          <id>LINES_READ</id>
+          <enabled>Y</enabled>
+          <name>LINES_READ</name>
+        </field>
+        <field>
+          <id>LINES_WRITTEN</id>
+          <enabled>Y</enabled>
+          <name>LINES_WRITTEN</name>
+        </field>
+        <field>
+          <id>LINES_UPDATED</id>
+          <enabled>Y</enabled>
+          <name>LINES_UPDATED</name>
+        </field>
+        <field>
+          <id>LINES_INPUT</id>
+          <enabled>Y</enabled>
+          <name>LINES_INPUT</name>
+        </field>
+        <field>
+          <id>LINES_OUTPUT</id>
+          <enabled>Y</enabled>
+          <name>LINES_OUTPUT</name>
+        </field>
+        <field>
+          <id>LINES_REJECTED</id>
+          <enabled>Y</enabled>
+          <name>LINES_REJECTED</name>
+        </field>
+        <field>
+          <id>ERRORS</id>
+          <enabled>Y</enabled>
+          <name>ERRORS</name>
+        </field>
+        <field>
+          <id>LOG_FIELD</id>
+          <enabled>N</enabled>
+          <name>LOG_FIELD</name>
+        </field>
+      </step-log-table>
+      <metrics-log-table>
+        <connection />
+        <schema />
+        <table />
+        <timeout_days />
+        <field>
+          <id>ID_BATCH</id>
+          <enabled>Y</enabled>
+          <name>ID_BATCH</name>
+        </field>
+        <field>
+          <id>CHANNEL_ID</id>
+          <enabled>Y</enabled>
+          <name>CHANNEL_ID</name>
+        </field>
+        <field>
+          <id>LOG_DATE</id>
+          <enabled>Y</enabled>
+          <name>LOG_DATE</name>
+        </field>
+        <field>
+          <id>METRICS_DATE</id>
+          <enabled>Y</enabled>
+          <name>METRICS_DATE</name>
+        </field>
+        <field>
+          <id>METRICS_CODE</id>
+          <enabled>Y</enabled>
+          <name>METRICS_CODE</name>
+        </field>
+        <field>
+          <id>METRICS_DESCRIPTION</id>
+          <enabled>Y</enabled>
+          <name>METRICS_DESCRIPTION</name>
+        </field>
+        <field>
+          <id>METRICS_SUBJECT</id>
+          <enabled>Y</enabled>
+          <name>METRICS_SUBJECT</name>
+        </field>
+        <field>
+          <id>METRICS_TYPE</id>
+          <enabled>Y</enabled>
+          <name>METRICS_TYPE</name>
+        </field>
+        <field>
+          <id>METRICS_VALUE</id>
+          <enabled>Y</enabled>
+          <name>METRICS_VALUE</name>
+        </field>
+      </metrics-log-table>
+    </log>
+    <maxdate>
+      <connection />
+      <table />
+      <field />
+      <offset>0.0</offset>
+      <maxdiff>0.0</maxdiff>
+    </maxdate>
+    <size_rowset>10000</size_rowset>
+    <sleep_time_empty>50</sleep_time_empty>
+    <sleep_time_full>50</sleep_time_full>
+    <unique_connections>N</unique_connections>
+    <feedback_shown>Y</feedback_shown>
+    <feedback_size>50000</feedback_size>
+    <using_thread_priorities>Y</using_thread_priorities>
+    <shared_objects_file />
+    <capture_step_performance>N</capture_step_performance>
+    <step_performance_capturing_delay>1000</step_performance_capturing_delay>
+    <step_performance_capturing_size_limit>100</step_performance_capturing_size_limit>
+    <dependencies>
+    </dependencies>
+    <partitionschemas>
+    </partitionschemas>
+    <slaveservers>
+    </slaveservers>
+    <clusterschemas>
+    </clusterschemas>
+    <created_user>-</created_user>
+    <created_date>2019/01/30 12:03:02.307</created_date>
+    <modified_user>-</modified_user>
+    <modified_date>2019/01/30 12:03:02.307</modified_date>
+    <key_for_session_key>H4sIAAAAAAAAAAMAAAAAAAAAAAA=</key_for_session_key>
+    <is_key_private>N</is_key_private>
+  </info>
+  <notepads>
+  </notepads>
+  <connection>
+    <name>ETL_LOG</name>
+    <server>${SERVIDOR_MDM}</server>
+    <type>POSTGRESQL</type>
+    <access>Native</access>
+    <database>${BASEDATOS_MDM}</database>
+    <port>${PUERTO_MDM}</port>
+    <username>${USUARIO_MDM}</username>
+    <password>${PASS_MDM}</password>
+    <servername />
+    <data_tablespace />
+    <index_tablespace />
+    <attributes>
+      <attribute>
+        <code>FORCE_IDENTIFIERS_TO_LOWERCASE</code>
+        <attribute>N</attribute>
+      </attribute>
+      <attribute>
+        <code>FORCE_IDENTIFIERS_TO_UPPERCASE</code>
+        <attribute>N</attribute>
+      </attribute>
+      <attribute>
+        <code>IS_CLUSTERED</code>
+        <attribute>N</attribute>
+      </attribute>
+      <attribute>
+        <code>PORT_NUMBER</code>
+        <attribute>${PUERTO_MDM}</attribute>
+      </attribute>
+      <attribute>
+        <code>PRESERVE_RESERVED_WORD_CASE</code>
+        <attribute>Y</attribute>
+      </attribute>
+      <attribute>
+        <code>QUOTE_ALL_FIELDS</code>
+        <attribute>N</attribute>
+      </attribute>
+      <attribute>
+        <code>SUPPORTS_BOOLEAN_DATA_TYPE</code>
+        <attribute>N</attribute>
+      </attribute>
+      <attribute>
+        <code>SUPPORTS_TIMESTAMP_DATA_TYPE</code>
+        <attribute>N</attribute>
+      </attribute>
+      <attribute>
+        <code>USE_POOLING</code>
+        <attribute>N</attribute>
+      </attribute>
+    </attributes>
+  </connection>
+  <connection>
+    <name>IDCIUDADANA</name>
+    <server>${SERVIDOR_IDC}</server>
+    <type>MYSQL</type>
+    <access>Native</access>
+    <database>${BASEDATOS_IDC}</database>
+    <port>3306</port>
+    <username>${USUARIO_IDC}</username>
+    <password>${PASS_IDC}</password>
+    <servername />
+    <data_tablespace />
+    <index_tablespace />
+    <attributes>
+      <attribute>
+        <code>FORCE_IDENTIFIERS_TO_LOWERCASE</code>
+        <attribute>N</attribute>
+      </attribute>
+      <attribute>
+        <code>FORCE_IDENTIFIERS_TO_UPPERCASE</code>
+        <attribute>N</attribute>
+      </attribute>
+      <attribute>
+        <code>IS_CLUSTERED</code>
+        <attribute>N</attribute>
+      </attribute>
+      <attribute>
+        <code>PORT_NUMBER</code>
+        <attribute>3306</attribute>
+      </attribute>
+      <attribute>
+        <code>PRESERVE_RESERVED_WORD_CASE</code>
+        <attribute>Y</attribute>
+      </attribute>
+      <attribute>
+        <code>QUOTE_ALL_FIELDS</code>
+        <attribute>N</attribute>
+      </attribute>
+      <attribute>
+        <code>STREAM_RESULTS</code>
+        <attribute>Y</attribute>
+      </attribute>
+      <attribute>
+        <code>SUPPORTS_BOOLEAN_DATA_TYPE</code>
+        <attribute>Y</attribute>
+      </attribute>
+      <attribute>
+        <code>SUPPORTS_TIMESTAMP_DATA_TYPE</code>
+        <attribute>Y</attribute>
+      </attribute>
+      <attribute>
+        <code>USE_POOLING</code>
+        <attribute>N</attribute>
+      </attribute>
+    </attributes>
+  </connection>
+  <connection>
+    <name>MDM</name>
+    <server>${SERVIDOR_MDM}</server>
+    <type>POSTGRESQL</type>
+    <access>Native</access>
+    <database>${BASEDATOS_MDM}</database>
+    <port>${PUERTO_MDM}</port>
+    <username>${USUARIO_MDM}</username>
+    <password>${PASS_MDM}</password>
+    <servername />
+    <data_tablespace />
+    <index_tablespace />
+    <attributes>
+      <attribute>
+        <code>FORCE_IDENTIFIERS_TO_LOWERCASE</code>
+        <attribute>N</attribute>
+      </attribute>
+      <attribute>
+        <code>FORCE_IDENTIFIERS_TO_UPPERCASE</code>
+        <attribute>N</attribute>
+      </attribute>
+      <attribute>
+        <code>IS_CLUSTERED</code>
+        <attribute>N</attribute>
+      </attribute>
+      <attribute>
+        <code>PORT_NUMBER</code>
+        <attribute>${PUERTO_MDM}</attribute>
+      </attribute>
+      <attribute>
+        <code>PRESERVE_RESERVED_WORD_CASE</code>
+        <attribute>Y</attribute>
+      </attribute>
+      <attribute>
+        <code>QUOTE_ALL_FIELDS</code>
+        <attribute>N</attribute>
+      </attribute>
+      <attribute>
+        <code>SUPPORTS_BOOLEAN_DATA_TYPE</code>
+        <attribute>Y</attribute>
+      </attribute>
+      <attribute>
+        <code>SUPPORTS_TIMESTAMP_DATA_TYPE</code>
+        <attribute>Y</attribute>
+      </attribute>
+      <attribute>
+        <code>USE_POOLING</code>
+        <attribute>N</attribute>
+      </attribute>
+    </attributes>
+  </connection>
+  <order>
+    <hop>
+      <from>Existe Documento</from>
+      <to>Armar Reg</to>
+      <enabled>Y</enabled>
+    </hop>
+    <hop>
+      <from>Armar Reg</from>
+      <to>Cuil-ValorDato</to>
+      <enabled>Y</enabled>
+    </hop>
+    <hop>
+      <from>Cuil-ValorDato</from>
+      <to>Añadir constantes</to>
+      <enabled>Y</enabled>
+    </hop>
+    <hop>
+      <from>Strings cut</from>
+      <to>Registro Ejecucion</to>
+      <enabled>N</enabled>
+    </hop>
+    <hop>
+      <from>Actualizacion A</from>
+      <to>Domicilio</to>
+      <enabled>Y</enabled>
+    </hop>
+    <hop>
+      <from>Actualizacion B</from>
+      <to>Armar Reg 2</to>
+      <enabled>Y</enabled>
+    </hop>
+    <hop>
+      <from>Actualizacion M</from>
+      <to>Actualizar Domicilio</to>
+      <enabled>Y</enabled>
+    </hop>
+    <hop>
+      <from>Actualizar Domicilio</from>
+      <to>Domicilio Modificacion</to>
+      <enabled>N</enabled>
+    </hop>
+    <hop>
+      <from>Barrio MDM</from>
+      <to>Compare fields</to>
+      <enabled>Y</enabled>
+    </hop>
+    <hop>
+      <from>Calle B</from>
+      <to>cut Reg B</to>
+      <enabled>Y</enabled>
+    </hop>
+    <hop>
+      <from>Calle MDM</from>
+      <to>Localidad MDM</to>
+      <enabled>Y</enabled>
+    </hop>
+    <hop>
+      <from>Calle no es nulo?</from>
+      <to>Ordenar filas</to>
+      <enabled>Y</enabled>
+    </hop>
+    <hop>
+      <from>Compare fields</from>
+      <to>Actualizacion A</to>
+      <enabled>Y</enabled>
+    </hop>
+    <hop>
+      <from>Compare fields</from>
+      <to>Actualizacion B</to>
+      <enabled>Y</enabled>
+    </hop>
+    <hop>
+      <from>Compare fields</from>
+      <to>Actualizacion M</to>
+      <enabled>Y</enabled>
+    </hop>
+    <hop>
+      <from>Compare fields</from>
+      <to>iguales</to>
+      <enabled>Y</enabled>
+    </hop>
+    <hop>
+      <from>Direccion Nulo</from>
+      <to>cut Reg Nulo</to>
+      <enabled>Y</enabled>
+    </hop>
+    <hop>
+      <from>Domicilio</from>
+      <to>Domicilio Altas</to>
+      <enabled>N</enabled>
+    </hop>
+    <hop>
+      <from>Domicilio Altas</from>
+      <to>Max(iddomicilio)</to>
+      <enabled>N</enabled>
+    </hop>
+    <hop>
+      <from>Domicilio Modificacion</from>
+      <to>Renombra idDomicilio</to>
+      <enabled>N</enabled>
+    </hop>
+    <hop>
+      <from>Filas Unicas</from>
+      <to>Calle MDM</to>
+      <enabled>Y</enabled>
+    </hop>
+    <hop>
+      <from>Localidad MDM</from>
+      <to>Barrio MDM</to>
+      <enabled>Y</enabled>
+    </hop>
+    <hop>
+      <from>Merge Join</from>
+      <to>Filas Unicas</to>
+      <enabled>Y</enabled>
+    </hop>
+    <hop>
+      <from>Ordenar filas</from>
+      <to>Merge Join</to>
+      <enabled>Y</enabled>
+    </hop>
+    <hop>
+      <from>Direccion Nula</from>
+      <to>Direccion Nulo</to>
+      <enabled>Y</enabled>
+    </hop>
+    <hop>
+      <from>cut Reg B</from>
+      <to>Registro Ejecucion 2</to>
+      <enabled>N</enabled>
+    </hop>
+    <hop>
+      <from>cut Reg Nulo</from>
+      <to>Registro Ejecucion Nulo</to>
+      <enabled>N</enabled>
+    </hop>
+    <hop>
+      <from>Añadir constantes</from>
+      <to>Strings cut</to>
+      <enabled>Y</enabled>
+    </hop>
+    <hop>
+      <from>Fecha Hora</from>
+      <to>Var. Entorno</to>
+      <enabled>Y</enabled>
+    </hop>
+    <hop>
+      <from>OrigenDomicilo</from>
+      <to>Calle no es nulo?</to>
+      <enabled>Y</enabled>
+    </hop>
+    <hop>
+      <from>Armar Reg 2</from>
+      <to>Calle B</to>
+      <enabled>Y</enabled>
+    </hop>
+    <hop>
+      <from>DomTipo MDM</from>
+      <to>Tipo Domicilio no es nulo?</to>
+      <enabled>N</enabled>
+    </hop>
+    <hop>
+      <from>Tipo Domicilio no es nulo?</from>
+      <to>Docimilio_tipo</to>
+      <enabled>N</enabled>
+    </hop>
+    <hop>
+      <from>Renombra idDomicilio</from>
+      <to>DomTipo MDM</to>
+      <enabled>N</enabled>
+    </hop>
+    <hop>
+      <from>cuil tipo</from>
+      <to>Documentos</to>
+      <enabled>Y</enabled>
+    </hop>
+    <hop>
+      <from>Var. Entorno</from>
+      <to>cuil tipo</to>
+      <enabled>Y</enabled>
+    </hop>
+    <hop>
+      <from>Documentos</from>
+      <to>Existe Documento</to>
+      <enabled>Y</enabled>
+    </hop>
+    <hop>
+      <from>Calle no es nulo?</from>
+      <to>Armar Reg 3</to>
+      <enabled>Y</enabled>
+    </hop>
+    <hop>
+      <from>Armar Reg 3</from>
+      <to>Direccion Nula</to>
+      <enabled>Y</enabled>
+    </hop>
+    <hop>
+      <from>Sin Acento 2</from>
+      <to>Ordenar filas MDM</to>
+      <enabled>Y</enabled>
+    </hop>
+    <hop>
+      <from>Actualizar Domicilio</from>
+      <to>Renombra idDomicilio</to>
+      <enabled>N</enabled>
+    </hop>
+    <hop>
+      <from>Domicilio</from>
+      <to>Max(iddomicilio)</to>
+      <enabled>Y</enabled>
+    </hop>
+    <hop>
+      <from>Tipo Domicilio es nulo? </from>
+      <to>Actualizar Domicilio Tipo 2</to>
+      <enabled>N</enabled>
+    </hop>
+    <hop>
+      <from>Tipo Domicilio no es nulo?</from>
+      <to>Nada 2</to>
+      <enabled>N</enabled>
+    </hop>
+    <hop>
+      <from>Existe Documento</from>
+      <to>OrigenDomicilo</to>
+      <enabled>Y</enabled>
+    </hop>
+    <hop>
+      <from>Tipo Domicilio es nulo? </from>
+      <to>Docimilio Tipo</to>
+      <enabled>Y</enabled>
+    </hop>
+    <hop>
+      <from>Seq PF</from>
+      <to>Calculadora 2</to>
+      <enabled>Y</enabled>
+    </hop>
+    <hop>
+      <from>Max(iddomicilio)</from>
+      <to>Seq PF</to>
+      <enabled>Y</enabled>
+    </hop>
+    <hop>
+      <from>Calculadora 2</from>
+      <to>DomTipo MDM 2</to>
+      <enabled>Y</enabled>
+    </hop>
+    <hop>
+      <from>REg Tipo Domicilio</from>
+      <to>Direccion Nula 2</to>
+      <enabled>Y</enabled>
+    </hop>
+    <hop>
+      <from>Direccion Nula 2</from>
+      <to>Direccion Nulo 2</to>
+      <enabled>Y</enabled>
+    </hop>
+    <hop>
+      <from>Corta REeg</from>
+      <to>Registro Ejecucion Nulo 2</to>
+      <enabled>N</enabled>
+    </hop>
+    <hop>
+      <from>Direccion Nulo 2</from>
+      <to>Corta REeg</to>
+      <enabled>Y</enabled>
+    </hop>
+    <hop>
+      <from>DomTipo MDM 2</from>
+      <to>Tipo Domicilio es nulo? </to>
+      <enabled>Y</enabled>
+    </hop>
+    <hop>
+      <from>Tipo Domicilio es nulo? </from>
+      <to>REg Tipo Domicilio</to>
+      <enabled>Y</enabled>
+    </hop>
+    <hop>
+      <from>Domicilio MDM</from>
+      <to>String operations</to>
+      <enabled>Y</enabled>
+    </hop>
+    <hop>
+      <from>String operations</from>
+      <to>Sin Acento 2</to>
+      <enabled>Y</enabled>
+    </hop>
+    <hop>
+      <from>Ordenar filas MDM</from>
+      <to>Merge Join</to>
+      <enabled>Y</enabled>
+    </hop>
+    <hop>
+      <from>domicilioIdCiudadana</from>
+      <to>Domicilio InitCap</to>
+      <enabled>Y</enabled>
+    </hop>
+    <hop>
+      <from>Domicilio InitCap</from>
+      <to>Sin Acento</to>
+      <enabled>Y</enabled>
+    </hop>
+    <hop>
+      <from>Sin Acento</from>
+      <to>Fecha Hora</to>
+      <enabled>Y</enabled>
+    </hop>
+  </order>
+  <step>
+    <name>Actualizacion A</name>
+    <type>Constant</type>
+    <description />
+    <distribute>N</distribute>
+    <custom_distribution />
+    <copies>1</copies>
+    <partitioning>
+      <method>none</method>
+      <schema_name />
+    </partitioning>
+    <fields>
+      <field>
+        <name>Accion</name>
+        <type>String</type>
+        <format />
+        <currency />
+        <decimal />
+        <group />
+        <nullif>A</nullif>
+        <length>-1</length>
+        <precision>-1</precision>
+        <set_empty_string>N</set_empty_string>
+      </field>
+      <field>
+        <name>descr</name>
+        <type>String</type>
+        <format />
+        <currency />
+        <decimal />
+        <group />
+        <nullif>Alta autoamtica extraccion Domicilio</nullif>
+        <length>-1</length>
+        <precision>-1</precision>
+        <set_empty_string>N</set_empty_string>
+      </field>
+    </fields>
+    <cluster_schema />
+    <remotesteps>
+      <input>
+      </input>
+      <output>
+      </output>
+    </remotesteps>
+    <GUI>
+      <xloc>1744</xloc>
+      <yloc>96</yloc>
+      <draw>Y</draw>
+    </GUI>
+  </step>
+  <step>
+    <name>Actualizacion B</name>
+    <type>Constant</type>
+    <description />
+    <distribute>N</distribute>
+    <custom_distribution />
+    <copies>1</copies>
+    <partitioning>
+      <method>none</method>
+      <schema_name />
+    </partitioning>
+    <fields>
+      <field>
+        <name>accion</name>
+        <type>String</type>
+        <format />
+        <currency />
+        <decimal />
+        <group />
+        <nullif>B</nullif>
+        <length>-1</length>
+        <precision>-1</precision>
+        <set_empty_string>N</set_empty_string>
+      </field>
+    </fields>
+    <cluster_schema />
+    <remotesteps>
+      <input>
+      </input>
+      <output>
+      </output>
+    </remotesteps>
+    <GUI>
+      <xloc>1648</xloc>
+      <yloc>208</yloc>
+      <draw>Y</draw>
+    </GUI>
+  </step>
+  <step>
+    <name>Actualizacion M</name>
+    <type>Constant</type>
+    <description />
+    <distribute>N</distribute>
+    <custom_distribution />
+    <copies>1</copies>
+    <partitioning>
+      <method>none</method>
+      <schema_name />
+    </partitioning>
+    <fields>
+      <field>
+        <name>accion</name>
+        <type>String</type>
+        <format />
+        <currency />
+        <decimal />
+        <group />
+        <nullif>M</nullif>
+        <length>-1</length>
+        <precision>-1</precision>
+        <set_empty_string>N</set_empty_string>
+      </field>
+      <field>
+        <name>descr</name>
+        <type>String</type>
+        <format />
+        <currency />
+        <decimal />
+        <group />
+        <nullif>Actualizado por extraccion Domicilio</nullif>
+        <length>-1</length>
+        <precision>-1</precision>
+        <set_empty_string>N</set_empty_string>
+      </field>
+    </fields>
+    <cluster_schema />
+    <remotesteps>
+      <input>
+      </input>
+      <output>
+      </output>
+    </remotesteps>
+    <GUI>
+      <xloc>1744</xloc>
+      <yloc>208</yloc>
+      <draw>Y</draw>
+    </GUI>
+  </step>
+  <step>
+    <name>Actualizar Domicilio</name>
+    <type>InsertUpdate</type>
+    <description />
+    <distribute>Y</distribute>
+    <custom_distribution />
+    <copies>1</copies>
+    <partitioning>
+      <method>none</method>
+      <schema_name />
+    </partitioning>
+    <connection>MDM</connection>
+    <commit>100</commit>
+    <update_bypassed>N</update_bypassed>
+    <lookup>
+      <schema>contactos</schema>
+      <table>domicilio</table>
+      <key>
+        <name>id_domicilio_mdm</name>
+        <field>id_domicilio</field>
+        <condition>=</condition>
+        <name2 />
+      </key>
+      <value>
+        <name>casa</name>
+        <rename>casa_ori</rename>
+        <update>Y</update>
+      </value>
+      <value>
+        <name>departamento</name>
+        <rename>departamento_ori</rename>
+        <update>Y</update>
+      </value>
+      <value>
+        <name>descripcion</name>
+        <rename>descr</rename>
+        <update>Y</update>
+      </value>
+      <value>
+        <name>fecha_ultima_actualizacion</name>
+        <rename>Fecha_Ultima_Act</rename>
+        <update>Y</update>
+      </value>
+      <value>
+        <name>id_barrio</name>
+        <rename>idbarrio_mdm</rename>
+        <update>Y</update>
+      </value>
+      <value>
+        <name>id_calle</name>
+        <rename>idcalle_mdm</rename>
+        <update>N</update>
+      </value>
+      <value>
+        <name>id_calle_cruce_1</name>
+        <rename>calle_cruce_1_ori</rename>
+        <update>Y</update>
+      </value>
+      <value>
+        <name>id_calle_cruce_2</name>
+        <rename>calle_cruce_2_ori</rename>
+        <update>Y</update>
+      </value>
+      <value>
+        <name>id_ejecucion_proc_act</name>
+        <rename>id_localidad_mdm</rename>
+        <update>Y</update>
+      </value>
+      <value>
+        <name>id_localidad</name>
+        <rename>idloc_mdm</rename>
+        <update>Y</update>
+      </value>
+      <value>
+        <name>id_persona_fisica</name>
+        <rename>id_persona_fisica_ori</rename>
+        <update>N</update>
+      </value>
+      <value>
+        <name>latitud</name>
+        <rename>latitud_ori</rename>
+        <update>Y</update>
+      </value>
+      <value>
+        <name>longitud</name>
+        <rename>longitud_ori</rename>
+        <update>Y</update>
+      </value>
+      <value>
+        <name>manzana</name>
+        <rename>manzana_ori</rename>
+        <update>Y</update>
+      </value>
+      <value>
+        <name>numero</name>
+        <rename>numero_ori</rename>
+        <update>N</update>
+      </value>
+      <value>
+        <name>otros_datos</name>
+        <rename>otros_datos_ori</rename>
+        <update>Y</update>
+      </value>
+      <value>
+        <name>partida_inmobiliaria</name>
+        <rename>partida_inmobiliaria_ori</rename>
+        <update>Y</update>
+      </value>
+      <value>
+        <name>piso</name>
+        <rename>piso_ori</rename>
+        <update>Y</update>
+      </value>
+      <value>
+        <name>torre</name>
+        <rename>torre_ori</rename>
+        <update>Y</update>
+      </value>
+      <value>
+        <name>ultima_actualizacion</name>
+        <rename>accion</rename>
+        <update>Y</update>
+      </value>
+    </lookup>
+    <cluster_schema />
+    <remotesteps>
+      <input>
+      </input>
+      <output>
+      </output>
+    </remotesteps>
+    <GUI>
+      <xloc>1856</xloc>
+      <yloc>208</yloc>
+      <draw>Y</draw>
+    </GUI>
+  </step>
+  <step>
+    <name>Actualizar Domicilio Tipo 2</name>
+    <type>InsertUpdate</type>
+    <description />
+    <distribute>Y</distribute>
+    <custom_distribution />
+    <copies>1</copies>
+    <partitioning>
+      <method>none</method>
+      <schema_name />
+    </partitioning>
+    <connection>MDM</connection>
+    <commit>100</commit>
+    <update_bypassed>N</update_bypassed>
+    <lookup>
+      <schema>contactos</schema>
+      <table>domicilio_tipo</table>
+      <key>
+        <name>id_tipodom_mdm</name>
+        <field>id_tipo_domicilio</field>
+        <condition>=</condition>
+        <name2 />
+      </key>
+      <key>
+        <name>id_domicilio</name>
+        <field>id_domicilio</field>
+        <condition>=</condition>
+        <name2 />
+      </key>
+      <value>
+        <name>ultima_actualizacion</name>
+        <rename>Accion</rename>
+        <update>Y</update>
+      </value>
+      <value>
+        <name>fecha_ultima_actualizacion</name>
+        <rename>Fecha_Ultima_Act</rename>
+        <update>Y</update>
+      </value>
+      <value>
+        <name>id_ejecucion_proc_act</name>
+        <rename>id_proceso_act</rename>
+        <update>Y</update>
+      </value>
+    </lookup>
+    <cluster_schema />
+    <remotesteps>
+      <input>
+      </input>
+      <output>
+      </output>
+    </remotesteps>
+    <GUI>
+      <xloc>2736</xloc>
+      <yloc>0</yloc>
+      <draw>Y</draw>
+    </GUI>
+  </step>
+  <step>
+    <name>Armar Reg</name>
+    <type>ConcatFields</type>
+    <description />
+    <distribute>Y</distribute>
+    <custom_distribution />
+    <copies>1</copies>
+    <partitioning>
+      <method>none</method>
+      <schema_name />
+    </partitioning>
+    <separator>|</separator>
+    <enclosure>'</enclosure>
+    <enclosure_forced>N</enclosure_forced>
+    <enclosure_fix_disabled>N</enclosure_fix_disabled>
+    <header>N</header>
+    <footer>N</footer>
+    <format>DOS</format>
+    <compression>None</compression>
+    <encoding />
+    <endedLine />
+    <fileNameInField>N</fileNameInField>
+    <fileNameField />
+    <create_parent_folder>Y</create_parent_folder>
+    <file>
+      <name>file</name>
+      <is_command>N</is_command>
+      <servlet_output>N</servlet_output>
+      <do_not_open_new_file_init>N</do_not_open_new_file_init>
+      <extention>txt</extention>
+      <append>N</append>
+      <split>N</split>
+      <haspartno>N</haspartno>
+      <add_date>N</add_date>
+      <add_time>N</add_time>
+      <SpecifyFormat>N</SpecifyFormat>
+      <date_time_format />
+      <add_to_result_filenames>Y</add_to_result_filenames>
+      <pad>N</pad>
+      <fast_dump>N</fast_dump>
+      <splitevery>0</splitevery>
+    </file>
+    <fields>
+      <field>
+        <name>cuil</name>
+        <type>BigNumber</type>
+        <format />
+        <currency />
+        <decimal />
+        <group />
+        <nullif />
+        <trim_type>both</trim_type>
+        <length>-1</length>
+        <precision>-1</precision>
+      </field>
+      <field>
+        <name>direccion_ori</name>
+        <type>String</type>
+        <format />
+        <currency />
+        <decimal />
+        <group />
+        <nullif />
+        <trim_type>both</trim_type>
+        <length>-1</length>
+        <precision>-1</precision>
+      </field>
+      <field>
+        <name>calle_ori</name>
+        <type>String</type>
+        <format />
+        <currency />
+        <decimal />
+        <group />
+        <nullif />
+        <trim_type>both</trim_type>
+        <length>-1</length>
+        <precision>-1</precision>
+      </field>
+      <field>
+        <name>numero_ori</name>
+        <type>String</type>
+        <format />
+        <currency />
+        <decimal />
+        <group />
+        <nullif />
+        <trim_type>both</trim_type>
+        <length>-1</length>
+        <precision>-1</precision>
+      </field>
+      <field>
+        <name>nom_loc_ori</name>
+        <type>String</type>
+        <format />
+        <currency />
+        <decimal />
+        <group />
+        <nullif />
+        <trim_type>both</trim_type>
+        <length>-1</length>
+        <precision>-1</precision>
+      </field>
+      <field>
+        <name>torre_ori</name>
+        <type>String</type>
+        <format />
+        <currency />
+        <decimal />
+        <group />
+        <nullif />
+        <trim_type>both</trim_type>
+        <length>-1</length>
+        <precision>-1</precision>
+      </field>
+      <field>
+        <name>casa_ori</name>
+        <type>String</type>
+        <format />
+        <currency />
+        <decimal />
+        <group />
+        <nullif />
+        <trim_type>both</trim_type>
+        <length>-1</length>
+        <precision>-1</precision>
+      </field>
+      <field>
+        <name>manzana_ori</name>
+        <type>String</type>
+        <format />
+        <currency />
+        <decimal />
+        <group />
+        <nullif />
+        <trim_type>both</trim_type>
+        <length>-1</length>
+        <precision>-1</precision>
+      </field>
+      <field>
+        <name>tipo_domicilio_ori</name>
+        <type>String</type>
+        <format />
+        <currency />
+        <decimal />
+        <group />
+        <nullif />
+        <trim_type>both</trim_type>
+        <length>-1</length>
+        <precision>-1</precision>
+      </field>
+      <field>
+        <name>barrio_ori</name>
+        <type>String</type>
+        <format />
+        <currency />
+        <decimal />
+        <group />
+        <nullif />
+        <trim_type>both</trim_type>
+        <length>-1</length>
+        <precision>-1</precision>
+      </field>
+      <field>
+        <name>nom_distrito_ori</name>
+        <type>String</type>
+        <format />
+        <currency />
+        <decimal />
+        <group />
+        <nullif />
+        <trim_type>both</trim_type>
+        <length>-1</length>
+        <precision>-1</precision>
+      </field>
+    </fields>
+    <ConcatFields>
+      <targetFieldName>registro</targetFieldName>
+      <targetFieldLength>0</targetFieldLength>
+      <removeSelectedFields>N</removeSelectedFields>
+    </ConcatFields>
+    <cluster_schema />
+    <remotesteps>
+      <input>
+      </input>
+      <output>
+      </output>
+    </remotesteps>
+    <GUI>
+      <xloc>720</xloc>
+      <yloc>160</yloc>
+      <draw>Y</draw>
+    </GUI>
+  </step>
+  <step>
+    <name>Armar Reg 2</name>
+    <type>ConcatFields</type>
+    <description />
+    <distribute>Y</distribute>
+    <custom_distribution />
+    <copies>1</copies>
+    <partitioning>
+      <method>none</method>
+      <schema_name />
+    </partitioning>
+    <separator>|</separator>
+    <enclosure>'</enclosure>
+    <enclosure_forced>N</enclosure_forced>
+    <enclosure_fix_disabled>N</enclosure_fix_disabled>
+    <header>N</header>
+    <footer>N</footer>
+    <format>DOS</format>
+    <compression>None</compression>
+    <encoding />
+    <endedLine />
+    <fileNameInField>N</fileNameInField>
+    <fileNameField />
+    <create_parent_folder>Y</create_parent_folder>
+    <file>
+      <name>file</name>
+      <is_command>N</is_command>
+      <servlet_output>N</servlet_output>
+      <do_not_open_new_file_init>N</do_not_open_new_file_init>
+      <extention>txt</extention>
+      <append>N</append>
+      <split>N</split>
+      <haspartno>N</haspartno>
+      <add_date>N</add_date>
+      <add_time>N</add_time>
+      <SpecifyFormat>N</SpecifyFormat>
+      <date_time_format />
+      <add_to_result_filenames>Y</add_to_result_filenames>
+      <pad>N</pad>
+      <fast_dump>N</fast_dump>
+      <splitevery>0</splitevery>
+    </file>
+    <fields>
+      <field>
+        <name>id_persona_fisica_ori</name>
+        <type>None</type>
+        <format />
+        <currency />
+        <decimal />
+        <group />
+        <nullif />
+        <trim_type>both</trim_type>
+        <length>-1</length>
+        <precision>-1</precision>
+      </field>
+      <field>
+        <name>calle_ori</name>
+        <type>None</type>
+        <format />
+        <currency />
+        <decimal />
+        <group />
+        <nullif />
+        <trim_type>both</trim_type>
+        <length>-1</length>
+        <precision>-1</precision>
+      </field>
+      <field>
+        <name>numero_ori</name>
+        <type>String</type>
+        <format />
+        <currency />
+        <decimal />
+        <group />
+        <nullif />
+        <trim_type>both</trim_type>
+        <length>-1</length>
+        <precision>-1</precision>
+      </field>
+      <field>
+        <name>calle_mdm</name>
+        <type>String</type>
+        <format />
+        <currency />
+        <decimal />
+        <group />
+        <nullif />
+        <trim_type>both</trim_type>
+        <length>-1</length>
+        <precision>-1</precision>
+      </field>
+      <field>
+        <name>numero_dom_mdm</name>
+        <type>String</type>
+        <format />
+        <currency />
+        <decimal />
+        <group />
+        <nullif />
+        <trim_type>both</trim_type>
+        <length>-1</length>
+        <precision>-1</precision>
+      </field>
+      <field>
+        <name>direccion_mdm</name>
+        <type>String</type>
+        <format />
+        <currency />
+        <decimal />
+        <group />
+        <nullif />
+        <trim_type>both</trim_type>
+        <length>-1</length>
+        <precision>-1</precision>
+      </field>
+      <field>
+        <name>persona_fisica_mdm</name>
+        <type>Integer</type>
+        <format>0</format>
+        <currency />
+        <decimal />
+        <group />
+        <nullif />
+        <trim_type>both</trim_type>
+        <length>-1</length>
+        <precision>-1</precision>
+      </field>
+    </fields>
+    <ConcatFields>
+      <targetFieldName>registro</targetFieldName>
+      <targetFieldLength>0</targetFieldLength>
+      <removeSelectedFields>N</removeSelectedFields>
+    </ConcatFields>
+    <cluster_schema />
+    <remotesteps>
+      <input>
+      </input>
+      <output>
+      </output>
+    </remotesteps>
+    <GUI>
+      <xloc>1648</xloc>
+      <yloc>288</yloc>
+      <draw>Y</draw>
+    </GUI>
+  </step>
+  <step>
+    <name>Armar Reg 3</name>
+    <type>ConcatFields</type>
+    <description />
+    <distribute>Y</distribute>
+    <custom_distribution />
+    <copies>1</copies>
+    <partitioning>
+      <method>none</method>
+      <schema_name />
+    </partitioning>
+    <separator>|</separator>
+    <enclosure>'</enclosure>
+    <enclosure_forced>N</enclosure_forced>
+    <enclosure_fix_disabled>N</enclosure_fix_disabled>
+    <header>N</header>
+    <footer>N</footer>
+    <format>DOS</format>
+    <compression>None</compression>
+    <encoding />
+    <endedLine />
+    <fileNameInField>N</fileNameInField>
+    <fileNameField />
+    <create_parent_folder>Y</create_parent_folder>
+    <file>
+      <name>file</name>
+      <is_command>N</is_command>
+      <servlet_output>N</servlet_output>
+      <do_not_open_new_file_init>N</do_not_open_new_file_init>
+      <extention>txt</extention>
+      <append>N</append>
+      <split>N</split>
+      <haspartno>N</haspartno>
+      <add_date>N</add_date>
+      <add_time>N</add_time>
+      <SpecifyFormat>N</SpecifyFormat>
+      <date_time_format />
+      <add_to_result_filenames>Y</add_to_result_filenames>
+      <pad>N</pad>
+      <fast_dump>N</fast_dump>
+      <splitevery>0</splitevery>
+    </file>
+    <fields>
+      <field>
+        <name>nro_documento_ori</name>
+        <type>Integer</type>
+        <format>0</format>
+        <currency />
+        <decimal />
+        <group />
+        <nullif />
+        <trim_type>both</trim_type>
+        <length>-1</length>
+        <precision>-1</precision>
+      </field>
+      <field>
+        <name>nom_tipoDoc_ori</name>
+        <type>String</type>
+        <format />
+        <currency />
+        <decimal />
+        <group />
+        <nullif />
+        <trim_type>both</trim_type>
+        <length>-1</length>
+        <precision>-1</precision>
+      </field>
+      <field>
+        <name>genero_ori</name>
+        <type>String</type>
+        <format />
+        <currency />
+        <decimal />
+        <group />
+        <nullif />
+        <trim_type>both</trim_type>
+        <length>-1</length>
+        <precision>-1</precision>
+      </field>
+      <field>
+        <name>direccion_ori</name>
+        <type>String</type>
+        <format />
+        <currency />
+        <decimal />
+        <group />
+        <nullif />
+        <trim_type>both</trim_type>
+        <length>-1</length>
+        <precision>-1</precision>
+      </field>
+      <field>
+        <name>numero_ori</name>
+        <type>Integer</type>
+        <format>0</format>
+        <currency />
+        <decimal />
+        <group />
+        <nullif />
+        <trim_type>both</trim_type>
+        <length>-1</length>
+        <precision>-1</precision>
+      </field>
+      <field>
+        <name>piso_ori</name>
+        <type>String</type>
+        <format />
+        <currency />
+        <decimal />
+        <group />
+        <nullif />
+        <trim_type>both</trim_type>
+        <length>-1</length>
+        <precision>-1</precision>
+      </field>
+      <field>
+        <name>departamento_ori</name>
+        <type>String</type>
+        <format />
+        <currency />
+        <decimal />
+        <group />
+        <nullif />
+        <trim_type>both</trim_type>
+        <length>-1</length>
+        <precision>-1</precision>
+      </field>
+      <field>
+        <name>idCalle</name>
+        <type>Integer</type>
+        <format>0</format>
+        <currency />
+        <decimal />
+        <group />
+        <nullif />
+        <trim_type>both</trim_type>
+        <length>-1</length>
+        <precision>-1</precision>
+      </field>
+      <field>
+        <name>calle_ori</name>
+        <type>String</type>
+        <format />
+        <currency />
+        <decimal />
+        <group />
+        <nullif />
+        <trim_type>both</trim_type>
+        <length>-1</length>
+        <precision>-1</precision>
+      </field>
+    </fields>
+    <ConcatFields>
+      <targetFieldName>registro</targetFieldName>
+      <targetFieldLength>0</targetFieldLength>
+      <removeSelectedFields>N</removeSelectedFields>
+    </ConcatFields>
+    <cluster_schema />
+    <remotesteps>
+      <input>
+      </input>
+      <output>
+      </output>
+    </remotesteps>
+    <GUI>
+      <xloc>944</xloc>
+      <yloc>160</yloc>
+      <draw>Y</draw>
+    </GUI>
+  </step>
+  <step>
+    <name>Añadir constantes</name>
+    <type>Constant</type>
+    <description />
+    <distribute>Y</distribute>
+    <custom_distribution />
+    <copies>1</copies>
+    <partitioning>
+      <method>none</method>
+      <schema_name />
+    </partitioning>
+    <fields>
+      <field>
+        <name>motivo</name>
+        <type>String</type>
+        <format />
+        <currency />
+        <decimal />
+        <group />
+        <nullif>no existe documento</nullif>
+        <length>-1</length>
+        <precision>-1</precision>
+        <set_empty_string>N</set_empty_string>
+      </field>
+      <field>
+        <name>dato</name>
+        <type>String</type>
+        <format />
+        <currency />
+        <decimal />
+        <group />
+        <nullif>cuil</nullif>
+        <length>-1</length>
+        <precision>-1</precision>
+        <set_empty_string>N</set_empty_string>
+      </field>
+    </fields>
+    <cluster_schema />
+    <remotesteps>
+      <input>
+      </input>
+      <output>
+      </output>
+    </remotesteps>
+    <GUI>
+      <xloc>720</xloc>
+      <yloc>288</yloc>
+      <draw>Y</draw>
+    </GUI>
+  </step>
+  <step>
+    <name>Barrio MDM</name>
+    <type>DBJoin</type>
+    <description />
+    <distribute>Y</distribute>
+    <custom_distribution />
+    <copies>1</copies>
+    <partitioning>
+      <method>none</method>
+      <schema_name />
+    </partitioning>
+    <connection>MDM</connection>
+    <rowlimit>0</rowlimit>
+    <sql>select 	trim(barrio.nombre)	AS barrio_mdm,
+		id_barrio 			AS idbarrio_mdm
+ from territorio.barrio barrio
+	  LEFT OUTER JOIN territorio.distrito distr ON distr.id_distrito = barrio.id_distrito
+	
+	
+ where upper(trim(barrio.nombre)) = upper(trim(?))
+   AND trim(distr.nombre) = trim(?)
+
+order by barrio.nombre</sql>
+    <outer_join>Y</outer_join>
+    <replace_vars>Y</replace_vars>
+    <parameter>
+      <field>
+        <name>barrio_ori</name>
+        <type>String</type>
+      </field>
+      <field>
+        <name>nom_distrito_ori</name>
+        <type>String</type>
+      </field>
+    </parameter>
+    <cluster_schema />
+    <remotesteps>
+      <input>
+      </input>
+      <output>
+      </output>
+    </remotesteps>
+    <GUI>
+      <xloc>1552</xloc>
+      <yloc>96</yloc>
+      <draw>Y</draw>
+    </GUI>
+  </step>
+  <step>
+    <name>Calculadora 2</name>
+    <type>Calculator</type>
+    <description />
+    <distribute>Y</distribute>
+    <custom_distribution />
+    <copies>1</copies>
+    <partitioning>
+      <method>none</method>
+      <schema_name />
+    </partitioning>
+    <calculation>
+      <field_name>id_domicilio_tipo</field_name>
+      <calc_type>ADD</calc_type>
+      <field_a>id_domicilio</field_a>
+      <field_b>incremento</field_b>
+      <field_c />
+      <value_type>Integer</value_type>
+      <value_length>-1</value_length>
+      <value_precision>-1</value_precision>
+      <remove>N</remove>
+      <conversion_mask />
+      <decimal_symbol />
+      <grouping_symbol />
+      <currency_symbol />
+    </calculation>
+    <cluster_schema />
+    <remotesteps>
+      <input>
+      </input>
+      <output>
+      </output>
+    </remotesteps>
+    <GUI>
+      <xloc>2304</xloc>
+      <yloc>96</yloc>
+      <draw>Y</draw>
+    </GUI>
+  </step>
+  <step>
+    <name>Calle B</name>
+    <type>Constant</type>
+    <description />
+    <distribute>Y</distribute>
+    <custom_distribution />
+    <copies>1</copies>
+    <partitioning>
+      <method>none</method>
+      <schema_name />
+    </partitioning>
+    <fields>
+      <field>
+        <name>motivo</name>
+        <type>String</type>
+        <format />
+        <currency />
+        <decimal />
+        <group />
+        <nullif>Baja Domicilio</nullif>
+        <length>-1</length>
+        <precision>-1</precision>
+        <set_empty_string>N</set_empty_string>
+      </field>
+      <field>
+        <name>dato</name>
+        <type>String</type>
+        <format />
+        <currency />
+        <decimal />
+        <group />
+        <nullif>id Domicilio</nullif>
+        <length>-1</length>
+        <precision>-1</precision>
+        <set_empty_string>N</set_empty_string>
+      </field>
+    </fields>
+    <cluster_schema />
+    <remotesteps>
+      <input>
+      </input>
+      <output>
+      </output>
+    </remotesteps>
+    <GUI>
+      <xloc>1648</xloc>
+      <yloc>368</yloc>
+      <draw>Y</draw>
+    </GUI>
+  </step>
+  <step>
+    <name>Calle MDM</name>
+    <type>DBJoin</type>
+    <description />
+    <distribute>Y</distribute>
+    <custom_distribution />
+    <copies>1</copies>
+    <partitioning>
+      <method>none</method>
+      <schema_name />
+    </partitioning>
+    <connection>MDM</connection>
+    <rowlimit>0</rowlimit>
+    <sql>select 	territorio.calle.nombre 	AS nombre_calle_mdm,
+		territorio.calle.id_calle 	AS idcalle_mdm
+	
+ from territorio.calle
+    left outer join territorio.localidad ON territorio.localidad.id_localidad = territorio.calle.id_localidad
+ where trim(territorio.calle.nombre) = trim(?)
+	and trim(territorio.localidad.nombre) = trim(?)
+
+order by territorio.calle.nombre,territorio.localidad.nombre</sql>
+    <outer_join>Y</outer_join>
+    <replace_vars>Y</replace_vars>
+    <parameter>
+      <field>
+        <name>calle_ori</name>
+        <type>String</type>
+      </field>
+      <field>
+        <name>nom_loc_ori</name>
+        <type>String</type>
+      </field>
+    </parameter>
+    <cluster_schema />
+    <remotesteps>
+      <input>
+      </input>
+      <output>
+      </output>
+    </remotesteps>
+    <GUI>
+      <xloc>1360</xloc>
+      <yloc>96</yloc>
+      <draw>Y</draw>
+    </GUI>
+  </step>
+  <step>
+    <name>Calle no es nulo?</name>
+    <type>FilterRows</type>
+    <description />
+    <distribute>Y</distribute>
+    <custom_distribution />
+    <copies>1</copies>
+    <partitioning>
+      <method>none</method>
+      <schema_name />
+    </partitioning>
+    <send_true_to>Ordenar filas</send_true_to>
+    <send_false_to>Armar Reg 3</send_false_to>
+    <compare>
+      <condition>
+        <negated>N</negated>
+        <leftvalue>calle_ori</leftvalue>
+        <function>IS NOT NULL</function>
+        <rightvalue />
+        <value>
+          <name>constant</name>
+          <type>String</type>
+          <text>Y</text>
+          <length>-1</length>
+          <precision>-1</precision>
+          <isnull>N</isnull>
+          <mask />
+        </value>
+      </condition>
+    </compare>
+    <cluster_schema />
+    <remotesteps>
+      <input>
+      </input>
+      <output>
+      </output>
+    </remotesteps>
+    <GUI>
+      <xloc>944</xloc>
+      <yloc>96</yloc>
+      <draw>Y</draw>
+    </GUI>
+  </step>
+  <step>
+    <name>Compare fields</name>
+    <type>CompareFields</type>
+    <description />
+    <distribute>Y</distribute>
+    <custom_distribution />
+    <copies>1</copies>
+    <partitioning>
+      <method>none</method>
+      <schema_name />
+    </partitioning>
+    <changed_target_step>Actualizacion M</changed_target_step>
+    <identical_target_step>iguales</identical_target_step>
+    <added_target_step>Actualizacion A</added_target_step>
+    <removed_target_step>Actualizacion B</removed_target_step>
+    <add_fields_list>Y</add_fields_list>
+    <fields_list_field />
+    <fields>
+      <field>
+        <reference_field>nom_calle_mdm</reference_field>
+        <compare_field>Calle_origen</compare_field>
+      </field>
+      <field>
+        <reference_field>numero_dom_mdm</reference_field>
+        <compare_field>numero_ori</compare_field>
+      </field>
+      <field>
+        <reference_field>persona_fisica_mdm</reference_field>
+        <compare_field>id_persona_fisica_ori</compare_field>
+      </field>
+    </fields>
+    <cluster_schema />
+    <remotesteps>
+      <input>
+      </input>
+      <output>
+      </output>
+    </remotesteps>
+    <GUI>
+      <xloc>1648</xloc>
+      <yloc>96</yloc>
+      <draw>Y</draw>
+    </GUI>
+  </step>
+  <step>
+    <name>Corta REeg</name>
+    <type>StringCut</type>
+    <description />
+    <distribute>Y</distribute>
+    <custom_distribution />
+    <copies>1</copies>
+    <partitioning>
+      <method>none</method>
+      <schema_name />
+    </partitioning>
+    <fields>
+      <field>
+        <in_stream_name>registro</in_stream_name>
+        <out_stream_name />
+        <cut_from>0</cut_from>
+        <cut_to>499</cut_to>
+      </field>
+    </fields>
+    <cluster_schema />
+    <remotesteps>
+      <input>
+      </input>
+      <output>
+      </output>
+    </remotesteps>
+    <GUI>
+      <xloc>2544</xloc>
+      <yloc>400</yloc>
+      <draw>Y</draw>
+    </GUI>
+  </step>
+  <step>
+    <name>Cuil-ValorDato</name>
+    <type>SelectValues</type>
+    <description />
+    <distribute>Y</distribute>
+    <custom_distribution />
+    <copies>1</copies>
+    <partitioning>
+      <method>none</method>
+      <schema_name />
+    </partitioning>
+    <fields>
+      <field>
+        <name>cuil</name>
+        <rename>valor_dato</rename>
+      </field>
+      <select_unspecified>Y</select_unspecified>
+    </fields>
+    <cluster_schema />
+    <remotesteps>
+      <input>
+      </input>
+      <output>
+      </output>
+    </remotesteps>
+    <GUI>
+      <xloc>720</xloc>
+      <yloc>224</yloc>
+      <draw>Y</draw>
+    </GUI>
+  </step>
+  <step>
+    <name>Direccion Nula</name>
+    <type>SelectValues</type>
+    <description />
+    <distribute>Y</distribute>
+    <custom_distribution />
+    <copies>1</copies>
+    <partitioning>
+      <method>none</method>
+      <schema_name />
+    </partitioning>
+    <fields>
+      <field>
+        <name>direccion_ori</name>
+        <rename>valor_dato</rename>
+      </field>
+      <select_unspecified>Y</select_unspecified>
+    </fields>
+    <cluster_schema />
+    <remotesteps>
+      <input>
+      </input>
+      <output>
+      </output>
+    </remotesteps>
+    <GUI>
+      <xloc>944</xloc>
+      <yloc>224</yloc>
+      <draw>Y</draw>
+    </GUI>
+  </step>
+  <step>
+    <name>Direccion Nula 2</name>
+    <type>SelectValues</type>
+    <description />
+    <distribute>Y</distribute>
+    <custom_distribution />
+    <copies>1</copies>
+    <partitioning>
+      <method>none</method>
+      <schema_name />
+    </partitioning>
+    <fields>
+      <field>
+        <name>direccion_ori</name>
+        <rename>valor_dato</rename>
+      </field>
+      <select_unspecified>Y</select_unspecified>
+    </fields>
+    <cluster_schema />
+    <remotesteps>
+      <input>
+      </input>
+      <output>
+      </output>
+    </remotesteps>
+    <GUI>
+      <xloc>2544</xloc>
+      <yloc>256</yloc>
+      <draw>Y</draw>
+    </GUI>
+  </step>
+  <step>
+    <name>Direccion Nulo</name>
+    <type>Constant</type>
+    <description />
+    <distribute>Y</distribute>
+    <custom_distribution />
+    <copies>1</copies>
+    <partitioning>
+      <method>none</method>
+      <schema_name />
+    </partitioning>
+    <fields>
+      <field>
+        <name>motivo</name>
+        <type>String</type>
+        <format />
+        <currency />
+        <decimal />
+        <group />
+        <nullif>Valor Nulo</nullif>
+        <length>-1</length>
+        <precision>-1</precision>
+        <set_empty_string>N</set_empty_string>
+      </field>
+      <field>
+        <name>dato</name>
+        <type>String</type>
+        <format />
+        <currency />
+        <decimal />
+        <group />
+        <nullif>direccion Origen</nullif>
+        <length>-1</length>
+        <precision>-1</precision>
+        <set_empty_string>N</set_empty_string>
+      </field>
+    </fields>
+    <cluster_schema />
+    <remotesteps>
+      <input>
+      </input>
+      <output>
+      </output>
+    </remotesteps>
+    <GUI>
+      <xloc>944</xloc>
+      <yloc>288</yloc>
+      <draw>Y</draw>
+    </GUI>
+  </step>
+  <step>
+    <name>Direccion Nulo 2</name>
+    <type>Constant</type>
+    <description />
+    <distribute>Y</distribute>
+    <custom_distribution />
+    <copies>1</copies>
+    <partitioning>
+      <method>none</method>
+      <schema_name />
+    </partitioning>
+    <fields>
+      <field>
+        <name>motivo</name>
+        <type>String</type>
+        <format />
+        <currency />
+        <decimal />
+        <group />
+        <nullif>Valor Nulo</nullif>
+        <length>-1</length>
+        <precision>-1</precision>
+        <set_empty_string>N</set_empty_string>
+      </field>
+      <field>
+        <name>dato</name>
+        <type>String</type>
+        <format />
+        <currency />
+        <decimal />
+        <group />
+        <nullif>Tipo Domicilio</nullif>
+        <length>-1</length>
+        <precision>-1</precision>
+        <set_empty_string>N</set_empty_string>
+      </field>
+    </fields>
+    <cluster_schema />
+    <remotesteps>
+      <input>
+      </input>
+      <output>
+      </output>
+    </remotesteps>
+    <GUI>
+      <xloc>2544</xloc>
+      <yloc>320</yloc>
+      <draw>Y</draw>
+    </GUI>
+  </step>
+  <step>
+    <name>Docimilio Tipo</name>
+    <type>TableOutput</type>
+    <description />
+    <distribute>Y</distribute>
+    <custom_distribution />
+    <copies>1</copies>
+    <partitioning>
+      <method>none</method>
+      <schema_name />
+    </partitioning>
+    <connection>MDM</connection>
+    <schema>contactos</schema>
+    <table>domicilio_tipo</table>
+    <commit>1000</commit>
+    <truncate>N</truncate>
+    <ignore_errors>N</ignore_errors>
+    <use_batch>N</use_batch>
+    <specify_fields>Y</specify_fields>
+    <partitioning_enabled>N</partitioning_enabled>
+    <partitioning_field />
+    <partitioning_daily>N</partitioning_daily>
+    <partitioning_monthly>Y</partitioning_monthly>
+    <tablename_in_field>N</tablename_in_field>
+    <tablename_field />
+    <tablename_in_table>Y</tablename_in_table>
+    <return_keys>N</return_keys>
+    <return_field />
+    <fields>
+      <field>
+        <column_name>id_ejecucion_proc_act</column_name>
+        <stream_name>id_proceso_act</stream_name>
+      </field>
+      <field>
+        <column_name>fecha_ultima_actualizacion</column_name>
+        <stream_name>Fecha_Ultima_Act</stream_name>
+      </field>
+      <field>
+        <column_name>ultima_actualizacion</column_name>
+        <stream_name>Accion</stream_name>
+      </field>
+      <field>
+        <column_name>id_domicilio</column_name>
+        <stream_name>id_domicilio_tipo</stream_name>
+      </field>
+      <field>
+        <column_name>id_tipo_domicilio</column_name>
+        <stream_name>id_tipodom_mdm</stream_name>
+      </field>
+    </fields>
+    <cluster_schema />
+    <remotesteps>
+      <input>
+      </input>
+      <output>
+      </output>
+    </remotesteps>
+    <GUI>
+      <xloc>2672</xloc>
+      <yloc>96</yloc>
+      <draw>Y</draw>
+    </GUI>
+  </step>
+  <step>
+    <name>Docimilio_tipo</name>
+    <type>TableOutput</type>
+    <description />
+    <distribute>N</distribute>
+    <custom_distribution />
+    <copies>1</copies>
+    <partitioning>
+      <method>none</method>
+      <schema_name />
+    </partitioning>
+    <connection>MDM</connection>
+    <schema>contactos</schema>
+    <table>domicilio_tipo</table>
+    <commit>1000</commit>
+    <truncate>N</truncate>
+    <ignore_errors>N</ignore_errors>
+    <use_batch>N</use_batch>
+    <specify_fields>Y</specify_fields>
+    <partitioning_enabled>N</partitioning_enabled>
+    <partitioning_field />
+    <partitioning_daily>N</partitioning_daily>
+    <partitioning_monthly>Y</partitioning_monthly>
+    <tablename_in_field>N</tablename_in_field>
+    <tablename_field />
+    <tablename_in_table>Y</tablename_in_table>
+    <return_keys>N</return_keys>
+    <return_field />
+    <fields>
+      <field>
+        <column_name>fecha_ultima_actualizacion</column_name>
+        <stream_name>Fecha_Ultima_Act</stream_name>
+      </field>
+      <field>
+        <column_name>ultima_actualizacion</column_name>
+        <stream_name>Accion</stream_name>
+      </field>
+      <field>
+        <column_name>id_ejecucion_proc_act</column_name>
+        <stream_name>id_proceso_act</stream_name>
+      </field>
+      <field>
+        <column_name>id_domicilio</column_name>
+        <stream_name>id_domicilio</stream_name>
+      </field>
+      <field>
+        <column_name>id_tipo_domicilio</column_name>
+        <stream_name>id_tipodom_mdm</stream_name>
+      </field>
+    </fields>
+    <cluster_schema />
+    <remotesteps>
+      <input>
+      </input>
+      <output>
+      </output>
+    </remotesteps>
+    <GUI>
+      <xloc>2256</xloc>
+      <yloc>416</yloc>
+      <draw>Y</draw>
+    </GUI>
+  </step>
+  <step>
+    <name>Documentos</name>
+    <type>DBJoin</type>
+    <description />
+    <distribute>Y</distribute>
+    <custom_distribution />
+    <copies>1</copies>
+    <partitioning>
+      <method>none</method>
+      <schema_name />
+    </partitioning>
+    <connection>MDM</connection>
+    <rowlimit>0</rowlimit>
+    <sql>select doc.id_persona_fisica AS PersonaFisicaDoc,
+		doc.id_documento,
+		trim(case when pf.id_persona_fisica  is not null then 
+					trim(coalesce(trim(pf.apellido_1),''))  || ' '|| trim(coalesce(trim(pf.apellido_2),''))  ||' ' || trim(coalesce(trim(pf.apellido_3),'')) ELSE
+					trim(coalesce(trim(pfa.apellido_1),'')) || ' '||  trim(coalesce(trim(pfa.apellido_2),'')) ||' ' || trim(coalesce(trim(pfa.apellido_3),'')) end),
+   		trim(case when pf.id_persona_fisica  is not null then 
+					trim(coalesce(trim(pf.nombre_1),''))  ||' ' || trim(coalesce(trim(pf.nombre_2),''))  ||' ' || trim(coalesce(trim(pf.nombre_3),'')) ELSE
+					trim(coalesce(trim(pfa.nombre_1),'')) ||' ' || trim(coalesce(trim(pfa.nombre_2),'')) ||' ' || trim(coalesce(trim(pfa.nombre_3),'')) END ) ,
+		doc.id_documento as iddoc,
+		doc.id_persona_fisica AS id_persona_fisica_ori
+from personas.documento doc
+   left outer join personas.tipo_documento  tipodoc ON  doc.id_tipo_documento = tipodoc.id_tipo_documento
+   left outer join personas.persona_fisica_audit  pfa ON  doc.id_persona_fisica = pfa.id_persona_fisica_audit
+   left outer join personas.persona_fisica  pf ON  doc.id_persona_fisica = pf.id_persona_fisica
+ where numero_documento = ?
+ -- and trim(tipodoc.nombre) = trim(?)
+  and trim(case when pf.id_persona_fisica  is not null then 
+					trim(coalesce(trim(pf.apellido_1),''))  || ' '|| trim(coalesce(trim(pf.apellido_2),''))  ||' ' || trim(coalesce(trim(pf.apellido_3),'')) ELSE
+					trim(coalesce(trim(pfa.apellido_1),'')) || ' '||  trim(coalesce(trim(pfa.apellido_2),'')) ||' ' || trim(coalesce(trim(pfa.apellido_3),'')) end) =  trim(coalesce(?,''))
+  AND trim(case when pf.id_persona_fisica  is not null then 
+					trim(coalesce(trim(pf.nombre_1),''))  ||' ' || trim(coalesce(trim(pf.nombre_2),''))  ||' ' || trim(coalesce(trim(pf.nombre_3),'')) ELSE
+					trim(coalesce(trim(pfa.nombre_1),'')) ||' ' || trim(coalesce(trim(pfa.nombre_2),'')) ||' ' || trim(coalesce(trim(pfa.nombre_3),'')) END ) = trim(coalesce(?,''))</sql>
+    <outer_join>Y</outer_join>
+    <replace_vars>Y</replace_vars>
+    <parameter>
+      <field>
+        <name>cuil</name>
+        <type>Integer</type>
+      </field>
+      <field>
+        <name>apellido_ori</name>
+        <type>None</type>
+      </field>
+      <field>
+        <name>nombre_ori</name>
+        <type>None</type>
+      </field>
+    </parameter>
+    <cluster_schema />
+    <remotesteps>
+      <input>
+      </input>
+      <output>
+      </output>
+    </remotesteps>
+    <GUI>
+      <xloc>624</xloc>
+      <yloc>96</yloc>
+      <draw>Y</draw>
+    </GUI>
+  </step>
+  <step>
+    <name>DomTipo MDM</name>
+    <type>DBJoin</type>
+    <description />
+    <distribute>Y</distribute>
+    <custom_distribution />
+    <copies>1</copies>
+    <partitioning>
+      <method>none</method>
+      <schema_name />
+    </partitioning>
+    <connection>MDM</connection>
+    <rowlimit>0</rowlimit>
+    <sql>select 	id_domicilio		AS id_domicilio_mdm,
+		tDom.id_tipo_domicilio	AS id_tipoDom_mdm
+ from contactos.domicilio_tipo tDom,
+	  contactos.tipo_domicilio tipoDom
+
+ where id_domicilio		 = ?
+   AND trim(tipoDom.tipo_domicilio) = trim(?)
+   AND tipoDom.id_tipo_domicilio = tDom.id_tipo_domicilio
+
+order by id_domicilio,tDom.id_tipo_domicilio</sql>
+    <outer_join>Y</outer_join>
+    <replace_vars>Y</replace_vars>
+    <parameter>
+      <field>
+        <name>id_domicilio</name>
+        <type>Integer</type>
+      </field>
+      <field>
+        <name>tipo_domicilio_ori</name>
+        <type>String</type>
+      </field>
+    </parameter>
+    <cluster_schema />
+    <remotesteps>
+      <input>
+      </input>
+      <output>
+      </output>
+    </remotesteps>
+    <GUI>
+      <xloc>2224</xloc>
+      <yloc>208</yloc>
+      <draw>Y</draw>
+    </GUI>
+  </step>
+  <step>
+    <name>DomTipo MDM 2</name>
+    <type>DBJoin</type>
+    <description />
+    <distribute>Y</distribute>
+    <custom_distribution />
+    <copies>1</copies>
+    <partitioning>
+      <method>none</method>
+      <schema_name />
+    </partitioning>
+    <connection>MDM</connection>
+    <rowlimit>0</rowlimit>
+    <sql>select 	id_domicilio		AS id_domicilio_mdm,
+		tDom.id_tipo_domicilio	AS id_tipoDom_mdm
+ from contactos.domicilio_tipo tDom,
+	  contactos.tipo_domicilio tipoDom
+
+ where id_domicilio		 = ?
+   AND trim(tipoDom.tipo_domicilio) = trim(?)
+   AND tipoDom.id_tipo_domicilio = tDom.id_tipo_domicilio
+
+order by id_domicilio,tDom.id_tipo_domicilio</sql>
+    <outer_join>Y</outer_join>
+    <replace_vars>Y</replace_vars>
+    <parameter>
+      <field>
+        <name>id_domicilio</name>
+        <type>Integer</type>
+      </field>
+      <field>
+        <name>tipo_domicilio_ori</name>
+        <type>String</type>
+      </field>
+    </parameter>
+    <cluster_schema />
+    <remotesteps>
+      <input>
+      </input>
+      <output>
+      </output>
+    </remotesteps>
+    <GUI>
+      <xloc>2416</xloc>
+      <yloc>96</yloc>
+      <draw>Y</draw>
+    </GUI>
+  </step>
+  <step>
+    <name>Domicilio</name>
+    <type>TableOutput</type>
+    <description />
+    <distribute>N</distribute>
+    <custom_distribution />
+    <copies>1</copies>
+    <partitioning>
+      <method>none</method>
+      <schema_name />
+    </partitioning>
+    <connection>MDM</connection>
+    <schema>contactos</schema>
+    <table>domicilio</table>
+    <commit>1000</commit>
+    <truncate>N</truncate>
+    <ignore_errors>Y</ignore_errors>
+    <use_batch>N</use_batch>
+    <specify_fields>Y</specify_fields>
+    <partitioning_enabled>N</partitioning_enabled>
+    <partitioning_field />
+    <partitioning_daily>N</partitioning_daily>
+    <partitioning_monthly>Y</partitioning_monthly>
+    <tablename_in_field>N</tablename_in_field>
+    <tablename_field />
+    <tablename_in_table>Y</tablename_in_table>
+    <return_keys>N</return_keys>
+    <return_field />
+    <fields>
+      <field>
+        <column_name>fecha_ultima_actualizacion</column_name>
+        <stream_name>Fecha_Ultima_Act</stream_name>
+      </field>
+      <field>
+        <column_name>id_persona_fisica</column_name>
+        <stream_name>id_persona_fisica_ori</stream_name>
+      </field>
+      <field>
+        <column_name>manzana</column_name>
+        <stream_name>manzana_ori</stream_name>
+      </field>
+      <field>
+        <column_name>casa</column_name>
+        <stream_name>casa_ori</stream_name>
+      </field>
+      <field>
+        <column_name>torre</column_name>
+        <stream_name>torre_ori</stream_name>
+      </field>
+      <field>
+        <column_name>numero</column_name>
+        <stream_name>numero_ori</stream_name>
+      </field>
+      <field>
+        <column_name>piso</column_name>
+        <stream_name>piso_ori</stream_name>
+      </field>
+      <field>
+        <column_name>departamento</column_name>
+        <stream_name>departamento_ori</stream_name>
+      </field>
+      <field>
+        <column_name>latitud</column_name>
+        <stream_name>latitud_ori</stream_name>
+      </field>
+      <field>
+        <column_name>longitud</column_name>
+        <stream_name>longitud_ori</stream_name>
+      </field>
+      <field>
+        <column_name>descripcion</column_name>
+        <stream_name>descr</stream_name>
+      </field>
+      <field>
+        <column_name>otros_datos</column_name>
+        <stream_name>otros_datos_ori</stream_name>
+      </field>
+      <field>
+        <column_name>ultima_actualizacion</column_name>
+        <stream_name>Accion</stream_name>
+      </field>
+      <field>
+        <column_name>partida_inmobiliaria</column_name>
+        <stream_name>partida_inmobiliaria_ori</stream_name>
+      </field>
+      <field>
+        <column_name>id_ejecucion_proc_act</column_name>
+        <stream_name>id_proceso_act</stream_name>
+      </field>
+      <field>
+        <column_name>id_barrio</column_name>
+        <stream_name>idbarrio_mdm</stream_name>
+      </field>
+      <field>
+        <column_name>id_localidad</column_name>
+        <stream_name>idloc_mdm</stream_name>
+      </field>
+      <field>
+        <column_name>id_calle</column_name>
+        <stream_name>idcalle_mdm</stream_name>
+      </field>
+    </fields>
+    <cluster_schema />
+    <remotesteps>
+      <input>
+      </input>
+      <output>
+      </output>
+    </remotesteps>
+    <GUI>
+      <xloc>1856</xloc>
+      <yloc>96</yloc>
+      <draw>Y</draw>
+    </GUI>
+  </step>
+  <step>
+    <name>Domicilio Altas</name>
+    <type>TextFileOutput</type>
+    <description />
+    <distribute>Y</distribute>
+    <custom_distribution />
+    <copies>1</copies>
+    <partitioning>
+      <method>none</method>
+      <schema_name />
+    </partitioning>
+    <separator>;</separator>
+    <enclosure>"</enclosure>
+    <enclosure_forced>N</enclosure_forced>
+    <enclosure_fix_disabled>N</enclosure_fix_disabled>
+    <header>Y</header>
+    <footer>N</footer>
+    <format>DOS</format>
+    <compression>None</compression>
+    <encoding />
+    <endedLine />
+    <fileNameInField>N</fileNameInField>
+    <fileNameField />
+    <create_parent_folder>Y</create_parent_folder>
+    <file>
+      <name>${Internal.Entry.Current.Directory}\logs\Domicilio-Alta</name>
+      <is_command>N</is_command>
+      <servlet_output>N</servlet_output>
+      <do_not_open_new_file_init>N</do_not_open_new_file_init>
+      <extention>txt</extention>
+      <append>N</append>
+      <split>N</split>
+      <haspartno>N</haspartno>
+      <add_date>N</add_date>
+      <add_time>N</add_time>
+      <SpecifyFormat>N</SpecifyFormat>
+      <date_time_format />
+      <add_to_result_filenames>Y</add_to_result_filenames>
+      <pad>N</pad>
+      <fast_dump>N</fast_dump>
+      <splitevery>0</splitevery>
+    </file>
+    <fields>
+      <field>
+        <name>id_persona_fisica_ori</name>
+        <type>None</type>
+        <format />
+        <currency />
+        <decimal />
+        <group />
+        <nullif />
+        <trim_type>none</trim_type>
+        <length>-1</length>
+        <precision>-1</precision>
+      </field>
+      <field>
+        <name>calle_ori</name>
+        <type>None</type>
+        <format />
+        <currency />
+        <decimal />
+        <group />
+        <nullif />
+        <trim_type>none</trim_type>
+        <length>-1</length>
+        <precision>-1</precision>
+      </field>
+      <field>
+        <name>departamento_ori</name>
+        <type>None</type>
+        <format />
+        <currency />
+        <decimal />
+        <group />
+        <nullif />
+        <trim_type>none</trim_type>
+        <length>-1</length>
+        <precision>-1</precision>
+      </field>
+      <field>
+        <name>cod_postal_ori</name>
+        <type>None</type>
+        <format />
+        <currency />
+        <decimal />
+        <group />
+        <nullif />
+        <trim_type>none</trim_type>
+        <length>-1</length>
+        <precision>-1</precision>
+      </field>
+      <field>
+        <name>nom_pais</name>
+        <type>None</type>
+        <format />
+        <currency />
+        <decimal />
+        <group />
+        <nullif />
+        <trim_type>none</trim_type>
+        <length>-1</length>
+        <precision>-1</precision>
+      </field>
+      <field>
+        <name>nom_prov</name>
+        <type>None</type>
+        <format />
+        <currency />
+        <decimal />
+        <group />
+        <nullif />
+        <trim_type>none</trim_type>
+        <length>-1</length>
+        <precision>-1</precision>
+      </field>
+      <field>
+        <name>nom_loc</name>
+        <type>None</type>
+        <format />
+        <currency />
+        <decimal />
+        <group />
+        <nullif />
+        <trim_type>none</trim_type>
+        <length>-1</length>
+        <precision>-1</precision>
+      </field>
+      <field>
+        <name>otros_datos_ori</name>
+        <type>None</type>
+        <format />
+        <currency />
+        <decimal />
+        <group />
+        <nullif />
+        <trim_type>none</trim_type>
+        <length>-1</length>
+        <precision>-1</precision>
+      </field>
+      <field>
+        <name>latitud_ori</name>
+        <type>None</type>
+        <format />
+        <currency />
+        <decimal />
+        <group />
+        <nullif />
+        <trim_type>none</trim_type>
+        <length>-1</length>
+        <precision>-1</precision>
+      </field>
+      <field>
+        <name>longitud_ori</name>
+        <type>None</type>
+        <format />
+        <currency />
+        <decimal />
+        <group />
+        <nullif />
+        <trim_type>none</trim_type>
+        <length>-1</length>
+        <precision>-1</precision>
+      </field>
+      <field>
+        <name>imagen_path_ori</name>
+        <type>None</type>
+        <format />
+        <currency />
+        <decimal />
+        <group />
+        <nullif />
+        <trim_type>none</trim_type>
+        <length>-1</length>
+        <precision>-1</precision>
+      </field>
+      <field>
+        <name>numero_ori</name>
+        <type>None</type>
+        <format />
+        <currency />
+        <decimal />
+        <group />
+        <nullif />
+        <trim_type>none</trim_type>
+        <length>-1</length>
+        <precision>-1</precision>
+      </field>
+      <field>
+        <name>piso_ori</name>
+        <type>None</type>
+        <format />
+        <currency />
+        <decimal />
+        <group />
+        <nullif />
+        <trim_type>none</trim_type>
+        <length>-1</length>
+        <precision>-1</precision>
+      </field>
+      <field>
+        <name>calle_cruce_1_ori</name>
+        <type>None</type>
+        <format />
+        <currency />
+        <decimal />
+        <group />
+        <nullif />
+        <trim_type>none</trim_type>
+        <length>-1</length>
+        <precision>-1</precision>
+      </field>
+      <field>
+        <name>calle_cruce_2_ori</name>
+        <type>None</type>
+        <format />
+        <currency />
+        <decimal />
+        <group />
+        <nullif />
+        <trim_type>none</trim_type>
+        <length>-1</length>
+        <precision>-1</precision>
+      </field>
+      <field>
+        <name>descripcion_ori</name>
+        <type>None</type>
+        <format />
+        <currency />
+        <decimal />
+        <group />
+        <nullif />
+        <trim_type>none</trim_type>
+        <length>-1</length>
+        <precision>-1</precision>
+      </field>
+      <field>
+        <name>torre_ori</name>
+        <type>None</type>
+        <format />
+        <currency />
+        <decimal />
+        <group />
+        <nullif />
+        <trim_type>none</trim_type>
+        <length>-1</length>
+        <precision>-1</precision>
+      </field>
+      <field>
+        <name>casa_ori</name>
+        <type>None</type>
+        <format />
+        <currency />
+        <decimal />
+        <group />
+        <nullif />
+        <trim_type>none</trim_type>
+        <length>-1</length>
+        <precision>-1</precision>
+      </field>
+      <field>
+        <name>manzana_ori</name>
+        <type>None</type>
+        <format />
+        <currency />
+        <decimal />
+        <group />
+        <nullif />
+        <trim_type>none</trim_type>
+        <length>-1</length>
+        <precision>-1</precision>
+      </field>
+      <field>
+        <name>partida_inmobiliaria_ori</name>
+        <type>None</type>
+        <format />
+        <currency />
+        <decimal />
+        <group />
+        <nullif />
+        <trim_type>none</trim_type>
+        <length>-1</length>
+        <precision>-1</precision>
+      </field>
+    </fields>
+    <cluster_schema />
+    <remotesteps>
+      <input>
+      </input>
+      <output>
+      </output>
+    </remotesteps>
+    <GUI>
+      <xloc>1984</xloc>
+      <yloc>144</yloc>
+      <draw>Y</draw>
+    </GUI>
+  </step>
+  <step>
+    <name>Domicilio InitCap</name>
+    <type>StringOperations</type>
+    <description />
+    <distribute>Y</distribute>
+    <custom_distribution />
+    <copies>1</copies>
+    <partitioning>
+      <method>none</method>
+      <schema_name />
+    </partitioning>
+    <fields>
+      <field>
+        <in_stream_name>nombre_ori</in_stream_name>
+        <out_stream_name />
+        <trim_type>both</trim_type>
+        <lower_upper>none</lower_upper>
+        <padding_type>none</padding_type>
+        <pad_char />
+        <pad_len />
+        <init_cap>yes</init_cap>
+        <mask_xml>none</mask_xml>
+        <digits>none</digits>
+        <remove_special_characters>none</remove_special_characters>
+      </field>
+      <field>
+        <in_stream_name>apellido_ori</in_stream_name>
+        <out_stream_name />
+        <trim_type>both</trim_type>
+        <lower_upper>none</lower_upper>
+        <padding_type>none</padding_type>
+        <pad_char />
+        <pad_len />
+        <init_cap>yes</init_cap>
+        <mask_xml>none</mask_xml>
+        <digits>none</digits>
+        <remove_special_characters>none</remove_special_characters>
+      </field>
+      <field>
+        <in_stream_name>tipo_domicilio_ori</in_stream_name>
+        <out_stream_name />
+        <trim_type>both</trim_type>
+        <lower_upper>none</lower_upper>
+        <padding_type>none</padding_type>
+        <pad_char />
+        <pad_len />
+        <init_cap>yes</init_cap>
+        <mask_xml>none</mask_xml>
+        <digits>none</digits>
+        <remove_special_characters>none</remove_special_characters>
+      </field>
+      <field>
+        <in_stream_name>nom_prov</in_stream_name>
+        <out_stream_name />
+        <trim_type>both</trim_type>
+        <lower_upper>none</lower_upper>
+        <padding_type>none</padding_type>
+        <pad_char />
+        <pad_len />
+        <init_cap>yes</init_cap>
+        <mask_xml>none</mask_xml>
+        <digits>none</digits>
+        <remove_special_characters>none</remove_special_characters>
+      </field>
+      <field>
+        <in_stream_name>nom_distrito_ori</in_stream_name>
+        <out_stream_name />
+        <trim_type>both</trim_type>
+        <lower_upper>none</lower_upper>
+        <padding_type>none</padding_type>
+        <pad_char />
+        <pad_len />
+        <init_cap>yes</init_cap>
+        <mask_xml>none</mask_xml>
+        <digits>none</digits>
+        <remove_special_characters>none</remove_special_characters>
+      </field>
+      <field>
+        <in_stream_name>barrio_ori</in_stream_name>
+        <out_stream_name />
+        <trim_type>both</trim_type>
+        <lower_upper>none</lower_upper>
+        <padding_type>none</padding_type>
+        <pad_char />
+        <pad_len />
+        <init_cap>yes</init_cap>
+        <mask_xml>none</mask_xml>
+        <digits>none</digits>
+        <remove_special_characters>none</remove_special_characters>
+      </field>
+      <field>
+        <in_stream_name>numero_ori</in_stream_name>
+        <out_stream_name />
+        <trim_type>none</trim_type>
+        <lower_upper>none</lower_upper>
+        <padding_type>none</padding_type>
+        <pad_char />
+        <pad_len />
+        <init_cap>no</init_cap>
+        <mask_xml>none</mask_xml>
+        <digits>digits_only</digits>
+        <remove_special_characters>none</remove_special_characters>
+      </field>
+    </fields>
+    <cluster_schema />
+    <remotesteps>
+      <input>
+      </input>
+      <output>
+      </output>
+    </remotesteps>
+    <GUI>
+      <xloc>176</xloc>
+      <yloc>96</yloc>
+      <draw>Y</draw>
+    </GUI>
+  </step>
+  <step>
+    <name>Domicilio MDM</name>
+    <type>TableInput</type>
+    <description />
+    <distribute>Y</distribute>
+    <custom_distribution />
+    <copies>1</copies>
+    <partitioning>
+      <method>none</method>
+      <schema_name />
+    </partitioning>
+    <connection>MDM</connection>
+    <sql>select 	trim(TC.nombre) 			AS calle_mdm,
+		(TC.id_calle)				AS id_calle_mdm,
+		loc.id_localidad			AS id_localidad_mdm,
+		barrio.id_barrio			AS id_barrio_mdm,
+		-- domic.id_tipo_domicilio		AS id_tipo_domicilio_mdm,
+		domic.numero				AS numero_dom_mdm,
+		trim(TC.nombre) || trim(domic.numero) 	AS direccion_mdm,
+		loc.nombre					AS nombre_loc_mdm,
+		domic.id_persona_fisica 	AS persona_fisica_mdm,
+		id_domicilio				AS id_domicilio_mdm
+FROM contactos.domicilio domic
+	LEFT OUTER JOIN personas.indice_persona persona ON domic.id_persona_fisica = persona.id_persona_fisica
+	LEFT OUTER JOIN territorio.localidad loc 	ON loc.id_localidad = domic.id_localidad
+	LEFT OUTER JOIN territorio.calle  TC		ON TC.id_calle = domic.id_calle
+	LEFT OUTER JOIN territorio.barrio 	barrio	ON barrio.id_barrio = domic.id_barrio
+	-- LEFT OUTER JOIN contactos.tipo_domicilio tipo_domic	ON tipo_domic.id_tipo_domicilio = domic.id_tipo_domicilio
+WHERE trim(TC.nombre)  			is not null
+order by TC.nombre,domic.numero,domic.id_persona_fisica</sql>
+    <limit>0</limit>
+    <lookup />
+    <execute_each_row>N</execute_each_row>
+    <variables_active>N</variables_active>
+    <lazy_conversion_active>N</lazy_conversion_active>
+    <cluster_schema />
+    <remotesteps>
+      <input>
+      </input>
+      <output>
+      </output>
+    </remotesteps>
+    <GUI>
+      <xloc>1200</xloc>
+      <yloc>400</yloc>
+      <draw>Y</draw>
+    </GUI>
+  </step>
+  <step>
+    <name>Domicilio Modificacion</name>
+    <type>TextFileOutput</type>
+    <description />
+    <distribute>Y</distribute>
+    <custom_distribution />
+    <copies>1</copies>
+    <partitioning>
+      <method>none</method>
+      <schema_name />
+    </partitioning>
+    <separator>;</separator>
+    <enclosure>"</enclosure>
+    <enclosure_forced>N</enclosure_forced>
+    <enclosure_fix_disabled>N</enclosure_fix_disabled>
+    <header>Y</header>
+    <footer>N</footer>
+    <format>DOS</format>
+    <compression>None</compression>
+    <encoding />
+    <endedLine />
+    <fileNameInField>N</fileNameInField>
+    <fileNameField />
+    <create_parent_folder>Y</create_parent_folder>
+    <file>
+      <name>${Internal.Entry.Current.Directory}\logs\Domicilio-Modificacion</name>
+      <is_command>N</is_command>
+      <servlet_output>N</servlet_output>
+      <do_not_open_new_file_init>N</do_not_open_new_file_init>
+      <extention>txt</extention>
+      <append>N</append>
+      <split>N</split>
+      <haspartno>N</haspartno>
+      <add_date>N</add_date>
+      <add_time>N</add_time>
+      <SpecifyFormat>Y</SpecifyFormat>
+      <date_time_format />
+      <add_to_result_filenames>Y</add_to_result_filenames>
+      <pad>N</pad>
+      <fast_dump>N</fast_dump>
+      <splitevery>0</splitevery>
+    </file>
+    <fields>
+      <field>
+        <name>id_persona_fisica_ori</name>
+        <type>None</type>
+        <format />
+        <currency />
+        <decimal />
+        <group />
+        <nullif />
+        <trim_type>none</trim_type>
+        <length>-1</length>
+        <precision>-1</precision>
+      </field>
+      <field>
+        <name>calle_ori</name>
+        <type>None</type>
+        <format />
+        <currency />
+        <decimal />
+        <group />
+        <nullif />
+        <trim_type>none</trim_type>
+        <length>-1</length>
+        <precision>-1</precision>
+      </field>
+      <field>
+        <name>cod_postal_ori</name>
+        <type>None</type>
+        <format />
+        <currency />
+        <decimal />
+        <group />
+        <nullif />
+        <trim_type>none</trim_type>
+        <length>-1</length>
+        <precision>-1</precision>
+      </field>
+      <field>
+        <name>numero_ori</name>
+        <type>None</type>
+        <format />
+        <currency />
+        <decimal />
+        <group />
+        <nullif />
+        <trim_type>none</trim_type>
+        <length>-1</length>
+        <precision>-1</precision>
+      </field>
+      <field>
+        <name>piso_ori</name>
+        <type>None</type>
+        <format />
+        <currency />
+        <decimal />
+        <group />
+        <nullif />
+        <trim_type>none</trim_type>
+        <length>-1</length>
+        <precision>-1</precision>
+      </field>
+      <field>
+        <name>descripcion_ori</name>
+        <type>None</type>
+        <format />
+        <currency />
+        <decimal />
+        <group />
+        <nullif />
+        <trim_type>none</trim_type>
+        <length>-1</length>
+        <precision>-1</precision>
+      </field>
+      <field>
+        <name>torre_ori</name>
+        <type>None</type>
+        <format />
+        <currency />
+        <decimal />
+        <group />
+        <nullif />
+        <trim_type>none</trim_type>
+        <length>-1</length>
+        <precision>-1</precision>
+      </field>
+      <field>
+        <name>casa_ori</name>
+        <type>None</type>
+        <format />
+        <currency />
+        <decimal />
+        <group />
+        <nullif />
+        <trim_type>none</trim_type>
+        <length>-1</length>
+        <precision>-1</precision>
+      </field>
+      <field>
+        <name>manzana_ori</name>
+        <type>None</type>
+        <format />
+        <currency />
+        <decimal />
+        <group />
+        <nullif />
+        <trim_type>none</trim_type>
+        <length>-1</length>
+        <precision>-1</precision>
+      </field>
+      <field>
+        <name>partida_inmobiliaria_ori</name>
+        <type>None</type>
+        <format />
+        <currency />
+        <decimal />
+        <group />
+        <nullif />
+        <trim_type>none</trim_type>
+        <length>-1</length>
+        <precision>-1</precision>
+      </field>
+      <field>
+        <name>geom_ori</name>
+        <type>None</type>
+        <format />
+        <currency />
+        <decimal />
+        <group />
+        <nullif />
+        <trim_type>none</trim_type>
+        <length>-1</length>
+        <precision>-1</precision>
+      </field>
+      <field>
+        <name>id_calle_mdm</name>
+        <type>Integer</type>
+        <format>####0;-####0</format>
+        <currency />
+        <decimal>,</decimal>
+        <group>.</group>
+        <nullif />
+        <trim_type>none</trim_type>
+        <length>15</length>
+        <precision>0</precision>
+      </field>
+      <field>
+        <name>nombre_calle_mdm</name>
+        <type>String</type>
+        <format />
+        <currency />
+        <decimal />
+        <group />
+        <nullif />
+        <trim_type>none</trim_type>
+        <length>255</length>
+        <precision>-1</precision>
+      </field>
+    </fields>
+    <cluster_schema />
+    <remotesteps>
+      <input>
+      </input>
+      <output>
+      </output>
+    </remotesteps>
+    <GUI>
+      <xloc>1968</xloc>
+      <yloc>272</yloc>
+      <draw>Y</draw>
+    </GUI>
+  </step>
+  <step>
+    <name>Existe Documento</name>
+    <type>FilterRows</type>
+    <description />
+    <distribute>Y</distribute>
+    <custom_distribution />
+    <copies>1</copies>
+    <partitioning>
+      <method>none</method>
+      <schema_name />
+    </partitioning>
+    <send_true_to>OrigenDomicilo</send_true_to>
+    <send_false_to>Armar Reg</send_false_to>
+    <compare>
+      <condition>
+        <negated>N</negated>
+        <leftvalue>id_persona_fisica_ori</leftvalue>
+        <function>IS NOT NULL</function>
+        <rightvalue />
+      </condition>
+    </compare>
+    <cluster_schema />
+    <remotesteps>
+      <input>
+      </input>
+      <output>
+      </output>
+    </remotesteps>
+    <GUI>
+      <xloc>720</xloc>
+      <yloc>96</yloc>
+      <draw>Y</draw>
+    </GUI>
+  </step>
+  <step>
+    <name>Fecha Hora</name>
+    <type>SystemInfo</type>
+    <description />
+    <distribute>Y</distribute>
+    <custom_distribution />
+    <copies>1</copies>
+    <partitioning>
+      <method>none</method>
+      <schema_name />
+    </partitioning>
+    <fields>
+      <field>
+        <name>Fecha_Ultima_Act</name>
+        <type>system date (variable)</type>
+      </field>
+    </fields>
+    <cluster_schema />
+    <remotesteps>
+      <input>
+      </input>
+      <output>
+      </output>
+    </remotesteps>
+    <GUI>
+      <xloc>400</xloc>
+      <yloc>96</yloc>
+      <draw>Y</draw>
+    </GUI>
+  </step>
+  <step>
+    <name>Filas Unicas</name>
+    <type>Unique</type>
+    <description />
+    <distribute>Y</distribute>
+    <custom_distribution />
+    <copies>1</copies>
+    <partitioning>
+      <method>none</method>
+      <schema_name />
+    </partitioning>
+    <count_rows>N</count_rows>
+    <count_field />
+    <reject_duplicate_row>N</reject_duplicate_row>
+    <error_description />
+    <fields>
+      <field>
+        <name>Calle_origen</name>
+        <case_insensitive>Y</case_insensitive>
+      </field>
+      <field>
+        <name>numero_ori</name>
+        <case_insensitive>Y</case_insensitive>
+      </field>
+      <field>
+        <name>id_persona_fisica_ori</name>
+        <case_insensitive>N</case_insensitive>
+      </field>
+      <field>
+        <name>nom_calle_mdm</name>
+        <case_insensitive>N</case_insensitive>
+      </field>
+      <field>
+        <name>numero_dom_mdm</name>
+        <case_insensitive>N</case_insensitive>
+      </field>
+      <field>
+        <name>persona_fisica_mdm</name>
+        <case_insensitive>N</case_insensitive>
+      </field>
+    </fields>
+    <cluster_schema />
+    <remotesteps>
+      <input>
+      </input>
+      <output>
+      </output>
+    </remotesteps>
+    <GUI>
+      <xloc>1280</xloc>
+      <yloc>96</yloc>
+      <draw>Y</draw>
+    </GUI>
+  </step>
+  <step>
+    <name>Localidad MDM</name>
+    <type>DBJoin</type>
+    <description />
+    <distribute>Y</distribute>
+    <custom_distribution />
+    <copies>1</copies>
+    <partitioning>
+      <method>none</method>
+      <schema_name />
+    </partitioning>
+    <connection>MDM</connection>
+    <rowlimit>0</rowlimit>
+    <sql>
+ select	trim(loc.nombre) 	AS nombre_localidad,
+		loc.id_localidad 	AS idloc_mdm
+ from territorio.localidad loc
+	LEFT OUTER JOIN territorio.departamento dep ON dep.id_departamento = loc.id_departamento
+		-- LEFT OUTER JOIN territorio.distrito distr ON distr.id_distrito = loc.id_distrito
+	 LEFT OUTER JOIN territorio.provincia prov ON prov.id_provincia = dep.id_provincia
+	
+ where upper(trim(loc.nombre)) = upper(trim(?))
+    AND upper(trim(prov.nombre)) = upper(trim(?))
+
+order by loc.nombre</sql>
+    <outer_join>Y</outer_join>
+    <replace_vars>Y</replace_vars>
+    <parameter>
+      <field>
+        <name>nom_loc_ori</name>
+        <type>String</type>
+      </field>
+      <field>
+        <name>nom_prov</name>
+        <type>String</type>
+      </field>
+    </parameter>
+    <cluster_schema />
+    <remotesteps>
+      <input>
+      </input>
+      <output>
+      </output>
+    </remotesteps>
+    <GUI>
+      <xloc>1456</xloc>
+      <yloc>96</yloc>
+      <draw>Y</draw>
+    </GUI>
+  </step>
+  <step>
+    <name>Max(iddomicilio)</name>
+    <type>DBJoin</type>
+    <description />
+    <distribute>N</distribute>
+    <custom_distribution />
+    <copies>1</copies>
+    <partitioning>
+      <method>none</method>
+      <schema_name />
+    </partitioning>
+    <connection>MDM</connection>
+    <rowlimit>0</rowlimit>
+    <sql>
+ select coalesce( MAX(id_domicilio),0) + 1 AS id_domicilio
+ from contactos.domicilio</sql>
+    <outer_join>Y</outer_join>
+    <replace_vars>N</replace_vars>
+    <parameter>
+    </parameter>
+    <cluster_schema />
+    <remotesteps>
+      <input>
+      </input>
+      <output>
+      </output>
+    </remotesteps>
+    <GUI>
+      <xloc>2096</xloc>
+      <yloc>96</yloc>
+      <draw>Y</draw>
+    </GUI>
+  </step>
+  <step>
+    <name>Merge Join</name>
+    <type>MergeJoin</type>
+    <description />
+    <distribute>N</distribute>
+    <custom_distribution />
+    <copies>1</copies>
+    <partitioning>
+      <method>none</method>
+      <schema_name />
+    </partitioning>
+    <join_type>FULL OUTER</join_type>
+    <step1>Ordenar filas</step1>
+    <step2>Ordenar filas MDM</step2>
+    <keys_1>
+      <key>Calle_origen</key>
+      <key>numero_ori</key>
+      <key>id_persona_fisica_ori</key>
+    </keys_1>
+    <keys_2>
+      <key>nom_calle_mdm</key>
+      <key>numero_mdm</key>
+      <key>persona_fisica_mdm</key>
+    </keys_2>
+    <cluster_schema />
+    <remotesteps>
+      <input>
+      </input>
+      <output>
+      </output>
+    </remotesteps>
+    <GUI>
+      <xloc>1200</xloc>
+      <yloc>96</yloc>
+      <draw>Y</draw>
+    </GUI>
+  </step>
+  <step>
+    <name>Nada 2</name>
+    <type>Dummy</type>
+    <description />
+    <distribute>Y</distribute>
+    <custom_distribution />
+    <copies>1</copies>
+    <partitioning>
+      <method>none</method>
+      <schema_name />
+    </partitioning>
+    <cluster_schema />
+    <remotesteps>
+      <input>
+      </input>
+      <output>
+      </output>
+    </remotesteps>
+    <GUI>
+      <xloc>2192</xloc>
+      <yloc>416</yloc>
+      <draw>Y</draw>
+    </GUI>
+  </step>
+  <step>
+    <name>Ordenar filas</name>
+    <type>SortRows</type>
+    <description />
+    <distribute>N</distribute>
+    <custom_distribution />
+    <copies>1</copies>
+    <partitioning>
+      <method>none</method>
+      <schema_name />
+    </partitioning>
+    <directory>%%java.io.tmpdir%%</directory>
+    <prefix>out</prefix>
+    <sort_size>1000000</sort_size>
+    <free_memory />
+    <compress>N</compress>
+    <compress_variable />
+    <unique_rows>N</unique_rows>
+    <fields>
+      <field>
+        <name>Calle_origen</name>
+        <ascending>Y</ascending>
+        <case_sensitive>N</case_sensitive>
+        <collator_enabled>N</collator_enabled>
+        <collator_strength>0</collator_strength>
+        <presorted>N</presorted>
+      </field>
+      <field>
+        <name>numero_ori</name>
+        <ascending>Y</ascending>
+        <case_sensitive>N</case_sensitive>
+        <collator_enabled>N</collator_enabled>
+        <collator_strength>0</collator_strength>
+        <presorted>N</presorted>
+      </field>
+      <field>
+        <name>id_persona_fisica_ori</name>
+        <ascending>Y</ascending>
+        <case_sensitive>N</case_sensitive>
+        <collator_enabled>N</collator_enabled>
+        <collator_strength>0</collator_strength>
+        <presorted>N</presorted>
+      </field>
+    </fields>
+    <cluster_schema />
+    <remotesteps>
+      <input>
+      </input>
+      <output>
+      </output>
+    </remotesteps>
+    <GUI>
+      <xloc>1056</xloc>
+      <yloc>96</yloc>
+      <draw>Y</draw>
+    </GUI>
+  </step>
+  <step>
+    <name>Ordenar filas MDM</name>
+    <type>SortRows</type>
+    <description />
+    <distribute>N</distribute>
+    <custom_distribution />
+    <copies>1</copies>
+    <partitioning>
+      <method>none</method>
+      <schema_name />
+    </partitioning>
+    <directory>%%java.io.tmpdir%%</directory>
+    <prefix>out</prefix>
+    <sort_size>1000000</sort_size>
+    <free_memory />
+    <compress>N</compress>
+    <compress_variable />
+    <unique_rows>N</unique_rows>
+    <fields>
+      <field>
+        <name>nom_calle_mdm</name>
+        <ascending>Y</ascending>
+        <case_sensitive>N</case_sensitive>
+        <collator_enabled>N</collator_enabled>
+        <collator_strength>0</collator_strength>
+        <presorted>N</presorted>
+      </field>
+    </fields>
+    <cluster_schema />
+    <remotesteps>
+      <input>
+      </input>
+      <output>
+      </output>
+    </remotesteps>
+    <GUI>
+      <xloc>1200</xloc>
+      <yloc>160</yloc>
+      <draw>Y</draw>
+    </GUI>
+  </step>
+  <step>
+    <name>OrigenDomicilo</name>
+    <type>Constant</type>
+    <description />
+    <distribute>Y</distribute>
+    <custom_distribution />
+    <copies>1</copies>
+    <partitioning>
+      <method>none</method>
+      <schema_name />
+    </partitioning>
+    <fields>
+      <field>
+        <name>ORIGEN-DOM</name>
+        <type>String</type>
+        <format />
+        <currency />
+        <decimal />
+        <group />
+        <nullif>IDCIU</nullif>
+        <length>-1</length>
+        <precision>-1</precision>
+        <set_empty_string>N</set_empty_string>
+      </field>
+    </fields>
+    <cluster_schema />
+    <remotesteps>
+      <input>
+      </input>
+      <output>
+      </output>
+    </remotesteps>
+    <GUI>
+      <xloc>848</xloc>
+      <yloc>96</yloc>
+      <draw>Y</draw>
+    </GUI>
+  </step>
+  <step>
+    <name>REg Tipo Domicilio</name>
+    <type>ConcatFields</type>
+    <description />
+    <distribute>Y</distribute>
+    <custom_distribution />
+    <copies>1</copies>
+    <partitioning>
+      <method>none</method>
+      <schema_name />
+    </partitioning>
+    <separator>|</separator>
+    <enclosure>'</enclosure>
+    <enclosure_forced>N</enclosure_forced>
+    <enclosure_fix_disabled>N</enclosure_fix_disabled>
+    <header>N</header>
+    <footer>N</footer>
+    <format>DOS</format>
+    <compression>None</compression>
+    <encoding />
+    <endedLine />
+    <fileNameInField>N</fileNameInField>
+    <fileNameField />
+    <create_parent_folder>Y</create_parent_folder>
+    <file>
+      <name>file</name>
+      <is_command>N</is_command>
+      <servlet_output>N</servlet_output>
+      <do_not_open_new_file_init>N</do_not_open_new_file_init>
+      <extention>txt</extention>
+      <append>N</append>
+      <split>N</split>
+      <haspartno>N</haspartno>
+      <add_date>N</add_date>
+      <add_time>N</add_time>
+      <SpecifyFormat>N</SpecifyFormat>
+      <date_time_format />
+      <add_to_result_filenames>Y</add_to_result_filenames>
+      <pad>N</pad>
+      <fast_dump>N</fast_dump>
+      <splitevery>0</splitevery>
+    </file>
+    <fields>
+      <field>
+        <name>tipo_domicilio_ori</name>
+        <type>String</type>
+        <format />
+        <currency />
+        <decimal />
+        <group />
+        <nullif />
+        <trim_type>both</trim_type>
+        <length>-1</length>
+        <precision>-1</precision>
+      </field>
+      <field>
+        <name>id_persona_fisica_ori</name>
+        <type>Integer</type>
+        <format>0</format>
+        <currency />
+        <decimal />
+        <group />
+        <nullif />
+        <trim_type>both</trim_type>
+        <length>-1</length>
+        <precision>-1</precision>
+      </field>
+    </fields>
+    <ConcatFields>
+      <targetFieldName>registro</targetFieldName>
+      <targetFieldLength>0</targetFieldLength>
+      <removeSelectedFields>N</removeSelectedFields>
+    </ConcatFields>
+    <cluster_schema />
+    <remotesteps>
+      <input>
+      </input>
+      <output>
+      </output>
+    </remotesteps>
+    <GUI>
+      <xloc>2544</xloc>
+      <yloc>192</yloc>
+      <draw>Y</draw>
+    </GUI>
+  </step>
+  <step>
+    <name>Registro Ejecucion</name>
+    <type>TableOutput</type>
+    <description />
+    <distribute>Y</distribute>
+    <custom_distribution />
+    <copies>1</copies>
+    <partitioning>
+      <method>none</method>
+      <schema_name />
+    </partitioning>
+    <connection>MDM</connection>
+    <schema>origenes</schema>
+    <table>registro_ejecucion</table>
+    <commit>1000</commit>
+    <truncate>N</truncate>
+    <ignore_errors>N</ignore_errors>
+    <use_batch>N</use_batch>
+    <specify_fields>Y</specify_fields>
+    <partitioning_enabled>N</partitioning_enabled>
+    <partitioning_field />
+    <partitioning_daily>N</partitioning_daily>
+    <partitioning_monthly>Y</partitioning_monthly>
+    <tablename_in_field>N</tablename_in_field>
+    <tablename_field />
+    <tablename_in_table>Y</tablename_in_table>
+    <return_keys>N</return_keys>
+    <return_field />
+    <fields>
+      <field>
+        <column_name>dato</column_name>
+        <stream_name>dato</stream_name>
+      </field>
+      <field>
+        <column_name>fecha_hora</column_name>
+        <stream_name>Fecha_Ultima_Act</stream_name>
+      </field>
+      <field>
+        <column_name>id_ejecucion_proc_act</column_name>
+        <stream_name>id_proceso_act</stream_name>
+      </field>
+      <field>
+        <column_name>motivo</column_name>
+        <stream_name>motivo</stream_name>
+      </field>
+      <field>
+        <column_name>proceso</column_name>
+        <stream_name>proceso</stream_name>
+      </field>
+      <field>
+        <column_name>registro</column_name>
+        <stream_name>registro</stream_name>
+      </field>
+      <field>
+        <column_name>usuario</column_name>
+        <stream_name>username</stream_name>
+      </field>
+      <field>
+        <column_name>valor_dato</column_name>
+        <stream_name>valor_dato</stream_name>
+      </field>
+      <field>
+        <column_name>modulo</column_name>
+        <stream_name>transf_name</stream_name>
+      </field>
+    </fields>
+    <cluster_schema />
+    <remotesteps>
+      <input>
+      </input>
+      <output>
+      </output>
+    </remotesteps>
+    <GUI>
+      <xloc>720</xloc>
+      <yloc>448</yloc>
+      <draw>Y</draw>
+    </GUI>
+  </step>
+  <step>
+    <name>Registro Ejecucion 2</name>
+    <type>TableOutput</type>
+    <description />
+    <distribute>Y</distribute>
+    <custom_distribution />
+    <copies>1</copies>
+    <partitioning>
+      <method>none</method>
+      <schema_name />
+    </partitioning>
+    <connection>MDM</connection>
+    <schema>origenes</schema>
+    <table>registro_ejecucion</table>
+    <commit>1000</commit>
+    <truncate>N</truncate>
+    <ignore_errors>N</ignore_errors>
+    <use_batch>N</use_batch>
+    <specify_fields>Y</specify_fields>
+    <partitioning_enabled>N</partitioning_enabled>
+    <partitioning_field />
+    <partitioning_daily>N</partitioning_daily>
+    <partitioning_monthly>Y</partitioning_monthly>
+    <tablename_in_field>N</tablename_in_field>
+    <tablename_field />
+    <tablename_in_table>Y</tablename_in_table>
+    <return_keys>N</return_keys>
+    <return_field />
+    <fields>
+      <field>
+        <column_name>dato</column_name>
+        <stream_name>dato</stream_name>
+      </field>
+      <field>
+        <column_name>fecha_hora</column_name>
+        <stream_name>Fecha_Ultima_Act</stream_name>
+      </field>
+      <field>
+        <column_name>id_ejecucion_proc_act</column_name>
+        <stream_name>id_proceso_act</stream_name>
+      </field>
+      <field>
+        <column_name>motivo</column_name>
+        <stream_name>motivo</stream_name>
+      </field>
+      <field>
+        <column_name>proceso</column_name>
+        <stream_name>proceso</stream_name>
+      </field>
+      <field>
+        <column_name>registro</column_name>
+        <stream_name>registro</stream_name>
+      </field>
+      <field>
+        <column_name>usuario</column_name>
+        <stream_name>username</stream_name>
+      </field>
+      <field>
+        <column_name>valor_dato</column_name>
+        <stream_name>valor_dato</stream_name>
+      </field>
+      <field>
+        <column_name>modulo</column_name>
+        <stream_name>transf_name</stream_name>
+      </field>
+    </fields>
+    <cluster_schema />
+    <remotesteps>
+      <input>
+      </input>
+      <output>
+      </output>
+    </remotesteps>
+    <GUI>
+      <xloc>1824</xloc>
+      <yloc>368</yloc>
+      <draw>Y</draw>
+    </GUI>
+  </step>
+  <step>
+    <name>Registro Ejecucion Nulo</name>
+    <type>TableOutput</type>
+    <description />
+    <distribute>Y</distribute>
+    <custom_distribution />
+    <copies>1</copies>
+    <partitioning>
+      <method>none</method>
+      <schema_name />
+    </partitioning>
+    <connection>MDM</connection>
+    <schema>origenes</schema>
+    <table>registro_ejecucion</table>
+    <commit>1000</commit>
+    <truncate>N</truncate>
+    <ignore_errors>N</ignore_errors>
+    <use_batch>N</use_batch>
+    <specify_fields>Y</specify_fields>
+    <partitioning_enabled>N</partitioning_enabled>
+    <partitioning_field />
+    <partitioning_daily>N</partitioning_daily>
+    <partitioning_monthly>Y</partitioning_monthly>
+    <tablename_in_field>N</tablename_in_field>
+    <tablename_field />
+    <tablename_in_table>Y</tablename_in_table>
+    <return_keys>N</return_keys>
+    <return_field />
+    <fields>
+      <field>
+        <column_name>dato</column_name>
+        <stream_name>dato</stream_name>
+      </field>
+      <field>
+        <column_name>fecha_hora</column_name>
+        <stream_name>Fecha_Ultima_Act</stream_name>
+      </field>
+      <field>
+        <column_name>id_ejecucion_proc_act</column_name>
+        <stream_name>id_proceso_act</stream_name>
+      </field>
+      <field>
+        <column_name>motivo</column_name>
+        <stream_name>motivo</stream_name>
+      </field>
+      <field>
+        <column_name>proceso</column_name>
+        <stream_name>proceso</stream_name>
+      </field>
+      <field>
+        <column_name>registro</column_name>
+        <stream_name>registro</stream_name>
+      </field>
+      <field>
+        <column_name>usuario</column_name>
+        <stream_name>username</stream_name>
+      </field>
+      <field>
+        <column_name>valor_dato</column_name>
+        <stream_name>valor_dato</stream_name>
+      </field>
+      <field>
+        <column_name>modulo</column_name>
+        <stream_name>transf_name</stream_name>
+      </field>
+    </fields>
+    <cluster_schema />
+    <remotesteps>
+      <input>
+      </input>
+      <output>
+      </output>
+    </remotesteps>
+    <GUI>
+      <xloc>944</xloc>
+      <yloc>448</yloc>
+      <draw>Y</draw>
+    </GUI>
+  </step>
+  <step>
+    <name>Registro Ejecucion Nulo 2</name>
+    <type>TableOutput</type>
+    <description />
+    <distribute>Y</distribute>
+    <custom_distribution />
+    <copies>1</copies>
+    <partitioning>
+      <method>none</method>
+      <schema_name />
+    </partitioning>
+    <connection>MDM</connection>
+    <schema>origenes</schema>
+    <table>registro_ejecucion</table>
+    <commit>1000</commit>
+    <truncate>N</truncate>
+    <ignore_errors>N</ignore_errors>
+    <use_batch>N</use_batch>
+    <specify_fields>Y</specify_fields>
+    <partitioning_enabled>N</partitioning_enabled>
+    <partitioning_field />
+    <partitioning_daily>N</partitioning_daily>
+    <partitioning_monthly>Y</partitioning_monthly>
+    <tablename_in_field>N</tablename_in_field>
+    <tablename_field />
+    <tablename_in_table>Y</tablename_in_table>
+    <return_keys>N</return_keys>
+    <return_field />
+    <fields>
+      <field>
+        <column_name>dato</column_name>
+        <stream_name>dato</stream_name>
+      </field>
+      <field>
+        <column_name>fecha_hora</column_name>
+        <stream_name>Fecha_Ultima_Act</stream_name>
+      </field>
+      <field>
+        <column_name>id_ejecucion_proc_act</column_name>
+        <stream_name>id_proceso_act</stream_name>
+      </field>
+      <field>
+        <column_name>motivo</column_name>
+        <stream_name>motivo</stream_name>
+      </field>
+      <field>
+        <column_name>proceso</column_name>
+        <stream_name>proceso</stream_name>
+      </field>
+      <field>
+        <column_name>registro</column_name>
+        <stream_name>registro</stream_name>
+      </field>
+      <field>
+        <column_name>usuario</column_name>
+        <stream_name>username</stream_name>
+      </field>
+      <field>
+        <column_name>valor_dato</column_name>
+        <stream_name>valor_dato</stream_name>
+      </field>
+      <field>
+        <column_name>modulo</column_name>
+        <stream_name>transf_name</stream_name>
+      </field>
+    </fields>
+    <cluster_schema />
+    <remotesteps>
+      <input>
+      </input>
+      <output>
+      </output>
+    </remotesteps>
+    <GUI>
+      <xloc>2544</xloc>
+      <yloc>480</yloc>
+      <draw>Y</draw>
+    </GUI>
+  </step>
+  <step>
+    <name>Renombra idDomicilio</name>
+    <type>SelectValues</type>
+    <description />
+    <distribute>N</distribute>
+    <custom_distribution />
+    <copies>1</copies>
+    <partitioning>
+      <method>none</method>
+      <schema_name />
+    </partitioning>
+    <fields>
+      <field>
+        <name>id_domicilio_mdm</name>
+        <rename>id_domicilio</rename>
+      </field>
+      <select_unspecified>Y</select_unspecified>
+    </fields>
+    <cluster_schema />
+    <remotesteps>
+      <input>
+      </input>
+      <output>
+      </output>
+    </remotesteps>
+    <GUI>
+      <xloc>2096</xloc>
+      <yloc>208</yloc>
+      <draw>Y</draw>
+    </GUI>
+  </step>
+  <step>
+    <name>Seq PF</name>
+    <type>FieldsChangeSequence</type>
+    <description />
+    <distribute>N</distribute>
+    <custom_distribution />
+    <copies>1</copies>
+    <partitioning>
+      <method>none</method>
+      <schema_name />
+    </partitioning>
+    <start>1</start>
+    <increment>1</increment>
+    <resultfieldName>incremento</resultfieldName>
+    <fields>
+      <field>
+        <name>id_domicilio</name>
+      </field>
+    </fields>
+    <cluster_schema />
+    <remotesteps>
+      <input>
+      </input>
+      <output>
+      </output>
+    </remotesteps>
+    <GUI>
+      <xloc>2224</xloc>
+      <yloc>96</yloc>
+      <draw>Y</draw>
+    </GUI>
+  </step>
+  <step>
+    <name>Sin Acento</name>
+    <type>Janino</type>
+    <description />
+    <distribute>N</distribute>
+    <custom_distribution />
+    <copies>1</copies>
+    <partitioning>
+      <method>none</method>
+      <schema_name />
+    </partitioning>
+    <formula>
+      <field_name>Calle_origen</field_name>
+      <formula_string>org.apache.commons.lang3.StringUtils.stripAccents(calle_ori)</formula_string>
+      <value_type>String</value_type>
+      <value_length>-1</value_length>
+      <value_precision>-1</value_precision>
+      <replace_field />
+    </formula>
+    <formula>
+      <field_name>Localidad_ori</field_name>
+      <formula_string>org.apache.commons.lang3.StringUtils.stripAccents(nom_loc_ori)</formula_string>
+      <value_type>String</value_type>
+      <value_length>-1</value_length>
+      <value_precision>-1</value_precision>
+      <replace_field />
+    </formula>
+    <formula>
+      <field_name>nombre</field_name>
+      <formula_string>org.apache.commons.lang3.StringUtils.stripAccents(nombre_ori)</formula_string>
+      <value_type>String</value_type>
+      <value_length>-1</value_length>
+      <value_precision>-1</value_precision>
+      <replace_field />
+    </formula>
+    <formula>
+      <field_name>apellido</field_name>
+      <formula_string>org.apache.commons.lang3.StringUtils.stripAccents(apellido_ori)</formula_string>
+      <value_type>String</value_type>
+      <value_length>-1</value_length>
+      <value_precision>-1</value_precision>
+      <replace_field />
+    </formula>
+    <formula>
+      <field_name>tipo_dom_ori</field_name>
+      <formula_string>org.apache.commons.lang3.StringUtils.stripAccents(tipo_domicilio_ori)</formula_string>
+      <value_type>String</value_type>
+      <value_length>-1</value_length>
+      <value_precision>-1</value_precision>
+      <replace_field />
+    </formula>
+    <cluster_schema />
+    <remotesteps>
+      <input>
+      </input>
+      <output>
+      </output>
+    </remotesteps>
+    <GUI>
+      <xloc>288</xloc>
+      <yloc>96</yloc>
+      <draw>Y</draw>
+    </GUI>
+  </step>
+  <step>
+    <name>Sin Acento 2</name>
+    <type>Janino</type>
+    <description />
+    <distribute>Y</distribute>
+    <custom_distribution />
+    <copies>1</copies>
+    <partitioning>
+      <method>none</method>
+      <schema_name />
+    </partitioning>
+    <formula>
+      <field_name>nom_calle_mdm</field_name>
+      <formula_string>org.apache.commons.lang3.StringUtils.stripAccents(calle_mdm)</formula_string>
+      <value_type>String</value_type>
+      <value_length>-1</value_length>
+      <value_precision>-1</value_precision>
+      <replace_field />
+    </formula>
+    <cluster_schema />
+    <remotesteps>
+      <input>
+      </input>
+      <output>
+      </output>
+    </remotesteps>
+    <GUI>
+      <xloc>1200</xloc>
+      <yloc>240</yloc>
+      <draw>Y</draw>
+    </GUI>
+  </step>
+  <step>
+    <name>String operations</name>
+    <type>StringOperations</type>
+    <description />
+    <distribute>Y</distribute>
+    <custom_distribution />
+    <copies>1</copies>
+    <partitioning>
+      <method>none</method>
+      <schema_name />
+    </partitioning>
+    <fields>
+      <field>
+        <in_stream_name>calle_mdm</in_stream_name>
+        <out_stream_name />
+        <trim_type>both</trim_type>
+        <lower_upper>none</lower_upper>
+        <padding_type>none</padding_type>
+        <pad_char />
+        <pad_len />
+        <init_cap>yes</init_cap>
+        <mask_xml>none</mask_xml>
+        <digits>none</digits>
+        <remove_special_characters>none</remove_special_characters>
+      </field>
+      <field>
+        <in_stream_name>direccion_mdm</in_stream_name>
+        <out_stream_name />
+        <trim_type>both</trim_type>
+        <lower_upper>none</lower_upper>
+        <padding_type>none</padding_type>
+        <pad_char />
+        <pad_len />
+        <init_cap>yes</init_cap>
+        <mask_xml>none</mask_xml>
+        <digits>none</digits>
+        <remove_special_characters>none</remove_special_characters>
+      </field>
+      <field>
+        <in_stream_name>nombre_loc_mdm</in_stream_name>
+        <out_stream_name />
+        <trim_type>none</trim_type>
+        <lower_upper>none</lower_upper>
+        <padding_type>none</padding_type>
+        <pad_char />
+        <pad_len />
+        <init_cap>yes</init_cap>
+        <mask_xml>none</mask_xml>
+        <digits>none</digits>
+        <remove_special_characters>none</remove_special_characters>
+      </field>
+    </fields>
+    <cluster_schema />
+    <remotesteps>
+      <input>
+      </input>
+      <output>
+      </output>
+    </remotesteps>
+    <GUI>
+      <xloc>1200</xloc>
+      <yloc>320</yloc>
+      <draw>Y</draw>
+    </GUI>
+  </step>
+  <step>
+    <name>Strings cut</name>
+    <type>StringCut</type>
+    <description />
+    <distribute>Y</distribute>
+    <custom_distribution />
+    <copies>1</copies>
+    <partitioning>
+      <method>none</method>
+      <schema_name />
+    </partitioning>
+    <fields>
+      <field>
+        <in_stream_name>registro</in_stream_name>
+        <out_stream_name />
+        <cut_from>0</cut_from>
+        <cut_to>499</cut_to>
+      </field>
+    </fields>
+    <cluster_schema />
+    <remotesteps>
+      <input>
+      </input>
+      <output>
+      </output>
+    </remotesteps>
+    <GUI>
+      <xloc>720</xloc>
+      <yloc>368</yloc>
+      <draw>Y</draw>
+    </GUI>
+  </step>
+  <step>
+    <name>Tipo Domicilio es nulo? </name>
+    <type>FilterRows</type>
+    <description />
+    <distribute>Y</distribute>
+    <custom_distribution />
+    <copies>1</copies>
+    <partitioning>
+      <method>none</method>
+      <schema_name />
+    </partitioning>
+    <send_true_to>REg Tipo Domicilio</send_true_to>
+    <send_false_to>Docimilio Tipo</send_false_to>
+    <compare>
+      <condition>
+        <negated>N</negated>
+        <leftvalue>tipo_domicilio_ori</leftvalue>
+        <function>IS NULL</function>
+        <rightvalue />
+        <value>
+          <name>constant</name>
+          <type>String</type>
+          <text>Y</text>
+          <length>-1</length>
+          <precision>-1</precision>
+          <isnull>N</isnull>
+          <mask />
+        </value>
+      </condition>
+    </compare>
+    <cluster_schema />
+    <remotesteps>
+      <input>
+      </input>
+      <output>
+      </output>
+    </remotesteps>
+    <GUI>
+      <xloc>2544</xloc>
+      <yloc>96</yloc>
+      <draw>Y</draw>
+    </GUI>
+  </step>
+  <step>
+    <name>Tipo Domicilio no es nulo?</name>
+    <type>FilterRows</type>
+    <description />
+    <distribute>Y</distribute>
+    <custom_distribution />
+    <copies>1</copies>
+    <partitioning>
+      <method>none</method>
+      <schema_name />
+    </partitioning>
+    <send_true_to>Nada 2</send_true_to>
+    <send_false_to>Docimilio_tipo</send_false_to>
+    <compare>
+      <condition>
+        <negated>N</negated>
+        <leftvalue>tipo_domicilio_ori</leftvalue>
+        <function>IS NOT NULL</function>
+        <rightvalue />
+        <value>
+          <name>constant</name>
+          <type>String</type>
+          <text>Y</text>
+          <length>-1</length>
+          <precision>-1</precision>
+          <isnull>N</isnull>
+          <mask />
+        </value>
+      </condition>
+    </compare>
+    <cluster_schema />
+    <remotesteps>
+      <input>
+      </input>
+      <output>
+      </output>
+    </remotesteps>
+    <GUI>
+      <xloc>2224</xloc>
+      <yloc>320</yloc>
+      <draw>Y</draw>
+    </GUI>
+  </step>
+  <step>
+    <name>Var. Entorno</name>
+    <type>GetVariable</type>
+    <description />
+    <distribute>Y</distribute>
+    <custom_distribution />
+    <copies>1</copies>
+    <partitioning>
+      <method>none</method>
+      <schema_name />
+    </partitioning>
+    <fields>
+      <field>
+        <name>id_proceso_act</name>
+        <variable>${id_ejecucion_proc_act}</variable>
+        <type>Integer</type>
+        <format />
+        <currency />
+        <decimal />
+        <group />
+        <length>-1</length>
+        <precision>-1</precision>
+        <trim_type>none</trim_type>
+      </field>
+      <field>
+        <name>proceso</name>
+        <variable>${PROCESO}</variable>
+        <type>String</type>
+        <format />
+        <currency />
+        <decimal />
+        <group />
+        <length>-1</length>
+        <precision>-1</precision>
+        <trim_type>none</trim_type>
+      </field>
+      <field>
+        <name>username</name>
+        <variable>${user.name}</variable>
+        <type>String</type>
+        <format />
+        <currency />
+        <decimal />
+        <group />
+        <length>-1</length>
+        <precision>-1</precision>
+        <trim_type>none</trim_type>
+      </field>
+      <field>
+        <name>transf_name</name>
+        <variable>${Internal.Transformation.Name}</variable>
+        <type>String</type>
+        <format />
+        <currency />
+        <decimal />
+        <group />
+        <length>-1</length>
+        <precision>-1</precision>
+        <trim_type>none</trim_type>
+      </field>
+    </fields>
+    <cluster_schema />
+    <remotesteps>
+      <input>
+      </input>
+      <output>
+      </output>
+    </remotesteps>
+    <GUI>
+      <xloc>480</xloc>
+      <yloc>96</yloc>
+      <draw>Y</draw>
+    </GUI>
+  </step>
+  <step>
+    <name>cuil tipo</name>
+    <type>SelectValues</type>
+    <description />
+    <distribute>Y</distribute>
+    <custom_distribution />
+    <copies>1</copies>
+    <partitioning>
+      <method>none</method>
+      <schema_name />
+    </partitioning>
+    <fields>
+      <select_unspecified>N</select_unspecified>
+      <meta>
+        <name>cuil</name>
+        <rename>cuil</rename>
+        <type>Integer</type>
+        <length>-2</length>
+        <precision>-2</precision>
+        <conversion_mask />
+        <date_format_lenient>false</date_format_lenient>
+        <date_format_locale />
+        <date_format_timezone />
+        <lenient_string_to_number>false</lenient_string_to_number>
+        <encoding />
+        <decimal_symbol />
+        <grouping_symbol />
+        <currency_symbol />
+        <storage_type />
+      </meta>
+    </fields>
+    <cluster_schema />
+    <remotesteps>
+      <input>
+      </input>
+      <output>
+      </output>
+    </remotesteps>
+    <GUI>
+      <xloc>560</xloc>
+      <yloc>96</yloc>
+      <draw>Y</draw>
+    </GUI>
+  </step>
+  <step>
+    <name>cut Reg B</name>
+    <type>StringCut</type>
+    <description />
+    <distribute>Y</distribute>
+    <custom_distribution />
+    <copies>1</copies>
+    <partitioning>
+      <method>none</method>
+      <schema_name />
+    </partitioning>
+    <fields>
+      <field>
+        <in_stream_name>registro</in_stream_name>
+        <out_stream_name />
+        <cut_from>0</cut_from>
+        <cut_to>499</cut_to>
+      </field>
+    </fields>
+    <cluster_schema />
+    <remotesteps>
+      <input>
+      </input>
+      <output>
+      </output>
+    </remotesteps>
+    <GUI>
+      <xloc>1728</xloc>
+      <yloc>368</yloc>
+      <draw>Y</draw>
+    </GUI>
+  </step>
+  <step>
+    <name>cut Reg Nulo</name>
+    <type>StringCut</type>
+    <description />
+    <distribute>Y</distribute>
+    <custom_distribution />
+    <copies>1</copies>
+    <partitioning>
+      <method>none</method>
+      <schema_name />
+    </partitioning>
+    <fields>
+      <field>
+        <in_stream_name>registro</in_stream_name>
+        <out_stream_name />
+        <cut_from>0</cut_from>
+        <cut_to>499</cut_to>
+      </field>
+    </fields>
+    <cluster_schema />
+    <remotesteps>
+      <input>
+      </input>
+      <output>
+      </output>
+    </remotesteps>
+    <GUI>
+      <xloc>944</xloc>
+      <yloc>368</yloc>
+      <draw>Y</draw>
+    </GUI>
+  </step>
+  <step>
+    <name>domicilioIdCiudadana</name>
+    <type>TableInput</type>
+    <description />
+    <distribute>Y</distribute>
+    <custom_distribution />
+    <copies>1</copies>
+    <partitioning>
+      <method>none</method>
+      <schema_name />
+    </partitioning>
+    <connection>IDCIUDADANA</connection>
+    <sql>
+	
+	
+	SELECT 
+	convert(cuil,unsigned INTEGER ) as cuil,
+	concat(trim(calle),' ',trim(nro))	as direccion_ori,
+	trim(calle) 			as calle_ori,
+	trim(nro)				as numero_ori,
+	trim(piso)				as piso_ori,
+	case when length(trim(departamento)) > 5 then '' else 	trim(departamento) end As departamento_ori,
+	trim(cod_postal)		as cod_postal_ori,
+	-- pais_id,
+	-- trim(paises.nombre)		as nom_pais,
+	domicilio_alternativo.provincia_id,
+	trim(provincias.nombre)	as nom_prov,
+	localidad_id,
+	trim(localidades.nombre) as nom_loc_ori,
+	trim(otros_datos)		as otros_datos_ori,
+	trim(provincia_aux),
+	trim(localidad_aux),
+	trim(latitud)			as latitud_ori,
+	trim(longitud)			as longitud_ori,
+	--trim(imagen_ubicacion)	as imagen_path_ori,
+	null 					as imagen_path_ori,
+	null 					as calle_cruce_1_ori,
+	null 					as calle_cruce_2_ori,
+	null 					as descripcion_ori,
+	null 					as torre_ori,
+	null 					as casa_ori,
+	null 					as manzana_ori,
+	null 					as partida_inmobiliaria_ori,
+	-- null 					as geom_ori,
+	null 					as tipo_domicilio_ori,
+	null 					as barrio_ori,
+	null					AS nom_distrito_ori,
+	apellido				AS apellido_ori,
+	nombres					AS nombre_ori
+	
+FROM domicilio_alternativo
+	-- LEFT OUTER JOIN ciudadano ON domicilio_alternativo.ciudadano_id = ciudadano.id
+	LEFT OUTER JOIN registro_ciudadano  reg ON reg.ciudadano_id = domicilio_alternativo.ciudadano_id
+	LEFT OUTER JOIN localidades ON localidades.id = domicilio_alternativo.localidad_id
+	-- LEFT OUTER JOIN paises ON paises.id = domicilio_alternativo.pais_id
+	LEFT OUTER JOIN provincias ON provincias.id = domicilio_alternativo.provincia_id
+where apellido is not null
+  and nombres is not null
+  AND calle &lt;&gt; 'Sin nombre' 
+  AND nro  &lt;&gt; 'Sin número'
+
+order by calle,nro
+
+
+</sql>
+    <limit>0</limit>
+    <lookup />
+    <execute_each_row>N</execute_each_row>
+    <variables_active>N</variables_active>
+    <lazy_conversion_active>N</lazy_conversion_active>
+    <cluster_schema />
+    <remotesteps>
+      <input>
+      </input>
+      <output>
+      </output>
+    </remotesteps>
+    <GUI>
+      <xloc>48</xloc>
+      <yloc>96</yloc>
+      <draw>Y</draw>
+    </GUI>
+  </step>
+  <step>
+    <name>iguales</name>
+    <type>Dummy</type>
+    <description />
+    <distribute>Y</distribute>
+    <custom_distribution />
+    <copies>1</copies>
+    <partitioning>
+      <method>none</method>
+      <schema_name />
+    </partitioning>
+    <cluster_schema />
+    <remotesteps>
+      <input>
+      </input>
+      <output>
+      </output>
+    </remotesteps>
+    <GUI>
+      <xloc>1648</xloc>
+      <yloc>16</yloc>
+      <draw>Y</draw>
+    </GUI>
+  </step>
+  <step_error_handling>
+  </step_error_handling>
+  <slave-step-copy-partition-distribution>
+  </slave-step-copy-partition-distribution>
+  <slave_transformation>N</slave_transformation>
+</transformation>

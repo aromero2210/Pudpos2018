@@ -1,0 +1,269 @@
+nom_loc_ori;idCalle;calle_ori;idBarrio;barrio_ori;manzana_ori;nom_prov;Calle_origen;Localidad_ori
+Selva;;1 Mayo;;;;Santiago del Estero;1 Mayo;Selva
+Guardia Escolta;;10;;;;Santiago del Estero;10;Guardia Escolta
+General Pico;;117;;;;La Pampa;117;General Pico
+Arribe;;12 De Octubre;;;;Buenos Aires;12 De Octubre;Arribe
+Mar Del Plata;;14 De Julio;;;;Buenos Aires;14 De Julio;Mar Del Plata
+Colon;;18;;;;Buenos Aires;18;Colon
+Posadas;;"20 ""A""";;;;Misiones;"20 ""A""";Posadas
+Selva;;20 De Junio;;;;Santiago del Estero;20 De Junio;Selva
+C.A.B.A.;;25 De Mayo;;;;Capital Federal;25 De Mayo;C.A.B.A.
+Devoto;;25 De Mayo;;;;Códoba;25 De Mayo;Devoto
+Parana;;25 De Mayo;;;;Entre Ríos;25 De Mayo;Parana
+Victoria;;25 De Mayo 502;;;;Entre Ríos;25 De Mayo 502;Victoria
+Selva;;27 De Abril;;;;Santiago del Estero;27 De Abril;Selva
+Colon;;42;;;;Buenos Aires;42;Colon
+Colon;;45;;;;Buenos Aires;45;Colon
+Colon;;46 Entre 7 Y 9;;;;Buenos Aires;46 Entre 7 Y 9;Colon
+Colon;;48;;;;Buenos Aires;48;Colon
+Colon;;50;;;;Buenos Aires;50;Colon
+Colon;;7;;;;Buenos Aires;7;Colon
+San Francisco;;9 De Julio;;;;Códoba;9 De Julio;San Francisco
+Selva;;9 De Julio;;;;Santiago del Estero;9 De Julio;Selva
+Selva;;9 De Julio 359;;;;Santiago del Estero;9 De Julio 359;Selva
+San Francisco;;9 De Septiembre;;;;Códoba;9 De Septiembre;San Francisco
+Resistencia;;A.Frondizi;;;;Chaco;A.Frondizi;Resistencia
+San Nicolas De Los Arroyos;;Adolfo Alsina;;;;Buenos Aires;Adolfo Alsina;San Nicolas De Los Arroyos
+Juana Koslay;;Aguada De Pueyrredon;;;;San Luis;Aguada De Pueyrredon;Juana Koslay
+General Baldissera;;Alberdi;;;;Códoba;Alberdi;General Baldissera
+Cruz Alta;;Alberti;;;;Códoba;Alberti;Cruz Alta
+Parana;;Alem;;;;Entre Ríos;Alem;Parana
+Mar Del Plata;;Almafuerte;;;;Buenos Aires;Almafuerte;Mar Del Plata
+San Francisco;;Almafuerte;;;;Códoba;Almafuerte;San Francisco
+Devoto;;Almirante Brown;;;;Códoba;Almirante Brown;Devoto
+San Francisco;;Almirante Brown;;;;Códoba;Almirante Brown;San Francisco
+Freyre;;Alsina 544;;;;Códoba;Alsina 544;Freyre
+San Nicolas De Los Arroyos;;Ameghino;;;;Buenos Aires;Ameghino;San Nicolas De Los Arroyos
+Porte;;Andrés Gorchs;;;;Códoba;Andres Gorchs;Porte
+Parana;;Andres Pazos;;;;Entre Ríos;Andres Pazos;Parana
+Parana;;Antelo;;;;Entre Ríos;Antelo;Parana
+Resistencia;;Arbo Y Blanco;;;;Chaco;Arbo Y Blanco;Resistencia
+General Arenales;;Ataliva Roca;;;;Buenos Aires;Ataliva Roca;General Arenales
+Ascencion;;Av 24 De Mayo;;;;Buenos Aires;Av 24 De Mayo;Ascencion
+Cordoba;;Av Figueroa Alcorta;;;;Códoba;Av Figueroa Alcorta;Cordoba
+San Francisco;;Av. Chile;;;;Códoba;Av. Chile;San Francisco
+Ramos Mejia;;Av. Gaona;;;;Buenos Aires;Av. Gaona;Ramos Mejia
+San Francisco;;Av. Libertador Norte;;;;Códoba;Av. Libertador Norte;San Francisco
+Parana;;Av. Ramirez;;;;Entre Ríos;Av. Ramirez;Parana
+Arribe;;Av. San Martín;;;;Buenos Aires;Av. San Martin;Arribe
+San Roque;;Av.Argentina Y Av.Maggi;;;;Códoba;Av.Argentina Y Av.Maggi;San Roque
+San Nicolas De Los Arroyos;;Avda. Falcon;;;;Buenos Aires;Avda. Falcon;San Nicolas De Los Arroyos
+Posadas;;Avda. Marconi;;;;Misiones;Avda. Marconi;Posadas
+San Martin De Los Andes;;Avda.San Martìn;;;;Neuquén;Avda.San Martin;San Martin De Los Andes
+Morteros;;Avellaneda;;;;Códoba;Avellaneda;Morteros
+Corrientes;;Avenida Armenia;;;;Corrientes;Avenida Armenia;Corrientes
+San Francisco;;Avenida Libertador Sur;;;;Códoba;Avenida Libertador Sur;San Francisco
+Falda De Los Reartes;;Avenida Los Reartes;;;;Códoba;Avenida Los Reartes;Falda De Los Reartes
+San Francisco;;Avenida Sabatini;;;;Códoba;Avenida Sabatini;San Francisco
+Los Polvorines;;Aviadora Carola Lorenzini;;;;Buenos Aires;Aviadora Carola Lorenzini;Los Polvorines
+Parana;;Balbin;;;;Entre Ríos;Balbin;Parana
+Parana;;Barrio 170 Viviendas Mz. 2 C. 11;;;;Entre Ríos;Barrio 170 Viviendas Mz. 2 C. 11;Parana
+Santo Tome;;Barrio 40 Viviendas Manzana B;;;;Corrientes;Barrio 40 Viviendas Manzana B;Santo Tome
+Santa Sylvina;;Barrio Techo Digno;;;;Chaco;Barrio Techo Digno;Santa Sylvina
+Puerto Madryn;;Bartolomé Mitre;;;;Chubut;Bartolome Mitre;Puerto Madryn
+Parana;;Bases;;;;Entre Ríos;Bases;Parana
+San Francisco;;Belgrano;;;;Códoba;Belgrano;San Francisco
+Rio Tercero;;Belisario Roldan;;;;Códoba;Belisario Roldan;Rio Tercero
+Munro;;Bernardo De Irigoyen;;;;Buenos Aires;Bernardo De Irigoyen;Munro
+Villa Ramallo;;Bonfiglio;;;;Buenos Aires;Bonfiglio;Villa Ramallo
+Villa Carlos Paz;;Buenos Aires;;;;Códoba;Buenos Aires;Villa Carlos Paz
+Morteros;;Bv 25 De Mayo;;;;Códoba;Bv 25 De Mayo;Morteros
+San Francisco;;Bv Saenz Peña;;;;Códoba;Bv Saenz Pena;San Francisco
+La Falda;;Bv. Artigas;;;;Códoba;Bv. Artigas;La Falda
+San Francisco;;Bv. Buenos Aires;;;;Códoba;Bv. Buenos Aires;San Francisco
+San Benito;;Bv. Crespo;;;;Entre Ríos;Bv. Crespo;San Benito
+Villa Angela;;B° 22 Viviendas Municipal Mz24 Pc 22;;;;Chaco;B° 22 Viviendas Municipal Mz24 Pc 22;Villa Angela
+Parana;;Bº Mosconi3;;;;Entre Ríos;Bº Mosconi3;Parana
+Munro;;C. Saavedra;;;;Buenos Aires;C. Saavedra;Munro
+Lavalle;;Caá Guazú;;;;Corrientes;Caa Guazu;Lavalle
+Merlo;;Cantata Del Bosque Natal;;;;San Luis;Cantata Del Bosque Natal;Merlo
+Campana;;Capilla Del Señor;;;;Buenos Aires;Capilla Del Senor;Campana
+San Francisco;;Carlos Gilli;;;;Códoba;Carlos Gilli;San Francisco
+Parana;;Carolina Muzzilli;;;;Entre Ríos;Carolina Muzzilli;Parana
+San Francisco;;Carrá;;;;Códoba;Carra;San Francisco
+Brinkmann;;Caseros;;;;Códoba;Caseros;Brinkmann
+San Francisco;;Castelli;;;;Códoba;Castelli;San Francisco
+Parana;;Catamarca;;;;Entre Ríos;Catamarca;Parana
+San Francisco;;Catamarca Norte;;;;Códoba;Catamarca Norte;San Francisco
+Morteros;;Celestino Vaira;;;;Códoba;Celestino Vaira;Morteros
+Parana;;Cesar Perez Cólman;;;;Entre Ríos;Cesar Perez Colman;Parana
+Marcos Juarez;;Chacabuco;;;;Códoba;Chacabuco;Marcos Juarez
+Bandera;;Chaco;;;;Santiago del Estero;Chaco;Bandera
+Arias;;Chaco Y Salta;;;;Códoba;Chaco Y Salta;Arias
+Parana;;Churruarín;;;;Entre Ríos;Churruarin;Parana
+C.A.B.A.;;Ciudad De La Paz;;;;Capital Federal;Ciudad De La Paz;C.A.B.A.
+Monte Caseros;;Colon;;;;Corrientes;Colon;Monte Caseros
+Parana;;Colón;;;;Entre Ríos;Colon;Parana
+San Francisco;;Colon;;;;Códoba;Colon;San Francisco
+C.A.B.A.;;Colpayo;;;;Capital Federal;Colpayo;C.A.B.A.
+Parana;;Comandate Espora;;;;Entre Ríos;Comandate Espora;Parana
+11 De Septiembre;;Combate De Los Pozos;;;;Buenos Aires;Combate De Los Pozos;11 De Septiembre
+Villa Nueva;;Comercio;;;;Códoba;Comercio;Villa Nueva
+Arias;;Córdoba;;;;Códoba;Cordoba;Arias
+San Francisco;;Córdoba;;;;Códoba;Cordoba;San Francisco
+Alpa Corral;;Costanera;;;;Códoba;Costanera;Alpa Corral
+Parana;;Crucero Gral. Belgrano;;;;Entre Ríos;Crucero Gral. Belgrano;Parana
+Parana;;Cura Alvarez;;;;Entre Ríos;Cura Alvarez;Parana
+Baradero;;Darragueira;;;;Buenos Aires;Darragueira;Baradero
+San Nicolas De Los Arroyos;;De Las Artes;;;;Buenos Aires;De Las Artes;San Nicolas De Los Arroyos
+Capilla Del Monte;;Dean Funes;;;;Códoba;Dean Funes;Capilla Del Monte
+Mar Del Plata;;Dean Funes;;;;Buenos Aires;Dean Funes;Mar Del Plata
+San Francisco;;Dean Funes;;;;Códoba;Dean Funes;San Francisco
+Canals;;Doctor Barutia;;;;Códoba;Doctor Barutia;Canals
+Santa Sylvina;;Doña Eugenia;;;;Chaco;Dona Eugenia;Santa Sylvina
+San Francisco;;Dorrego;;;;Códoba;Dorrego;San Francisco
+Camilo Aldao;;Dra. Ines N. De Aldao;;;;Códoba;Dra. Ines N. De Aldao;Camilo Aldao
+San Francisco;;Drago;;;;Códoba;Drago;San Francisco
+Alta Gracia;;Eduardo Madero;;;;Códoba;Eduardo Madero;Alta Gracia
+Tigre;;Eduardo Madero;;;;Buenos Aires;Eduardo Madero;Tigre
+Santa Rosa De Calamuchita;;El Nogal;;;;Códoba;El Nogal;Santa Rosa De Calamuchita
+Corral De Bustos;;Entre Rios;;;;Códoba;Entre Rios;Corral De Bustos
+San Francisco;;Entre Rios;;;;Códoba;Entre Rios;San Francisco
+San Francisco;;Entre Ríos Sur;;;;Códoba;Entre Rios Sur;San Francisco
+Morteros;;España;;;;Códoba;Espana;Morteros
+Parana;;Estrada Y Los Vascos;;;;Entre Ríos;Estrada Y Los Vascos;Parana
+Parana;;F. M. Esquiú;;;;Entre Ríos;F. M. Esquiu;Parana
+San Francisco;;Falucho;;;;Códoba;Falucho;San Francisco
+Nogoya;;Fitz Gerald;;;;Entre Ríos;Fitz Gerald;Nogoya
+Parana;;Florentino Ameghino;;;;Entre Ríos;Florentino Ameghino;Parana
+Parana;;Fray Esquiu;;;;Entre Ríos;Fray Esquiu;Parana
+Santa Sylvina;;Fray Luis Beltran S/N;;;;Chaco;Fray Luis Beltran S/N;Santa Sylvina
+Campana;;French;;;;Buenos Aires;French;Campana
+Concepcion Del Uruguay;;Frondizi  Ex Mosconi 1050;;;;Entre Ríos;Frondizi  Ex Mosconi 1050;Concepcion Del Uruguay
+San Carlos De Bariloche;;Gallardo;;;;Río Negro;Gallardo;San Carlos De Bariloche
+Cruz Alta;;Garibaldi;;;;Códoba;Garibaldi;Cruz Alta
+Moreno;;Gervasio Mendez;;;;Buenos Aires;Gervasio Mendez;Moreno
+Santa Sylvina;;Gobernador Baigorria;;;;Chaco;Gobernador Baigorria;Santa Sylvina
+Parana;;Gobernador Parera;;;;Entre Ríos;Gobernador Parera;Parana
+Ituzaingo;;Gral Manuel Gpinto;;;;Buenos Aires;Gral Manuel Gpinto;Ituzaingo
+Selva;;Gran Malvina;;;;Santiago del Estero;Gran Malvina;Selva
+C.A.B.A.;;Guemes;;;;Capital Federal;Guemes;C.A.B.A.
+Cruz Alta;;Güemes;;;;Códoba;Guemes;Cruz Alta
+Parana;;Guemes;;;;Entre Ríos;Guemes;Parana
+San Benito;;Guido Marizza;;;;Entre Ríos;Guido Marizza;San Benito
+Santa Sylvina;;Guillermo Della Savia;;;;Chaco;Guillermo Della Savia;Santa Sylvina
+C.A.B.A.;;Hipolito Yrigoyen;;;;Capital Federal;Hipolito Yrigoyen;C.A.B.A.
+San Francisco;;Independencia 1129;;;;Códoba;Independencia 1129;San Francisco
+San Francisco;;Independencia Sur;;;;Códoba;Independencia Sur;San Francisco
+San Francisco;;Independendia Norte;;;;Códoba;Independendia Norte;San Francisco
+Morteros;;Intendente Aonzo;;;;Códoba;Intendente Aonzo;Morteros
+Porte;;Intendente Asteggiano;;;;Códoba;Intendente Asteggiano;Porte
+Lincoln;;Intendente Menarvino;;;;Buenos Aires;Intendente Menarvino;Lincoln
+Santa Sylvina;;Intermedia;;;;Chaco;Intermedia;Santa Sylvina
+Cordoba;;Italia;;;;Códoba;Italia;Cordoba
+Leones;;Italia;;;;Códoba;Italia;Leones
+San Francisco;;Italia;;;;Códoba;Italia;San Francisco
+Salta;;Ituzaingó;;;;Salta;Ituzaingo;Salta
+Laboulaye;;Jaime Pérez;;;;Códoba;Jaime Perez;Laboulaye
+Cosquin;;Japon;;;;Códoba;Japon;Cosquin
+San Francisco;;Joaquin Martinez;;;;Códoba;Joaquin Martinez;San Francisco
+Parana;;Jorge Newbery 577;;;;Entre Ríos;Jorge Newbery 577;Parana
+San Francisco;;Jose Hernandez;;;;Códoba;Jose Hernandez;San Francisco
+Santa Sylvina;;José Hernández;;;;Chaco;Jose Hernandez;Santa Sylvina
+San Francisco;;José Ingenieros;;;;Códoba;Jose Ingenieros;San Francisco
+San Francisco;;Jose Marmol;;;;Códoba;Jose Marmol;San Francisco
+Vedia;;Juan B. Alberdi;;;;Buenos Aires;Juan B. Alberdi;Vedia
+San Francisco;;Juan Xxiii;;;;Códoba;Juan Xxiii;San Francisco
+Parana;;Juana De Ibarbourou;;;;Entre Ríos;Juana De Ibarbourou;Parana
+Machagai;;Junin;;;;Chaco;Junin;Machagai
+Rio Grande;;Kekombosch;;;;Tierra del Fuego;Kekombosch;Rio Grande
+Mar Del Plata;;La Rioja;;;;Buenos Aires;La Rioja;Mar Del Plata
+San Francisco;;Lamadrid;;;;Códoba;Lamadrid;San Francisco
+Parana;;Laprida;;;;Entre Ríos;Laprida;Parana
+San Francisco;;Larrea;;;;Códoba;Larrea;San Francisco
+Victoria;;Larrea;;;;Entre Ríos;Larrea;Victoria
+San Francisco;;Las Acacias;;;;Códoba;Las Acacias;San Francisco
+Morteros;;Las Heras;;;;Códoba;Las Heras;Morteros
+San Luis;;Las Heras;;;;San Luis;Las Heras;San Luis
+Villa Giardino;;Las Tunas;;;;Códoba;Las Tunas;Villa Giardino
+Arribe;;Lavalle;;;;Buenos Aires;Lavalle;Arribe
+Santa Sylvina;;Leandro N/Alem;;;;Chaco;Leandro N/Alem;Santa Sylvina
+Colonia Vignaud;;Libertad;;;;Códoba;Libertad;Colonia Vignaud
+San Francisco;;Libertad;;;;Códoba;Libertad;San Francisco
+Santa Regina;;Libertad;;;;Buenos Aires;Libertad;Santa Regina
+San Francisco;;Lima;;;;Códoba;Lima;San Francisco
+Oran;;Lopez Y Planes;;;;Salta;Lopez Y Planes;Oran
+San Francisco;;Los Alamos;;;;Códoba;Los Alamos;San Francisco
+San Francisco;;Los Álamos 2758;;;;Códoba;Los Alamos 2758;San Francisco
+San Francisco;;Los Andes;;;;Códoba;Los Andes;San Francisco
+San Nicolas De Los Arroyos;;Los Aromos;;;;Buenos Aires;Los Aromos;San Nicolas De Los Arroyos
+San Francisco;;Los Manzanos;;;;Códoba;Los Manzanos;San Francisco
+Cruz Alta;;Luis Reybet;;;;Códoba;Luis Reybet;Cruz Alta
+Corral De Bustos;;M. Dorrego;;;;Códoba;M. Dorrego;Corral De Bustos
+Morteros;;Madre Teresa De Calcuta 330;;;;Códoba;Madre Teresa De Calcuta 330;Morteros
+Morteros;;Maipu;;;;Códoba;Maipu;Morteros
+Tristan Suarez;;Marcos Juárez;;;;Buenos Aires;Marcos Juarez;Tristan Suarez
+Rincon De Milberg;;Marcos Sastre;;;;Buenos Aires;Marcos Sastre;Rincon De Milberg
+Morteros;;Mariano Moreno;;;;Códoba;Mariano Moreno;Morteros
+San Francisco;;Mariano Moreno;;;;Códoba;Mariano Moreno;San Francisco
+Cruz Alta;;Matheu;;;;Códoba;Matheu;Cruz Alta
+Pablo Nogues;;Maure;;;;Buenos Aires;Maure;Pablo Nogues
+San Nicolas De Los Arroyos;;Mendoza;;;;Buenos Aires;Mendoza;San Nicolas De Los Arroyos
+San Francisco;;Mexico;;;;Códoba;Mexico;San Francisco
+Crespo;;Mitre;;;;Entre Ríos;Mitre;Crespo
+Parana;;Moisés Lebenhson;;;;Entre Ríos;Moises Lebenhson;Parana
+San Nicolas De Los Arroyos;;Mozart;;;;Buenos Aires;Mozart;San Nicolas De Los Arroyos
+Los Nogales;;Mz19 Casa 13;;;;Tucumán;Mz19 Casa 13;Los Nogales
+San Nicolas De Los Arroyos;;Nacion;;;;Buenos Aires;Nacion;San Nicolas De Los Arroyos
+Aldea Brasilera;;Nicolás Avellaneda;;;;Entre Ríos;Nicolas Avellaneda;Aldea Brasilera
+San Nicolas De Los Arroyos;;Obligado;;;;Buenos Aires;Obligado;San Nicolas De Los Arroyos
+San Nicolas De Los Arroyos;;Olleros;;;;Buenos Aires;Olleros;San Nicolas De Los Arroyos
+Parana;;Ovidio Lagos;;;;Entre Ríos;Ovidio Lagos;Parana
+Neuquen;;Padre Stefenelli;;;;Neuquén;Padre Stefenelli;Neuquen
+Parana;;Pampa;;;;Entre Ríos;Pampa;Parana
+El Palomar;;Paracaidista Roca;;;;Buenos Aires;Paracaidista Roca;El Palomar
+San Francisco;;Paraguay Sur;;;;Códoba;Paraguay Sur;San Francisco
+San Francisco;;Pasaje Cangallo;;;;Códoba;Pasaje Cangallo;San Francisco
+San Nicolas De Los Arroyos;;Pasaje Gorbaran;;;;Buenos Aires;Pasaje Gorbaran;San Nicolas De Los Arroyos
+Cordoba;;Pasaje Juan Seru;;;;Códoba;Pasaje Juan Seru;Cordoba
+San Francisco;;Pasaje Laprida;;;;Códoba;Pasaje Laprida;San Francisco
+Huerta Grande;;Pedro Capdevila;;;;Códoba;Pedro Capdevila;Huerta Grande
+Parana;;Pedro Scalabrini;;;;Entre Ríos;Pedro Scalabrini;Parana
+Parana;;Pedro Zanni;;;;Entre Ríos;Pedro Zanni;Parana
+Parana;;Pellegrini;;;;Entre Ríos;Pellegrini;Parana
+San Francisco;;Perú;;;;Códoba;Peru;San Francisco
+Bialet Masse;;Piedra Blanca 1572;;;;Códoba;Piedra Blanca 1572;Bialet Masse
+Basail;;Planta Urbana;;;;Chaco;Planta Urbana;Basail
+Villa Rio Bermejito;;Planta Urbana;;;;Chaco;Planta Urbana;Villa Rio Bermejito
+San Nicolas De Los Arroyos;;Pombo;;;;Buenos Aires;Pombo;San Nicolas De Los Arroyos
+San Francisco;;Primeros Colonizadores;;;;Códoba;Primeros Colonizadores;San Francisco
+Carpinteria;;Pringles;;;;San Luis;Pringles;Carpinteria
+San Francisco;;Pueyrredón;;;;Códoba;Pueyrredon;San Francisco
+San Francisco;;Ramon Y Cajal;;;;Códoba;Ramon Y Cajal;San Francisco
+Resistencia;;Republica Dominicana;;;;Chaco;Republica Dominicana;Resistencia
+Monte Hermoso;;Río Juramento;;;;Buenos Aires;Rio Juramento;Monte Hermoso
+Cruz Alta;;Rioja;;;;Códoba;Rioja;Cruz Alta
+San Francisco;;Rioja;;;;Códoba;Rioja;San Francisco
+Morteros;;Rivadavia;;;;Códoba;Rivadavia;Morteros
+San Francisco;;Rivadavia;;;;Códoba;Rivadavia;San Francisco
+San Nicolas De Los Arroyos;;Rivadavia;;;;Buenos Aires;Rivadavia;San Nicolas De Los Arroyos
+San Francisco;;Rivadavia 1277;;;;Códoba;Rivadavia 1277;San Francisco
+Marcos Juarez;;Rivadavia Este;;;;Códoba;Rivadavia Este;Marcos Juarez
+Parana;;Rondeau;;;;Entre Ríos;Rondeau;Parana
+Alejo Ledesma;;Roque Saenz Peña;;;;Códoba;Roque Saenz Pena;Alejo Ledesma
+Chascomus;;Rosa Gorotizu;;;;Buenos Aires;Rosa Gorotizu;Chascomus
+Parana;;Rosario Del Tala;;;;Entre Ríos;Rosario Del Tala;Parana
+San Francisco;;Salta;;;;Códoba;Salta;San Francisco
+San Benito;;San Juan Y Mitre;;;;Entre Ríos;San Juan Y Mitre;San Benito
+Diamante;;San Lorenzo;;;;Entre Ríos;San Lorenzo;Diamante
+Morteros;;San Lorenzo;;;;Códoba;San Lorenzo;Morteros
+San Nicolas De Los Arroyos;;San Lorenzo;;;;Buenos Aires;San Lorenzo;San Nicolas De Los Arroyos
+Colonia Marina;;San Martin;;;;Códoba;San Martin;Colonia Marina
+Cruz Alta;;San Martin;;;;Códoba;San Martin;Cruz Alta
+Federal;;San Martin;;;;Entre Ríos;San Martin;Federal
+General Roca;;San Martin;;;;Códoba;San Martin;General Roca
+General Roca;;San Pablo;;;;Códoba;San Pablo;General Roca
+Parana;;Santa Cruz;;;;Entre Ríos;Santa Cruz;Parana
+Freyre;;Santa Fe;;;;Códoba;Santa Fe;Freyre
+Cruz Alta;;Santiago Toullieux;;;;Códoba;Santiago Toullieux;Cruz Alta
+Arias;;Sarmiento;;;;Códoba;Sarmiento;Arias
+Ramallo;;Sarmiento;;;;Buenos Aires;Sarmiento;Ramallo
+Resistencia;;Sarmiento;;;;Chaco;Sarmiento;Resistencia
+San Francisco;;Talcahuano;;;;Códoba;Talcahuano;San Francisco
+San Nicolas De Los Arroyos;;Tte.Coronel P.Petrecca;;;;Buenos Aires;Tte.Coronel P.Petrecca;San Nicolas De Los Arroyos
+San Juan;;Tucuman;;;;San Juan;Tucuman;San Juan
+Corral De Bustos;;Uruguay Este;;;;Códoba;Uruguay Este;Corral De Bustos
+Martinez;;Vicente Fidel Lopez;;;;Buenos Aires;Vicente Fidel Lopez;Martinez
+Parana;;Villlaguay;;;;Entre Ríos;Villlaguay;Parana
+Parana;;Zenteno;;;;Entre Ríos;Zenteno;Parana
+Colonia Italiana;;Zona Rural;;;;Códoba;Zona Rural;Colonia Italiana

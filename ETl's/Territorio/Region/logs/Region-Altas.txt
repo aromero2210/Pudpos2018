@@ -1,0 +1,6 @@
+gid;nombre_ori;nombre_abrev_ori;id_tipo_region_ori;jurisdiccion_ori;poblacion_promedio_ori;codigo_ori;id_nodo_ori
+2;Región Reconquista            ;Región Reconquista            ;;;;1;
+1;Región Rafaela                ;Región Rafaela                ;;;;2;
+3;Región Santa Fe               ;Región Santa Fe               ;;;;3;
+4;Región Rosario                ;Región Rosario                ;;;;4;
+5;Región Venado Tuerto          ;Región Venado Tuerto          ;;;;5;

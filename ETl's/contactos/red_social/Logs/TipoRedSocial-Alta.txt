@@ -1,0 +1,6 @@
+tipo_red_social_id;tipo_redsocial_ori
+1;Facebook
+5;Google+
+4;Linkedin
+2;Twitter
+3;Youtube

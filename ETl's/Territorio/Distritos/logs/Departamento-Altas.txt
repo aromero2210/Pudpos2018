@@ -1,0 +1,364 @@
+gid;id_distrito_ori;nombre_ori;id_departamento_ori;regional;cod_deleg_ori;nombre_deleg_ori;nombre1_ori
+1;0101;General Lopez;01;N;3;RAFAELA;Gregoria Perez de Denis
+1;0102;General Lopez;01;N;3;RAFAELA;Gato Colorado
+1;0103;General Lopez;01;N;3;RAFAELA;San Bernardo (01)
+1;0104;General Lopez;01;N;3;RAFAELA;Pozo Borrado
+1;0105;General Lopez;01;N;3;RAFAELA;Tostado
+1;0106;General Lopez;01;N;3;RAFAELA;Logrono
+1;0107;General Lopez;01;N;3;RAFAELA;Esteban Rams
+1;0108;General Lopez;01;N;3;RAFAELA;Montefiore
+1;0109;General Lopez;01;N;3;RAFAELA;Juan de Garay
+1;0110;General Lopez;01;N;3;RAFAELA;Villa Minetti
+1;0111;General Lopez;01;N;3;RAFAELA;Santa Margarita
+2;0202;Constitucion;02;N;2;RECONQUISTA;Vera
+2;0203;Constitucion;02;N;2;RECONQUISTA;La Gallareta
+2;0204;Constitucion;02;N;2;RECONQUISTA;Margarita
+2;0205;Constitucion;02;N;2;RECONQUISTA;Calchaqui
+2;0206;Constitucion;02;N;2;RECONQUISTA;Toba
+2;0207;Constitucion;02;N;2;RECONQUISTA;Fortin Olmos
+2;0208;Constitucion;02;N;2;RECONQUISTA;Canada Ombu
+2;0209;Constitucion;02;N;2;RECONQUISTA;Golondrina
+2;0210;Constitucion;02;N;2;RECONQUISTA;Intiyaco
+2;0211;Constitucion;02;N;2;RECONQUISTA;Garabato
+2;0212;Constitucion;02;N;2;RECONQUISTA;Los Amores
+2;0213;Constitucion;02;N;2;RECONQUISTA;Tartagal
+3;0302;Caseros;03;N;2;RECONQUISTA;Florencia
+3;0303;Caseros;03;N;2;RECONQUISTA;El Rabon
+3;0304;Caseros;03;N;2;RECONQUISTA;Villa Guillermina
+3;0305;Caseros;03;N;2;RECONQUISTA;Las Toscas
+3;0306;Caseros;03;N;2;RECONQUISTA;San Antonio de Obligado
+3;0307;Caseros;03;N;2;RECONQUISTA;Tacuarendi
+3;0308;Caseros;03;N;2;RECONQUISTA;Villa Ocampo
+3;0309;Caseros;03;N;2;RECONQUISTA;Villa Ana
+3;0312;Caseros;03;N;2;RECONQUISTA;Ingeniero Chanourdi
+3;0313;Caseros;03;N;2;RECONQUISTA;El Sombrerito
+3;0314;Caseros;03;N;2;RECONQUISTA;Arroyo Ceibal
+3;0315;Caseros;03;N;2;RECONQUISTA;Las Garzas
+3;0316;Caseros;03;N;2;RECONQUISTA;Lanteri
+3;0319;Caseros;03;N;2;RECONQUISTA;Avellaneda
+3;0320;Caseros;03;N;2;RECONQUISTA;Reconquista
+3;0321;Caseros;03;N;2;RECONQUISTA;El Araza
+3;0322;Caseros;03;N;2;RECONQUISTA;Berna
+3;0323;Caseros;03;N;2;RECONQUISTA;Malabrigo
+3;0324;Caseros;03;N;2;RECONQUISTA;Los Laureles
+3;0326;Caseros;03;N;2;RECONQUISTA;La Sarita
+3;0327;Caseros;03;N;2;RECONQUISTA;Guadalupe Norte
+3;0328;Caseros;03;N;2;RECONQUISTA;Nicanor Molina
+4;0401;San Lorenzo;04;N;2;RECONQUISTA;Romang
+4;0402;San Lorenzo;04;N;2;RECONQUISTA;Colonia Duran
+4;0403;San Lorenzo;04;N;2;RECONQUISTA;Alejandra
+4;0404;San Lorenzo;04;N;1;SANTA FE;San Javier
+4;0405;San Lorenzo;04;N;1;SANTA FE;Cacique Ariacaiquin
+4;0406;San Lorenzo;04;N;1;SANTA FE;La Brava
+4;0408;San Lorenzo;04;N;1;Santa Fe;Colonia Teresa
+5;0501;Rosario;05;N;1;SANTA FE;Helvecia
+5;0502;Rosario;05;N;1;SANTA FE;Cayasta
+5;0503;Rosario;05;N;1;SANTA FE;Santa Rosa
+5;0505;Rosario;05;N;1;SANTA FE;Colonia Mascias
+5;0506;Rosario;05;N;1;SANTA FE;Saladero Cabal
+6;0601;Iriondo;06;N;1;SANTA FE;Pedro Gomez Cello
+6;0602;Iriondo;06;N;1;SANTA FE;La Camila
+6;0603;Iriondo;06;N;1;SANTA FE;Vera y Pintado
+6;0604;Iriondo;06;N;1;SANTA FE;San Martin Norte
+6;0605;Iriondo;06;N;1;SANTA FE;La Criolla
+6;0606;Iriondo;06;N;1;SANTA FE;La Penca y Caraguata
+6;0607;Iriondo;06;N;1;SANTA FE;Gobernador Crespo
+6;0608;Iriondo;06;N;1;SANTA FE;Silva
+6;0609;Iriondo;06;N;1;SANTA FE;Marcelino Escalada
+6;0610;Iriondo;06;N;1;SANTA FE;Ramayon
+6;0611;Iriondo;06;N;1;SANTA FE;San Justo
+6;0612;Iriondo;06;N;1;SANTA FE;Nare
+6;0613;Iriondo;06;N;1;SANTA FE;San Bernardo (06)
+6;0614;Iriondo;06;N;1;SANTA FE;Angeloni
+6;0615;Iriondo;06;N;1;SANTA FE;Videla
+6;0616;Iriondo;06;N;1;SANTA FE;Esther
+6;0617;Iriondo;06;N;1;SANTA FE;Cayastacito
+6;0618;Iriondo;06;N;1;SANTA FE;Dolores
+7;0701;Belgrano;07;N;3;RAFAELA;Ceres
+7;0702;Belgrano;07;N;3;RAFAELA;Hersilia
+7;0703;Belgrano;07;N;3;RAFAELA;Ambrosetti
+7;0704;Belgrano;07;N;3;RAFAELA;Huanqueros
+7;0705;Belgrano;07;N;3;RAFAELA;Las Avispas
+7;0706;Belgrano;07;N;3;RAFAELA;Aguara
+7;0707;Belgrano;07;N;3;RAFAELA;Villa Saralegui
+7;0708;Belgrano;07;N;3;RAFAELA;San Cristobal
+7;0709;Belgrano;07;N;3;RAFAELA;Santurce
+7;0710;Belgrano;07;N;3;RAFAELA;Portugalete
+7;0711;Belgrano;07;N;3;RAFAELA;Arrufo
+7;0712;Belgrano;07;N;3;RAFAELA;La Rubia
+7;0713;Belgrano;07;N;3;RAFAELA;Colonia Ana
+7;0714;Belgrano;07;N;3;RAFAELA;Villa Trinidad
+7;0715;Belgrano;07;N;3;RAFAELA;Colonia Rosa
+7;0716;Belgrano;07;N;3;RAFAELA;San Guillermo
+7;0717;Belgrano;07;N;3;RAFAELA;Curupayti
+7;0718;Belgrano;07;N;3;RAFAELA;Capivara
+7;0719;Belgrano;07;N;3;RAFAELA;Nanducita
+7;0720;Belgrano;07;N;3;RAFAELA;La Lucila
+7;0721;Belgrano;07;N;3;RAFAELA;Colonia La Clara
+7;0722;Belgrano;07;N;3;RAFAELA;Soledad
+7;0723;Belgrano;07;N;3;RAFAELA;Constanza
+7;0724;Belgrano;07;N;3;RAFAELA;Moises Ville
+7;0725;Belgrano;07;N;3;RAFAELA;Monigote
+7;0726;Belgrano;07;N;3;RAFAELA;Suardi
+7;0727;Belgrano;07;N;3;RAFAELA;Monte Oscuridad
+7;0728;Belgrano;07;N;3;RAFAELA;Colonia Dos Rosas
+7;0729;Belgrano;07;N;3;RAFAELA;Colonia Bossi
+7;0730;Belgrano;07;N;3;RAFAELA;Las Palmeras
+7;0731;Belgrano;07;N;3;RAFAELA;Palacios
+7;0732;Belgrano;07;N;3;RAFAELA;La Cabral
+8;0801;San Martin;08;N;3;RAFAELA;Virginia
+8;0802;San Martin;08;N;3;RAFAELA;Maua
+8;0803;San Martin;08;N;3;RAFAELA;Humberto I
+8;0804;San Martin;08;N;3;RAFAELA;Colonia Raquel
+8;0805;San Martin;08;N;3;RAFAELA;Tacural
+8;0806;San Martin;08;N;3;RAFAELA;Tacurales
+8;0807;San Martin;08;N;3;RAFAELA;Bicha
+8;0808;San Martin;08;N;3;RAFAELA;Eusebia
+8;0809;San Martin;08;N;3;RAFAELA;Hugentobler
+8;0810;San Martin;08;N;3;RAFAELA;Aldao (Castellanos)
+8;0811;San Martin;08;N;3;RAFAELA;Sunchales
+8;0812;San Martin;08;N;3;RAFAELA;Ataliva
+8;0813;San Martin;08;N;3;RAFAELA;Galisteo
+8;0814;San Martin;08;N;3;RAFAELA;Lehmann
+8;0815;San Martin;08;N;3;RAFAELA;Egusquiza
+8;0816;San Martin;08;N;3;RAFAELA;Bigand
+8;0817;San Martin;08;N;3;RAFAELA;Fidela
+8;0818;San Martin;08;N;3;RAFAELA;Pueblo Marini
+8;0819;San Martin;08;N;3;RAFAELA;Ramona
+8;0820;San Martin;08;N;3;RAFAELA;Coronel Fraga
+8;0821;San Martin;08;N;3;RAFAELA;Vila
+8;0822;San Martin;08;N;3;RAFAELA;Castellanos
+8;0823;San Martin;08;N;3;RAFAELA;Presidente Roca
+8;0824;San Martin;08;N;3;RAFAELA;Rafaela
+8;0825;San Martin;08;N;3;RAFAELA;Bella Italia
+8;0826;San Martin;08;N;3;RAFAELA;Aurelia
+8;0827;San Martin;08;N;3;RAFAELA;Susana
+8;0828;San Martin;08;N;3;RAFAELA;Villa San Jose
+8;0829;San Martin;08;N;3;RAFAELA;Saguier
+8;0830;San Martin;08;N;3;RAFAELA;San Antonio
+8;0831;San Martin;08;N;3;RAFAELA;Santa Clara de Saguier
+8;0832;San Martin;08;N;3;RAFAELA;Bauer y Sigel
+8;0833;San Martin;08;N;3;RAFAELA;Josefina
+8;0834;San Martin;08;N;3;RAFAELA;Colonia Cello
+8;0835;San Martin;08;N;3;RAFAELA;Clucellas
+8;0836;San Martin;08;N;3;RAFAELA;Colonia Iturraspe
+8;0837;San Martin;08;N;3;RAFAELA;Angelica
+8;0838;San Martin;08;N;3;RAFAELA;Estacion Clucellas
+8;0839;San Martin;08;N;3;RAFAELA;Eustolia
+8;0840;San Martin;08;N;3;RAFAELA;Zenon Pereyra
+8;0841;San Martin;08;N;3;RAFAELA;Frontera
+8;0842;San Martin;08;N;3;RAFAELA;Esmeralda
+8;0843;San Martin;08;N;3;RAFAELA;Garibaldi
+8;0844;San Martin;08;N;3;RAFAELA;Maria Juana
+8;0845;San Martin;08;N;3;RAFAELA;Colonia Margarita
+8;0846;San Martin;08;N;3;RAFAELA;San Vicente
+9;0901;Castellanos;09;N;1;SANTA FE;Elisa
+9;0902;Castellanos;09;N;1;SANTA FE;Jacinto L. Arauz
+9;0903;Castellanos;09;N;1;SANTA FE;La Pelada
+9;0904;Castellanos;09;N;1;SANTA FE;Colonia Ituzango
+9;0905;Castellanos;09;N;1;SANTA FE;Soutomayor
+9;0906;Castellanos;09;N;1;SANTA FE;Providencia
+9;0907;Castellanos;09;N;1;SANTA FE;Maria Luisa
+9;0908;Castellanos;09;N;1;SANTA FE;Santo Domingo
+9;0909;Castellanos;09;N;1;SANTA FE;Progreso
+9;0910;Castellanos;09;N;1;SANTA FE;Hipatia
+9;0911;Castellanos;09;N;1;SANTA FE;Sarmiento
+9;0912;Castellanos;09;N;1;SANTA FE;Felicia
+9;0913;Castellanos;09;N;1;SANTA FE;Grutly
+9;0914;Castellanos;09;N;1;SANTA FE;Rivadavia
+9;0915;Castellanos;09;N;1;SANTA FE;Cululu
+9;0916;Castellanos;09;N;1;SANTA FE;Esperanza
+9;0917;Castellanos;09;N;1;SANTA FE;Cavour
+9;0918;Castellanos;09;N;1;SANTA FE;Humboldt
+9;0919;Castellanos;09;N;1;SANTA FE;Nuevo Torino
+9;0920;Castellanos;09;N;1;SANTA FE;Pilar
+9;0921;Castellanos;09;N;1;SANTA FE;Santa Ma. Centro
+9;0922;Castellanos;09;N;1;SANTA FE;Santa Ma. Norte
+9;0923;Castellanos;09;N;1;SANTA FE;San Jeronimo Norte
+9;0924;Castellanos;09;N;1;SANTA FE;Las Tunas
+9;0925;Castellanos;09;N;1;SANTA FE;Pujato Norte
+9;0926;Castellanos;09;N;1;SANTA FE;Franck
+9;0927;Castellanos;09;N;1;SANTA FE;Empalme San Carlos
+9;0928;Castellanos;09;N;1;SANTA FE;San Jose
+9;0929;Castellanos;09;N;1;SANTA FE;San Agustin
+9;0930;Castellanos;09;N;1;SANTA FE;San Carlos Norte
+9;0931;Castellanos;09;N;1;SANTA FE;San Jeronimo del Sauce
+9;0932;Castellanos;09;N;1;SANTA FE;Sa Pereyra
+9;0933;Castellanos;09;N;1;SANTA FE;San Mariano
+9;0934;Castellanos;09;N;1;SANTA FE;Santa Clara de B. Vista
+9;0935;Castellanos;09;N;1;SANTA FE;San Carlos Centro
+9;0936;Castellanos;09;N;1;SANTA FE;Matilde
+9;0937;Castellanos;09;N;1;SANTA FE;San Carlos Sur
+10;1001;San Jerónimo;10;N;1;SANTA FE;Emilia
+10;1002;San Jerónimo;10;N;1;SANTA FE;Cabal
+10;1003;San Jerónimo;10;N;1;SANTA FE;Llambi Campbell
+10;1004;San Jerónimo;10;N;1;SANTA FE;Campo Andino
+10;1005;San Jerónimo;10;N;1;SANTA FE;Laguna Paiva
+10;1006;San Jerónimo;10;N;1;SANTA FE;Nelson
+10;1007;San Jerónimo;10;N;1;SANTA FE;Candioti
+10;1008;San Jerónimo;10;N;1;SANTA FE;Arroyo Aguiar
+10;1009;San Jerónimo;10;N;1;SANTA FE;Monte Vera
+10;1010;San Jerónimo;10;N;1;SANTA FE;Recreo
+10;1011;San Jerónimo;10;N;1;SANTA FE;Santa Fe
+10;1012;San Jerónimo;10;N;1;SANTA FE;Santo Tome
+10;1013;San Jerónimo;10;N;1;SANTA FE;Sauce Viejo
+10;1015;San Jerónimo;10;N;1;SANTA FE;Arroyo Leyes
+10;1016;San Jerónimo;10;N;1;SANTA FE;San Jose del Rincon
+11;1101;La Capital;11;N;1;SANTA FE;Lopez
+11;1102;La Capital;11;N;1;SANTA FE;Gessler
+11;1103;La Capital;11;N;1;SANTA FE;Larrechea
+11;1104;La Capital;11;N;1;SANTA FE;Desvio Arijon
+11;1105;La Capital;11;N;1;SANTA FE;Coronda
+11;1106;La Capital;11;N;1;SANTA FE;Loma Alta
+11;1107;La Capital;11;N;1;SANTA FE;Campo Piaggio
+11;1108;La Capital;11;N;1;SANTA FE;Galvez
+11;1109;La Capital;11;N;1;SANTA FE;San Eugenio
+11;1110;La Capital;11;N;1;SANTA FE;Arocena
+11;1111;La Capital;11;N;1;SANTA FE;San Fabian
+11;1112;La Capital;11;N;1;SANTA FE;Pueblo Irigoyen
+11;1113;La Capital;11;N;1;SANTA FE;Bernardo de Irigoyen
+11;1114;La Capital;11;N;1;SANTA FE;Casalegno
+11;1115;La Capital;11;N;1;SANTA FE;Barrancas
+11;1116;La Capital;11;N;1;SANTA FE;Monje
+11;1117;La Capital;11;N;1;SANTA FE;Gaboto
+11;1118;La Capital;11;N;1;SANTA FE;Maciel
+11;1119;La Capital;11;N;1;SANTA FE;Estacion Diaz
+11;1122;La Capital;11;N;1;SANTA FE;Centeno
+11;1124;La Capital;11;N;1;SANTA FE;San Genaro
+12;1201;Garay;12;N;1;SANTA FE;Castelar
+12;1202;Garay;12;N;1;SANTA FE;Crispi
+12;1203;Garay;12;N;1;SANTA FE;Sastre
+12;1204;Garay;12;N;1;SANTA FE;San Martin de las Escobas
+12;1205;Garay;12;N;1;SANTA FE;Colonia Belgrano
+12;1206;Garay;12;N;1;SANTA FE;Canada Rosquin
+12;1207;Garay;12;N;1;SANTA FE;Traill
+12;1208;Garay;12;N;1;SANTA FE;San Jorge
+12;1209;Garay;12;N;1;SANTA FE;Las Petacas
+12;1210;Garay;12;N;1;SANTA FE;Landeta
+12;1211;Garay;12;N;1;SANTA FE;Carlos Pellegrini
+12;1212;Garay;12;N;1;SANTA FE;Casas
+12;1213;Garay;12;N;1;SANTA FE;Las Bandurrias
+12;1214;Garay;12;N;1;SANTA FE;Los Cardos
+12;1215;Garay;12;N;1;SANTA FE;El Trebol
+12;1216;Garay;12;N;1;SANTA FE;Piamonte
+12;1217;Garay;12;N;1;SANTA FE;Maria Susana
+13;1301;General Obligado;13;S;4;ROSARIO;Bouquet
+13;1302;General Obligado;13;S;4;ROSARIO;Las Rosas
+13;1303;General Obligado;13;S;4;ROSARIO;Las Parejas
+13;1304;General Obligado;13;S;4;ROSARIO;Montes de Oca
+13;1305;General Obligado;13;S;4;ROSARIO;Tortugas
+13;1306;General Obligado;13;S;4;ROSARIO;Armstrong
+14;1401;Vera;14;S;4;ROSARIO;Clason
+14;1402;Vera;14;S;4;ROSARIO;Totoras
+14;1403;Vera;14;S;4;ROSARIO;Carrizales
+14;1404;Vera;14;S;4;ROSARIO;Oliveros
+14;1405;Vera;14;S;4;ROSARIO;Pueblo Andino
+14;1406;Vera;14;S;4;ROSARIO;Serodino
+14;1407;Vera;14;S;4;ROSARIO;Lucio V. Lopez
+14;1408;Vera;14;S;4;ROSARIO;Salto Grande
+14;1409;Vera;14;S;4;ROSARIO;Bustinza
+14;1410;Vera;14;S;4;ROSARIO;Cda. de Gomez
+14;1411;Vera;14;S;4;ROSARIO;Correa
+14;1412;Vera;14;S;4;ROSARIO;Villa Eloisa
+15;1501;9 de Julio;15;S;4;ROSARIO;Timbues
+15;1502;9 de Julio;15;S;4;ROSARIO;Puerto San Martin
+15;1503;9 de Julio;15;S;4;ROSARIO;San Lorenzo
+15;1504;9 de Julio;15;S;4;ROSARIO;Fray Luis Beltran
+15;1505;9 de Julio;15;S;4;ROSARIO;Capitan Bermudez
+15;1506;9 de Julio;15;S;4;ROSARIO;Ricardone
+15;1507;9 de Julio;15;S;4;ROSARIO;Aldao (San Lorenzo)
+15;1508;9 de Julio;15;S;4;ROSARIO;Luis Palacios
+15;1509;9 de Julio;15;S;4;ROSARIO;Carcarana
+15;1510;9 de Julio;15;S;4;ROSARIO;San Jeronimo Sur
+15;1511;9 de Julio;15;S;4;ROSARIO;Roldan
+15;1512;9 de Julio;15;S;4;ROSARIO;Pujato
+15;1513;9 de Julio;15;S;4;ROSARIO;Coronel Arnold
+15;1514;9 de Julio;15;S;4;ROSARIO;Fuentes
+15;1515;9 de Julio;15;S;4;ROSARIO;Villa Mugueta
+16;1601;San Javier;16;S;4;ROSARIO;Ibarlucea
+16;1602;San Javier;16;S;4;ROSARIO;Granadero Baigorria
+16;1603;San Javier;16;S;4;ROSARIO;Rosario
+16;1604;San Javier;16;S;4;ROSARIO;Funes
+16;1605;San Javier;16;S;4;ROSARIO;Zavalla
+16;1606;San Javier;16;S;4;ROSARIO;Perez
+16;1607;San Javier;16;S;4;ROSARIO;Soldini
+16;1608;San Javier;16;S;4;ROSARIO;Villa Gobernador Gálvez
+16;1609;San Javier;16;S;4;ROSARIO;Alvear
+16;1610;San Javier;16;S;4;ROSARIO;Pi#ero
+16;1611;San Javier;16;S;4;ROSARIO;Alvarez
+16;1612;San Javier;16;S;4;ROSARIO;Pueblo Munoz
+16;1613;San Javier;16;S;4;ROSARIO;Acebal
+16;1614;San Javier;16;S;4;ROSARIO;Carmen del Sauce
+16;1615;San Javier;16;S;4;ROSARIO;Coronel Dominguez
+16;1616;San Javier;16;S;4;ROSARIO;Villa Amelia
+16;1617;San Javier;16;S;4;ROSARIO;General Lagos
+16;1618;San Javier;16;S;4;ROSARIO;Arroyo Seco
+16;1619;San Javier;16;S;4;ROSARIO;Fighiera
+16;1620;San Javier;16;S;4;ROSARIO;Coronel Bogado
+16;1621;San Javier;16;S;4;ROSARIO;Albarellos
+16;1622;San Javier;16;S;4;ROSARIO;Pueblo Uranga
+16;1623;San Javier;16;S;4;ROSARIO;Arminda
+16;1625;San Javier;16;S;4;ROSARIO;Pueblo Esther
+17;1701;San Justo;17;S;5;VENADO TUERTO;Cafferata
+17;1702;San Justo;17;S;5;VENADO TUERTO;La Chispa
+17;1703;San Justo;17;S;5;VENADO TUERTO;Murphy
+17;1704;San Justo;17;S;5;VENADO TUERTO;Chovet
+17;1705;San Justo;17;S;5;VENADO TUERTO;Cda. de Ucle
+17;1706;San Justo;17;S;5;VENADO TUERTO;Firmat
+17;1707;San Justo;17;S;5;VENADO TUERTO;Miguel Torres
+17;1708;San Justo;17;S;5;VENADO TUERTO;Carreras
+17;1709;San Justo;17;S;5;VENADO TUERTO;Melincué
+17;1710;San Justo;17;S;5;VENADO TUERTO;Elortondo
+17;1711;San Justo;17;S;5;VENADO TUERTO;Carmen
+17;1712;San Justo;17;S;5;VENADO TUERTO;Chapuy
+17;1713;San Justo;17;S;5;VENADO TUERTO;Venado Tuerto
+17;1714;San Justo;17;S;5;VENADO TUERTO;San Francisco
+17;1715;San Justo;17;S;5;VENADO TUERTO;Maggiolo
+17;1716;San Justo;17;S;5;VENADO TUERTO;San Eduardo
+17;1717;San Justo;17;S;5;VENADO TUERTO;Maria Teresa
+17;1718;San Justo;17;S;5;VENADO TUERTO;Santa Isabel
+17;1719;San Justo;17;S;5;VENADO TUERTO;Villa Cañás
+17;1720;San Justo;17;S;5;VENADO TUERTO;Hughes
+17;1721;San Justo;17;S;5;VENADO TUERTO;Labordeboy
+17;1722;San Justo;17;S;5;VENADO TUERTO;Wheelwright
+17;1723;San Justo;17;S;5;VENADO TUERTO;Teodelina
+17;1724;San Justo;17;S;5;VENADO TUERTO;San Gregorio
+17;1725;San Justo;17;S;5;VENADO TUERTO;Christophersen
+17;1726;San Justo;17;S;5;VENADO TUERTO;Sancti Spiritu
+17;1727;San Justo;17;S;5;VENADO TUERTO;Rufino
+17;1728;San Justo;17;S;5;VENADO TUERTO;Lazzarino
+17;1729;San Justo;17;S;5;VENADO TUERTO;Aron Castellanos
+17;1730;San Justo;17;S;5;VENADO TUERTO;Diego de Alvear
+17;1731;San Justo;17;S;5;VENADO TUERTO;Amenabar
+18;1801;San Cristobal;18;S;4;ROSARIO;Arteaga
+18;1802;San Cristobal;18;S;4;ROSARIO;San Jose de la Esquina
+18;1803;San Cristobal;18;S;4;ROSARIO;Arequito
+18;1804;San Cristobal;18;S;4;ROSARIO;Los Molinos
+18;1805;San Cristobal;18;S;4;ROSARIO;Casilda
+18;1806;San Cristobal;18;S;4;ROSARIO;Sanford
+18;1807;San Cristobal;18;S;4;ROSARIO;Bigand
+18;1808;San Cristobal;18;S;4;ROSARIO;Chabas
+18;1809;San Cristobal;18;S;4;ROSARIO;Villada
+18;1810;San Cristobal;18;S;5;VENADO TUERTO;Los Quirquinchos
+18;1811;San Cristobal;18;S;5;VENADO TUERTO;Berabevu
+18;1812;San Cristobal;18;S;5;VENADO TUERTO;Chanar Ladeado
+18;1813;San Cristobal;18;S;5;VENADO TUERTO;Godeken
+19;1901;Las Colonias;19;S;4;ROSARIO;Bombal
+19;1902;Las Colonias;19;S;4;ROSARIO;Alcorta
+19;1903;Las Colonias;19;S;4;ROSARIO;Juncal
+19;1904;Las Colonias;19;S;4;ROSARIO;Maximo Paz
+19;1905;Las Colonias;19;S;4;ROSARIO;Pavon Arriba
+19;1906;Las Colonias;19;S;4;ROSARIO;Santa Teresa
+19;1907;Las Colonias;19;S;4;ROSARIO;La Vanguardia
+19;1908;Las Colonias;19;S;4;ROSARIO;Cepeda
+19;1909;Las Colonias;19;S;4;ROSARIO;Sargento Cabral
+19;1910;Las Colonias;19;S;4;ROSARIO;Peyrano
+19;1911;Las Colonias;19;S;4;ROSARIO;Sanchez
+19;1912;Las Colonias;19;S;4;ROSARIO;General Gelly
+19;1913;Las Colonias;19;S;4;ROSARIO;Juan B. Molina
+19;1914;Las Colonias;19;S;4;ROSARIO;Godoy
+19;1915;Las Colonias;19;S;4;ROSARIO;Rueda
+19;1916;Las Colonias;19;S;4;ROSARIO;Empalme Villa Constitucion
+19;1917;Las Colonias;19;S;4;ROSARIO;Theobald
+19;1918;Las Colonias;19;S;4;ROSARIO;Villa Constitucion
+19;1919;Las Colonias;19;S;4;ROSARIO;Pavon

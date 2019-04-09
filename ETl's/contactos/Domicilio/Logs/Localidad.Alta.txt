@@ -1,0 +1,57 @@
+nom_loc_ori;departamento_ori;nom_pais;nom_prov
+11 De Septiembre;;Argentina;Buenos Aires
+Aldea Brasilera;;Argentina;Entre Ríos
+Alpa Corral;;Argentina;Códoba
+Alta Gracia;;Argentina;Códoba
+Arribe;;Argentina;Buenos Aires
+Ascencion;;Argentina;Buenos Aires
+Bandera;;Argentina;Santiago del Estero
+Basail;;Argentina;Chaco
+Bialet Masse;;Argentina;Códoba
+Brinkmann;;Argentina;Códoba
+C.A.B.A.;;Argentina;Capital Federal
+Capilla Del Monte;;Argentina;Códoba
+Carpinteria;;Argentina;San Luis
+Colonia Italiana;;Argentina;Códoba
+Colonia Marina;;Argentina;Códoba
+Colonia Vignaud;;Argentina;Códoba
+Concepcion Del Uruguay;;Argentina;Entre Ríos
+Corral De Bustos;;Argentina;Códoba
+Cosquin;;Argentina;Códoba
+Crespo;;Argentina;Entre Ríos
+Cruz Alta;;Argentina;Códoba
+Diamante;;Argentina;Entre Ríos
+El Palomar;;Argentina;Buenos Aires
+Falda De Los Reartes;;Argentina;Códoba
+Federal;;Argentina;Entre Ríos
+Freyre;;Argentina;Códoba
+General Baldissera;;Argentina;Códoba
+Guardia Escolta;;Argentina;Santiago del Estero
+Huerta Grande;;Argentina;Códoba
+Juana Koslay;;Argentina;San Luis
+La Falda;;Argentina;Códoba
+Lavalle;;Argentina;Corrientes
+Los Nogales;;Argentina;Tucumán
+Machagai;;Argentina;Chaco
+Mar Del Plata;;Argentina;Buenos Aires
+Monte Caseros;;Argentina;Corrientes
+Monte Hermoso;;Argentina;Buenos Aires
+Moreno;;Argentina;Buenos Aires
+Munro;;Argentina;Buenos Aires
+Oran;;Argentina;Salta
+Pablo Nogues;;Argentina;Buenos Aires
+Porte;;Argentina;Códoba
+Rincon De Milberg;;Argentina;Buenos Aires
+Rio Grande;;Argentina;Tierra del Fuego
+San Juan;;Argentina;San Juan
+San Luis;;Argentina;San Luis
+San Martin De Los Andes;;Argentina;Neuquén
+San Nicolas De Los Arroyos;;Argentina;Buenos Aires
+San Roque;;Argentina;Códoba
+Santa Rosa De Calamuchita;;Argentina;Códoba
+Santa Sylvina;;Argentina;Chaco
+Tristan Suarez;;Argentina;Buenos Aires
+Villa Angela;;Argentina;Chaco
+Villa Giardino;;Argentina;Códoba
+Villa Nueva;;Argentina;Códoba
+Villa Rio Bermejito;;Argentina;Chaco

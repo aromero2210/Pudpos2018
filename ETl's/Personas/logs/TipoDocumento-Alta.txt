@@ -1,0 +1,2 @@
+nom_tipo_doc_ori
+Documento Nacional De Identidad

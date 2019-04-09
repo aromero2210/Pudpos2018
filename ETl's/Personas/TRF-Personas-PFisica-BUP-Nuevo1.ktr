@@ -1,0 +1,7313 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<transformation>
+  <info>
+    <name>TRF-Personas-PFisica-BUP-Nuevo1</name>
+    <description />
+    <extended_description />
+    <trans_version />
+    <trans_type>Normal</trans_type>
+    <trans_status>0</trans_status>
+    <directory>/</directory>
+    <parameters>
+    </parameters>
+    <log>
+      <trans-log-table>
+        <connection>ETL_LOG</connection>
+        <schema>main</schema>
+        <table>etl_spoon_transf</table>
+        <size_limit_lines />
+        <interval />
+        <timeout_days />
+        <field>
+          <id>ID_BATCH</id>
+          <enabled>Y</enabled>
+          <name>ID_BATCH</name>
+        </field>
+        <field>
+          <id>CHANNEL_ID</id>
+          <enabled>Y</enabled>
+          <name>CHANNEL_ID</name>
+        </field>
+        <field>
+          <id>TRANSNAME</id>
+          <enabled>Y</enabled>
+          <name>TRANSNAME</name>
+        </field>
+        <field>
+          <id>STATUS</id>
+          <enabled>Y</enabled>
+          <name>STATUS</name>
+        </field>
+        <field>
+          <id>LINES_READ</id>
+          <enabled>Y</enabled>
+          <name>LINES_READ</name>
+          <subject />
+        </field>
+        <field>
+          <id>LINES_WRITTEN</id>
+          <enabled>Y</enabled>
+          <name>LINES_WRITTEN</name>
+          <subject />
+        </field>
+        <field>
+          <id>LINES_UPDATED</id>
+          <enabled>Y</enabled>
+          <name>LINES_UPDATED</name>
+          <subject />
+        </field>
+        <field>
+          <id>LINES_INPUT</id>
+          <enabled>Y</enabled>
+          <name>LINES_INPUT</name>
+          <subject />
+        </field>
+        <field>
+          <id>LINES_OUTPUT</id>
+          <enabled>Y</enabled>
+          <name>LINES_OUTPUT</name>
+          <subject />
+        </field>
+        <field>
+          <id>LINES_REJECTED</id>
+          <enabled>Y</enabled>
+          <name>LINES_REJECTED</name>
+          <subject />
+        </field>
+        <field>
+          <id>ERRORS</id>
+          <enabled>Y</enabled>
+          <name>ERRORS</name>
+        </field>
+        <field>
+          <id>STARTDATE</id>
+          <enabled>Y</enabled>
+          <name>STARTDATE</name>
+        </field>
+        <field>
+          <id>ENDDATE</id>
+          <enabled>Y</enabled>
+          <name>ENDDATE</name>
+        </field>
+        <field>
+          <id>LOGDATE</id>
+          <enabled>Y</enabled>
+          <name>LOGDATE</name>
+        </field>
+        <field>
+          <id>DEPDATE</id>
+          <enabled>Y</enabled>
+          <name>DEPDATE</name>
+        </field>
+        <field>
+          <id>REPLAYDATE</id>
+          <enabled>Y</enabled>
+          <name>REPLAYDATE</name>
+        </field>
+        <field>
+          <id>LOG_FIELD</id>
+          <enabled>Y</enabled>
+          <name>LOG_FIELD</name>
+        </field>
+        <field>
+          <id>EXECUTING_SERVER</id>
+          <enabled>N</enabled>
+          <name>EXECUTING_SERVER</name>
+        </field>
+        <field>
+          <id>EXECUTING_USER</id>
+          <enabled>N</enabled>
+          <name>EXECUTING_USER</name>
+        </field>
+        <field>
+          <id>CLIENT</id>
+          <enabled>N</enabled>
+          <name>CLIENT</name>
+        </field>
+      </trans-log-table>
+      <perf-log-table>
+        <connection />
+        <schema />
+        <table />
+        <interval />
+        <timeout_days />
+        <field>
+          <id>ID_BATCH</id>
+          <enabled>Y</enabled>
+          <name>ID_BATCH</name>
+        </field>
+        <field>
+          <id>SEQ_NR</id>
+          <enabled>Y</enabled>
+          <name>SEQ_NR</name>
+        </field>
+        <field>
+          <id>LOGDATE</id>
+          <enabled>Y</enabled>
+          <name>LOGDATE</name>
+        </field>
+        <field>
+          <id>TRANSNAME</id>
+          <enabled>Y</enabled>
+          <name>TRANSNAME</name>
+        </field>
+        <field>
+          <id>STEPNAME</id>
+          <enabled>Y</enabled>
+          <name>STEPNAME</name>
+        </field>
+        <field>
+          <id>STEP_COPY</id>
+          <enabled>Y</enabled>
+          <name>STEP_COPY</name>
+        </field>
+        <field>
+          <id>LINES_READ</id>
+          <enabled>Y</enabled>
+          <name>LINES_READ</name>
+        </field>
+        <field>
+          <id>LINES_WRITTEN</id>
+          <enabled>Y</enabled>
+          <name>LINES_WRITTEN</name>
+        </field>
+        <field>
+          <id>LINES_UPDATED</id>
+          <enabled>Y</enabled>
+          <name>LINES_UPDATED</name>
+        </field>
+        <field>
+          <id>LINES_INPUT</id>
+          <enabled>Y</enabled>
+          <name>LINES_INPUT</name>
+        </field>
+        <field>
+          <id>LINES_OUTPUT</id>
+          <enabled>Y</enabled>
+          <name>LINES_OUTPUT</name>
+        </field>
+        <field>
+          <id>LINES_REJECTED</id>
+          <enabled>Y</enabled>
+          <name>LINES_REJECTED</name>
+        </field>
+        <field>
+          <id>ERRORS</id>
+          <enabled>Y</enabled>
+          <name>ERRORS</name>
+        </field>
+        <field>
+          <id>INPUT_BUFFER_ROWS</id>
+          <enabled>Y</enabled>
+          <name>INPUT_BUFFER_ROWS</name>
+        </field>
+        <field>
+          <id>OUTPUT_BUFFER_ROWS</id>
+          <enabled>Y</enabled>
+          <name>OUTPUT_BUFFER_ROWS</name>
+        </field>
+      </perf-log-table>
+      <channel-log-table>
+        <connection />
+        <schema />
+        <table />
+        <timeout_days />
+        <field>
+          <id>ID_BATCH</id>
+          <enabled>Y</enabled>
+          <name>ID_BATCH</name>
+        </field>
+        <field>
+          <id>CHANNEL_ID</id>
+          <enabled>Y</enabled>
+          <name>CHANNEL_ID</name>
+        </field>
+        <field>
+          <id>LOG_DATE</id>
+          <enabled>Y</enabled>
+          <name>LOG_DATE</name>
+        </field>
+        <field>
+          <id>LOGGING_OBJECT_TYPE</id>
+          <enabled>Y</enabled>
+          <name>LOGGING_OBJECT_TYPE</name>
+        </field>
+        <field>
+          <id>OBJECT_NAME</id>
+          <enabled>Y</enabled>
+          <name>OBJECT_NAME</name>
+        </field>
+        <field>
+          <id>OBJECT_COPY</id>
+          <enabled>Y</enabled>
+          <name>OBJECT_COPY</name>
+        </field>
+        <field>
+          <id>REPOSITORY_DIRECTORY</id>
+          <enabled>Y</enabled>
+          <name>REPOSITORY_DIRECTORY</name>
+        </field>
+        <field>
+          <id>FILENAME</id>
+          <enabled>Y</enabled>
+          <name>FILENAME</name>
+        </field>
+        <field>
+          <id>OBJECT_ID</id>
+          <enabled>Y</enabled>
+          <name>OBJECT_ID</name>
+        </field>
+        <field>
+          <id>OBJECT_REVISION</id>
+          <enabled>Y</enabled>
+          <name>OBJECT_REVISION</name>
+        </field>
+        <field>
+          <id>PARENT_CHANNEL_ID</id>
+          <enabled>Y</enabled>
+          <name>PARENT_CHANNEL_ID</name>
+        </field>
+        <field>
+          <id>ROOT_CHANNEL_ID</id>
+          <enabled>Y</enabled>
+          <name>ROOT_CHANNEL_ID</name>
+        </field>
+      </channel-log-table>
+      <step-log-table>
+        <connection>ETL_LOG</connection>
+        <schema>main</schema>
+        <table>etl_spoon_tstep</table>
+        <timeout_days />
+        <field>
+          <id>ID_BATCH</id>
+          <enabled>Y</enabled>
+          <name>ID_BATCH</name>
+        </field>
+        <field>
+          <id>CHANNEL_ID</id>
+          <enabled>Y</enabled>
+          <name>CHANNEL_ID</name>
+        </field>
+        <field>
+          <id>LOG_DATE</id>
+          <enabled>Y</enabled>
+          <name>LOG_DATE</name>
+        </field>
+        <field>
+          <id>TRANSNAME</id>
+          <enabled>Y</enabled>
+          <name>TRANSNAME</name>
+        </field>
+        <field>
+          <id>STEPNAME</id>
+          <enabled>Y</enabled>
+          <name>STEPNAME</name>
+        </field>
+        <field>
+          <id>STEP_COPY</id>
+          <enabled>Y</enabled>
+          <name>STEP_COPY</name>
+        </field>
+        <field>
+          <id>LINES_READ</id>
+          <enabled>Y</enabled>
+          <name>LINES_READ</name>
+        </field>
+        <field>
+          <id>LINES_WRITTEN</id>
+          <enabled>Y</enabled>
+          <name>LINES_WRITTEN</name>
+        </field>
+        <field>
+          <id>LINES_UPDATED</id>
+          <enabled>Y</enabled>
+          <name>LINES_UPDATED</name>
+        </field>
+        <field>
+          <id>LINES_INPUT</id>
+          <enabled>Y</enabled>
+          <name>LINES_INPUT</name>
+        </field>
+        <field>
+          <id>LINES_OUTPUT</id>
+          <enabled>Y</enabled>
+          <name>LINES_OUTPUT</name>
+        </field>
+        <field>
+          <id>LINES_REJECTED</id>
+          <enabled>Y</enabled>
+          <name>LINES_REJECTED</name>
+        </field>
+        <field>
+          <id>ERRORS</id>
+          <enabled>Y</enabled>
+          <name>ERRORS</name>
+        </field>
+        <field>
+          <id>LOG_FIELD</id>
+          <enabled>N</enabled>
+          <name>LOG_FIELD</name>
+        </field>
+      </step-log-table>
+      <metrics-log-table>
+        <connection />
+        <schema />
+        <table />
+        <timeout_days />
+        <field>
+          <id>ID_BATCH</id>
+          <enabled>Y</enabled>
+          <name>ID_BATCH</name>
+        </field>
+        <field>
+          <id>CHANNEL_ID</id>
+          <enabled>Y</enabled>
+          <name>CHANNEL_ID</name>
+        </field>
+        <field>
+          <id>LOG_DATE</id>
+          <enabled>Y</enabled>
+          <name>LOG_DATE</name>
+        </field>
+        <field>
+          <id>METRICS_DATE</id>
+          <enabled>Y</enabled>
+          <name>METRICS_DATE</name>
+        </field>
+        <field>
+          <id>METRICS_CODE</id>
+          <enabled>Y</enabled>
+          <name>METRICS_CODE</name>
+        </field>
+        <field>
+          <id>METRICS_DESCRIPTION</id>
+          <enabled>Y</enabled>
+          <name>METRICS_DESCRIPTION</name>
+        </field>
+        <field>
+          <id>METRICS_SUBJECT</id>
+          <enabled>Y</enabled>
+          <name>METRICS_SUBJECT</name>
+        </field>
+        <field>
+          <id>METRICS_TYPE</id>
+          <enabled>Y</enabled>
+          <name>METRICS_TYPE</name>
+        </field>
+        <field>
+          <id>METRICS_VALUE</id>
+          <enabled>Y</enabled>
+          <name>METRICS_VALUE</name>
+        </field>
+      </metrics-log-table>
+    </log>
+    <maxdate>
+      <connection />
+      <table />
+      <field />
+      <offset>0.0</offset>
+      <maxdiff>0.0</maxdiff>
+    </maxdate>
+    <size_rowset>10000</size_rowset>
+    <sleep_time_empty>50</sleep_time_empty>
+    <sleep_time_full>50</sleep_time_full>
+    <unique_connections>N</unique_connections>
+    <feedback_shown>Y</feedback_shown>
+    <feedback_size>50000</feedback_size>
+    <using_thread_priorities>Y</using_thread_priorities>
+    <shared_objects_file />
+    <capture_step_performance>N</capture_step_performance>
+    <step_performance_capturing_delay>1000</step_performance_capturing_delay>
+    <step_performance_capturing_size_limit>100</step_performance_capturing_size_limit>
+    <dependencies>
+    </dependencies>
+    <partitionschemas>
+    </partitionschemas>
+    <slaveservers>
+    </slaveservers>
+    <clusterschemas>
+    </clusterschemas>
+    <created_user>-</created_user>
+    <created_date>2019/01/30 12:03:02.307</created_date>
+    <modified_user>-</modified_user>
+    <modified_date>2019/01/30 12:03:02.307</modified_date>
+    <key_for_session_key>H4sIAAAAAAAAAAMAAAAAAAAAAAA=</key_for_session_key>
+    <is_key_private>N</is_key_private>
+  </info>
+  <notepads>
+  </notepads>
+  <connection>
+    <name>BUP</name>
+    <server>${SERVIDOR_BUP}</server>
+    <type>MYSQL</type>
+    <access>Native</access>
+    <database>${BASEDATOS_BUP}</database>
+    <port>3306</port>
+    <username>${USUARIO_BUP}</username>
+    <password>${PASS_BUP}</password>
+    <servername />
+    <data_tablespace />
+    <index_tablespace />
+    <attributes>
+      <attribute>
+        <code>FORCE_IDENTIFIERS_TO_LOWERCASE</code>
+        <attribute>N</attribute>
+      </attribute>
+      <attribute>
+        <code>FORCE_IDENTIFIERS_TO_UPPERCASE</code>
+        <attribute>N</attribute>
+      </attribute>
+      <attribute>
+        <code>IS_CLUSTERED</code>
+        <attribute>N</attribute>
+      </attribute>
+      <attribute>
+        <code>PORT_NUMBER</code>
+        <attribute>3306</attribute>
+      </attribute>
+      <attribute>
+        <code>PRESERVE_RESERVED_WORD_CASE</code>
+        <attribute>Y</attribute>
+      </attribute>
+      <attribute>
+        <code>QUOTE_ALL_FIELDS</code>
+        <attribute>N</attribute>
+      </attribute>
+      <attribute>
+        <code>STREAM_RESULTS</code>
+        <attribute>Y</attribute>
+      </attribute>
+      <attribute>
+        <code>SUPPORTS_BOOLEAN_DATA_TYPE</code>
+        <attribute>Y</attribute>
+      </attribute>
+      <attribute>
+        <code>SUPPORTS_TIMESTAMP_DATA_TYPE</code>
+        <attribute>Y</attribute>
+      </attribute>
+      <attribute>
+        <code>USE_POOLING</code>
+        <attribute>N</attribute>
+      </attribute>
+    </attributes>
+  </connection>
+  <connection>
+    <name>ETL_LOG</name>
+    <server>${SERVIDOR_MDM}</server>
+    <type>POSTGRESQL</type>
+    <access>Native</access>
+    <database>${BASEDATOS_MDM}</database>
+    <port>${PUERTO_MDM}</port>
+    <username>${USUARIO_MDM}</username>
+    <password>${PASS_MDM}</password>
+    <servername />
+    <data_tablespace />
+    <index_tablespace />
+    <attributes>
+      <attribute>
+        <code>FORCE_IDENTIFIERS_TO_LOWERCASE</code>
+        <attribute>N</attribute>
+      </attribute>
+      <attribute>
+        <code>FORCE_IDENTIFIERS_TO_UPPERCASE</code>
+        <attribute>N</attribute>
+      </attribute>
+      <attribute>
+        <code>IS_CLUSTERED</code>
+        <attribute>N</attribute>
+      </attribute>
+      <attribute>
+        <code>PORT_NUMBER</code>
+        <attribute>${PUERTO_MDM}</attribute>
+      </attribute>
+      <attribute>
+        <code>PRESERVE_RESERVED_WORD_CASE</code>
+        <attribute>Y</attribute>
+      </attribute>
+      <attribute>
+        <code>QUOTE_ALL_FIELDS</code>
+        <attribute>N</attribute>
+      </attribute>
+      <attribute>
+        <code>SUPPORTS_BOOLEAN_DATA_TYPE</code>
+        <attribute>N</attribute>
+      </attribute>
+      <attribute>
+        <code>SUPPORTS_TIMESTAMP_DATA_TYPE</code>
+        <attribute>N</attribute>
+      </attribute>
+      <attribute>
+        <code>USE_POOLING</code>
+        <attribute>N</attribute>
+      </attribute>
+    </attributes>
+  </connection>
+  <connection>
+    <name>MDM</name>
+    <server>${SERVIDOR_MDM}</server>
+    <type>POSTGRESQL</type>
+    <access>Native</access>
+    <database>${BASEDATOS_MDM}</database>
+    <port>${PUERTO_MDM}</port>
+    <username>${USUARIO_MDM}</username>
+    <password>${PASS_MDM}</password>
+    <servername />
+    <data_tablespace />
+    <index_tablespace />
+    <attributes>
+      <attribute>
+        <code>FORCE_IDENTIFIERS_TO_LOWERCASE</code>
+        <attribute>N</attribute>
+      </attribute>
+      <attribute>
+        <code>FORCE_IDENTIFIERS_TO_UPPERCASE</code>
+        <attribute>N</attribute>
+      </attribute>
+      <attribute>
+        <code>IS_CLUSTERED</code>
+        <attribute>N</attribute>
+      </attribute>
+      <attribute>
+        <code>PORT_NUMBER</code>
+        <attribute>${PUERTO_MDM}</attribute>
+      </attribute>
+      <attribute>
+        <code>PRESERVE_RESERVED_WORD_CASE</code>
+        <attribute>Y</attribute>
+      </attribute>
+      <attribute>
+        <code>QUOTE_ALL_FIELDS</code>
+        <attribute>N</attribute>
+      </attribute>
+      <attribute>
+        <code>SUPPORTS_BOOLEAN_DATA_TYPE</code>
+        <attribute>Y</attribute>
+      </attribute>
+      <attribute>
+        <code>SUPPORTS_TIMESTAMP_DATA_TYPE</code>
+        <attribute>Y</attribute>
+      </attribute>
+      <attribute>
+        <code>USE_POOLING</code>
+        <attribute>N</attribute>
+      </attribute>
+    </attributes>
+  </connection>
+  <order>
+    <hop>
+      <from>Regex Evaluation</from>
+      <to>Cuit Valido</to>
+      <enabled>Y</enabled>
+    </hop>
+    <hop>
+      <from>Cuit Valido</from>
+      <to>Mapeo de Valores</to>
+      <enabled>Y</enabled>
+    </hop>
+    <hop>
+      <from>Armar Reg 2</from>
+      <to>Renombra valor_dato</to>
+      <enabled>Y</enabled>
+    </hop>
+    <hop>
+      <from>Añadir constantes 2</from>
+      <to>fecha_hora 2</to>
+      <enabled>Y</enabled>
+    </hop>
+    <hop>
+      <from>Obtener Variables 2 2</from>
+      <to>Strings cut 2</to>
+      <enabled>Y</enabled>
+    </hop>
+    <hop>
+      <from>Renombra valor_dato</from>
+      <to>Añadir constantes 2</to>
+      <enabled>Y</enabled>
+    </hop>
+    <hop>
+      <from>Strings cut 2</from>
+      <to>Registro Sin Cuit</to>
+      <enabled>Y</enabled>
+    </hop>
+    <hop>
+      <from>fecha_hora 2</from>
+      <to>Obtener Variables 2 2</to>
+      <enabled>Y</enabled>
+    </hop>
+    <hop>
+      <from>Mapeo de Valores</from>
+      <to>Armar Reg 2</to>
+      <enabled>Y</enabled>
+    </hop>
+    <hop>
+      <from>Var Entorno 2</from>
+      <to>Añadir constantes</to>
+      <enabled>Y</enabled>
+    </hop>
+    <hop>
+      <from>Cuenta Update</from>
+      <to>CANT_PROCESADOS</to>
+      <enabled>Y</enabled>
+    </hop>
+    <hop>
+      <from>Añadir constantes</from>
+      <to>Regex Evaluation</to>
+      <enabled>Y</enabled>
+    </hop>
+    <hop>
+      <from>Añadir constantes</from>
+      <to>Cuenta Update</to>
+      <enabled>Y</enabled>
+    </hop>
+    <hop>
+      <from>Constantes NroDoc</from>
+      <to>Cut Pfisica</to>
+      <enabled>Y</enabled>
+    </hop>
+    <hop>
+      <from>Cut Pfisica</from>
+      <to>Registro Pfisica</to>
+      <enabled>Y</enabled>
+    </hop>
+    <hop>
+      <from>Documento nulo</from>
+      <to>Registro NroDoc</to>
+      <enabled>Y</enabled>
+    </hop>
+    <hop>
+      <from>Fecha Hora</from>
+      <to>Documento nulo</to>
+      <enabled>Y</enabled>
+    </hop>
+    <hop>
+      <from>Registro NroDoc</from>
+      <to>Renombra</to>
+      <enabled>Y</enabled>
+    </hop>
+    <hop>
+      <from>Renombra</from>
+      <to>Constantes NroDoc</to>
+      <enabled>Y</enabled>
+    </hop>
+    <hop>
+      <from>Actualizar Indice Persona</from>
+      <to>SUMA MODIFICADOS</to>
+      <enabled>N</enabled>
+    </hop>
+    <hop>
+      <from>Actualizar Pfisica</from>
+      <to>Actualizar Indice Persona</to>
+      <enabled>Y</enabled>
+    </hop>
+    <hop>
+      <from>Actualizar Pfisica Audit</from>
+      <to>Actualizar Indice Persona</to>
+      <enabled>Y</enabled>
+    </hop>
+    <hop>
+      <from>Armar Reg B</from>
+      <to>Renombra Nro Doc</to>
+      <enabled>Y</enabled>
+    </hop>
+    <hop>
+      <from>Calculadora ALTA</from>
+      <to>CANT_ALTAS</to>
+      <enabled>N</enabled>
+    </hop>
+    <hop>
+      <from>Calculadora BAJA</from>
+      <to>CANT_BORRADOS</to>
+      <enabled>N</enabled>
+    </hop>
+    <hop>
+      <from>Estado Civil MDM</from>
+      <to>Trato Cortesia MDM</to>
+      <enabled>Y</enabled>
+    </hop>
+    <hop>
+      <from>Indice Persona</from>
+      <to>Calculadora ALTA</to>
+      <enabled>N</enabled>
+    </hop>
+    <hop>
+      <from>PFisica ?</from>
+      <to>Persona Fisica 2</to>
+      <enabled>Y</enabled>
+    </hop>
+    <hop>
+      <from>PFisica ?</from>
+      <to>Persona Fisica Audit 2</to>
+      <enabled>Y</enabled>
+    </hop>
+    <hop>
+      <from>Persona Fisica ?</from>
+      <to>Actualizar Pfisica</to>
+      <enabled>Y</enabled>
+    </hop>
+    <hop>
+      <from>Persona Fisica ?</from>
+      <to>Actualizar Pfisica Audit</to>
+      <enabled>Y</enabled>
+    </hop>
+    <hop>
+      <from>Renombra Nro Doc</from>
+      <to>motivo</to>
+      <enabled>Y</enabled>
+    </hop>
+    <hop>
+      <from>SUMA MODIFICADOS</from>
+      <to>CANT_MODIFICADOS</to>
+      <enabled>N</enabled>
+    </hop>
+    <hop>
+      <from>accion A</from>
+      <to>Altas</to>
+      <enabled>Y</enabled>
+    </hop>
+    <hop>
+      <from>accion A</from>
+      <to>cambiar tipo</to>
+      <enabled>Y</enabled>
+    </hop>
+    <hop>
+      <from>accion B</from>
+      <to>Armar Reg B</to>
+      <enabled>Y</enabled>
+    </hop>
+    <hop>
+      <from>accion M</from>
+      <to>Modificados</to>
+      <enabled>Y</enabled>
+    </hop>
+    <hop>
+      <from>accion M</from>
+      <to>cambiar tipos</to>
+      <enabled>Y</enabled>
+    </hop>
+    <hop>
+      <from>cambiar tipo</from>
+      <to>Max( IdPersona)</to>
+      <enabled>Y</enabled>
+    </hop>
+    <hop>
+      <from>cambiar tipos</from>
+      <to>Persona Fisica ?</to>
+      <enabled>Y</enabled>
+    </hop>
+    <hop>
+      <from>motivo</from>
+      <to>Strings Cut</to>
+      <enabled>Y</enabled>
+    </hop>
+    <hop>
+      <from>accion B</from>
+      <to>Calculadora BAJA</to>
+      <enabled>N</enabled>
+    </hop>
+    <hop>
+      <from>Compare fields</from>
+      <to>dummy</to>
+      <enabled>Y</enabled>
+    </hop>
+    <hop>
+      <from>Compare fields</from>
+      <to>accion M</to>
+      <enabled>Y</enabled>
+    </hop>
+    <hop>
+      <from>Compare fields</from>
+      <to>accion A</to>
+      <enabled>Y</enabled>
+    </hop>
+    <hop>
+      <from>Compare fields</from>
+      <to>accion B</to>
+      <enabled>Y</enabled>
+    </hop>
+    <hop>
+      <from>Documento nulo</from>
+      <to>Fecha Ori 2</to>
+      <enabled>Y</enabled>
+    </hop>
+    <hop>
+      <from>Fecha Ori 2</from>
+      <to>Documento</to>
+      <enabled>Y</enabled>
+    </hop>
+    <hop>
+      <from>Documento</from>
+      <to>Estado Civil MDM</to>
+      <enabled>Y</enabled>
+    </hop>
+    <hop>
+      <from>Merge Join</from>
+      <to>Compare fields</to>
+      <enabled>Y</enabled>
+    </hop>
+    <hop>
+      <from>accion B</from>
+      <to>Bajas</to>
+      <enabled>Y</enabled>
+    </hop>
+    <hop>
+      <from>Trato Cortesia MDM</from>
+      <to>Merge Join</to>
+      <enabled>Y</enabled>
+    </hop>
+    <hop>
+      <from>Ordenar filas</from>
+      <to>Fecha Hora</to>
+      <enabled>Y</enabled>
+    </hop>
+    <hop>
+      <from>Selecciona/Renombra valores</from>
+      <to>Merge Join</to>
+      <enabled>Y</enabled>
+    </hop>
+    <hop>
+      <from>Unión Ordenada</from>
+      <to>Indice Persona</to>
+      <enabled>Y</enabled>
+    </hop>
+    <hop>
+      <from>Persona Fisica 2</from>
+      <to>Ordenar filas 2</to>
+      <enabled>Y</enabled>
+    </hop>
+    <hop>
+      <from>Ordenar filas 2</from>
+      <to>Unión Ordenada</to>
+      <enabled>Y</enabled>
+    </hop>
+    <hop>
+      <from>Documento 2</from>
+      <to>es Cuit?</to>
+      <enabled>Y</enabled>
+    </hop>
+    <hop>
+      <from>es Cuit?</from>
+      <to>Documento Cuit</to>
+      <enabled>Y</enabled>
+    </hop>
+    <hop>
+      <from>es Cuit?</from>
+      <to>dummy 2</to>
+      <enabled>Y</enabled>
+    </hop>
+    <hop>
+      <from>Codigo Doc MDM</from>
+      <to>cambiar tipo 2</to>
+      <enabled>Y</enabled>
+    </hop>
+    <hop>
+      <from>Tipo Doc MDM</from>
+      <to>Codigo Doc MDM</to>
+      <enabled>Y</enabled>
+    </hop>
+    <hop>
+      <from>Indice Persona</from>
+      <to>Tipo Doc MDM</to>
+      <enabled>Y</enabled>
+    </hop>
+    <hop>
+      <from>cambiar tipo 2</from>
+      <to>Documento 2</to>
+      <enabled>Y</enabled>
+    </hop>
+    <hop>
+      <from>Mapeo de Valores</from>
+      <to>Ordenar filas</to>
+      <enabled>Y</enabled>
+    </hop>
+    <hop>
+      <from>Cuit Valido</from>
+      <to>Ordenar filas</to>
+      <enabled>Y</enabled>
+    </hop>
+    <hop>
+      <from>Persona Fisica Audit 2</from>
+      <to>Ordenar filas 2</to>
+      <enabled>Y</enabled>
+    </hop>
+    <hop>
+      <from>Seq PF 2</from>
+      <to>Calculadora 2</to>
+      <enabled>Y</enabled>
+    </hop>
+    <hop>
+      <from>Calculadora 2</from>
+      <to>PFisica ?</to>
+      <enabled>Y</enabled>
+    </hop>
+    <hop>
+      <from>Max( IdPersona)</from>
+      <to>Seq PF 2</to>
+      <enabled>Y</enabled>
+    </hop>
+    <hop>
+      <from>Tipo Doc MDM 2</from>
+      <to>Codigo Doc MDM 2</to>
+      <enabled>N</enabled>
+    </hop>
+    <hop>
+      <from>Actualizar Indice Persona</from>
+      <to>Tipo Doc MDM 2</to>
+      <enabled>N</enabled>
+    </hop>
+    <hop>
+      <from>Strings Cut</from>
+      <to>Registro ejecucion</to>
+      <enabled>Y</enabled>
+    </hop>
+    <hop>
+      <from>PF-MDM</from>
+      <to>Ordenar filas 2 2</to>
+      <enabled>Y</enabled>
+    </hop>
+    <hop>
+      <from>PFisica-BUP</from>
+      <to>PF InitCap</to>
+      <enabled>Y</enabled>
+    </hop>
+    <hop>
+      <from>PF InitCap</from>
+      <to>Sin Acento</to>
+      <enabled>Y</enabled>
+    </hop>
+    <hop>
+      <from>Sin Acento</from>
+      <to>Var Entorno 2</to>
+      <enabled>Y</enabled>
+    </hop>
+    <hop>
+      <from>Ordenar filas 2 2</from>
+      <to>Selecciona/Renombra valores</to>
+      <enabled>Y</enabled>
+    </hop>
+    <hop>
+      <from>datos mdm</from>
+      <to>String operations</to>
+      <enabled>Y</enabled>
+    </hop>
+    <hop>
+      <from>String operations</from>
+      <to>PF-MDM</to>
+      <enabled>Y</enabled>
+    </hop>
+  </order>
+  <step>
+    <name>Actualizar Indice Persona</name>
+    <type>InsertUpdate</type>
+    <description />
+    <distribute>N</distribute>
+    <custom_distribution />
+    <copies>1</copies>
+    <partitioning>
+      <method>none</method>
+      <schema_name />
+    </partitioning>
+    <connection>MDM</connection>
+    <commit>100</commit>
+    <update_bypassed>N</update_bypassed>
+    <lookup>
+      <schema>personas</schema>
+      <table>indice_persona</table>
+      <key>
+        <name>id_persona_fisicamdm</name>
+        <field>id_persona_fisica</field>
+        <condition>=</condition>
+        <name2 />
+      </key>
+      <value>
+        <name>ubicacion</name>
+        <rename>pf_audit</rename>
+        <update>Y</update>
+      </value>
+    </lookup>
+    <cluster_schema />
+    <remotesteps>
+      <input>
+      </input>
+      <output>
+      </output>
+    </remotesteps>
+    <GUI>
+      <xloc>2320</xloc>
+      <yloc>32</yloc>
+      <draw>Y</draw>
+    </GUI>
+  </step>
+  <step>
+    <name>Actualizar Pfisica</name>
+    <type>InsertUpdate</type>
+    <description />
+    <distribute>Y</distribute>
+    <custom_distribution />
+    <copies>1</copies>
+    <partitioning>
+      <method>none</method>
+      <schema_name />
+    </partitioning>
+    <connection>MDM</connection>
+    <commit>1000</commit>
+    <update_bypassed>N</update_bypassed>
+    <lookup>
+      <schema>personas</schema>
+      <table>persona_fisica</table>
+      <key>
+        <name>id_persona_fisicamdm</name>
+        <field>id_persona_fisica</field>
+        <condition>=</condition>
+        <name2 />
+      </key>
+      <value>
+        <name>alias</name>
+        <rename>alias_ori</rename>
+        <update>Y</update>
+      </value>
+      <value>
+        <name>apellido_1</name>
+        <rename>apellido_ori</rename>
+        <update>Y</update>
+      </value>
+      <value>
+        <name>apellido_2</name>
+        <rename>apellido_2_ori</rename>
+        <update>Y</update>
+      </value>
+      <value>
+        <name>apellido_3</name>
+        <rename>apellido_3_ori</rename>
+        <update>Y</update>
+      </value>
+      <value>
+        <name>estado_registro</name>
+        <rename>estado_registro_ori</rename>
+        <update>Y</update>
+      </value>
+      <value>
+        <name>fec_nacimiento</name>
+        <rename>fec_nacimiento_ori</rename>
+        <update>Y</update>
+      </value>
+      <value>
+        <name>fecha_defuncion</name>
+        <rename>fecha_defuncion_ori</rename>
+        <update>Y</update>
+      </value>
+      <value>
+        <name>fecha_ultima_actualizacion</name>
+        <rename>fecha_ultima_act</rename>
+        <update>Y</update>
+      </value>
+      <value>
+        <name>genero</name>
+        <rename>genero_ori</rename>
+        <update>Y</update>
+      </value>
+      <value>
+        <name>genero_al_nacer</name>
+        <rename>genero_al_nacer_ori</rename>
+        <update>Y</update>
+      </value>
+      <value>
+        <name>id_ejecucion_proc_act</name>
+        <rename>id_proceso_act</rename>
+        <update>Y</update>
+      </value>
+      <value>
+        <name>id_estado_civil</name>
+        <rename>idestadoCivil</rename>
+        <update>Y</update>
+      </value>
+      <value>
+        <name>id_pre_registro</name>
+        <rename>id_pre_registro_ori</rename>
+        <update>Y</update>
+      </value>
+      <value>
+        <name>id_tratamiento_cortesia</name>
+        <rename>idcortesia</rename>
+        <update>Y</update>
+      </value>
+      <value>
+        <name>imagen_path_perfil</name>
+        <rename>imagen_path_perfil_ori</rename>
+        <update>Y</update>
+      </value>
+      <value>
+        <name>nombre_1</name>
+        <rename>nombre_ori</rename>
+        <update>Y</update>
+      </value>
+      <value>
+        <name>nombre_2</name>
+        <rename>nombre_2_ori</rename>
+        <update>Y</update>
+      </value>
+      <value>
+        <name>nombre_3</name>
+        <rename>nombre_3_ori</rename>
+        <update>Y</update>
+      </value>
+      <value>
+        <name>numero_dni</name>
+        <rename>dni_ori</rename>
+        <update>Y</update>
+      </value>
+      <value>
+        <name>ultima_actualizacion</name>
+        <rename>accion</rename>
+        <update>Y</update>
+      </value>
+    </lookup>
+    <cluster_schema />
+    <remotesteps>
+      <input>
+      </input>
+      <output>
+      </output>
+    </remotesteps>
+    <GUI>
+      <xloc>2192</xloc>
+      <yloc>16</yloc>
+      <draw>Y</draw>
+    </GUI>
+  </step>
+  <step>
+    <name>Actualizar Pfisica Audit</name>
+    <type>InsertUpdate</type>
+    <description />
+    <distribute>Y</distribute>
+    <custom_distribution />
+    <copies>1</copies>
+    <partitioning>
+      <method>none</method>
+      <schema_name />
+    </partitioning>
+    <connection>MDM</connection>
+    <commit>1000</commit>
+    <update_bypassed>N</update_bypassed>
+    <lookup>
+      <schema>personas</schema>
+      <table>persona_fisica_audit</table>
+      <key>
+        <name>id_persona_fisicamdm</name>
+        <field>id_persona_fisica_audit</field>
+        <condition>=</condition>
+        <name2 />
+      </key>
+      <value>
+        <name>apellido_1</name>
+        <rename>apellido_ori</rename>
+        <update>Y</update>
+      </value>
+      <value>
+        <name>apellido_2</name>
+        <rename>apellido_2_ori</rename>
+        <update>Y</update>
+      </value>
+      <value>
+        <name>apellido_3</name>
+        <rename>apellido_3_ori</rename>
+        <update>Y</update>
+      </value>
+      <value>
+        <name>nombre_1</name>
+        <rename>nombre_ori</rename>
+        <update>Y</update>
+      </value>
+      <value>
+        <name>nombre_2</name>
+        <rename>nombre_2_ori</rename>
+        <update>Y</update>
+      </value>
+      <value>
+        <name>nombre_3</name>
+        <rename>nombre_3_ori</rename>
+        <update>Y</update>
+      </value>
+      <value>
+        <name>fec_nacimiento</name>
+        <rename>fec_nacimiento_ori</rename>
+        <update>Y</update>
+      </value>
+      <value>
+        <name>genero_al_nacer</name>
+        <rename>genero_al_nacer_ori</rename>
+        <update>Y</update>
+      </value>
+      <value>
+        <name>genero</name>
+        <rename>genero_ori</rename>
+        <update>Y</update>
+      </value>
+      <value>
+        <name>numero_dni</name>
+        <rename>dni_ori</rename>
+        <update>Y</update>
+      </value>
+      <value>
+        <name>id_tratamiento_cortesia</name>
+        <rename>idcortesia</rename>
+        <update>Y</update>
+      </value>
+      <value>
+        <name>estado_registro</name>
+        <rename>estado_registro_ori</rename>
+        <update>Y</update>
+      </value>
+      <value>
+        <name>alias</name>
+        <rename>alias_ori</rename>
+        <update>Y</update>
+      </value>
+      <value>
+        <name>id_pre_registro</name>
+        <rename>id_pre_registro_ori</rename>
+        <update>Y</update>
+      </value>
+      <value>
+        <name>id_estado_civil</name>
+        <rename>idestadoCivil</rename>
+        <update>Y</update>
+      </value>
+      <value>
+        <name>imagen_path_perfil</name>
+        <rename>imagen_path_perfil_ori</rename>
+        <update>Y</update>
+      </value>
+      <value>
+        <name>ultima_actualizacion</name>
+        <rename>accion</rename>
+        <update>Y</update>
+      </value>
+      <value>
+        <name>fecha_ultima_actualizacion</name>
+        <rename>fecha_ultima_act</rename>
+        <update>Y</update>
+      </value>
+      <value>
+        <name>id_ejecucion_proc_act</name>
+        <rename>id_proceso_act</rename>
+        <update>Y</update>
+      </value>
+      <value>
+        <name>fecha_defuncion</name>
+        <rename>fecha_defuncion_ori</rename>
+        <update>Y</update>
+      </value>
+    </lookup>
+    <cluster_schema />
+    <remotesteps>
+      <input>
+      </input>
+      <output>
+      </output>
+    </remotesteps>
+    <GUI>
+      <xloc>2192</xloc>
+      <yloc>96</yloc>
+      <draw>Y</draw>
+    </GUI>
+  </step>
+  <step>
+    <name>Altas</name>
+    <type>TextFileOutput</type>
+    <description />
+    <distribute>N</distribute>
+    <custom_distribution />
+    <copies>1</copies>
+    <partitioning>
+      <method>none</method>
+      <schema_name />
+    </partitioning>
+    <separator>;</separator>
+    <enclosure>"</enclosure>
+    <enclosure_forced>N</enclosure_forced>
+    <enclosure_fix_disabled>N</enclosure_fix_disabled>
+    <header>Y</header>
+    <footer>N</footer>
+    <format>DOS</format>
+    <compression>None</compression>
+    <encoding />
+    <endedLine />
+    <fileNameInField>N</fileNameInField>
+    <fileNameField />
+    <create_parent_folder>Y</create_parent_folder>
+    <file>
+      <name>${Internal.Entry.Current.Directory}/logs/PersonaFisica-Altas</name>
+      <is_command>N</is_command>
+      <servlet_output>N</servlet_output>
+      <do_not_open_new_file_init>N</do_not_open_new_file_init>
+      <extention>txt</extention>
+      <append>Y</append>
+      <split>N</split>
+      <haspartno>N</haspartno>
+      <add_date>N</add_date>
+      <add_time>N</add_time>
+      <SpecifyFormat>N</SpecifyFormat>
+      <date_time_format />
+      <add_to_result_filenames>Y</add_to_result_filenames>
+      <pad>N</pad>
+      <fast_dump>N</fast_dump>
+      <splitevery>0</splitevery>
+    </file>
+    <fields>
+      <field>
+        <name>alias_ori</name>
+        <type>String</type>
+        <format />
+        <currency />
+        <decimal />
+        <group />
+        <nullif />
+        <trim_type>both</trim_type>
+        <length>-1</length>
+        <precision>-1</precision>
+      </field>
+      <field>
+        <name>apellido_2_ori</name>
+        <type>String</type>
+        <format />
+        <currency />
+        <decimal />
+        <group />
+        <nullif />
+        <trim_type>both</trim_type>
+        <length>-1</length>
+        <precision>-1</precision>
+      </field>
+      <field>
+        <name>apellido_3_ori</name>
+        <type>String</type>
+        <format />
+        <currency />
+        <decimal />
+        <group />
+        <nullif />
+        <trim_type>both</trim_type>
+        <length>-1</length>
+        <precision>-1</precision>
+      </field>
+      <field>
+        <name>apellido_ori</name>
+        <type>String</type>
+        <format />
+        <currency />
+        <decimal />
+        <group />
+        <nullif />
+        <trim_type>both</trim_type>
+        <length>-1</length>
+        <precision>-1</precision>
+      </field>
+      <field>
+        <name>cuit</name>
+        <type>String</type>
+        <format />
+        <currency />
+        <decimal />
+        <group />
+        <nullif />
+        <trim_type>both</trim_type>
+        <length>-1</length>
+        <precision>-1</precision>
+      </field>
+      <field>
+        <name>dni_ori</name>
+        <type>Integer</type>
+        <format>0</format>
+        <currency />
+        <decimal>,</decimal>
+        <group>.</group>
+        <nullif />
+        <trim_type>both</trim_type>
+        <length>-1</length>
+        <precision>-1</precision>
+      </field>
+      <field>
+        <name>estado_civil_ori</name>
+        <type>String</type>
+        <format />
+        <currency />
+        <decimal />
+        <group />
+        <nullif />
+        <trim_type>both</trim_type>
+        <length>-1</length>
+        <precision>-1</precision>
+      </field>
+      <field>
+        <name>estado_registro_ori</name>
+        <type>String</type>
+        <format />
+        <currency />
+        <decimal />
+        <group />
+        <nullif />
+        <trim_type>both</trim_type>
+        <length>-1</length>
+        <precision>-1</precision>
+      </field>
+      <field>
+        <name>fec_nacimiento_ori</name>
+        <type>Date</type>
+        <format />
+        <currency />
+        <decimal />
+        <group />
+        <nullif />
+        <trim_type>both</trim_type>
+        <length>-1</length>
+        <precision>-1</precision>
+      </field>
+      <field>
+        <name>fecha_defuncion_ori</name>
+        <type>String</type>
+        <format />
+        <currency />
+        <decimal />
+        <group />
+        <nullif />
+        <trim_type>both</trim_type>
+        <length>-1</length>
+        <precision>-1</precision>
+      </field>
+      <field>
+        <name>fecha_desde_ori</name>
+        <type>String</type>
+        <format />
+        <currency />
+        <decimal />
+        <group />
+        <nullif />
+        <trim_type>both</trim_type>
+        <length>-1</length>
+        <precision>-1</precision>
+      </field>
+      <field>
+        <name>fecha_hasta_ori</name>
+        <type>String</type>
+        <format />
+        <currency />
+        <decimal />
+        <group />
+        <nullif />
+        <trim_type>both</trim_type>
+        <length>-1</length>
+        <precision>-1</precision>
+      </field>
+      <field>
+        <name>fecha_ultima_act</name>
+        <type>Date</type>
+        <format />
+        <currency />
+        <decimal />
+        <group />
+        <nullif />
+        <trim_type>both</trim_type>
+        <length>-1</length>
+        <precision>-1</precision>
+      </field>
+      <field>
+        <name>genero_al_nacer_ori</name>
+        <type>String</type>
+        <format />
+        <currency />
+        <decimal />
+        <group />
+        <nullif />
+        <trim_type>both</trim_type>
+        <length>-1</length>
+        <precision>-1</precision>
+      </field>
+      <field>
+        <name>genero_ori</name>
+        <type>String</type>
+        <format />
+        <currency />
+        <decimal />
+        <group />
+        <nullif />
+        <trim_type>both</trim_type>
+        <length>-1</length>
+        <precision>-1</precision>
+      </field>
+      <field>
+        <name>id_pre_registro_ori</name>
+        <type>String</type>
+        <format />
+        <currency />
+        <decimal />
+        <group />
+        <nullif />
+        <trim_type>both</trim_type>
+        <length>-1</length>
+        <precision>-1</precision>
+      </field>
+      <field>
+        <name>id_tratamiento_cortesia_ori</name>
+        <type>String</type>
+        <format />
+        <currency />
+        <decimal />
+        <group />
+        <nullif />
+        <trim_type>both</trim_type>
+        <length>-1</length>
+        <precision>-1</precision>
+      </field>
+      <field>
+        <name>idcortesia</name>
+        <type>Integer</type>
+        <format>0</format>
+        <currency />
+        <decimal>,</decimal>
+        <group>.</group>
+        <nullif />
+        <trim_type>both</trim_type>
+        <length>-1</length>
+        <precision>-1</precision>
+      </field>
+      <field>
+        <name>iddoc</name>
+        <type>Integer</type>
+        <format>0</format>
+        <currency />
+        <decimal>,</decimal>
+        <group>.</group>
+        <nullif />
+        <trim_type>both</trim_type>
+        <length>-1</length>
+        <precision>-1</precision>
+      </field>
+      <field>
+        <name>idestadoCivil</name>
+        <type>Integer</type>
+        <format>0</format>
+        <currency />
+        <decimal>,</decimal>
+        <group>.</group>
+        <nullif />
+        <trim_type>both</trim_type>
+        <length>-1</length>
+        <precision>-1</precision>
+      </field>
+      <field>
+        <name>imagen_path_perfil_ori</name>
+        <type>String</type>
+        <format />
+        <currency />
+        <decimal />
+        <group />
+        <nullif />
+        <trim_type>both</trim_type>
+        <length>-1</length>
+        <precision>-1</precision>
+      </field>
+      <field>
+        <name>nacional_extranjero_ori</name>
+        <type>String</type>
+        <format />
+        <currency />
+        <decimal />
+        <group />
+        <nullif />
+        <trim_type>both</trim_type>
+        <length>-1</length>
+        <precision>-1</precision>
+      </field>
+      <field>
+        <name>nombre_2_ori</name>
+        <type>String</type>
+        <format />
+        <currency />
+        <decimal />
+        <group />
+        <nullif />
+        <trim_type>both</trim_type>
+        <length>-1</length>
+        <precision>-1</precision>
+      </field>
+      <field>
+        <name>nombre_3_ori</name>
+        <type>String</type>
+        <format />
+        <currency />
+        <decimal />
+        <group />
+        <nullif />
+        <trim_type>both</trim_type>
+        <length>-1</length>
+        <precision>-1</precision>
+      </field>
+      <field>
+        <name>nombre_ori</name>
+        <type>String</type>
+        <format />
+        <currency />
+        <decimal />
+        <group />
+        <nullif />
+        <trim_type>both</trim_type>
+        <length>-1</length>
+        <precision>-1</precision>
+      </field>
+      <field>
+        <name>nombre_tipodoc_ori</name>
+        <type>String</type>
+        <format />
+        <currency />
+        <decimal />
+        <group />
+        <nullif />
+        <trim_type>both</trim_type>
+        <length>-1</length>
+        <precision>-1</precision>
+      </field>
+      <field>
+        <name>numero_doc_ori</name>
+        <type>Integer</type>
+        <format>0</format>
+        <currency />
+        <decimal>,</decimal>
+        <group>.</group>
+        <nullif />
+        <trim_type>both</trim_type>
+        <length>-1</length>
+        <precision>-1</precision>
+      </field>
+      <field>
+        <name>principal_ori</name>
+        <type>String</type>
+        <format />
+        <currency />
+        <decimal />
+        <group />
+        <nullif />
+        <trim_type>both</trim_type>
+        <length>-1</length>
+        <precision>-1</precision>
+      </field>
+    </fields>
+    <cluster_schema />
+    <remotesteps>
+      <input>
+      </input>
+      <output>
+      </output>
+    </remotesteps>
+    <GUI>
+      <xloc>1872</xloc>
+      <yloc>320</yloc>
+      <draw>Y</draw>
+    </GUI>
+  </step>
+  <step>
+    <name>Armar Reg 2</name>
+    <type>ConcatFields</type>
+    <description />
+    <distribute>Y</distribute>
+    <custom_distribution />
+    <copies>1</copies>
+    <partitioning>
+      <method>none</method>
+      <schema_name />
+    </partitioning>
+    <separator>|</separator>
+    <enclosure>'</enclosure>
+    <enclosure_forced>N</enclosure_forced>
+    <enclosure_fix_disabled>N</enclosure_fix_disabled>
+    <header>N</header>
+    <footer>N</footer>
+    <format>DOS</format>
+    <compression>None</compression>
+    <encoding />
+    <endedLine />
+    <fileNameInField>N</fileNameInField>
+    <fileNameField />
+    <create_parent_folder>Y</create_parent_folder>
+    <file>
+      <name>file</name>
+      <is_command>N</is_command>
+      <servlet_output>N</servlet_output>
+      <do_not_open_new_file_init>N</do_not_open_new_file_init>
+      <extention>txt</extention>
+      <append>N</append>
+      <split>N</split>
+      <haspartno>N</haspartno>
+      <add_date>N</add_date>
+      <add_time>N</add_time>
+      <SpecifyFormat>N</SpecifyFormat>
+      <date_time_format />
+      <add_to_result_filenames>Y</add_to_result_filenames>
+      <pad>N</pad>
+      <fast_dump>N</fast_dump>
+      <splitevery>0</splitevery>
+    </file>
+    <fields>
+      <field>
+        <name>cuit</name>
+        <type>Integer</type>
+        <format />
+        <currency />
+        <decimal />
+        <group />
+        <nullif />
+        <trim_type>none</trim_type>
+        <length>-1</length>
+        <precision>0</precision>
+      </field>
+      <field>
+        <name>apellido_ori</name>
+        <type>None</type>
+        <format />
+        <currency />
+        <decimal />
+        <group />
+        <nullif />
+        <trim_type>none</trim_type>
+        <length>-1</length>
+        <precision>-1</precision>
+      </field>
+      <field>
+        <name>nombre_ori</name>
+        <type>None</type>
+        <format />
+        <currency />
+        <decimal />
+        <group />
+        <nullif />
+        <trim_type>none</trim_type>
+        <length>-1</length>
+        <precision>-1</precision>
+      </field>
+    </fields>
+    <ConcatFields>
+      <targetFieldName>registro</targetFieldName>
+      <targetFieldLength>0</targetFieldLength>
+      <removeSelectedFields>N</removeSelectedFields>
+    </ConcatFields>
+    <cluster_schema />
+    <remotesteps>
+      <input>
+      </input>
+      <output>
+      </output>
+    </remotesteps>
+    <GUI>
+      <xloc>624</xloc>
+      <yloc>224</yloc>
+      <draw>Y</draw>
+    </GUI>
+  </step>
+  <step>
+    <name>Armar Reg B</name>
+    <type>ConcatFields</type>
+    <description />
+    <distribute>Y</distribute>
+    <custom_distribution />
+    <copies>1</copies>
+    <partitioning>
+      <method>none</method>
+      <schema_name />
+    </partitioning>
+    <separator>|</separator>
+    <enclosure>'</enclosure>
+    <enclosure_forced>N</enclosure_forced>
+    <enclosure_fix_disabled>N</enclosure_fix_disabled>
+    <header>N</header>
+    <footer>N</footer>
+    <format>DOS</format>
+    <compression>None</compression>
+    <encoding />
+    <endedLine />
+    <fileNameInField>N</fileNameInField>
+    <fileNameField />
+    <create_parent_folder>Y</create_parent_folder>
+    <file>
+      <name>file</name>
+      <is_command>N</is_command>
+      <servlet_output>N</servlet_output>
+      <do_not_open_new_file_init>Y</do_not_open_new_file_init>
+      <extention>txt</extention>
+      <append>N</append>
+      <split>N</split>
+      <haspartno>N</haspartno>
+      <add_date>N</add_date>
+      <add_time>N</add_time>
+      <SpecifyFormat>N</SpecifyFormat>
+      <date_time_format />
+      <add_to_result_filenames>Y</add_to_result_filenames>
+      <pad>N</pad>
+      <fast_dump>N</fast_dump>
+      <splitevery>0</splitevery>
+    </file>
+    <fields>
+      <field>
+        <name>apellido_ori</name>
+        <type>Integer</type>
+        <format />
+        <currency />
+        <decimal />
+        <group />
+        <nullif />
+        <trim_type>none</trim_type>
+        <length>-1</length>
+        <precision>0</precision>
+      </field>
+      <field>
+        <name>nombre_ori</name>
+        <type>None</type>
+        <format />
+        <currency />
+        <decimal />
+        <group />
+        <nullif />
+        <trim_type>none</trim_type>
+        <length>-1</length>
+        <precision>-1</precision>
+      </field>
+      <field>
+        <name>numero_doc_ori</name>
+        <type>None</type>
+        <format />
+        <currency />
+        <decimal />
+        <group />
+        <nullif />
+        <trim_type>none</trim_type>
+        <length>-1</length>
+        <precision>-1</precision>
+      </field>
+    </fields>
+    <ConcatFields>
+      <targetFieldName>registro</targetFieldName>
+      <targetFieldLength>0</targetFieldLength>
+      <removeSelectedFields>N</removeSelectedFields>
+    </ConcatFields>
+    <cluster_schema />
+    <remotesteps>
+      <input>
+      </input>
+      <output>
+      </output>
+    </remotesteps>
+    <GUI>
+      <xloc>1616</xloc>
+      <yloc>240</yloc>
+      <draw>Y</draw>
+    </GUI>
+  </step>
+  <step>
+    <name>Añadir constantes</name>
+    <type>Constant</type>
+    <description />
+    <distribute>N</distribute>
+    <custom_distribution />
+    <copies>1</copies>
+    <partitioning>
+      <method>none</method>
+      <schema_name />
+    </partitioning>
+    <fields>
+      <field>
+        <name>pf_audit</name>
+        <type>string</type>
+        <format />
+        <currency />
+        <decimal />
+        <group />
+        <nullif>PF</nullif>
+        <length>-1</length>
+        <precision>-1</precision>
+        <set_empty_string>N</set_empty_string>
+      </field>
+      <field>
+        <name>uno</name>
+        <type>integer</type>
+        <format />
+        <currency />
+        <decimal />
+        <group />
+        <nullif>1</nullif>
+        <length>-1</length>
+        <precision>-1</precision>
+        <set_empty_string>N</set_empty_string>
+      </field>
+      <field>
+        <name>cant_procesados</name>
+        <type>Integer</type>
+        <format />
+        <currency />
+        <decimal />
+        <group />
+        <nullif>0</nullif>
+        <length>-1</length>
+        <precision>-1</precision>
+        <set_empty_string>N</set_empty_string>
+      </field>
+    </fields>
+    <cluster_schema />
+    <remotesteps>
+      <input>
+      </input>
+      <output>
+      </output>
+    </remotesteps>
+    <GUI>
+      <xloc>400</xloc>
+      <yloc>64</yloc>
+      <draw>Y</draw>
+    </GUI>
+  </step>
+  <step>
+    <name>Añadir constantes 2</name>
+    <type>Constant</type>
+    <description />
+    <distribute>Y</distribute>
+    <custom_distribution />
+    <copies>1</copies>
+    <partitioning>
+      <method>none</method>
+      <schema_name />
+    </partitioning>
+    <fields>
+      <field>
+        <name>motivo</name>
+        <type>String</type>
+        <format />
+        <currency />
+        <decimal />
+        <group />
+        <nullif>Error Formato</nullif>
+        <length>-1</length>
+        <precision>-1</precision>
+        <set_empty_string>N</set_empty_string>
+      </field>
+      <field>
+        <name>dato</name>
+        <type>String</type>
+        <format />
+        <currency />
+        <decimal />
+        <group />
+        <nullif>Cuit</nullif>
+        <length>-1</length>
+        <precision>-1</precision>
+        <set_empty_string>N</set_empty_string>
+      </field>
+    </fields>
+    <cluster_schema />
+    <remotesteps>
+      <input>
+      </input>
+      <output>
+      </output>
+    </remotesteps>
+    <GUI>
+      <xloc>624</xloc>
+      <yloc>368</yloc>
+      <draw>Y</draw>
+    </GUI>
+  </step>
+  <step>
+    <name>Bajas</name>
+    <type>TextFileOutput</type>
+    <description />
+    <distribute>N</distribute>
+    <custom_distribution />
+    <copies>1</copies>
+    <partitioning>
+      <method>none</method>
+      <schema_name />
+    </partitioning>
+    <separator>;</separator>
+    <enclosure>"</enclosure>
+    <enclosure_forced>N</enclosure_forced>
+    <enclosure_fix_disabled>N</enclosure_fix_disabled>
+    <header>Y</header>
+    <footer>N</footer>
+    <format>DOS</format>
+    <compression>None</compression>
+    <encoding />
+    <endedLine />
+    <fileNameInField>N</fileNameInField>
+    <fileNameField />
+    <create_parent_folder>Y</create_parent_folder>
+    <file>
+      <name>${Internal.Entry.Current.Directory}/logs/PersonaFisica-bajas</name>
+      <is_command>N</is_command>
+      <servlet_output>N</servlet_output>
+      <do_not_open_new_file_init>N</do_not_open_new_file_init>
+      <extention>txt</extention>
+      <append>Y</append>
+      <split>N</split>
+      <haspartno>N</haspartno>
+      <add_date>N</add_date>
+      <add_time>N</add_time>
+      <SpecifyFormat>N</SpecifyFormat>
+      <date_time_format />
+      <add_to_result_filenames>Y</add_to_result_filenames>
+      <pad>N</pad>
+      <fast_dump>N</fast_dump>
+      <splitevery>0</splitevery>
+    </file>
+    <fields>
+      <field>
+        <name>id_persona_fisicamdm</name>
+        <type>Integer</type>
+        <format>0</format>
+        <currency />
+        <decimal>,</decimal>
+        <group>.</group>
+        <nullif />
+        <trim_type>both</trim_type>
+        <length>-1</length>
+        <precision>-1</precision>
+      </field>
+      <field>
+        <name>id_documento</name>
+        <type>Integer</type>
+        <format>0</format>
+        <currency />
+        <decimal>,</decimal>
+        <group>.</group>
+        <nullif />
+        <trim_type>both</trim_type>
+        <length>-1</length>
+        <precision>-1</precision>
+      </field>
+      <field>
+        <name>numero_documento</name>
+        <type>Integer</type>
+        <format>0</format>
+        <currency />
+        <decimal>,</decimal>
+        <group>.</group>
+        <nullif />
+        <trim_type>both</trim_type>
+        <length>-1</length>
+        <precision>-1</precision>
+      </field>
+      <field>
+        <name>ubicacion</name>
+        <type>String</type>
+        <format />
+        <currency />
+        <decimal />
+        <group />
+        <nullif />
+        <trim_type>both</trim_type>
+        <length>-1</length>
+        <precision>-1</precision>
+      </field>
+      <field>
+        <name>apellidos</name>
+        <type>String</type>
+        <format />
+        <currency />
+        <decimal />
+        <group />
+        <nullif />
+        <trim_type>both</trim_type>
+        <length>-1</length>
+        <precision>-1</precision>
+      </field>
+      <field>
+        <name>nombres</name>
+        <type>String</type>
+        <format />
+        <currency />
+        <decimal />
+        <group />
+        <nullif />
+        <trim_type>both</trim_type>
+        <length>-1</length>
+        <precision>-1</precision>
+      </field>
+      <field>
+        <name>fec_nacimiento</name>
+        <type>Date</type>
+        <format />
+        <currency />
+        <decimal />
+        <group />
+        <nullif />
+        <trim_type>both</trim_type>
+        <length>-1</length>
+        <precision>-1</precision>
+      </field>
+      <field>
+        <name>genero_al_nacer</name>
+        <type>String</type>
+        <format />
+        <currency />
+        <decimal />
+        <group />
+        <nullif />
+        <trim_type>both</trim_type>
+        <length>-1</length>
+        <precision>-1</precision>
+      </field>
+      <field>
+        <name>genero</name>
+        <type>String</type>
+        <format />
+        <currency />
+        <decimal />
+        <group />
+        <nullif />
+        <trim_type>both</trim_type>
+        <length>-1</length>
+        <precision>-1</precision>
+      </field>
+      <field>
+        <name>numero_dni</name>
+        <type>Integer</type>
+        <format>0</format>
+        <currency />
+        <decimal>,</decimal>
+        <group>.</group>
+        <nullif />
+        <trim_type>both</trim_type>
+        <length>-1</length>
+        <precision>-1</precision>
+      </field>
+      <field>
+        <name>id_tratamiento_cortesia</name>
+        <type>Integer</type>
+        <format>0</format>
+        <currency />
+        <decimal>,</decimal>
+        <group>.</group>
+        <nullif />
+        <trim_type>both</trim_type>
+        <length>-1</length>
+        <precision>-1</precision>
+      </field>
+      <field>
+        <name>tratamiento_cortesia</name>
+        <type>String</type>
+        <format />
+        <currency />
+        <decimal />
+        <group />
+        <nullif />
+        <trim_type>both</trim_type>
+        <length>-1</length>
+        <precision>-1</precision>
+      </field>
+      <field>
+        <name>estado_registro</name>
+        <type>String</type>
+        <format />
+        <currency />
+        <decimal />
+        <group />
+        <nullif />
+        <trim_type>both</trim_type>
+        <length>-1</length>
+        <precision>-1</precision>
+      </field>
+      <field>
+        <name>alias</name>
+        <type>String</type>
+        <format />
+        <currency />
+        <decimal />
+        <group />
+        <nullif />
+        <trim_type>both</trim_type>
+        <length>-1</length>
+        <precision>-1</precision>
+      </field>
+      <field>
+        <name>id_pre_registro</name>
+        <type>Integer</type>
+        <format>0</format>
+        <currency />
+        <decimal>,</decimal>
+        <group>.</group>
+        <nullif />
+        <trim_type>both</trim_type>
+        <length>-1</length>
+        <precision>-1</precision>
+      </field>
+      <field>
+        <name>id_estado_civil</name>
+        <type>Integer</type>
+        <format>0</format>
+        <currency />
+        <decimal>,</decimal>
+        <group>.</group>
+        <nullif />
+        <trim_type>both</trim_type>
+        <length>-1</length>
+        <precision>-1</precision>
+      </field>
+      <field>
+        <name>estado_civil</name>
+        <type>String</type>
+        <format />
+        <currency />
+        <decimal />
+        <group />
+        <nullif />
+        <trim_type>both</trim_type>
+        <length>-1</length>
+        <precision>-1</precision>
+      </field>
+      <field>
+        <name>imagen_path_perfil</name>
+        <type>String</type>
+        <format />
+        <currency />
+        <decimal />
+        <group />
+        <nullif />
+        <trim_type>both</trim_type>
+        <length>-1</length>
+        <precision>-1</precision>
+      </field>
+      <field>
+        <name>fecha_defuncion</name>
+        <type>Date</type>
+        <format />
+        <currency />
+        <decimal />
+        <group />
+        <nullif />
+        <trim_type>both</trim_type>
+        <length>-1</length>
+        <precision>-1</precision>
+      </field>
+      <field>
+        <name>ultima_actualizacion</name>
+        <type>String</type>
+        <format />
+        <currency />
+        <decimal />
+        <group />
+        <nullif />
+        <trim_type>both</trim_type>
+        <length>-1</length>
+        <precision>-1</precision>
+      </field>
+      <field>
+        <name>fecha_ultima_actualizacion</name>
+        <type>Timestamp</type>
+        <format />
+        <currency />
+        <decimal />
+        <group />
+        <nullif />
+        <trim_type>both</trim_type>
+        <length>-1</length>
+        <precision>-1</precision>
+      </field>
+      <field>
+        <name>id_ejecucion_proc_act</name>
+        <type>Integer</type>
+        <format>0</format>
+        <currency />
+        <decimal>,</decimal>
+        <group>.</group>
+        <nullif />
+        <trim_type>both</trim_type>
+        <length>-1</length>
+        <precision>-1</precision>
+      </field>
+      <field>
+        <name>tipo_documento</name>
+        <type>String</type>
+        <format />
+        <currency />
+        <decimal />
+        <group />
+        <nullif />
+        <trim_type>both</trim_type>
+        <length>-1</length>
+        <precision>-1</precision>
+      </field>
+      <field>
+        <name>cuit</name>
+        <type>String</type>
+        <format />
+        <currency />
+        <decimal />
+        <group />
+        <nullif />
+        <trim_type>both</trim_type>
+        <length>-1</length>
+        <precision>-1</precision>
+      </field>
+      <field>
+        <name>apellido_ori</name>
+        <type>String</type>
+        <format />
+        <currency />
+        <decimal />
+        <group />
+        <nullif />
+        <trim_type>both</trim_type>
+        <length>-1</length>
+        <precision>-1</precision>
+      </field>
+      <field>
+        <name>apellido_2_ori</name>
+        <type>String</type>
+        <format />
+        <currency />
+        <decimal />
+        <group />
+        <nullif />
+        <trim_type>both</trim_type>
+        <length>-1</length>
+        <precision>-1</precision>
+      </field>
+      <field>
+        <name>apellido_3_ori</name>
+        <type>String</type>
+        <format />
+        <currency />
+        <decimal />
+        <group />
+        <nullif />
+        <trim_type>both</trim_type>
+        <length>-1</length>
+        <precision>-1</precision>
+      </field>
+      <field>
+        <name>nombre_ori</name>
+        <type>String</type>
+        <format />
+        <currency />
+        <decimal />
+        <group />
+        <nullif />
+        <trim_type>both</trim_type>
+        <length>-1</length>
+        <precision>-1</precision>
+      </field>
+      <field>
+        <name>nombre_2_ori</name>
+        <type>String</type>
+        <format />
+        <currency />
+        <decimal />
+        <group />
+        <nullif />
+        <trim_type>both</trim_type>
+        <length>-1</length>
+        <precision>-1</precision>
+      </field>
+      <field>
+        <name>nombre_3_ori</name>
+        <type>String</type>
+        <format />
+        <currency />
+        <decimal />
+        <group />
+        <nullif />
+        <trim_type>both</trim_type>
+        <length>-1</length>
+        <precision>-1</precision>
+      </field>
+      <field>
+        <name>fec_nacimiento_ori</name>
+        <type>Date</type>
+        <format>yyyy/MM/dd</format>
+        <currency />
+        <decimal />
+        <group />
+        <nullif />
+        <trim_type>both</trim_type>
+        <length>-1</length>
+        <precision>-1</precision>
+      </field>
+      <field>
+        <name>genero_al_nacer_ori</name>
+        <type>String</type>
+        <format />
+        <currency />
+        <decimal />
+        <group />
+        <nullif />
+        <trim_type>both</trim_type>
+        <length>-1</length>
+        <precision>-1</precision>
+      </field>
+      <field>
+        <name>genero_ori</name>
+        <type>String</type>
+        <format />
+        <currency />
+        <decimal />
+        <group />
+        <nullif />
+        <trim_type>both</trim_type>
+        <length>-1</length>
+        <precision>-1</precision>
+      </field>
+      <field>
+        <name>estado_civil_ori</name>
+        <type>String</type>
+        <format />
+        <currency />
+        <decimal />
+        <group />
+        <nullif />
+        <trim_type>both</trim_type>
+        <length>-1</length>
+        <precision>-1</precision>
+      </field>
+      <field>
+        <name>dni_ori</name>
+        <type>Integer</type>
+        <format>0</format>
+        <currency />
+        <decimal>,</decimal>
+        <group>.</group>
+        <nullif />
+        <trim_type>both</trim_type>
+        <length>-1</length>
+        <precision>-1</precision>
+      </field>
+      <field>
+        <name>numero_doc_ori</name>
+        <type>Integer</type>
+        <format>0</format>
+        <currency />
+        <decimal>,</decimal>
+        <group>.</group>
+        <nullif />
+        <trim_type>both</trim_type>
+        <length>-1</length>
+        <precision>-1</precision>
+      </field>
+      <field>
+        <name>nombre_tipodoc_ori</name>
+        <type>String</type>
+        <format />
+        <currency />
+        <decimal />
+        <group />
+        <nullif />
+        <trim_type>both</trim_type>
+        <length>-1</length>
+        <precision>-1</precision>
+      </field>
+      <field>
+        <name>id_tratamiento_cortesia_ori</name>
+        <type>String</type>
+        <format />
+        <currency />
+        <decimal />
+        <group />
+        <nullif />
+        <trim_type>both</trim_type>
+        <length>-1</length>
+        <precision>-1</precision>
+      </field>
+      <field>
+        <name>tratamiento_cortesia_ori</name>
+        <type>String</type>
+        <format />
+        <currency />
+        <decimal />
+        <group />
+        <nullif />
+        <trim_type>both</trim_type>
+        <length>-1</length>
+        <precision>-1</precision>
+      </field>
+      <field>
+        <name>estado_registro_ori</name>
+        <type>String</type>
+        <format />
+        <currency />
+        <decimal />
+        <group />
+        <nullif />
+        <trim_type>both</trim_type>
+        <length>-1</length>
+        <precision>-1</precision>
+      </field>
+      <field>
+        <name>alias_ori</name>
+        <type>String</type>
+        <format />
+        <currency />
+        <decimal />
+        <group />
+        <nullif />
+        <trim_type>both</trim_type>
+        <length>-1</length>
+        <precision>-1</precision>
+      </field>
+      <field>
+        <name>id_pre_registro_ori</name>
+        <type>String</type>
+        <format />
+        <currency />
+        <decimal />
+        <group />
+        <nullif />
+        <trim_type>both</trim_type>
+        <length>-1</length>
+        <precision>-1</precision>
+      </field>
+      <field>
+        <name>ultima_actualizacion_ori</name>
+        <type>String</type>
+        <format />
+        <currency />
+        <decimal />
+        <group />
+        <nullif />
+        <trim_type>both</trim_type>
+        <length>-1</length>
+        <precision>-1</precision>
+      </field>
+      <field>
+        <name>fecha_ultima_actualizacion_ori</name>
+        <type>String</type>
+        <format />
+        <currency />
+        <decimal />
+        <group />
+        <nullif />
+        <trim_type>both</trim_type>
+        <length>-1</length>
+        <precision>-1</precision>
+      </field>
+      <field>
+        <name>id_ejecucion_proc_act_ori</name>
+        <type>String</type>
+        <format />
+        <currency />
+        <decimal />
+        <group />
+        <nullif />
+        <trim_type>both</trim_type>
+        <length>-1</length>
+        <precision>-1</precision>
+      </field>
+      <field>
+        <name>fecha_defuncion_ori</name>
+        <type>Date</type>
+        <format>yyyy/MM/dd</format>
+        <currency />
+        <decimal />
+        <group />
+        <nullif />
+        <trim_type>both</trim_type>
+        <length>-1</length>
+        <precision>-1</precision>
+      </field>
+      <field>
+        <name>nacional_extranjero_ori</name>
+        <type>String</type>
+        <format />
+        <currency />
+        <decimal />
+        <group />
+        <nullif />
+        <trim_type>both</trim_type>
+        <length>-1</length>
+        <precision>-1</precision>
+      </field>
+      <field>
+        <name>principal_ori</name>
+        <type>String</type>
+        <format />
+        <currency />
+        <decimal />
+        <group />
+        <nullif />
+        <trim_type>both</trim_type>
+        <length>-1</length>
+        <precision>-1</precision>
+      </field>
+      <field>
+        <name>fecha_desde_ori</name>
+        <type>String</type>
+        <format />
+        <currency />
+        <decimal />
+        <group />
+        <nullif />
+        <trim_type>both</trim_type>
+        <length>-1</length>
+        <precision>-1</precision>
+      </field>
+      <field>
+        <name>fecha_hasta_ori</name>
+        <type>String</type>
+        <format />
+        <currency />
+        <decimal />
+        <group />
+        <nullif />
+        <trim_type>both</trim_type>
+        <length>-1</length>
+        <precision>-1</precision>
+      </field>
+      <field>
+        <name>imagen_frente_ori</name>
+        <type>String</type>
+        <format />
+        <currency />
+        <decimal />
+        <group />
+        <nullif />
+        <trim_type>both</trim_type>
+        <length>-1</length>
+        <precision>-1</precision>
+      </field>
+      <field>
+        <name>imagen_reverso_ori</name>
+        <type>String</type>
+        <format />
+        <currency />
+        <decimal />
+        <group />
+        <nullif />
+        <trim_type>both</trim_type>
+        <length>-1</length>
+        <precision>-1</precision>
+      </field>
+      <field>
+        <name>imagen_path_perfil_ori</name>
+        <type>String</type>
+        <format />
+        <currency />
+        <decimal />
+        <group />
+        <nullif />
+        <trim_type>both</trim_type>
+        <length>-1</length>
+        <precision>-1</precision>
+      </field>
+      <field>
+        <name>nom_cod_doc_ori</name>
+        <type>String</type>
+        <format />
+        <currency />
+        <decimal />
+        <group />
+        <nullif />
+        <trim_type>both</trim_type>
+        <length>-1</length>
+        <precision>-1</precision>
+      </field>
+      <field>
+        <name>nro_tramite_ori</name>
+        <type>String</type>
+        <format />
+        <currency />
+        <decimal />
+        <group />
+        <nullif />
+        <trim_type>both</trim_type>
+        <length>-1</length>
+        <precision>-1</precision>
+      </field>
+      <field>
+        <name>id_estado_civil_ori</name>
+        <type>String</type>
+        <format />
+        <currency />
+        <decimal />
+        <group />
+        <nullif />
+        <trim_type>both</trim_type>
+        <length>-1</length>
+        <precision>-1</precision>
+      </field>
+      <field>
+        <name>id_documento_ori</name>
+        <type>String</type>
+        <format />
+        <currency />
+        <decimal />
+        <group />
+        <nullif />
+        <trim_type>both</trim_type>
+        <length>-1</length>
+        <precision>-1</precision>
+      </field>
+      <field>
+        <name>nom_tipo_doc_ori</name>
+        <type>String</type>
+        <format />
+        <currency />
+        <decimal />
+        <group />
+        <nullif />
+        <trim_type>both</trim_type>
+        <length>-1</length>
+        <precision>-1</precision>
+      </field>
+      <field>
+        <name>nomcorto_tipo_doc_ori</name>
+        <type>String</type>
+        <format />
+        <currency />
+        <decimal />
+        <group />
+        <nullif />
+        <trim_type>both</trim_type>
+        <length>-1</length>
+        <precision>-1</precision>
+      </field>
+      <field>
+        <name>id_proceso_act</name>
+        <type>Integer</type>
+        <format>0</format>
+        <currency />
+        <decimal />
+        <group />
+        <nullif />
+        <trim_type>both</trim_type>
+        <length>-1</length>
+        <precision>-1</precision>
+      </field>
+      <field>
+        <name>proceso</name>
+        <type>String</type>
+        <format />
+        <currency />
+        <decimal />
+        <group />
+        <nullif />
+        <trim_type>both</trim_type>
+        <length>-1</length>
+        <precision>-1</precision>
+      </field>
+      <field>
+        <name>cant_procesados</name>
+        <type>Integer</type>
+        <format>0</format>
+        <currency />
+        <decimal />
+        <group />
+        <nullif />
+        <trim_type>both</trim_type>
+        <length>-1</length>
+        <precision>-1</precision>
+      </field>
+      <field>
+        <name>cant_modificados</name>
+        <type>Integer</type>
+        <format>0</format>
+        <currency />
+        <decimal />
+        <group />
+        <nullif />
+        <trim_type>both</trim_type>
+        <length>-1</length>
+        <precision>-1</precision>
+      </field>
+      <field>
+        <name>cant_borrados</name>
+        <type>Integer</type>
+        <format>0</format>
+        <currency />
+        <decimal />
+        <group />
+        <nullif />
+        <trim_type>both</trim_type>
+        <length>-1</length>
+        <precision>-1</precision>
+      </field>
+      <field>
+        <name>cant_iguales</name>
+        <type>Integer</type>
+        <format>0</format>
+        <currency />
+        <decimal />
+        <group />
+        <nullif />
+        <trim_type>both</trim_type>
+        <length>-1</length>
+        <precision>-1</precision>
+      </field>
+      <field>
+        <name>cant_altas</name>
+        <type>Integer</type>
+        <format>0</format>
+        <currency />
+        <decimal />
+        <group />
+        <nullif />
+        <trim_type>both</trim_type>
+        <length>-1</length>
+        <precision>-1</precision>
+      </field>
+      <field>
+        <name>pf_audit</name>
+        <type>String</type>
+        <format />
+        <currency />
+        <decimal />
+        <group />
+        <nullif />
+        <trim_type>both</trim_type>
+        <length>-1</length>
+        <precision>-1</precision>
+      </field>
+      <field>
+        <name>cant_procesados_1</name>
+        <type>Integer</type>
+        <format>0</format>
+        <currency />
+        <decimal>,</decimal>
+        <group>.</group>
+        <nullif />
+        <trim_type>both</trim_type>
+        <length>-1</length>
+        <precision>-1</precision>
+      </field>
+      <field>
+        <name>username</name>
+        <type>String</type>
+        <format />
+        <currency />
+        <decimal />
+        <group />
+        <nullif />
+        <trim_type>both</trim_type>
+        <length>-1</length>
+        <precision>-1</precision>
+      </field>
+      <field>
+        <name>transf_name</name>
+        <type>String</type>
+        <format />
+        <currency />
+        <decimal />
+        <group />
+        <nullif />
+        <trim_type>both</trim_type>
+        <length>-1</length>
+        <precision>-1</precision>
+      </field>
+      <field>
+        <name>Fecha_Ultima_Act</name>
+        <type>Date</type>
+        <format />
+        <currency />
+        <decimal />
+        <group />
+        <nullif />
+        <trim_type>both</trim_type>
+        <length>-1</length>
+        <precision>-1</precision>
+      </field>
+      <field>
+        <name>personafisicadoc</name>
+        <type>Integer</type>
+        <format>0</format>
+        <currency />
+        <decimal>,</decimal>
+        <group>.</group>
+        <nullif />
+        <trim_type>both</trim_type>
+        <length>-1</length>
+        <precision>-1</precision>
+      </field>
+      <field>
+        <name>id_documento_mdm</name>
+        <type>Integer</type>
+        <format>0</format>
+        <currency />
+        <decimal>,</decimal>
+        <group>.</group>
+        <nullif />
+        <trim_type>both</trim_type>
+        <length>-1</length>
+        <precision>-1</precision>
+      </field>
+      <field>
+        <name>iddoc</name>
+        <type>Integer</type>
+        <format>0</format>
+        <currency />
+        <decimal>,</decimal>
+        <group>.</group>
+        <nullif />
+        <trim_type>both</trim_type>
+        <length>-1</length>
+        <precision>-1</precision>
+      </field>
+      <field>
+        <name>idestadocivil</name>
+        <type>Integer</type>
+        <format>0</format>
+        <currency />
+        <decimal>,</decimal>
+        <group>.</group>
+        <nullif />
+        <trim_type>both</trim_type>
+        <length>-1</length>
+        <precision>-1</precision>
+      </field>
+      <field>
+        <name>idcortesia</name>
+        <type>Integer</type>
+        <format>0</format>
+        <currency />
+        <decimal>,</decimal>
+        <group>.</group>
+        <nullif />
+        <trim_type>both</trim_type>
+        <length>-1</length>
+        <precision>-1</precision>
+      </field>
+      <field>
+        <name>accion</name>
+        <type>String</type>
+        <format />
+        <currency />
+        <decimal />
+        <group />
+        <nullif />
+        <trim_type>both</trim_type>
+        <length>-1</length>
+        <precision>-1</precision>
+      </field>
+      <field>
+        <name>uno</name>
+        <type>Integer</type>
+        <format>0</format>
+        <currency />
+        <decimal>,</decimal>
+        <group>.</group>
+        <nullif />
+        <trim_type>both</trim_type>
+        <length>-1</length>
+        <precision>-1</precision>
+      </field>
+    </fields>
+    <cluster_schema />
+    <remotesteps>
+      <input>
+      </input>
+      <output>
+      </output>
+    </remotesteps>
+    <GUI>
+      <xloc>1728</xloc>
+      <yloc>224</yloc>
+      <draw>Y</draw>
+    </GUI>
+  </step>
+  <step>
+    <name>CANT_ALTAS</name>
+    <type>SetVariable</type>
+    <description />
+    <distribute>N</distribute>
+    <custom_distribution />
+    <copies>1</copies>
+    <partitioning>
+      <method>none</method>
+      <schema_name />
+    </partitioning>
+    <fields>
+      <field>
+        <field_name>cantidad</field_name>
+        <variable_name>CANT_ALTAS</variable_name>
+        <variable_type>ROOT_JOB</variable_type>
+        <default_value />
+      </field>
+    </fields>
+    <use_formatting>Y</use_formatting>
+    <cluster_schema />
+    <remotesteps>
+      <input>
+      </input>
+      <output>
+      </output>
+    </remotesteps>
+    <GUI>
+      <xloc>2624</xloc>
+      <yloc>512</yloc>
+      <draw>Y</draw>
+    </GUI>
+  </step>
+  <step>
+    <name>CANT_BORRADOS</name>
+    <type>SetVariable</type>
+    <description />
+    <distribute>N</distribute>
+    <custom_distribution />
+    <copies>1</copies>
+    <partitioning>
+      <method>none</method>
+      <schema_name />
+    </partitioning>
+    <fields>
+      <field>
+        <field_name>cantidad</field_name>
+        <variable_name>CANT_BORRADOS</variable_name>
+        <variable_type>ROOT_JOB</variable_type>
+        <default_value />
+      </field>
+    </fields>
+    <use_formatting>Y</use_formatting>
+    <cluster_schema />
+    <remotesteps>
+      <input>
+      </input>
+      <output>
+      </output>
+    </remotesteps>
+    <GUI>
+      <xloc>1712</xloc>
+      <yloc>400</yloc>
+      <draw>Y</draw>
+    </GUI>
+  </step>
+  <step>
+    <name>CANT_MODIFICADOS</name>
+    <type>SetVariable</type>
+    <description />
+    <distribute>N</distribute>
+    <custom_distribution />
+    <copies>1</copies>
+    <partitioning>
+      <method>none</method>
+      <schema_name />
+    </partitioning>
+    <fields>
+      <field>
+        <field_name>cantidad</field_name>
+        <variable_name>CANT_MODIFICADOS</variable_name>
+        <variable_type>ROOT_JOB</variable_type>
+        <default_value />
+      </field>
+    </fields>
+    <use_formatting>Y</use_formatting>
+    <cluster_schema />
+    <remotesteps>
+      <input>
+      </input>
+      <output>
+      </output>
+    </remotesteps>
+    <GUI>
+      <xloc>2544</xloc>
+      <yloc>0</yloc>
+      <draw>Y</draw>
+    </GUI>
+  </step>
+  <step>
+    <name>CANT_PROCESADOS</name>
+    <type>SetVariable</type>
+    <description />
+    <distribute>N</distribute>
+    <custom_distribution />
+    <copies>1</copies>
+    <partitioning>
+      <method>none</method>
+      <schema_name />
+    </partitioning>
+    <fields>
+      <field>
+        <field_name>cant_procesados</field_name>
+        <variable_name>CANT_PROCESADOS</variable_name>
+        <variable_type>ROOT_JOB</variable_type>
+        <default_value />
+      </field>
+    </fields>
+    <use_formatting>Y</use_formatting>
+    <cluster_schema />
+    <remotesteps>
+      <input>
+      </input>
+      <output>
+      </output>
+    </remotesteps>
+    <GUI>
+      <xloc>400</xloc>
+      <yloc>240</yloc>
+      <draw>Y</draw>
+    </GUI>
+  </step>
+  <step>
+    <name>Calculadora 2</name>
+    <type>Calculator</type>
+    <description />
+    <distribute>Y</distribute>
+    <custom_distribution />
+    <copies>1</copies>
+    <partitioning>
+      <method>none</method>
+      <schema_name />
+    </partitioning>
+    <calculation>
+      <field_name>id_persona_fisica_ori</field_name>
+      <calc_type>ADD</calc_type>
+      <field_a>id_personafisicaori</field_a>
+      <field_b>incremento</field_b>
+      <field_c />
+      <value_type>Integer</value_type>
+      <value_length>-1</value_length>
+      <value_precision>-1</value_precision>
+      <remove>N</remove>
+      <conversion_mask />
+      <decimal_symbol />
+      <grouping_symbol />
+      <currency_symbol />
+    </calculation>
+    <cluster_schema />
+    <remotesteps>
+      <input>
+      </input>
+      <output>
+      </output>
+    </remotesteps>
+    <GUI>
+      <xloc>2224</xloc>
+      <yloc>336</yloc>
+      <draw>Y</draw>
+    </GUI>
+  </step>
+  <step>
+    <name>Calculadora ALTA</name>
+    <type>Calculator</type>
+    <description />
+    <distribute>Y</distribute>
+    <custom_distribution />
+    <copies>1</copies>
+    <partitioning>
+      <method>none</method>
+      <schema_name />
+    </partitioning>
+    <calculation>
+      <field_name>cantidad</field_name>
+      <calc_type>ADD</calc_type>
+      <field_a>cant_altas</field_a>
+      <field_b>uno </field_b>
+      <field_c />
+      <value_type>Integer</value_type>
+      <value_length>-1</value_length>
+      <value_precision>-1</value_precision>
+      <remove>N</remove>
+      <conversion_mask />
+      <decimal_symbol />
+      <grouping_symbol />
+      <currency_symbol />
+    </calculation>
+    <cluster_schema />
+    <remotesteps>
+      <input>
+      </input>
+      <output>
+      </output>
+    </remotesteps>
+    <GUI>
+      <xloc>2624</xloc>
+      <yloc>400</yloc>
+      <draw>Y</draw>
+    </GUI>
+  </step>
+  <step>
+    <name>Calculadora BAJA</name>
+    <type>Calculator</type>
+    <description />
+    <distribute>Y</distribute>
+    <custom_distribution />
+    <copies>1</copies>
+    <partitioning>
+      <method>none</method>
+      <schema_name />
+    </partitioning>
+    <calculation>
+      <field_name>cantidad</field_name>
+      <calc_type>ADD</calc_type>
+      <field_a>cant_borrados</field_a>
+      <field_b>uno</field_b>
+      <field_c />
+      <value_type>None</value_type>
+      <value_length>-1</value_length>
+      <value_precision>-1</value_precision>
+      <remove>N</remove>
+      <conversion_mask />
+      <decimal_symbol />
+      <grouping_symbol />
+      <currency_symbol />
+    </calculation>
+    <cluster_schema />
+    <remotesteps>
+      <input>
+      </input>
+      <output>
+      </output>
+    </remotesteps>
+    <GUI>
+      <xloc>1712</xloc>
+      <yloc>336</yloc>
+      <draw>Y</draw>
+    </GUI>
+  </step>
+  <step>
+    <name>Codigo Doc MDM</name>
+    <type>DBJoin</type>
+    <description />
+    <distribute>Y</distribute>
+    <custom_distribution />
+    <copies>1</copies>
+    <partitioning>
+      <method>none</method>
+      <schema_name />
+    </partitioning>
+    <connection>MDM</connection>
+    <rowlimit>0</rowlimit>
+    <sql>select id_codigo_documento AS id_CodDoc_Alta
+ from personas.codigo_documento  
+where trim(personas.codigo_documento.nombre) = (?)</sql>
+    <outer_join>Y</outer_join>
+    <replace_vars>Y</replace_vars>
+    <parameter>
+      <field>
+        <name>nom_cod_doc_ori</name>
+        <type>String</type>
+      </field>
+    </parameter>
+    <cluster_schema />
+    <remotesteps>
+      <input>
+      </input>
+      <output>
+      </output>
+    </remotesteps>
+    <GUI>
+      <xloc>2832</xloc>
+      <yloc>336</yloc>
+      <draw>Y</draw>
+    </GUI>
+  </step>
+  <step>
+    <name>Codigo Doc MDM 2</name>
+    <type>DBJoin</type>
+    <description />
+    <distribute>Y</distribute>
+    <custom_distribution />
+    <copies>1</copies>
+    <partitioning>
+      <method>none</method>
+      <schema_name />
+    </partitioning>
+    <connection>MDM</connection>
+    <rowlimit>0</rowlimit>
+    <sql>select id_codigo_documento AS id_CodDoc_Alta
+ from personas.codigo_documento  
+where trim(personas.codigo_documento.nombre) = (?)</sql>
+    <outer_join>Y</outer_join>
+    <replace_vars>Y</replace_vars>
+    <parameter>
+      <field>
+        <name>nom_cod_doc_ori</name>
+        <type>String</type>
+      </field>
+    </parameter>
+    <cluster_schema />
+    <remotesteps>
+      <input>
+      </input>
+      <output>
+      </output>
+    </remotesteps>
+    <GUI>
+      <xloc>2579</xloc>
+      <yloc>94</yloc>
+      <draw>Y</draw>
+    </GUI>
+  </step>
+  <step>
+    <name>Compare fields</name>
+    <type>CompareFields</type>
+    <description />
+    <distribute>Y</distribute>
+    <custom_distribution />
+    <copies>1</copies>
+    <partitioning>
+      <method>none</method>
+      <schema_name />
+    </partitioning>
+    <changed_target_step>accion M</changed_target_step>
+    <identical_target_step>dummy</identical_target_step>
+    <added_target_step>accion A</added_target_step>
+    <removed_target_step>accion B</removed_target_step>
+    <add_fields_list>N</add_fields_list>
+    <fields_list_field />
+    <fields>
+      <field>
+        <reference_field>alias</reference_field>
+        <compare_field>alias_ori</compare_field>
+      </field>
+      <field>
+        <reference_field>Apellido-MDM</reference_field>
+        <compare_field>Apellido-Ori</compare_field>
+      </field>
+      <field>
+        <reference_field>estado_registro</reference_field>
+        <compare_field>estado_registro_ori</compare_field>
+      </field>
+      <field>
+        <reference_field>fecha_defuncion</reference_field>
+        <compare_field>fecha_defuncion_ori</compare_field>
+      </field>
+      <field>
+        <reference_field>genero</reference_field>
+        <compare_field>genero_ori</compare_field>
+      </field>
+      <field>
+        <reference_field>id_documento_mdm</reference_field>
+        <compare_field>iddoc</compare_field>
+      </field>
+      <field>
+        <reference_field>id_estado_civil</reference_field>
+        <compare_field>idestadocivil</compare_field>
+      </field>
+      <field>
+        <reference_field>Nombre-MDM</reference_field>
+        <compare_field>Nombre-Ori</compare_field>
+      </field>
+      <field>
+        <reference_field>numero_documento</reference_field>
+        <compare_field>numero_doc_ori</compare_field>
+      </field>
+      <field>
+        <reference_field>fec_nacimiento</reference_field>
+        <compare_field>fec_nacimiento_ori</compare_field>
+      </field>
+    </fields>
+    <cluster_schema />
+    <remotesteps>
+      <input>
+      </input>
+      <output>
+      </output>
+    </remotesteps>
+    <GUI>
+      <xloc>1616</xloc>
+      <yloc>64</yloc>
+      <draw>Y</draw>
+    </GUI>
+  </step>
+  <step>
+    <name>Constantes NroDoc</name>
+    <type>Constant</type>
+    <description />
+    <distribute>Y</distribute>
+    <custom_distribution />
+    <copies>1</copies>
+    <partitioning>
+      <method>none</method>
+      <schema_name />
+    </partitioning>
+    <fields>
+      <field>
+        <name>motivo</name>
+        <type>String</type>
+        <format />
+        <currency />
+        <decimal />
+        <group />
+        <nullif>Valor Nulo</nullif>
+        <length>-1</length>
+        <precision>-1</precision>
+        <set_empty_string>N</set_empty_string>
+      </field>
+      <field>
+        <name>dato</name>
+        <type>String</type>
+        <format />
+        <currency />
+        <decimal />
+        <group />
+        <nullif>NroDocumento</nullif>
+        <length>-1</length>
+        <precision>-1</precision>
+        <set_empty_string>N</set_empty_string>
+      </field>
+    </fields>
+    <cluster_schema />
+    <remotesteps>
+      <input>
+      </input>
+      <output>
+      </output>
+    </remotesteps>
+    <GUI>
+      <xloc>928</xloc>
+      <yloc>256</yloc>
+      <draw>Y</draw>
+    </GUI>
+  </step>
+  <step>
+    <name>Cuenta Update</name>
+    <type>MemoryGroupBy</type>
+    <description />
+    <distribute>N</distribute>
+    <custom_distribution />
+    <copies>1</copies>
+    <partitioning>
+      <method>none</method>
+      <schema_name />
+    </partitioning>
+    <give_back_row>Y</give_back_row>
+    <group>
+      </group>
+    <fields>
+      <field>
+        <aggregate>cant_procesados</aggregate>
+        <subject>cuit</subject>
+        <type>COUNT_ANY</type>
+        <valuefield />
+      </field>
+    </fields>
+    <cluster_schema />
+    <remotesteps>
+      <input>
+      </input>
+      <output>
+      </output>
+    </remotesteps>
+    <GUI>
+      <xloc>400</xloc>
+      <yloc>160</yloc>
+      <draw>Y</draw>
+    </GUI>
+  </step>
+  <step>
+    <name>Cuit Valido</name>
+    <type>FilterRows</type>
+    <description />
+    <distribute>Y</distribute>
+    <custom_distribution />
+    <copies>1</copies>
+    <partitioning>
+      <method>none</method>
+      <schema_name />
+    </partitioning>
+    <send_true_to>Ordenar filas</send_true_to>
+    <send_false_to>Mapeo de Valores</send_false_to>
+    <compare>
+      <condition>
+        <negated>N</negated>
+        <leftvalue>result</leftvalue>
+        <function>=</function>
+        <rightvalue />
+        <value>
+          <name>constant</name>
+          <type>String</type>
+          <text>Y</text>
+          <length>-1</length>
+          <precision>-1</precision>
+          <isnull>N</isnull>
+          <mask />
+        </value>
+      </condition>
+    </compare>
+    <cluster_schema />
+    <remotesteps>
+      <input>
+      </input>
+      <output>
+      </output>
+    </remotesteps>
+    <GUI>
+      <xloc>624</xloc>
+      <yloc>64</yloc>
+      <draw>Y</draw>
+    </GUI>
+  </step>
+  <step>
+    <name>Cut Pfisica</name>
+    <type>StringCut</type>
+    <description />
+    <distribute>Y</distribute>
+    <custom_distribution />
+    <copies>1</copies>
+    <partitioning>
+      <method>none</method>
+      <schema_name />
+    </partitioning>
+    <fields>
+      <field>
+        <in_stream_name>registro</in_stream_name>
+        <out_stream_name />
+        <cut_from>0</cut_from>
+        <cut_to>499</cut_to>
+      </field>
+    </fields>
+    <cluster_schema />
+    <remotesteps>
+      <input>
+      </input>
+      <output>
+      </output>
+    </remotesteps>
+    <GUI>
+      <xloc>928</xloc>
+      <yloc>320</yloc>
+      <draw>Y</draw>
+    </GUI>
+  </step>
+  <step>
+    <name>Documento</name>
+    <type>DBJoin</type>
+    <description />
+    <distribute>Y</distribute>
+    <custom_distribution />
+    <copies>1</copies>
+    <partitioning>
+      <method>none</method>
+      <schema_name />
+    </partitioning>
+    <connection>MDM</connection>
+    <rowlimit>0</rowlimit>
+    <sql>select doc.id_persona_fisica AS PersonaFisicaDoc,
+		doc.id_documento,
+		trim(case when pf.id_persona_fisica  is not null then 
+					trim(coalesce(trim(pf.apellido_1),''))  || ' '|| trim(coalesce(trim(pf.apellido_2),''))  ||' ' || trim(coalesce(trim(pf.apellido_3),'')) ELSE
+					trim(coalesce(trim(pfa.apellido_1),'')) || ' '||  trim(coalesce(trim(pfa.apellido_2),'')) ||' ' || trim(coalesce(trim(pfa.apellido_3),'')) end) apellidos,
+   		trim(case when pf.id_persona_fisica  is not null then 
+					trim(coalesce(trim(pf.nombre_1),''))  ||' ' || trim(coalesce(trim(pf.nombre_2),''))  ||' ' || trim(coalesce(trim(pf.nombre_3),'')) ELSE
+					trim(coalesce(trim(pfa.nombre_1),'')) ||' ' || trim(coalesce(trim(pfa.nombre_2),'')) ||' ' || trim(coalesce(trim(pfa.nombre_3),'')) END ) nombres ,
+		doc.id_documento as iddoc,
+		doc.id_persona_fisica AS id_persona_fisica_ori
+from personas.documento doc
+   left outer join personas.tipo_documento  tipodoc ON  doc.id_tipo_documento = tipodoc.id_tipo_documento
+   left outer join personas.persona_fisica_audit  pfa ON  doc.id_persona_fisica = pfa.id_persona_fisica_audit
+   left outer join personas.persona_fisica  pf ON  doc.id_persona_fisica = pf.id_persona_fisica
+ where numero_documento = ?
+ -- and trim(tipodoc.nombre) = trim(?)
+  and trim(case when pf.id_persona_fisica  is not null then 
+					trim(coalesce(trim(pf.apellido_1),''))  || ' '|| trim(coalesce(trim(pf.apellido_2),''))  ||' ' || trim(coalesce(trim(pf.apellido_3),'')) ELSE
+					trim(coalesce(trim(pfa.apellido_1),'')) || ' '||  trim(coalesce(trim(pfa.apellido_2),'')) ||' ' || trim(coalesce(trim(pfa.apellido_3),'')) end) =  trim(coalesce(?,''))
+  AND trim(case when pf.id_persona_fisica  is not null then 
+					trim(coalesce(trim(pf.nombre_1),''))  ||' ' || trim(coalesce(trim(pf.nombre_2),''))  ||' ' || trim(coalesce(trim(pf.nombre_3),'')) ELSE
+					trim(coalesce(trim(pfa.nombre_1),'')) ||' ' || trim(coalesce(trim(pfa.nombre_2),'')) ||' ' || trim(coalesce(trim(pfa.nombre_3),'')) END ) = trim(coalesce(?,''))</sql>
+    <outer_join>Y</outer_join>
+    <replace_vars>Y</replace_vars>
+    <parameter>
+      <field>
+        <name>numero_doc_ori</name>
+        <type>Integer</type>
+      </field>
+      <field>
+        <name>apellido_ori</name>
+        <type>String</type>
+      </field>
+      <field>
+        <name>nombre_ori</name>
+        <type>String</type>
+      </field>
+    </parameter>
+    <cluster_schema />
+    <remotesteps>
+      <input>
+      </input>
+      <output>
+      </output>
+    </remotesteps>
+    <GUI>
+      <xloc>1136</xloc>
+      <yloc>64</yloc>
+      <draw>Y</draw>
+    </GUI>
+  </step>
+  <step>
+    <name>Documento 2</name>
+    <type>TableOutput</type>
+    <description />
+    <distribute>N</distribute>
+    <custom_distribution />
+    <copies>1</copies>
+    <partitioning>
+      <method>none</method>
+      <schema_name />
+    </partitioning>
+    <connection>MDM</connection>
+    <schema>personas</schema>
+    <table>documento</table>
+    <commit>1000</commit>
+    <truncate>N</truncate>
+    <ignore_errors>N</ignore_errors>
+    <use_batch>N</use_batch>
+    <specify_fields>Y</specify_fields>
+    <partitioning_enabled>N</partitioning_enabled>
+    <partitioning_field />
+    <partitioning_daily>N</partitioning_daily>
+    <partitioning_monthly>Y</partitioning_monthly>
+    <tablename_in_field>N</tablename_in_field>
+    <tablename_field />
+    <tablename_in_table>Y</tablename_in_table>
+    <return_keys>N</return_keys>
+    <return_field />
+    <fields>
+      <field>
+        <column_name>id_persona_fisica</column_name>
+        <stream_name>id_persona_fisica_ori_1</stream_name>
+      </field>
+      <field>
+        <column_name>numero_documento</column_name>
+        <stream_name>numero_doc_ori</stream_name>
+      </field>
+      <field>
+        <column_name>principal</column_name>
+        <stream_name>principal_ori</stream_name>
+      </field>
+      <field>
+        <column_name>fecha_desde</column_name>
+        <stream_name>fecha_desde_ori</stream_name>
+      </field>
+      <field>
+        <column_name>fecha_hasta</column_name>
+        <stream_name>fecha_hasta_ori</stream_name>
+      </field>
+      <field>
+        <column_name>path_imagen_frente</column_name>
+        <stream_name>imagen_frente_ori</stream_name>
+      </field>
+      <field>
+        <column_name>path_imagen_reverso</column_name>
+        <stream_name>imagen_reverso_ori</stream_name>
+      </field>
+      <field>
+        <column_name>nacional_extranjero</column_name>
+        <stream_name>nacional_extranjero_ori</stream_name>
+      </field>
+      <field>
+        <column_name>id_codigo_documento</column_name>
+        <stream_name>id_coddoc_alta</stream_name>
+      </field>
+      <field>
+        <column_name>id_tipo_documento</column_name>
+        <stream_name>id_tipodoc_alta</stream_name>
+      </field>
+      <field>
+        <column_name>id_ejecucion_proc_act</column_name>
+        <stream_name>id_proceso_act</stream_name>
+      </field>
+      <field>
+        <column_name>ultima_actualizacion</column_name>
+        <stream_name>accion</stream_name>
+      </field>
+      <field>
+        <column_name>fecha_ultima_actualizacion</column_name>
+        <stream_name>Fecha_Ultima_Act</stream_name>
+      </field>
+    </fields>
+    <cluster_schema />
+    <remotesteps>
+      <input>
+      </input>
+      <output>
+      </output>
+    </remotesteps>
+    <GUI>
+      <xloc>3024</xloc>
+      <yloc>336</yloc>
+      <draw>Y</draw>
+    </GUI>
+  </step>
+  <step>
+    <name>Documento Cuit</name>
+    <type>TableOutput</type>
+    <description />
+    <distribute>N</distribute>
+    <custom_distribution />
+    <copies>1</copies>
+    <partitioning>
+      <method>none</method>
+      <schema_name />
+    </partitioning>
+    <connection>MDM</connection>
+    <schema>personas</schema>
+    <table>documento</table>
+    <commit>1000</commit>
+    <truncate>N</truncate>
+    <ignore_errors>N</ignore_errors>
+    <use_batch>N</use_batch>
+    <specify_fields>Y</specify_fields>
+    <partitioning_enabled>N</partitioning_enabled>
+    <partitioning_field />
+    <partitioning_daily>N</partitioning_daily>
+    <partitioning_monthly>Y</partitioning_monthly>
+    <tablename_in_field>N</tablename_in_field>
+    <tablename_field />
+    <tablename_in_table>Y</tablename_in_table>
+    <return_keys>N</return_keys>
+    <return_field />
+    <fields>
+      <field>
+        <column_name>id_persona_fisica</column_name>
+        <stream_name>id_persona_fisica_ori_1</stream_name>
+      </field>
+      <field>
+        <column_name>numero_documento</column_name>
+        <stream_name>cuit</stream_name>
+      </field>
+      <field>
+        <column_name>principal</column_name>
+        <stream_name>principal_ori</stream_name>
+      </field>
+      <field>
+        <column_name>fecha_desde</column_name>
+        <stream_name>fecha_desde_ori</stream_name>
+      </field>
+      <field>
+        <column_name>fecha_hasta</column_name>
+        <stream_name>fecha_hasta_ori</stream_name>
+      </field>
+      <field>
+        <column_name>path_imagen_frente</column_name>
+        <stream_name>imagen_frente_ori</stream_name>
+      </field>
+      <field>
+        <column_name>path_imagen_reverso</column_name>
+        <stream_name>imagen_reverso_ori</stream_name>
+      </field>
+      <field>
+        <column_name>nacional_extranjero</column_name>
+        <stream_name>nacional_extranjero_ori</stream_name>
+      </field>
+      <field>
+        <column_name>id_codigo_documento</column_name>
+        <stream_name>id_coddoc_alta</stream_name>
+      </field>
+      <field>
+        <column_name>id_ejecucion_proc_act</column_name>
+        <stream_name>id_proceso_act</stream_name>
+      </field>
+      <field>
+        <column_name>ultima_actualizacion</column_name>
+        <stream_name>accion</stream_name>
+      </field>
+      <field>
+        <column_name>fecha_ultima_actualizacion</column_name>
+        <stream_name>Fecha_Ultima_Act</stream_name>
+      </field>
+      <field>
+        <column_name>id_tipo_documento</column_name>
+        <stream_name>id_tipodoc_alta</stream_name>
+      </field>
+    </fields>
+    <cluster_schema />
+    <remotesteps>
+      <input>
+      </input>
+      <output>
+      </output>
+    </remotesteps>
+    <GUI>
+      <xloc>3216</xloc>
+      <yloc>336</yloc>
+      <draw>Y</draw>
+    </GUI>
+  </step>
+  <step>
+    <name>Documento nulo</name>
+    <type>FilterRows</type>
+    <description />
+    <distribute>Y</distribute>
+    <custom_distribution />
+    <copies>1</copies>
+    <partitioning>
+      <method>none</method>
+      <schema_name />
+    </partitioning>
+    <send_true_to>Registro NroDoc</send_true_to>
+    <send_false_to>Fecha Ori 2</send_false_to>
+    <compare>
+      <condition>
+        <negated>N</negated>
+        <leftvalue>numero_doc_ori</leftvalue>
+        <function>IS NULL</function>
+        <rightvalue />
+        <value>
+          <name>constant</name>
+          <type>String</type>
+          <text>Y</text>
+          <length>-1</length>
+          <precision>-1</precision>
+          <isnull>N</isnull>
+          <mask />
+        </value>
+      </condition>
+    </compare>
+    <cluster_schema />
+    <remotesteps>
+      <input>
+      </input>
+      <output>
+      </output>
+    </remotesteps>
+    <GUI>
+      <xloc>928</xloc>
+      <yloc>64</yloc>
+      <draw>Y</draw>
+    </GUI>
+  </step>
+  <step>
+    <name>Estado Civil MDM</name>
+    <type>DBJoin</type>
+    <description />
+    <distribute>Y</distribute>
+    <custom_distribution />
+    <copies>1</copies>
+    <partitioning>
+      <method>none</method>
+      <schema_name />
+    </partitioning>
+    <connection>MDM</connection>
+    <rowlimit>0</rowlimit>
+    <sql>select id_estado_civil as idestadoCivil
+ from personas.estado_civil
+where trim(personas.estado_civil.estado_civil) = trim(?)</sql>
+    <outer_join>Y</outer_join>
+    <replace_vars>Y</replace_vars>
+    <parameter>
+      <field>
+        <name>estado_civil_ori</name>
+        <type>Integer</type>
+      </field>
+    </parameter>
+    <cluster_schema />
+    <remotesteps>
+      <input>
+      </input>
+      <output>
+      </output>
+    </remotesteps>
+    <GUI>
+      <xloc>1248</xloc>
+      <yloc>64</yloc>
+      <draw>Y</draw>
+    </GUI>
+  </step>
+  <step>
+    <name>Fecha Hora</name>
+    <type>SystemInfo</type>
+    <description />
+    <distribute>Y</distribute>
+    <custom_distribution />
+    <copies>1</copies>
+    <partitioning>
+      <method>none</method>
+      <schema_name />
+    </partitioning>
+    <fields>
+      <field>
+        <name>Fecha_Ultima_Act</name>
+        <type>system date (variable)</type>
+      </field>
+    </fields>
+    <cluster_schema />
+    <remotesteps>
+      <input>
+      </input>
+      <output>
+      </output>
+    </remotesteps>
+    <GUI>
+      <xloc>832</xloc>
+      <yloc>64</yloc>
+      <draw>Y</draw>
+    </GUI>
+  </step>
+  <step>
+    <name>Fecha Ori 2</name>
+    <type>SelectValues</type>
+    <description />
+    <distribute>N</distribute>
+    <custom_distribution />
+    <copies>1</copies>
+    <partitioning>
+      <method>none</method>
+      <schema_name />
+    </partitioning>
+    <fields>
+      <select_unspecified>Y</select_unspecified>
+      <remove>
+        <name>uno</name>
+      </remove>
+      <remove>
+        <name>prefijo</name>
+      </remove>
+      <remove>
+        <name>numero</name>
+      </remove>
+      <remove>
+        <name>separador1</name>
+      </remove>
+      <remove>
+        <name>separador2</name>
+      </remove>
+      <remove>
+        <name>verificador</name>
+      </remove>
+      <meta>
+        <name>fec_nacimiento_ori</name>
+        <rename>fec_nacimiento_ori</rename>
+        <type>String</type>
+        <length>-2</length>
+        <precision>-2</precision>
+        <conversion_mask>yyyy/MM/dd</conversion_mask>
+        <date_format_lenient>false</date_format_lenient>
+        <date_format_locale />
+        <date_format_timezone />
+        <lenient_string_to_number>false</lenient_string_to_number>
+        <encoding />
+        <decimal_symbol />
+        <grouping_symbol />
+        <currency_symbol />
+        <storage_type />
+      </meta>
+      <meta>
+        <name>fecha_defuncion_ori</name>
+        <rename>fecha_defuncion_ori</rename>
+        <type>String</type>
+        <length>-2</length>
+        <precision>-2</precision>
+        <conversion_mask>yyyy/MM/dd</conversion_mask>
+        <date_format_lenient>false</date_format_lenient>
+        <date_format_locale />
+        <date_format_timezone />
+        <lenient_string_to_number>false</lenient_string_to_number>
+        <encoding />
+        <decimal_symbol />
+        <grouping_symbol />
+        <currency_symbol />
+        <storage_type />
+      </meta>
+    </fields>
+    <cluster_schema />
+    <remotesteps>
+      <input>
+      </input>
+      <output>
+      </output>
+    </remotesteps>
+    <GUI>
+      <xloc>1040</xloc>
+      <yloc>64</yloc>
+      <draw>Y</draw>
+    </GUI>
+  </step>
+  <step>
+    <name>Indice Persona</name>
+    <type>TableOutput</type>
+    <description />
+    <distribute>N</distribute>
+    <custom_distribution />
+    <copies>1</copies>
+    <partitioning>
+      <method>none</method>
+      <schema_name />
+    </partitioning>
+    <connection>MDM</connection>
+    <schema>personas</schema>
+    <table>indice_persona</table>
+    <commit>1</commit>
+    <truncate>N</truncate>
+    <ignore_errors>N</ignore_errors>
+    <use_batch>N</use_batch>
+    <specify_fields>Y</specify_fields>
+    <partitioning_enabled>N</partitioning_enabled>
+    <partitioning_field />
+    <partitioning_daily>N</partitioning_daily>
+    <partitioning_monthly>Y</partitioning_monthly>
+    <tablename_in_field>N</tablename_in_field>
+    <tablename_field />
+    <tablename_in_table>Y</tablename_in_table>
+    <return_keys>N</return_keys>
+    <return_field />
+    <fields>
+      <field>
+        <column_name>ubicacion</column_name>
+        <stream_name>pf_audit</stream_name>
+      </field>
+      <field>
+        <column_name>id_persona_fisica</column_name>
+        <stream_name>id_persona_fisica_ori_1</stream_name>
+      </field>
+    </fields>
+    <cluster_schema />
+    <remotesteps>
+      <input>
+      </input>
+      <output>
+      </output>
+    </remotesteps>
+    <GUI>
+      <xloc>2624</xloc>
+      <yloc>208</yloc>
+      <draw>Y</draw>
+    </GUI>
+  </step>
+  <step>
+    <name>Mapeo de Valores</name>
+    <type>ValueMapper</type>
+    <description />
+    <distribute>N</distribute>
+    <custom_distribution />
+    <copies>1</copies>
+    <partitioning>
+      <method>none</method>
+      <schema_name />
+    </partitioning>
+    <field_to_use>pf_audit</field_to_use>
+    <target_field />
+    <non_match_default />
+    <fields>
+      <field>
+        <source_value>PF</source_value>
+        <target_value>PFA</target_value>
+      </field>
+    </fields>
+    <cluster_schema />
+    <remotesteps>
+      <input>
+      </input>
+      <output>
+      </output>
+    </remotesteps>
+    <GUI>
+      <xloc>624</xloc>
+      <yloc>144</yloc>
+      <draw>Y</draw>
+    </GUI>
+  </step>
+  <step>
+    <name>Max( IdPersona)</name>
+    <type>DBJoin</type>
+    <description />
+    <distribute>N</distribute>
+    <custom_distribution />
+    <copies>1</copies>
+    <partitioning>
+      <method>none</method>
+      <schema_name />
+    </partitioning>
+    <connection>MDM</connection>
+    <rowlimit>0</rowlimit>
+    <sql>
+ select coalesce( MAX(id_persona_fisica),0) + 1 AS id_personafisicaori
+ from personas.indice_persona</sql>
+    <outer_join>Y</outer_join>
+    <replace_vars>N</replace_vars>
+    <parameter>
+    </parameter>
+    <cluster_schema />
+    <remotesteps>
+      <input>
+      </input>
+      <output>
+      </output>
+    </remotesteps>
+    <GUI>
+      <xloc>2048</xloc>
+      <yloc>224</yloc>
+      <draw>Y</draw>
+    </GUI>
+  </step>
+  <step>
+    <name>Merge Join</name>
+    <type>MergeJoin</type>
+    <description />
+    <distribute>N</distribute>
+    <custom_distribution />
+    <copies>1</copies>
+    <partitioning>
+      <method>none</method>
+      <schema_name />
+    </partitioning>
+    <join_type>FULL OUTER</join_type>
+    <step1>Selecciona/Renombra valores</step1>
+    <step2>Trato Cortesia MDM</step2>
+    <keys_1>
+      <key>numero_documento</key>
+      <key>Apellido-MDM</key>
+      <key>Nombre-MDM</key>
+    </keys_1>
+    <keys_2>
+      <key>numero_doc_ori</key>
+      <key>Apellido-Ori</key>
+      <key>Nombre-Ori</key>
+    </keys_2>
+    <cluster_schema />
+    <remotesteps>
+      <input>
+      </input>
+      <output>
+      </output>
+    </remotesteps>
+    <GUI>
+      <xloc>1488</xloc>
+      <yloc>64</yloc>
+      <draw>Y</draw>
+    </GUI>
+  </step>
+  <step>
+    <name>Modificados</name>
+    <type>TextFileOutput</type>
+    <description />
+    <distribute>Y</distribute>
+    <custom_distribution />
+    <copies>1</copies>
+    <partitioning>
+      <method>none</method>
+      <schema_name />
+    </partitioning>
+    <separator>;</separator>
+    <enclosure>"</enclosure>
+    <enclosure_forced>N</enclosure_forced>
+    <enclosure_fix_disabled>N</enclosure_fix_disabled>
+    <header>Y</header>
+    <footer>N</footer>
+    <format>DOS</format>
+    <compression>None</compression>
+    <encoding />
+    <endedLine />
+    <fileNameInField>N</fileNameInField>
+    <fileNameField />
+    <create_parent_folder>Y</create_parent_folder>
+    <file>
+      <name>${Internal.Entry.Current.Directory}/logs/PersonaFisica-Modificados1</name>
+      <is_command>N</is_command>
+      <servlet_output>N</servlet_output>
+      <do_not_open_new_file_init>N</do_not_open_new_file_init>
+      <extention>txt</extention>
+      <append>N</append>
+      <split>N</split>
+      <haspartno>N</haspartno>
+      <add_date>N</add_date>
+      <add_time>N</add_time>
+      <SpecifyFormat>N</SpecifyFormat>
+      <date_time_format />
+      <add_to_result_filenames>N</add_to_result_filenames>
+      <pad>N</pad>
+      <fast_dump>N</fast_dump>
+      <splitevery>0</splitevery>
+    </file>
+    <fields>
+      <field>
+        <name>alias</name>
+        <type>String</type>
+        <format />
+        <currency />
+        <decimal />
+        <group />
+        <nullif />
+        <trim_type>both</trim_type>
+        <length>-1</length>
+        <precision>-1</precision>
+      </field>
+      <field>
+        <name>alias_ori</name>
+        <type>Binary</type>
+        <format />
+        <currency />
+        <decimal />
+        <group />
+        <nullif />
+        <trim_type>both</trim_type>
+        <length>-1</length>
+        <precision>-1</precision>
+      </field>
+      <field>
+        <name>apellido_ori</name>
+        <type>String</type>
+        <format />
+        <currency />
+        <decimal />
+        <group />
+        <nullif />
+        <trim_type>both</trim_type>
+        <length>-1</length>
+        <precision>-1</precision>
+      </field>
+      <field>
+        <name>apellidos</name>
+        <type>String</type>
+        <format />
+        <currency />
+        <decimal />
+        <group />
+        <nullif />
+        <trim_type>both</trim_type>
+        <length>-1</length>
+        <precision>-1</precision>
+      </field>
+      <field>
+        <name>estado_registro_ori</name>
+        <type>Binary</type>
+        <format />
+        <currency />
+        <decimal />
+        <group />
+        <nullif />
+        <trim_type>both</trim_type>
+        <length>-1</length>
+        <precision>-1</precision>
+      </field>
+      <field>
+        <name>fec_nacimiento</name>
+        <type>Date</type>
+        <format />
+        <currency />
+        <decimal />
+        <group />
+        <nullif />
+        <trim_type>both</trim_type>
+        <length>-1</length>
+        <precision>-1</precision>
+      </field>
+      <field>
+        <name>fec_nacimiento_ori</name>
+        <type>Date</type>
+        <format />
+        <currency />
+        <decimal />
+        <group />
+        <nullif />
+        <trim_type>both</trim_type>
+        <length>-1</length>
+        <precision>-1</precision>
+      </field>
+      <field>
+        <name>fecha_defuncion</name>
+        <type>Date</type>
+        <format />
+        <currency />
+        <decimal />
+        <group />
+        <nullif />
+        <trim_type>both</trim_type>
+        <length>-1</length>
+        <precision>-1</precision>
+      </field>
+      <field>
+        <name>fecha_defuncion_ori</name>
+        <type>Date</type>
+        <format />
+        <currency />
+        <decimal />
+        <group />
+        <nullif />
+        <trim_type>both</trim_type>
+        <length>-1</length>
+        <precision>-1</precision>
+      </field>
+      <field>
+        <name>genero</name>
+        <type>String</type>
+        <format />
+        <currency />
+        <decimal />
+        <group />
+        <nullif />
+        <trim_type>both</trim_type>
+        <length>-1</length>
+        <precision>-1</precision>
+      </field>
+      <field>
+        <name>genero_al_nacer</name>
+        <type>String</type>
+        <format />
+        <currency />
+        <decimal />
+        <group />
+        <nullif />
+        <trim_type>both</trim_type>
+        <length>-1</length>
+        <precision>-1</precision>
+      </field>
+      <field>
+        <name>genero_al_nacer_ori</name>
+        <type>Binary</type>
+        <format />
+        <currency />
+        <decimal />
+        <group />
+        <nullif />
+        <trim_type>both</trim_type>
+        <length>-1</length>
+        <precision>-1</precision>
+      </field>
+      <field>
+        <name>genero_ori</name>
+        <type>String</type>
+        <format />
+        <currency />
+        <decimal />
+        <group />
+        <nullif />
+        <trim_type>both</trim_type>
+        <length>-1</length>
+        <precision>-1</precision>
+      </field>
+      <field>
+        <name>id_documento</name>
+        <type>Integer</type>
+        <format>0</format>
+        <currency />
+        <decimal>,</decimal>
+        <group>.</group>
+        <nullif />
+        <trim_type>both</trim_type>
+        <length>-1</length>
+        <precision>-1</precision>
+      </field>
+      <field>
+        <name>id_documento_ori</name>
+        <type>Binary</type>
+        <format />
+        <currency />
+        <decimal />
+        <group />
+        <nullif />
+        <trim_type>both</trim_type>
+        <length>-1</length>
+        <precision>-1</precision>
+      </field>
+      <field>
+        <name>id_estado_civil</name>
+        <type>Integer</type>
+        <format>0</format>
+        <currency />
+        <decimal>,</decimal>
+        <group>.</group>
+        <nullif />
+        <trim_type>both</trim_type>
+        <length>-1</length>
+        <precision>-1</precision>
+      </field>
+      <field>
+        <name>id_pre_registro</name>
+        <type>Integer</type>
+        <format>0</format>
+        <currency />
+        <decimal>,</decimal>
+        <group>.</group>
+        <nullif />
+        <trim_type>both</trim_type>
+        <length>-1</length>
+        <precision>-1</precision>
+      </field>
+      <field>
+        <name>id_pre_registro_ori</name>
+        <type>Binary</type>
+        <format />
+        <currency />
+        <decimal />
+        <group />
+        <nullif />
+        <trim_type>both</trim_type>
+        <length>-1</length>
+        <precision>-1</precision>
+      </field>
+      <field>
+        <name>id_tratamiento_cortesia</name>
+        <type>Integer</type>
+        <format>0</format>
+        <currency />
+        <decimal>,</decimal>
+        <group>.</group>
+        <nullif />
+        <trim_type>both</trim_type>
+        <length>-1</length>
+        <precision>-1</precision>
+      </field>
+      <field>
+        <name>idcortesia</name>
+        <type>Integer</type>
+        <format>0</format>
+        <currency />
+        <decimal>,</decimal>
+        <group>.</group>
+        <nullif />
+        <trim_type>both</trim_type>
+        <length>-1</length>
+        <precision>-1</precision>
+      </field>
+      <field>
+        <name>iddoc</name>
+        <type>Integer</type>
+        <format>0</format>
+        <currency />
+        <decimal>,</decimal>
+        <group>.</group>
+        <nullif />
+        <trim_type>both</trim_type>
+        <length>-1</length>
+        <precision>-1</precision>
+      </field>
+      <field>
+        <name>idestadocivil</name>
+        <type>Integer</type>
+        <format>0</format>
+        <currency />
+        <decimal>,</decimal>
+        <group>.</group>
+        <nullif />
+        <trim_type>both</trim_type>
+        <length>-1</length>
+        <precision>-1</precision>
+      </field>
+      <field>
+        <name>nom_tipo_doc_ori</name>
+        <type>String</type>
+        <format />
+        <currency />
+        <decimal />
+        <group />
+        <nullif />
+        <trim_type>both</trim_type>
+        <length>-1</length>
+        <precision>-1</precision>
+      </field>
+      <field>
+        <name>nombre_ori</name>
+        <type>String</type>
+        <format />
+        <currency />
+        <decimal />
+        <group />
+        <nullif />
+        <trim_type>both</trim_type>
+        <length>-1</length>
+        <precision>-1</precision>
+      </field>
+      <field>
+        <name>nombre_tipodoc_ori</name>
+        <type>String</type>
+        <format />
+        <currency />
+        <decimal />
+        <group />
+        <nullif />
+        <trim_type>both</trim_type>
+        <length>-1</length>
+        <precision>-1</precision>
+      </field>
+      <field>
+        <name>nombres</name>
+        <type>String</type>
+        <format />
+        <currency />
+        <decimal />
+        <group />
+        <nullif />
+        <trim_type>both</trim_type>
+        <length>-1</length>
+        <precision>-1</precision>
+      </field>
+      <field>
+        <name>numero_doc_ori</name>
+        <type>Integer</type>
+        <format>0</format>
+        <currency />
+        <decimal>,</decimal>
+        <group>.</group>
+        <nullif />
+        <trim_type>both</trim_type>
+        <length>-1</length>
+        <precision>-1</precision>
+      </field>
+      <field>
+        <name>numero_documento</name>
+        <type>Integer</type>
+        <format>0</format>
+        <currency />
+        <decimal>,</decimal>
+        <group>.</group>
+        <nullif />
+        <trim_type>both</trim_type>
+        <length>-1</length>
+        <precision>-1</precision>
+      </field>
+      <field>
+        <name>tipo_documento</name>
+        <type>String</type>
+        <format />
+        <currency />
+        <decimal />
+        <group />
+        <nullif />
+        <trim_type>both</trim_type>
+        <length>-1</length>
+        <precision>-1</precision>
+      </field>
+      <field>
+        <name>tratamiento_cortesia_ori</name>
+        <type>Binary</type>
+        <format />
+        <currency />
+        <decimal />
+        <group />
+        <nullif />
+        <trim_type>both</trim_type>
+        <length>-1</length>
+        <precision>-1</precision>
+      </field>
+    </fields>
+    <cluster_schema />
+    <remotesteps>
+      <input>
+      </input>
+      <output>
+      </output>
+    </remotesteps>
+    <GUI>
+      <xloc>1872</xloc>
+      <yloc>128</yloc>
+      <draw>Y</draw>
+    </GUI>
+  </step>
+  <step>
+    <name>Obtener Variables 2 2</name>
+    <type>GetVariable</type>
+    <description />
+    <distribute>Y</distribute>
+    <custom_distribution />
+    <copies>1</copies>
+    <partitioning>
+      <method>none</method>
+      <schema_name />
+    </partitioning>
+    <fields>
+      <field>
+        <name>username</name>
+        <variable>${user.name}</variable>
+        <type>String</type>
+        <format />
+        <currency />
+        <decimal />
+        <group />
+        <length>-1</length>
+        <precision>-1</precision>
+        <trim_type>none</trim_type>
+      </field>
+      <field>
+        <name>transf_name</name>
+        <variable>${Internal.Transformation.Name}</variable>
+        <type>String</type>
+        <format />
+        <currency />
+        <decimal />
+        <group />
+        <length>-1</length>
+        <precision>-1</precision>
+        <trim_type>none</trim_type>
+      </field>
+    </fields>
+    <cluster_schema />
+    <remotesteps>
+      <input>
+      </input>
+      <output>
+      </output>
+    </remotesteps>
+    <GUI>
+      <xloc>624</xloc>
+      <yloc>528</yloc>
+      <draw>Y</draw>
+    </GUI>
+  </step>
+  <step>
+    <name>Ordenar filas</name>
+    <type>SortRows</type>
+    <description />
+    <distribute>Y</distribute>
+    <custom_distribution />
+    <copies>1</copies>
+    <partitioning>
+      <method>none</method>
+      <schema_name />
+    </partitioning>
+    <directory>%%java.io.tmpdir%%</directory>
+    <prefix>out</prefix>
+    <sort_size>1000000</sort_size>
+    <free_memory />
+    <compress>N</compress>
+    <compress_variable />
+    <unique_rows>N</unique_rows>
+    <fields>
+      <field>
+        <name>numero_doc_ori</name>
+        <ascending>Y</ascending>
+        <case_sensitive>N</case_sensitive>
+        <collator_enabled>N</collator_enabled>
+        <collator_strength>0</collator_strength>
+        <presorted>N</presorted>
+      </field>
+      <field>
+        <name>Apellido-Ori</name>
+        <ascending>Y</ascending>
+        <case_sensitive>N</case_sensitive>
+        <collator_enabled>N</collator_enabled>
+        <collator_strength>0</collator_strength>
+        <presorted>N</presorted>
+      </field>
+      <field>
+        <name>Nombre-Ori</name>
+        <ascending>Y</ascending>
+        <case_sensitive>N</case_sensitive>
+        <collator_enabled>N</collator_enabled>
+        <collator_strength>0</collator_strength>
+        <presorted>N</presorted>
+      </field>
+    </fields>
+    <cluster_schema />
+    <remotesteps>
+      <input>
+      </input>
+      <output>
+      </output>
+    </remotesteps>
+    <GUI>
+      <xloc>752</xloc>
+      <yloc>64</yloc>
+      <draw>Y</draw>
+    </GUI>
+  </step>
+  <step>
+    <name>Ordenar filas 2</name>
+    <type>SortRows</type>
+    <description />
+    <distribute>Y</distribute>
+    <custom_distribution />
+    <copies>1</copies>
+    <partitioning>
+      <method>none</method>
+      <schema_name />
+    </partitioning>
+    <directory>%%java.io.tmpdir%%</directory>
+    <prefix>out</prefix>
+    <sort_size>1000000</sort_size>
+    <free_memory />
+    <compress>N</compress>
+    <compress_variable />
+    <unique_rows>N</unique_rows>
+    <fields>
+      <field>
+        <name>id_persona_fisica_ori</name>
+        <ascending>Y</ascending>
+        <case_sensitive>N</case_sensitive>
+        <collator_enabled>N</collator_enabled>
+        <collator_strength>0</collator_strength>
+        <presorted>N</presorted>
+      </field>
+    </fields>
+    <cluster_schema />
+    <remotesteps>
+      <input>
+      </input>
+      <output>
+      </output>
+    </remotesteps>
+    <GUI>
+      <xloc>2448</xloc>
+      <yloc>208</yloc>
+      <draw>Y</draw>
+    </GUI>
+  </step>
+  <step>
+    <name>Ordenar filas 2 2</name>
+    <type>SortRows</type>
+    <description />
+    <distribute>N</distribute>
+    <custom_distribution />
+    <copies>1</copies>
+    <partitioning>
+      <method>none</method>
+      <schema_name />
+    </partitioning>
+    <directory>%%java.io.tmpdir%%</directory>
+    <prefix>out</prefix>
+    <sort_size>1000000</sort_size>
+    <free_memory />
+    <compress>N</compress>
+    <compress_variable />
+    <unique_rows>N</unique_rows>
+    <fields>
+      <field>
+        <name>numero_documento</name>
+        <ascending>Y</ascending>
+        <case_sensitive>N</case_sensitive>
+        <collator_enabled>N</collator_enabled>
+        <collator_strength>0</collator_strength>
+        <presorted>N</presorted>
+      </field>
+      <field>
+        <name>Apellido-MDM</name>
+        <ascending>Y</ascending>
+        <case_sensitive>N</case_sensitive>
+        <collator_enabled>N</collator_enabled>
+        <collator_strength>0</collator_strength>
+        <presorted>N</presorted>
+      </field>
+      <field>
+        <name>Nombre-MDM</name>
+        <ascending>Y</ascending>
+        <case_sensitive>N</case_sensitive>
+        <collator_enabled>N</collator_enabled>
+        <collator_strength>0</collator_strength>
+        <presorted>N</presorted>
+      </field>
+    </fields>
+    <cluster_schema />
+    <remotesteps>
+      <input>
+      </input>
+      <output>
+      </output>
+    </remotesteps>
+    <GUI>
+      <xloc>1488</xloc>
+      <yloc>224</yloc>
+      <draw>Y</draw>
+    </GUI>
+  </step>
+  <step>
+    <name>PF InitCap</name>
+    <type>StringOperations</type>
+    <description />
+    <distribute>Y</distribute>
+    <custom_distribution />
+    <copies>1</copies>
+    <partitioning>
+      <method>none</method>
+      <schema_name />
+    </partitioning>
+    <fields>
+      <field>
+        <in_stream_name>nombre_ori</in_stream_name>
+        <out_stream_name />
+        <trim_type>both</trim_type>
+        <lower_upper>none</lower_upper>
+        <padding_type>none</padding_type>
+        <pad_char />
+        <pad_len />
+        <init_cap>yes</init_cap>
+        <mask_xml>none</mask_xml>
+        <digits>remove_digits</digits>
+        <remove_special_characters>none</remove_special_characters>
+      </field>
+      <field>
+        <in_stream_name>apellido_ori</in_stream_name>
+        <out_stream_name />
+        <trim_type>both</trim_type>
+        <lower_upper>none</lower_upper>
+        <padding_type>none</padding_type>
+        <pad_char />
+        <pad_len />
+        <init_cap>yes</init_cap>
+        <mask_xml>none</mask_xml>
+        <digits>remove_digits</digits>
+        <remove_special_characters>none</remove_special_characters>
+      </field>
+    </fields>
+    <cluster_schema />
+    <remotesteps>
+      <input>
+      </input>
+      <output>
+      </output>
+    </remotesteps>
+    <GUI>
+      <xloc>80</xloc>
+      <yloc>64</yloc>
+      <draw>Y</draw>
+    </GUI>
+  </step>
+  <step>
+    <name>PF-MDM</name>
+    <type>Janino</type>
+    <description />
+    <distribute>Y</distribute>
+    <custom_distribution />
+    <copies>1</copies>
+    <partitioning>
+      <method>none</method>
+      <schema_name />
+    </partitioning>
+    <formula>
+      <field_name>Apellido-MDM</field_name>
+      <formula_string>org.apache.commons.lang3.StringUtils.stripAccents(apellidos_mdm)</formula_string>
+      <value_type>String</value_type>
+      <value_length>-1</value_length>
+      <value_precision>-1</value_precision>
+      <replace_field />
+    </formula>
+    <formula>
+      <field_name>Nombre-MDM</field_name>
+      <formula_string>org.apache.commons.lang3.StringUtils.stripAccents(nombres_mdm)</formula_string>
+      <value_type>String</value_type>
+      <value_length>-1</value_length>
+      <value_precision>-1</value_precision>
+      <replace_field />
+    </formula>
+    <cluster_schema />
+    <remotesteps>
+      <input>
+      </input>
+      <output>
+      </output>
+    </remotesteps>
+    <GUI>
+      <xloc>1488</xloc>
+      <yloc>304</yloc>
+      <draw>Y</draw>
+    </GUI>
+  </step>
+  <step>
+    <name>PFisica ?</name>
+    <type>FilterRows</type>
+    <description />
+    <distribute>Y</distribute>
+    <custom_distribution />
+    <copies>1</copies>
+    <partitioning>
+      <method>none</method>
+      <schema_name />
+    </partitioning>
+    <send_true_to>Persona Fisica 2</send_true_to>
+    <send_false_to>Persona Fisica Audit 2</send_false_to>
+    <compare>
+      <condition>
+        <negated>N</negated>
+        <leftvalue>pf_audit</leftvalue>
+        <function>=</function>
+        <rightvalue />
+        <value>
+          <name>constant</name>
+          <type>String</type>
+          <text>PF</text>
+          <length>-1</length>
+          <precision>-1</precision>
+          <isnull>N</isnull>
+          <mask />
+        </value>
+      </condition>
+    </compare>
+    <cluster_schema />
+    <remotesteps>
+      <input>
+      </input>
+      <output>
+      </output>
+    </remotesteps>
+    <GUI>
+      <xloc>2224</xloc>
+      <yloc>224</yloc>
+      <draw>Y</draw>
+    </GUI>
+  </step>
+  <step>
+    <name>PFisica-BUP</name>
+    <type>TableInput</type>
+    <description />
+    <distribute>N</distribute>
+    <custom_distribution />
+    <copies>1</copies>
+    <partitioning>
+      <method>none</method>
+      <schema_name />
+    </partitioning>
+    <connection>BUP</connection>
+    <sql>
+SELECT DISTINCT
+	cuit,
+	trim(apellido) as apellido_ori,
+	null as apellido_2_ori,
+	null as apellido_3_ori,
+	trim(nombres) as nombre_ori,
+	null as nombre_2_ori,
+	null as nombre_3_ori,
+	fechanacimiento as fec_nacimiento_ori,
+	null as genero_al_nacer_ori,
+	trim(genero)  genero_ori,
+    trim(estadoCivil) as estado_civil_ori,
+	CASE WHEN tipoDocumento = 1 THEN nroDocumento ELSE 0 END as dni_ori,
+	nroDocumento as numero_doc_ori,
+	trim(tipo_documento.descripcion) as nombre_tipodoc_ori,
+	null as id_tratamiento_cortesia_ori,
+	null AS tratamiento_cortesia_ori,
+	null as estado_registro_ori,
+	null as alias_ori,
+	null as id_pre_registro_ori,
+	null as ultima_actualizacion_ori,
+	null as fecha_ultima_actualizacion_ori,
+	null as id_ejecucion_proc_act_ori,
+	null as fecha_defuncion_ori,
+	null as nacional_extranjero_ori,
+	null as principal_ori,
+	null as fecha_desde_ori,			
+	null as fecha_hasta_ori,			
+	null as imagen_frente_ori,		
+	null as imagen_reverso_ori,	
+	null as imagen_path_perfil_ori,		
+	null as nom_cod_doc_ori,		
+	null as nro_tramite_ori,		
+	null as id_estado_civil_ori,
+	null as id_documento_ori,
+	tipo_documento.descripcion as nom_tipo_doc_ori,
+	tipo_documento.abreviatura as nomcorto_tipo_doc_ori	
+
+	
+FROM persona
+	LEFT OUTER JOIN persona_fisica ON persona_fisica.id = persona.id
+	LEFT OUTER JOIN estado_civil   ON estado_civil.id   = persona_fisica.idEstadoCivil
+	LEFT OUTER JOIN tipo_documento ON tipo_documento.id   = persona_fisica.tipoDocumento
+
+WHERE apellido IS NOT NULL 
+ AND nombres  IS NOT NULL
+
+-- where apellido like '%Romero%'  and 
+--	 AND nroDocumento  = 23491
+	--  and nroDocumento &lt;&gt; cuit
+--    where cuit = 20000000044
+-- where cuit in (12054203,10016407,10022401,
+-- 20250080191,20236778151,20224217383,20178949943,37228128,27389655924,20143662374,27028320197,28308924,27390515265,20380874505,20231418297,27365758390,20239166947,24958203,25364297,29519188,31085474,20777536,14552112)
+
+
+union 
+SELECT 
+	cuit,
+	trim(apellido) as apellido_ori,
+	null as apellido_2_ori,
+	null as apellido_3_ori,
+	trim(nombres) as nombre_ori,
+	null as nombre_2_ori,
+	null as nombre_3_ori,
+	fechanacimiento as fec_nacimiento_ori,
+	null as genero_al_nacer_ori,
+	trim(genero)  genero_ori,
+    trim(estadoCivil) as estado_civil_ori,
+	CASE WHEN tipoDocumento = 1 THEN nroDocumento ELSE 0 END as dni_ori,
+	CONVERT (cuit,SIGNED)  as numero_doc_ori,
+	trim(tipo_documento.descripcion) as nombre_tipodoc_ori,
+	null as id_tratamiento_cortesia_ori,
+	null AS tratamiento_cortesia_ori,
+	null as estado_registro_ori,
+	null as alias_ori,
+	null as id_pre_registro_ori,
+	null as ultima_actualizacion_ori,
+	null as fecha_ultima_actualizacion_ori,
+	null as id_ejecucion_proc_act_ori,
+	null as fecha_defuncion_ori,
+	null as nacional_extranjero_ori,
+	null as principal_ori,
+	null as fecha_desde_ori,			
+	null as fecha_hasta_ori,			
+	null as imagen_frente_ori,		
+	null as imagen_reverso_ori,	
+	null as imagen_path_perfil_ori,		
+	null as nom_cod_doc_ori,		
+	null as nro_tramite_ori,		
+	null as id_estado_civil_ori,
+	null as id_documento_ori,
+	tipo_documento.descripcion as nom_tipo_doc_ori,
+	tipo_documento.abreviatura as nomcorto_tipo_doc_ori	
+
+	
+FROM persona
+	LEFT OUTER JOIN persona_fisica ON persona_fisica.id = persona.id
+	LEFT OUTER JOIN estado_civil   ON estado_civil.id   = persona_fisica.idEstadoCivil
+	LEFT OUTER JOIN tipo_documento ON tipo_documento.id   = persona_fisica.tipoDocumento
+
+
+-- where apellido like '%Romero%'  and 
+--	where nroDocumento  = 153307
+--   where cuit = 20000000044
+-- where cuit in (12054203,10016407,10022401,
+--	20250080191,20236778151,20224217383,20178949943,37228128,27389655924,20143662374,27028320197,28308924,27390515265,20380874505,20231418297,27365758390,20239166947,24958203,25364297,29519188,31085474,20777536,14552112)
+where nroDocumento &lt;&gt; cuit
+  AND apellido IS NOT NULL 
+  AND nombres  IS NOT NULL
+-- and  cuit in (12054203,10016407,10022401,20250080191,20236778151,20224217383,20178949943,37228128,27389655924,20143662374,27028320197,28308924,27390515265,20380874505,20231418297,27365758390,20239166947,24958203,25364297,29519188,31085474,20777536,14552112)
+--	and  nroDocumento  = 12210523
+-- AND nroDocumento  = 23491
+order by numero_doc_ori, trim(apellido_ori), trim(nombre_ori) </sql>
+    <limit>0</limit>
+    <lookup />
+    <execute_each_row>N</execute_each_row>
+    <variables_active>N</variables_active>
+    <lazy_conversion_active>N</lazy_conversion_active>
+    <cluster_schema />
+    <remotesteps>
+      <input>
+      </input>
+      <output>
+      </output>
+    </remotesteps>
+    <GUI>
+      <xloc>0</xloc>
+      <yloc>64</yloc>
+      <draw>Y</draw>
+    </GUI>
+  </step>
+  <step>
+    <name>Persona Fisica 2</name>
+    <type>TableOutput</type>
+    <description />
+    <distribute>N</distribute>
+    <custom_distribution />
+    <copies>1</copies>
+    <partitioning>
+      <method>none</method>
+      <schema_name />
+    </partitioning>
+    <connection>MDM</connection>
+    <schema>personas</schema>
+    <table>persona_fisica</table>
+    <commit>1000</commit>
+    <truncate>N</truncate>
+    <ignore_errors>N</ignore_errors>
+    <use_batch>N</use_batch>
+    <specify_fields>Y</specify_fields>
+    <partitioning_enabled>N</partitioning_enabled>
+    <partitioning_field />
+    <partitioning_daily>N</partitioning_daily>
+    <partitioning_monthly>Y</partitioning_monthly>
+    <tablename_in_field>N</tablename_in_field>
+    <tablename_field />
+    <tablename_in_table>Y</tablename_in_table>
+    <return_keys>N</return_keys>
+    <return_field />
+    <fields>
+      <field>
+        <column_name>apellido_1</column_name>
+        <stream_name>apellido_ori</stream_name>
+      </field>
+      <field>
+        <column_name>apellido_2</column_name>
+        <stream_name>apellido_2_ori</stream_name>
+      </field>
+      <field>
+        <column_name>apellido_3</column_name>
+        <stream_name>apellido_3_ori</stream_name>
+      </field>
+      <field>
+        <column_name>nombre_1</column_name>
+        <stream_name>nombre_ori</stream_name>
+      </field>
+      <field>
+        <column_name>nombre_2</column_name>
+        <stream_name>nombre_2_ori</stream_name>
+      </field>
+      <field>
+        <column_name>nombre_3</column_name>
+        <stream_name>nombre_3_ori</stream_name>
+      </field>
+      <field>
+        <column_name>fec_nacimiento</column_name>
+        <stream_name>fec_nacimiento_ori</stream_name>
+      </field>
+      <field>
+        <column_name>genero_al_nacer</column_name>
+        <stream_name>genero_al_nacer_ori</stream_name>
+      </field>
+      <field>
+        <column_name>genero</column_name>
+        <stream_name>genero_ori</stream_name>
+      </field>
+      <field>
+        <column_name>numero_dni</column_name>
+        <stream_name>dni_ori</stream_name>
+      </field>
+      <field>
+        <column_name>id_tratamiento_cortesia</column_name>
+        <stream_name>idcortesia</stream_name>
+      </field>
+      <field>
+        <column_name>estado_registro</column_name>
+        <stream_name>estado_registro_ori</stream_name>
+      </field>
+      <field>
+        <column_name>alias</column_name>
+        <stream_name>alias_ori</stream_name>
+      </field>
+      <field>
+        <column_name>id_pre_registro</column_name>
+        <stream_name>id_pre_registro_ori</stream_name>
+      </field>
+      <field>
+        <column_name>id_estado_civil</column_name>
+        <stream_name>idestadocivil</stream_name>
+      </field>
+      <field>
+        <column_name>imagen_path_perfil</column_name>
+        <stream_name>imagen_path_perfil_ori</stream_name>
+      </field>
+      <field>
+        <column_name>fecha_defuncion</column_name>
+        <stream_name>fecha_defuncion_ori</stream_name>
+      </field>
+      <field>
+        <column_name>ultima_actualizacion</column_name>
+        <stream_name>accion</stream_name>
+      </field>
+      <field>
+        <column_name>fecha_ultima_actualizacion</column_name>
+        <stream_name>Fecha_Ultima_Act</stream_name>
+      </field>
+      <field>
+        <column_name>id_ejecucion_proc_act</column_name>
+        <stream_name>id_proceso_act</stream_name>
+      </field>
+      <field>
+        <column_name>id_persona_fisica</column_name>
+        <stream_name>id_persona_fisica_ori_1</stream_name>
+      </field>
+    </fields>
+    <cluster_schema />
+    <remotesteps>
+      <input>
+      </input>
+      <output>
+      </output>
+    </remotesteps>
+    <GUI>
+      <xloc>2336</xloc>
+      <yloc>272</yloc>
+      <draw>Y</draw>
+    </GUI>
+  </step>
+  <step>
+    <name>Persona Fisica ?</name>
+    <type>FilterRows</type>
+    <description />
+    <distribute>Y</distribute>
+    <custom_distribution />
+    <copies>1</copies>
+    <partitioning>
+      <method>none</method>
+      <schema_name />
+    </partitioning>
+    <send_true_to>Actualizar Pfisica</send_true_to>
+    <send_false_to>Actualizar Pfisica Audit</send_false_to>
+    <compare>
+      <condition>
+        <negated>N</negated>
+        <leftvalue>ubicacion</leftvalue>
+        <function>=</function>
+        <rightvalue />
+        <value>
+          <name>constant</name>
+          <type>String</type>
+          <text>PF</text>
+          <length>-1</length>
+          <precision>-1</precision>
+          <isnull>N</isnull>
+          <mask />
+        </value>
+      </condition>
+    </compare>
+    <cluster_schema />
+    <remotesteps>
+      <input>
+      </input>
+      <output>
+      </output>
+    </remotesteps>
+    <GUI>
+      <xloc>2064</xloc>
+      <yloc>48</yloc>
+      <draw>Y</draw>
+    </GUI>
+  </step>
+  <step>
+    <name>Persona Fisica Audit 2</name>
+    <type>TableOutput</type>
+    <description />
+    <distribute>N</distribute>
+    <custom_distribution />
+    <copies>1</copies>
+    <partitioning>
+      <method>none</method>
+      <schema_name />
+    </partitioning>
+    <connection>MDM</connection>
+    <schema>personas</schema>
+    <table>persona_fisica_audit</table>
+    <commit>1000</commit>
+    <truncate>N</truncate>
+    <ignore_errors>N</ignore_errors>
+    <use_batch>N</use_batch>
+    <specify_fields>Y</specify_fields>
+    <partitioning_enabled>N</partitioning_enabled>
+    <partitioning_field />
+    <partitioning_daily>N</partitioning_daily>
+    <partitioning_monthly>Y</partitioning_monthly>
+    <tablename_in_field>N</tablename_in_field>
+    <tablename_field />
+    <tablename_in_table>Y</tablename_in_table>
+    <return_keys>N</return_keys>
+    <return_field />
+    <fields>
+      <field>
+        <column_name>alias</column_name>
+        <stream_name>alias_ori</stream_name>
+      </field>
+      <field>
+        <column_name>apellido_1</column_name>
+        <stream_name>apellido_ori</stream_name>
+      </field>
+      <field>
+        <column_name>apellido_2</column_name>
+        <stream_name>apellido_2_ori</stream_name>
+      </field>
+      <field>
+        <column_name>apellido_3</column_name>
+        <stream_name>apellido_3_ori</stream_name>
+      </field>
+      <field>
+        <column_name>estado_registro</column_name>
+        <stream_name>estado_registro_ori</stream_name>
+      </field>
+      <field>
+        <column_name>fec_nacimiento</column_name>
+        <stream_name>fec_nacimiento_ori</stream_name>
+      </field>
+      <field>
+        <column_name>fecha_defuncion</column_name>
+        <stream_name>fecha_defuncion_ori</stream_name>
+      </field>
+      <field>
+        <column_name>fecha_ultima_actualizacion</column_name>
+        <stream_name>Fecha_Ultima_Act</stream_name>
+      </field>
+      <field>
+        <column_name>genero</column_name>
+        <stream_name>genero_ori</stream_name>
+      </field>
+      <field>
+        <column_name>genero_al_nacer</column_name>
+        <stream_name>genero_al_nacer_ori</stream_name>
+      </field>
+      <field>
+        <column_name>id_ejecucion_proc_act</column_name>
+        <stream_name>id_proceso_act</stream_name>
+      </field>
+      <field>
+        <column_name>id_estado_civil</column_name>
+        <stream_name>idestadocivil</stream_name>
+      </field>
+      <field>
+        <column_name>id_pre_registro</column_name>
+        <stream_name>id_pre_registro_ori</stream_name>
+      </field>
+      <field>
+        <column_name>id_tratamiento_cortesia</column_name>
+        <stream_name>idcortesia</stream_name>
+      </field>
+      <field>
+        <column_name>imagen_path_perfil</column_name>
+        <stream_name>imagen_path_perfil_ori</stream_name>
+      </field>
+      <field>
+        <column_name>nombre_1</column_name>
+        <stream_name>nombre_ori</stream_name>
+      </field>
+      <field>
+        <column_name>nombre_2</column_name>
+        <stream_name>nombre_2_ori</stream_name>
+      </field>
+      <field>
+        <column_name>nombre_3</column_name>
+        <stream_name>nombre_3_ori</stream_name>
+      </field>
+      <field>
+        <column_name>numero_dni</column_name>
+        <stream_name>dni_ori</stream_name>
+      </field>
+      <field>
+        <column_name>id_persona_fisica_audit</column_name>
+        <stream_name>id_persona_fisica_ori_1</stream_name>
+      </field>
+      <field>
+        <column_name>ultima_actualizacion</column_name>
+        <stream_name>accion</stream_name>
+      </field>
+    </fields>
+    <cluster_schema />
+    <remotesteps>
+      <input>
+      </input>
+      <output>
+      </output>
+    </remotesteps>
+    <GUI>
+      <xloc>2320</xloc>
+      <yloc>160</yloc>
+      <draw>Y</draw>
+    </GUI>
+  </step>
+  <step>
+    <name>Regex Evaluation</name>
+    <type>RegexEval</type>
+    <description />
+    <distribute>N</distribute>
+    <custom_distribution />
+    <copies>1</copies>
+    <partitioning>
+      <method>none</method>
+      <schema_name />
+    </partitioning>
+    <script>\b(20|23|24|27|30|33|34)((\D)?[0-9]{8}(\D)?)([0-9])</script>
+    <matcher>cuit</matcher>
+    <resultfieldname>result</resultfieldname>
+    <usevar>N</usevar>
+    <allowcapturegroups>Y</allowcapturegroups>
+    <replacefields>N</replacefields>
+    <canoneq>N</canoneq>
+    <caseinsensitive>Y</caseinsensitive>
+    <comment>N</comment>
+    <dotall>N</dotall>
+    <multiline>N</multiline>
+    <unicode>Y</unicode>
+    <unix>N</unix>
+    <fields>
+      <field>
+        <name>prefijo</name>
+        <type>Integer</type>
+        <format />
+        <group />
+        <decimal />
+        <length>-1</length>
+        <precision>-1</precision>
+        <nullif />
+        <ifnull />
+        <trimtype>none</trimtype>
+        <currency />
+      </field>
+      <field>
+        <name>numero</name>
+        <type>Integer</type>
+        <format />
+        <group />
+        <decimal />
+        <length>-1</length>
+        <precision>-1</precision>
+        <nullif />
+        <ifnull />
+        <trimtype>none</trimtype>
+        <currency />
+      </field>
+      <field>
+        <name>separador1</name>
+        <type>None</type>
+        <format />
+        <group />
+        <decimal />
+        <length>-1</length>
+        <precision>-1</precision>
+        <nullif>si</nullif>
+        <ifnull />
+        <trimtype>none</trimtype>
+        <currency />
+      </field>
+      <field>
+        <name>separador2</name>
+        <type>None</type>
+        <format />
+        <group />
+        <decimal />
+        <length>-1</length>
+        <precision>-1</precision>
+        <nullif>si</nullif>
+        <ifnull />
+        <trimtype>none</trimtype>
+        <currency />
+      </field>
+      <field>
+        <name>verificador</name>
+        <type>Integer</type>
+        <format />
+        <group />
+        <decimal />
+        <length>-1</length>
+        <precision>-1</precision>
+        <nullif />
+        <ifnull />
+        <trimtype>none</trimtype>
+        <currency />
+      </field>
+    </fields>
+    <cluster_schema />
+    <remotesteps>
+      <input>
+      </input>
+      <output>
+      </output>
+    </remotesteps>
+    <GUI>
+      <xloc>528</xloc>
+      <yloc>64</yloc>
+      <draw>Y</draw>
+    </GUI>
+  </step>
+  <step>
+    <name>Registro NroDoc</name>
+    <type>ConcatFields</type>
+    <description />
+    <distribute>Y</distribute>
+    <custom_distribution />
+    <copies>1</copies>
+    <partitioning>
+      <method>none</method>
+      <schema_name />
+    </partitioning>
+    <separator>|</separator>
+    <enclosure>'</enclosure>
+    <enclosure_forced>N</enclosure_forced>
+    <enclosure_fix_disabled>N</enclosure_fix_disabled>
+    <header>N</header>
+    <footer>N</footer>
+    <format>DOS</format>
+    <compression>None</compression>
+    <encoding />
+    <endedLine />
+    <fileNameInField>N</fileNameInField>
+    <fileNameField />
+    <create_parent_folder>Y</create_parent_folder>
+    <file>
+      <name>file</name>
+      <is_command>N</is_command>
+      <servlet_output>N</servlet_output>
+      <do_not_open_new_file_init>N</do_not_open_new_file_init>
+      <extention>txt</extention>
+      <append>N</append>
+      <split>N</split>
+      <haspartno>N</haspartno>
+      <add_date>N</add_date>
+      <add_time>N</add_time>
+      <SpecifyFormat>N</SpecifyFormat>
+      <date_time_format />
+      <add_to_result_filenames>Y</add_to_result_filenames>
+      <pad>N</pad>
+      <fast_dump>N</fast_dump>
+      <splitevery>0</splitevery>
+    </file>
+    <fields>
+      <field>
+        <name>numero_doc_ori</name>
+        <type>Integer</type>
+        <format />
+        <currency />
+        <decimal />
+        <group />
+        <nullif />
+        <trim_type>none</trim_type>
+        <length>-1</length>
+        <precision>0</precision>
+      </field>
+      <field>
+        <name>apellido_ori</name>
+        <type>None</type>
+        <format />
+        <currency />
+        <decimal />
+        <group />
+        <nullif />
+        <trim_type>none</trim_type>
+        <length>-1</length>
+        <precision>-1</precision>
+      </field>
+      <field>
+        <name>nombre_ori</name>
+        <type>None</type>
+        <format />
+        <currency />
+        <decimal />
+        <group />
+        <nullif />
+        <trim_type>none</trim_type>
+        <length>-1</length>
+        <precision>-1</precision>
+      </field>
+    </fields>
+    <ConcatFields>
+      <targetFieldName>registro</targetFieldName>
+      <targetFieldLength>0</targetFieldLength>
+      <removeSelectedFields>N</removeSelectedFields>
+    </ConcatFields>
+    <cluster_schema />
+    <remotesteps>
+      <input>
+      </input>
+      <output>
+      </output>
+    </remotesteps>
+    <GUI>
+      <xloc>928</xloc>
+      <yloc>128</yloc>
+      <draw>Y</draw>
+    </GUI>
+  </step>
+  <step>
+    <name>Registro Pfisica</name>
+    <type>TableOutput</type>
+    <description />
+    <distribute>Y</distribute>
+    <custom_distribution />
+    <copies>1</copies>
+    <partitioning>
+      <method>none</method>
+      <schema_name />
+    </partitioning>
+    <connection>MDM</connection>
+    <schema>origenes</schema>
+    <table>registro_ejecucion</table>
+    <commit>1000</commit>
+    <truncate>N</truncate>
+    <ignore_errors>N</ignore_errors>
+    <use_batch>N</use_batch>
+    <specify_fields>Y</specify_fields>
+    <partitioning_enabled>Y</partitioning_enabled>
+    <partitioning_field />
+    <partitioning_daily>N</partitioning_daily>
+    <partitioning_monthly>Y</partitioning_monthly>
+    <tablename_in_field>N</tablename_in_field>
+    <tablename_field />
+    <tablename_in_table>Y</tablename_in_table>
+    <return_keys>N</return_keys>
+    <return_field />
+    <fields>
+      <field>
+        <column_name>dato</column_name>
+        <stream_name>dato</stream_name>
+      </field>
+      <field>
+        <column_name>fecha_hora</column_name>
+        <stream_name>Fecha_Ultima_Act</stream_name>
+      </field>
+      <field>
+        <column_name>id_ejecucion_proc_act</column_name>
+        <stream_name>id_proceso_act</stream_name>
+      </field>
+      <field>
+        <column_name>motivo</column_name>
+        <stream_name>motivo</stream_name>
+      </field>
+      <field>
+        <column_name>proceso</column_name>
+        <stream_name>proceso</stream_name>
+      </field>
+      <field>
+        <column_name>registro</column_name>
+        <stream_name>registro</stream_name>
+      </field>
+      <field>
+        <column_name>usuario</column_name>
+        <stream_name>username</stream_name>
+      </field>
+      <field>
+        <column_name>valor_dato</column_name>
+        <stream_name>valor_dato</stream_name>
+      </field>
+      <field>
+        <column_name>modulo</column_name>
+        <stream_name>transf_name</stream_name>
+      </field>
+    </fields>
+    <cluster_schema />
+    <remotesteps>
+      <input>
+      </input>
+      <output>
+      </output>
+    </remotesteps>
+    <GUI>
+      <xloc>928</xloc>
+      <yloc>400</yloc>
+      <draw>Y</draw>
+    </GUI>
+  </step>
+  <step>
+    <name>Registro Sin Cuit</name>
+    <type>TableOutput</type>
+    <description />
+    <distribute>Y</distribute>
+    <custom_distribution />
+    <copies>1</copies>
+    <partitioning>
+      <method>none</method>
+      <schema_name />
+    </partitioning>
+    <connection>MDM</connection>
+    <schema>origenes</schema>
+    <table>registro_ejecucion</table>
+    <commit>1000</commit>
+    <truncate>N</truncate>
+    <ignore_errors>N</ignore_errors>
+    <use_batch>N</use_batch>
+    <specify_fields>Y</specify_fields>
+    <partitioning_enabled>N</partitioning_enabled>
+    <partitioning_field />
+    <partitioning_daily>N</partitioning_daily>
+    <partitioning_monthly>Y</partitioning_monthly>
+    <tablename_in_field>N</tablename_in_field>
+    <tablename_field />
+    <tablename_in_table>Y</tablename_in_table>
+    <return_keys>N</return_keys>
+    <return_field />
+    <fields>
+      <field>
+        <column_name>dato</column_name>
+        <stream_name>dato</stream_name>
+      </field>
+      <field>
+        <column_name>fecha_hora</column_name>
+        <stream_name>Fecha_Ultima_Act</stream_name>
+      </field>
+      <field>
+        <column_name>id_ejecucion_proc_act</column_name>
+        <stream_name>id_proceso_act</stream_name>
+      </field>
+      <field>
+        <column_name>motivo</column_name>
+        <stream_name>motivo</stream_name>
+      </field>
+      <field>
+        <column_name>proceso</column_name>
+        <stream_name>proceso</stream_name>
+      </field>
+      <field>
+        <column_name>registro</column_name>
+        <stream_name>registro</stream_name>
+      </field>
+      <field>
+        <column_name>usuario</column_name>
+        <stream_name>username</stream_name>
+      </field>
+      <field>
+        <column_name>valor_dato</column_name>
+        <stream_name>valor_dato</stream_name>
+      </field>
+      <field>
+        <column_name>modulo</column_name>
+        <stream_name>transf_name</stream_name>
+      </field>
+    </fields>
+    <cluster_schema />
+    <remotesteps>
+      <input>
+      </input>
+      <output>
+      </output>
+    </remotesteps>
+    <GUI>
+      <xloc>624</xloc>
+      <yloc>672</yloc>
+      <draw>Y</draw>
+    </GUI>
+  </step>
+  <step>
+    <name>Registro ejecucion</name>
+    <type>TableOutput</type>
+    <description />
+    <distribute>Y</distribute>
+    <custom_distribution />
+    <copies>1</copies>
+    <partitioning>
+      <method>none</method>
+      <schema_name />
+    </partitioning>
+    <connection>MDM</connection>
+    <schema>origenes</schema>
+    <table>registro_ejecucion</table>
+    <commit>1000</commit>
+    <truncate>N</truncate>
+    <ignore_errors>N</ignore_errors>
+    <use_batch>N</use_batch>
+    <specify_fields>Y</specify_fields>
+    <partitioning_enabled>N</partitioning_enabled>
+    <partitioning_field />
+    <partitioning_daily>N</partitioning_daily>
+    <partitioning_monthly>Y</partitioning_monthly>
+    <tablename_in_field>N</tablename_in_field>
+    <tablename_field />
+    <tablename_in_table>Y</tablename_in_table>
+    <return_keys>N</return_keys>
+    <return_field />
+    <fields>
+      <field>
+        <column_name>dato</column_name>
+        <stream_name>dato</stream_name>
+      </field>
+      <field>
+        <column_name>fecha_hora</column_name>
+        <stream_name>Fecha_Ultima_Act</stream_name>
+      </field>
+      <field>
+        <column_name>id_ejecucion_proc_act</column_name>
+        <stream_name>id_proceso_act</stream_name>
+      </field>
+      <field>
+        <column_name>motivo</column_name>
+        <stream_name>motivo</stream_name>
+      </field>
+      <field>
+        <column_name>proceso</column_name>
+        <stream_name>proceso</stream_name>
+      </field>
+      <field>
+        <column_name>registro</column_name>
+        <stream_name>registro</stream_name>
+      </field>
+      <field>
+        <column_name>usuario</column_name>
+        <stream_name>username</stream_name>
+      </field>
+      <field>
+        <column_name>valor_dato</column_name>
+        <stream_name>valor_dato</stream_name>
+      </field>
+      <field>
+        <column_name>modulo</column_name>
+        <stream_name>transf_name</stream_name>
+      </field>
+    </fields>
+    <cluster_schema />
+    <remotesteps>
+      <input>
+      </input>
+      <output>
+      </output>
+    </remotesteps>
+    <GUI>
+      <xloc>1616</xloc>
+      <yloc>544</yloc>
+      <draw>Y</draw>
+    </GUI>
+  </step>
+  <step>
+    <name>Renombra</name>
+    <type>SelectValues</type>
+    <description />
+    <distribute>Y</distribute>
+    <custom_distribution />
+    <copies>1</copies>
+    <partitioning>
+      <method>none</method>
+      <schema_name />
+    </partitioning>
+    <fields>
+      <field>
+        <name>numero_doc_ori</name>
+        <rename>valor_dato</rename>
+      </field>
+      <select_unspecified>Y</select_unspecified>
+    </fields>
+    <cluster_schema />
+    <remotesteps>
+      <input>
+      </input>
+      <output>
+      </output>
+    </remotesteps>
+    <GUI>
+      <xloc>928</xloc>
+      <yloc>192</yloc>
+      <draw>Y</draw>
+    </GUI>
+  </step>
+  <step>
+    <name>Renombra Nro Doc</name>
+    <type>SelectValues</type>
+    <description />
+    <distribute>Y</distribute>
+    <custom_distribution />
+    <copies>1</copies>
+    <partitioning>
+      <method>none</method>
+      <schema_name />
+    </partitioning>
+    <fields>
+      <field>
+        <name>numero_doc_ori</name>
+        <rename>valor_dato</rename>
+      </field>
+      <select_unspecified>Y</select_unspecified>
+    </fields>
+    <cluster_schema />
+    <remotesteps>
+      <input>
+      </input>
+      <output>
+      </output>
+    </remotesteps>
+    <GUI>
+      <xloc>1616</xloc>
+      <yloc>304</yloc>
+      <draw>Y</draw>
+    </GUI>
+  </step>
+  <step>
+    <name>Renombra valor_dato</name>
+    <type>SelectValues</type>
+    <description />
+    <distribute>Y</distribute>
+    <custom_distribution />
+    <copies>1</copies>
+    <partitioning>
+      <method>none</method>
+      <schema_name />
+    </partitioning>
+    <fields>
+      <field>
+        <name>cuit</name>
+        <rename>valor_dato</rename>
+      </field>
+      <select_unspecified>Y</select_unspecified>
+    </fields>
+    <cluster_schema />
+    <remotesteps>
+      <input>
+      </input>
+      <output>
+      </output>
+    </remotesteps>
+    <GUI>
+      <xloc>624</xloc>
+      <yloc>288</yloc>
+      <draw>Y</draw>
+    </GUI>
+  </step>
+  <step>
+    <name>SUMA MODIFICADOS</name>
+    <type>Calculator</type>
+    <description />
+    <distribute>Y</distribute>
+    <custom_distribution />
+    <copies>1</copies>
+    <partitioning>
+      <method>none</method>
+      <schema_name />
+    </partitioning>
+    <calculation>
+      <field_name>cantidad</field_name>
+      <calc_type>ADD</calc_type>
+      <field_a>cant_modificados</field_a>
+      <field_b>uno </field_b>
+      <field_c />
+      <value_type>Integer</value_type>
+      <value_length>-1</value_length>
+      <value_precision>-1</value_precision>
+      <remove>N</remove>
+      <conversion_mask />
+      <decimal_symbol />
+      <grouping_symbol />
+      <currency_symbol />
+    </calculation>
+    <cluster_schema />
+    <remotesteps>
+      <input>
+      </input>
+      <output>
+      </output>
+    </remotesteps>
+    <GUI>
+      <xloc>2416</xloc>
+      <yloc>0</yloc>
+      <draw>Y</draw>
+    </GUI>
+  </step>
+  <step>
+    <name>Selecciona/Renombra valores</name>
+    <type>SelectValues</type>
+    <description />
+    <distribute>Y</distribute>
+    <custom_distribution />
+    <copies>1</copies>
+    <partitioning>
+      <method>none</method>
+      <schema_name />
+    </partitioning>
+    <fields>
+      <select_unspecified>N</select_unspecified>
+      <meta>
+        <name>fec_nacimiento</name>
+        <rename>fec_nacimiento</rename>
+        <type>String</type>
+        <length>-2</length>
+        <precision>-2</precision>
+        <conversion_mask>yyyy/MM/dd</conversion_mask>
+        <date_format_lenient>false</date_format_lenient>
+        <date_format_locale />
+        <date_format_timezone />
+        <lenient_string_to_number>false</lenient_string_to_number>
+        <encoding />
+        <decimal_symbol />
+        <grouping_symbol />
+        <currency_symbol />
+        <storage_type />
+      </meta>
+      <meta>
+        <name>fecha_defuncion</name>
+        <rename>fecha_defuncion</rename>
+        <type>String</type>
+        <length>-2</length>
+        <precision>-2</precision>
+        <conversion_mask>yyyy/MM/dd</conversion_mask>
+        <date_format_lenient>false</date_format_lenient>
+        <date_format_locale />
+        <date_format_timezone />
+        <lenient_string_to_number>false</lenient_string_to_number>
+        <encoding />
+        <decimal_symbol />
+        <grouping_symbol />
+        <currency_symbol />
+        <storage_type />
+      </meta>
+    </fields>
+    <cluster_schema />
+    <remotesteps>
+      <input>
+      </input>
+      <output>
+      </output>
+    </remotesteps>
+    <GUI>
+      <xloc>1488</xloc>
+      <yloc>144</yloc>
+      <draw>Y</draw>
+    </GUI>
+  </step>
+  <step>
+    <name>Seq PF 2</name>
+    <type>FieldsChangeSequence</type>
+    <description />
+    <distribute>N</distribute>
+    <custom_distribution />
+    <copies>1</copies>
+    <partitioning>
+      <method>none</method>
+      <schema_name />
+    </partitioning>
+    <start>${indice}</start>
+    <increment>1</increment>
+    <resultfieldName>incremento</resultfieldName>
+    <fields>
+      <field>
+        <name>id_personafisicaori</name>
+      </field>
+    </fields>
+    <cluster_schema />
+    <remotesteps>
+      <input>
+      </input>
+      <output>
+      </output>
+    </remotesteps>
+    <GUI>
+      <xloc>2048</xloc>
+      <yloc>336</yloc>
+      <draw>Y</draw>
+    </GUI>
+  </step>
+  <step>
+    <name>Sin Acento</name>
+    <type>Janino</type>
+    <description />
+    <distribute>N</distribute>
+    <custom_distribution />
+    <copies>1</copies>
+    <partitioning>
+      <method>none</method>
+      <schema_name />
+    </partitioning>
+    <formula>
+      <field_name>Apellido-Ori</field_name>
+      <formula_string>org.apache.commons.lang3.StringUtils.stripAccents(apellido_ori)</formula_string>
+      <value_type>String</value_type>
+      <value_length>-1</value_length>
+      <value_precision>-1</value_precision>
+      <replace_field />
+    </formula>
+    <formula>
+      <field_name>Nombre-Ori</field_name>
+      <formula_string>org.apache.commons.lang3.StringUtils.stripAccents(nombre_ori)</formula_string>
+      <value_type>String</value_type>
+      <value_length>-1</value_length>
+      <value_precision>-1</value_precision>
+      <replace_field />
+    </formula>
+    <cluster_schema />
+    <remotesteps>
+      <input>
+      </input>
+      <output>
+      </output>
+    </remotesteps>
+    <GUI>
+      <xloc>176</xloc>
+      <yloc>64</yloc>
+      <draw>Y</draw>
+    </GUI>
+  </step>
+  <step>
+    <name>String operations</name>
+    <type>StringOperations</type>
+    <description />
+    <distribute>Y</distribute>
+    <custom_distribution />
+    <copies>1</copies>
+    <partitioning>
+      <method>none</method>
+      <schema_name />
+    </partitioning>
+    <fields>
+      <field>
+        <in_stream_name>apellidos_mdm</in_stream_name>
+        <out_stream_name />
+        <trim_type>both</trim_type>
+        <lower_upper>none</lower_upper>
+        <padding_type>none</padding_type>
+        <pad_char />
+        <pad_len />
+        <init_cap>yes</init_cap>
+        <mask_xml>none</mask_xml>
+        <digits>remove_digits</digits>
+        <remove_special_characters>none</remove_special_characters>
+      </field>
+      <field>
+        <in_stream_name>nombres_mdm</in_stream_name>
+        <out_stream_name />
+        <trim_type>both</trim_type>
+        <lower_upper>none</lower_upper>
+        <padding_type>none</padding_type>
+        <pad_char />
+        <pad_len />
+        <init_cap>yes</init_cap>
+        <mask_xml>none</mask_xml>
+        <digits>remove_digits</digits>
+        <remove_special_characters>none</remove_special_characters>
+      </field>
+    </fields>
+    <cluster_schema />
+    <remotesteps>
+      <input>
+      </input>
+      <output>
+      </output>
+    </remotesteps>
+    <GUI>
+      <xloc>1488</xloc>
+      <yloc>368</yloc>
+      <draw>Y</draw>
+    </GUI>
+  </step>
+  <step>
+    <name>Strings Cut</name>
+    <type>StringCut</type>
+    <description />
+    <distribute>Y</distribute>
+    <custom_distribution />
+    <copies>1</copies>
+    <partitioning>
+      <method>none</method>
+      <schema_name />
+    </partitioning>
+    <fields>
+      <field>
+        <in_stream_name>registro</in_stream_name>
+        <out_stream_name />
+        <cut_from>0</cut_from>
+        <cut_to>499</cut_to>
+      </field>
+    </fields>
+    <cluster_schema />
+    <remotesteps>
+      <input>
+      </input>
+      <output>
+      </output>
+    </remotesteps>
+    <GUI>
+      <xloc>1616</xloc>
+      <yloc>448</yloc>
+      <draw>Y</draw>
+    </GUI>
+  </step>
+  <step>
+    <name>Strings cut 2</name>
+    <type>StringCut</type>
+    <description />
+    <distribute>Y</distribute>
+    <custom_distribution />
+    <copies>1</copies>
+    <partitioning>
+      <method>none</method>
+      <schema_name />
+    </partitioning>
+    <fields>
+      <field>
+        <in_stream_name>registro</in_stream_name>
+        <out_stream_name />
+        <cut_from>0</cut_from>
+        <cut_to>499</cut_to>
+      </field>
+    </fields>
+    <cluster_schema />
+    <remotesteps>
+      <input>
+      </input>
+      <output>
+      </output>
+    </remotesteps>
+    <GUI>
+      <xloc>624</xloc>
+      <yloc>608</yloc>
+      <draw>Y</draw>
+    </GUI>
+  </step>
+  <step>
+    <name>Tipo Doc MDM</name>
+    <type>DBJoin</type>
+    <description />
+    <distribute>Y</distribute>
+    <custom_distribution />
+    <copies>1</copies>
+    <partitioning>
+      <method>none</method>
+      <schema_name />
+    </partitioning>
+    <connection>MDM</connection>
+    <rowlimit>0</rowlimit>
+    <sql>select id_tipo_documento as id_tipoDoc_alta
+ from personas.tipo_documento tipo_doc
+where trim(tipo_doc.nombre) = trim(?)</sql>
+    <outer_join>Y</outer_join>
+    <replace_vars>Y</replace_vars>
+    <parameter>
+      <field>
+        <name>nom_tipo_doc_ori</name>
+        <type>None</type>
+      </field>
+    </parameter>
+    <cluster_schema />
+    <remotesteps>
+      <input>
+      </input>
+      <output>
+      </output>
+    </remotesteps>
+    <GUI>
+      <xloc>2720</xloc>
+      <yloc>336</yloc>
+      <draw>Y</draw>
+    </GUI>
+  </step>
+  <step>
+    <name>Tipo Doc MDM 2</name>
+    <type>DBJoin</type>
+    <description />
+    <distribute>Y</distribute>
+    <custom_distribution />
+    <copies>1</copies>
+    <partitioning>
+      <method>none</method>
+      <schema_name />
+    </partitioning>
+    <connection>MDM</connection>
+    <rowlimit>0</rowlimit>
+    <sql>select id_tipo_documento as id_tipoDoc_alta
+ from personas.tipo_documento tipo_doc
+where trim(tipo_doc.nombre) = trim(?)</sql>
+    <outer_join>Y</outer_join>
+    <replace_vars>Y</replace_vars>
+    <parameter>
+      <field>
+        <name>nom_tipo_doc_ori</name>
+        <type>None</type>
+      </field>
+    </parameter>
+    <cluster_schema />
+    <remotesteps>
+      <input>
+      </input>
+      <output>
+      </output>
+    </remotesteps>
+    <GUI>
+      <xloc>2467</xloc>
+      <yloc>94</yloc>
+      <draw>Y</draw>
+    </GUI>
+  </step>
+  <step>
+    <name>Trato Cortesia MDM</name>
+    <type>DBJoin</type>
+    <description />
+    <distribute>N</distribute>
+    <custom_distribution />
+    <copies>1</copies>
+    <partitioning>
+      <method>none</method>
+      <schema_name />
+    </partitioning>
+    <connection>MDM</connection>
+    <rowlimit>0</rowlimit>
+    <sql>select id_tratamiento_cortesia as idcortesia
+ from personas.tratamiento_cortesia
+where trim(personas.tratamiento_cortesia.tratamiento_cortesia) = (?)</sql>
+    <outer_join>Y</outer_join>
+    <replace_vars>Y</replace_vars>
+    <parameter>
+      <field>
+        <name>tratamiento_cortesia_ori</name>
+        <type>String</type>
+      </field>
+    </parameter>
+    <cluster_schema />
+    <remotesteps>
+      <input>
+      </input>
+      <output>
+      </output>
+    </remotesteps>
+    <GUI>
+      <xloc>1376</xloc>
+      <yloc>64</yloc>
+      <draw>Y</draw>
+    </GUI>
+  </step>
+  <step>
+    <name>Unión Ordenada</name>
+    <type>SortedMerge</type>
+    <description />
+    <distribute>Y</distribute>
+    <custom_distribution />
+    <copies>1</copies>
+    <partitioning>
+      <method>none</method>
+      <schema_name />
+    </partitioning>
+    <fields>
+      <field>
+        <name>id_persona_fisica_ori</name>
+        <ascending>N</ascending>
+      </field>
+    </fields>
+    <cluster_schema />
+    <remotesteps>
+      <input>
+      </input>
+      <output>
+      </output>
+    </remotesteps>
+    <GUI>
+      <xloc>2528</xloc>
+      <yloc>208</yloc>
+      <draw>Y</draw>
+    </GUI>
+  </step>
+  <step>
+    <name>Var Entorno 2</name>
+    <type>GetVariable</type>
+    <description />
+    <distribute>N</distribute>
+    <custom_distribution />
+    <copies>1</copies>
+    <partitioning>
+      <method>none</method>
+      <schema_name />
+    </partitioning>
+    <fields>
+      <field>
+        <name>id_proceso_act</name>
+        <variable>${id_ejecucion_proc_act}</variable>
+        <type>Integer</type>
+        <format />
+        <currency />
+        <decimal />
+        <group />
+        <length>-1</length>
+        <precision>-1</precision>
+        <trim_type>none</trim_type>
+      </field>
+      <field>
+        <name>proceso</name>
+        <variable>${PROCESO}</variable>
+        <type>String</type>
+        <format />
+        <currency />
+        <decimal />
+        <group />
+        <length>-1</length>
+        <precision>-1</precision>
+        <trim_type>none</trim_type>
+      </field>
+      <field>
+        <name>cant_procesados</name>
+        <variable>${CANT_PROCESADOS}</variable>
+        <type>Integer</type>
+        <format />
+        <currency />
+        <decimal />
+        <group />
+        <length>-1</length>
+        <precision>-1</precision>
+        <trim_type>none</trim_type>
+      </field>
+      <field>
+        <name>cant_modificados</name>
+        <variable>${CANT_MODIFICADOS}</variable>
+        <type>Integer</type>
+        <format />
+        <currency />
+        <decimal />
+        <group />
+        <length>-1</length>
+        <precision>-1</precision>
+        <trim_type>none</trim_type>
+      </field>
+      <field>
+        <name>cant_borrados</name>
+        <variable>${CANT_BORRADOS}</variable>
+        <type>Integer</type>
+        <format />
+        <currency />
+        <decimal />
+        <group />
+        <length>-1</length>
+        <precision>-1</precision>
+        <trim_type>none</trim_type>
+      </field>
+      <field>
+        <name>cant_iguales</name>
+        <variable>${CANT_IGUALES}</variable>
+        <type>Integer</type>
+        <format />
+        <currency />
+        <decimal />
+        <group />
+        <length>-1</length>
+        <precision>-1</precision>
+        <trim_type>none</trim_type>
+      </field>
+      <field>
+        <name>cant_altas</name>
+        <variable>${CANT_ALTAS}</variable>
+        <type>Integer</type>
+        <format />
+        <currency />
+        <decimal />
+        <group />
+        <length>-1</length>
+        <precision>-1</precision>
+        <trim_type>none</trim_type>
+      </field>
+      <field>
+        <name>username</name>
+        <variable>${user.name}</variable>
+        <type>String</type>
+        <format />
+        <currency />
+        <decimal />
+        <group />
+        <length>-1</length>
+        <precision>-1</precision>
+        <trim_type>none</trim_type>
+      </field>
+      <field>
+        <name>transf_name</name>
+        <variable>${Internal.Transformation.Name}</variable>
+        <type>String</type>
+        <format />
+        <currency />
+        <decimal />
+        <group />
+        <length>-1</length>
+        <precision>-1</precision>
+        <trim_type>none</trim_type>
+      </field>
+    </fields>
+    <cluster_schema />
+    <remotesteps>
+      <input>
+      </input>
+      <output>
+      </output>
+    </remotesteps>
+    <GUI>
+      <xloc>288</xloc>
+      <yloc>64</yloc>
+      <draw>Y</draw>
+    </GUI>
+  </step>
+  <step>
+    <name>accion A</name>
+    <type>Constant</type>
+    <description />
+    <distribute>N</distribute>
+    <custom_distribution />
+    <copies>1</copies>
+    <partitioning>
+      <method>none</method>
+      <schema_name />
+    </partitioning>
+    <fields>
+      <field>
+        <name>accion</name>
+        <type>String</type>
+        <format />
+        <currency />
+        <decimal />
+        <group />
+        <nullif>A</nullif>
+        <length>-1</length>
+        <precision>-1</precision>
+        <set_empty_string>N</set_empty_string>
+      </field>
+      <field>
+        <name>uno </name>
+        <type>Integer</type>
+        <format />
+        <currency />
+        <decimal />
+        <group />
+        <nullif>1</nullif>
+        <length>-1</length>
+        <precision>-1</precision>
+        <set_empty_string>N</set_empty_string>
+      </field>
+      <field>
+        <name>descr</name>
+        <type>String</type>
+        <format />
+        <currency />
+        <decimal />
+        <group />
+        <nullif>Dado de alta por proceso de extraccion de Persona Fisica</nullif>
+        <length>-1</length>
+        <precision>-1</precision>
+        <set_empty_string>N</set_empty_string>
+      </field>
+    </fields>
+    <cluster_schema />
+    <remotesteps>
+      <input>
+      </input>
+      <output>
+      </output>
+    </remotesteps>
+    <GUI>
+      <xloc>1872</xloc>
+      <yloc>224</yloc>
+      <draw>Y</draw>
+    </GUI>
+  </step>
+  <step>
+    <name>accion B</name>
+    <type>Constant</type>
+    <description />
+    <distribute>N</distribute>
+    <custom_distribution />
+    <copies>1</copies>
+    <partitioning>
+      <method>none</method>
+      <schema_name />
+    </partitioning>
+    <fields>
+      <field>
+        <name>accion</name>
+        <type>String</type>
+        <format />
+        <currency />
+        <decimal />
+        <group />
+        <nullif>B</nullif>
+        <length>-1</length>
+        <precision>-1</precision>
+        <set_empty_string>N</set_empty_string>
+      </field>
+      <field>
+        <name>uno</name>
+        <type>Integer</type>
+        <format />
+        <currency />
+        <decimal />
+        <group />
+        <nullif>1</nullif>
+        <length>-1</length>
+        <precision>-1</precision>
+        <set_empty_string>N</set_empty_string>
+      </field>
+    </fields>
+    <cluster_schema />
+    <remotesteps>
+      <input>
+      </input>
+      <output>
+      </output>
+    </remotesteps>
+    <GUI>
+      <xloc>1616</xloc>
+      <yloc>160</yloc>
+      <draw>Y</draw>
+    </GUI>
+  </step>
+  <step>
+    <name>accion M</name>
+    <type>Constant</type>
+    <description />
+    <distribute>N</distribute>
+    <custom_distribution />
+    <copies>1</copies>
+    <partitioning>
+      <method>none</method>
+      <schema_name />
+    </partitioning>
+    <fields>
+      <field>
+        <name>accion</name>
+        <type>String</type>
+        <format />
+        <currency />
+        <decimal />
+        <group />
+        <nullif>M</nullif>
+        <length>-1</length>
+        <precision>-1</precision>
+        <set_empty_string>N</set_empty_string>
+      </field>
+      <field>
+        <name>descr</name>
+        <type>String</type>
+        <format />
+        <currency />
+        <decimal />
+        <group />
+        <nullif>Modificado por proceso de extraccion de Persona Fisica</nullif>
+        <length>-1</length>
+        <precision>-1</precision>
+        <set_empty_string>N</set_empty_string>
+      </field>
+      <field>
+        <name>uno</name>
+        <type>integer</type>
+        <format />
+        <currency />
+        <decimal />
+        <group />
+        <nullif>1</nullif>
+        <length>-1</length>
+        <precision>-1</precision>
+        <set_empty_string>N</set_empty_string>
+      </field>
+    </fields>
+    <cluster_schema />
+    <remotesteps>
+      <input>
+      </input>
+      <output>
+      </output>
+    </remotesteps>
+    <GUI>
+      <xloc>1872</xloc>
+      <yloc>48</yloc>
+      <draw>Y</draw>
+    </GUI>
+  </step>
+  <step>
+    <name>cambiar tipo</name>
+    <type>SelectValues</type>
+    <description />
+    <distribute>Y</distribute>
+    <custom_distribution />
+    <copies>1</copies>
+    <partitioning>
+      <method>none</method>
+      <schema_name />
+    </partitioning>
+    <fields>
+      <select_unspecified>Y</select_unspecified>
+      <remove>
+        <name>id_persona_fisicamdm</name>
+      </remove>
+      <meta>
+        <name>id_pre_registro_ori</name>
+        <rename>id_pre_registro_ori</rename>
+        <type>Integer</type>
+        <length>-2</length>
+        <precision>-2</precision>
+        <conversion_mask />
+        <date_format_lenient>false</date_format_lenient>
+        <date_format_locale />
+        <date_format_timezone />
+        <lenient_string_to_number>false</lenient_string_to_number>
+        <encoding />
+        <decimal_symbol />
+        <grouping_symbol />
+        <currency_symbol />
+        <storage_type />
+      </meta>
+      <meta>
+        <name>fecha_defuncion_ori</name>
+        <rename>fecha_defuncion_ori</rename>
+        <type>Date</type>
+        <length>-2</length>
+        <precision>-2</precision>
+        <conversion_mask />
+        <date_format_lenient>false</date_format_lenient>
+        <date_format_locale />
+        <date_format_timezone />
+        <lenient_string_to_number>false</lenient_string_to_number>
+        <encoding />
+        <decimal_symbol />
+        <grouping_symbol />
+        <currency_symbol />
+        <storage_type />
+      </meta>
+      <meta>
+        <name>id_proceso_act</name>
+        <rename>id_proceso_act</rename>
+        <type>Integer</type>
+        <length>-2</length>
+        <precision>-2</precision>
+        <conversion_mask />
+        <date_format_lenient>false</date_format_lenient>
+        <date_format_locale />
+        <date_format_timezone />
+        <lenient_string_to_number>false</lenient_string_to_number>
+        <encoding />
+        <decimal_symbol />
+        <grouping_symbol />
+        <currency_symbol />
+        <storage_type />
+      </meta>
+      <meta>
+        <name>pf_audit</name>
+        <rename>pf_audit</rename>
+        <type>String</type>
+        <length>-2</length>
+        <precision>-2</precision>
+        <conversion_mask />
+        <date_format_lenient>false</date_format_lenient>
+        <date_format_locale />
+        <date_format_timezone />
+        <lenient_string_to_number>false</lenient_string_to_number>
+        <encoding />
+        <decimal_symbol />
+        <grouping_symbol />
+        <currency_symbol />
+        <storage_type />
+      </meta>
+      <meta>
+        <name>fec_nacimiento_ori</name>
+        <rename>fec_nacimiento_ori</rename>
+        <type>Date</type>
+        <length>-2</length>
+        <precision>-2</precision>
+        <conversion_mask />
+        <date_format_lenient>false</date_format_lenient>
+        <date_format_locale />
+        <date_format_timezone />
+        <lenient_string_to_number>false</lenient_string_to_number>
+        <encoding />
+        <decimal_symbol />
+        <grouping_symbol />
+        <currency_symbol />
+        <storage_type />
+      </meta>
+    </fields>
+    <cluster_schema />
+    <remotesteps>
+      <input>
+      </input>
+      <output>
+      </output>
+    </remotesteps>
+    <GUI>
+      <xloc>1952</xloc>
+      <yloc>224</yloc>
+      <draw>Y</draw>
+    </GUI>
+  </step>
+  <step>
+    <name>cambiar tipo 2</name>
+    <type>SelectValues</type>
+    <description />
+    <distribute>Y</distribute>
+    <custom_distribution />
+    <copies>1</copies>
+    <partitioning>
+      <method>none</method>
+      <schema_name />
+    </partitioning>
+    <fields>
+      <select_unspecified>Y</select_unspecified>
+      <meta>
+        <name>id_pre_registro_ori</name>
+        <rename>id_pre_registro_ori</rename>
+        <type>Integer</type>
+        <length>-2</length>
+        <precision>-2</precision>
+        <conversion_mask />
+        <date_format_lenient>false</date_format_lenient>
+        <date_format_locale />
+        <date_format_timezone />
+        <lenient_string_to_number>false</lenient_string_to_number>
+        <encoding />
+        <decimal_symbol />
+        <grouping_symbol />
+        <currency_symbol />
+        <storage_type />
+      </meta>
+      <meta>
+        <name>fecha_desde_ori</name>
+        <rename>fecha_desde_ori</rename>
+        <type>Date</type>
+        <length>-2</length>
+        <precision>-2</precision>
+        <conversion_mask />
+        <date_format_lenient>false</date_format_lenient>
+        <date_format_locale />
+        <date_format_timezone />
+        <lenient_string_to_number>false</lenient_string_to_number>
+        <encoding />
+        <decimal_symbol />
+        <grouping_symbol />
+        <currency_symbol />
+        <storage_type />
+      </meta>
+      <meta>
+        <name>id_proceso_act</name>
+        <rename>id_proceso_act</rename>
+        <type>Integer</type>
+        <length>-2</length>
+        <precision>-2</precision>
+        <conversion_mask />
+        <date_format_lenient>false</date_format_lenient>
+        <date_format_locale />
+        <date_format_timezone />
+        <lenient_string_to_number>false</lenient_string_to_number>
+        <encoding />
+        <decimal_symbol />
+        <grouping_symbol />
+        <currency_symbol />
+        <storage_type />
+      </meta>
+      <meta>
+        <name>fecha_hasta_ori</name>
+        <rename>fecha_hasta_ori</rename>
+        <type>Date</type>
+        <length>-2</length>
+        <precision>-2</precision>
+        <conversion_mask />
+        <date_format_lenient>false</date_format_lenient>
+        <date_format_locale />
+        <date_format_timezone />
+        <lenient_string_to_number>false</lenient_string_to_number>
+        <encoding />
+        <decimal_symbol />
+        <grouping_symbol />
+        <currency_symbol />
+        <storage_type />
+      </meta>
+      <meta>
+        <name>nro_tramite_ori</name>
+        <rename>nro_tramite_ori</rename>
+        <type>Integer</type>
+        <length>-2</length>
+        <precision>-2</precision>
+        <conversion_mask />
+        <date_format_lenient>false</date_format_lenient>
+        <date_format_locale />
+        <date_format_timezone />
+        <lenient_string_to_number>false</lenient_string_to_number>
+        <encoding />
+        <decimal_symbol />
+        <grouping_symbol />
+        <currency_symbol />
+        <storage_type />
+      </meta>
+      <meta>
+        <name>cuit</name>
+        <rename>cuit</rename>
+        <type>Integer</type>
+        <length>-2</length>
+        <precision>-2</precision>
+        <conversion_mask />
+        <date_format_lenient>false</date_format_lenient>
+        <date_format_locale />
+        <date_format_timezone />
+        <lenient_string_to_number>false</lenient_string_to_number>
+        <encoding />
+        <decimal_symbol />
+        <grouping_symbol />
+        <currency_symbol />
+        <storage_type />
+      </meta>
+    </fields>
+    <cluster_schema />
+    <remotesteps>
+      <input>
+      </input>
+      <output>
+      </output>
+    </remotesteps>
+    <GUI>
+      <xloc>2944</xloc>
+      <yloc>336</yloc>
+      <draw>Y</draw>
+    </GUI>
+  </step>
+  <step>
+    <name>cambiar tipos</name>
+    <type>SelectValues</type>
+    <description />
+    <distribute>Y</distribute>
+    <custom_distribution />
+    <copies>1</copies>
+    <partitioning>
+      <method>none</method>
+      <schema_name />
+    </partitioning>
+    <fields>
+      <select_unspecified>Y</select_unspecified>
+      <meta>
+        <name>id_pre_registro_ori</name>
+        <rename>id_pre_registro_ori</rename>
+        <type>Integer</type>
+        <length>-2</length>
+        <precision>-2</precision>
+        <conversion_mask />
+        <date_format_lenient>false</date_format_lenient>
+        <date_format_locale />
+        <date_format_timezone />
+        <lenient_string_to_number>false</lenient_string_to_number>
+        <encoding />
+        <decimal_symbol />
+        <grouping_symbol />
+        <currency_symbol />
+        <storage_type />
+      </meta>
+      <meta>
+        <name>fecha_defuncion_ori</name>
+        <rename>fecha_defuncion_ori</rename>
+        <type>Date</type>
+        <length>-2</length>
+        <precision>-2</precision>
+        <conversion_mask />
+        <date_format_lenient>false</date_format_lenient>
+        <date_format_locale />
+        <date_format_timezone />
+        <lenient_string_to_number>false</lenient_string_to_number>
+        <encoding />
+        <decimal_symbol />
+        <grouping_symbol />
+        <currency_symbol />
+        <storage_type />
+      </meta>
+      <meta>
+        <name>id_proceso_act</name>
+        <rename>id_proceso_act</rename>
+        <type>Integer</type>
+        <length>-2</length>
+        <precision>-2</precision>
+        <conversion_mask />
+        <date_format_lenient>false</date_format_lenient>
+        <date_format_locale />
+        <date_format_timezone />
+        <lenient_string_to_number>false</lenient_string_to_number>
+        <encoding />
+        <decimal_symbol />
+        <grouping_symbol />
+        <currency_symbol />
+        <storage_type />
+      </meta>
+      <meta>
+        <name>pf_audit</name>
+        <rename>pf_audit</rename>
+        <type>String</type>
+        <length>-2</length>
+        <precision>-2</precision>
+        <conversion_mask />
+        <date_format_lenient>false</date_format_lenient>
+        <date_format_locale />
+        <date_format_timezone />
+        <lenient_string_to_number>false</lenient_string_to_number>
+        <encoding />
+        <decimal_symbol />
+        <grouping_symbol />
+        <currency_symbol />
+        <storage_type />
+      </meta>
+      <meta>
+        <name>dni_ori</name>
+        <rename>dni_ori</rename>
+        <type>Integer</type>
+        <length>-2</length>
+        <precision>-2</precision>
+        <conversion_mask />
+        <date_format_lenient>false</date_format_lenient>
+        <date_format_locale />
+        <date_format_timezone />
+        <lenient_string_to_number>false</lenient_string_to_number>
+        <encoding />
+        <decimal_symbol />
+        <grouping_symbol />
+        <currency_symbol />
+        <storage_type />
+      </meta>
+      <meta>
+        <name>fec_nacimiento_ori</name>
+        <rename>fec_nacimiento_ori</rename>
+        <type>Date</type>
+        <length>-2</length>
+        <precision>-2</precision>
+        <conversion_mask />
+        <date_format_lenient>false</date_format_lenient>
+        <date_format_locale />
+        <date_format_timezone />
+        <lenient_string_to_number>false</lenient_string_to_number>
+        <encoding />
+        <decimal_symbol />
+        <grouping_symbol />
+        <currency_symbol />
+        <storage_type />
+      </meta>
+    </fields>
+    <cluster_schema />
+    <remotesteps>
+      <input>
+      </input>
+      <output>
+      </output>
+    </remotesteps>
+    <GUI>
+      <xloc>1968</xloc>
+      <yloc>48</yloc>
+      <draw>Y</draw>
+    </GUI>
+  </step>
+  <step>
+    <name>datos mdm</name>
+    <type>TableInput</type>
+    <description />
+    <distribute>N</distribute>
+    <custom_distribution />
+    <copies>1</copies>
+    <partitioning>
+      <method>none</method>
+      <schema_name />
+    </partitioning>
+    <connection>MDM</connection>
+    <sql>
+
+
+
+ SELECT 
+		case when pf.id_persona_fisica 	is not null then pf.id_persona_fisica else pfa.id_persona_fisica_audit end AS id_persona_fisicamdm,
+		doc.id_documento as id_documento_mdm,
+		doc.numero_documento,
+		case when pf.id_persona_fisica 	is not null then 'PF' else 'PFA' end AS ubicacion,
+		trim(case when pf.id_persona_fisica  is not null then 
+					trim(trim(coalesce(trim(pf.apellido_1),''))  || ' '|| trim(coalesce(trim(pf.apellido_2),''))  ||' ' || trim(coalesce(trim(pf.apellido_3),''))) ELSE
+					trim(trim(coalesce(trim(pfa.apellido_1),'')) || ' '|| trim(coalesce(trim(pfa.apellido_2),'')) ||' ' || trim(coalesce(trim(pfa.apellido_3),''))) END )	AS apellidos_mdm,
+		trim(case when pf.id_persona_fisica  is not null then 
+					trim(trim(coalesce(trim(pf.nombre_1),''))  ||' ' || trim(coalesce(trim(pf.nombre_2),''))  ||' ' || trim(coalesce(trim(pf.nombre_3),''))) ELSE
+					trim(trim(coalesce(trim(pfa.nombre_1),'')) ||' ' || trim(coalesce(trim(pfa.nombre_2),'')) ||' ' || trim(coalesce(trim(pfa.nombre_3),''))) END 	)		AS nombres_mdm,
+		case when pf.id_persona_fisica  is not null then pf.fec_nacimiento  else pfa.fec_nacimiento end 		AS fec_nacimiento ,
+		case when pf.id_persona_fisica  is not null then trim(pf.genero_al_nacer) else trim(pfa.genero_al_nacer) end 	AS genero_al_nacer,
+		case when pf.id_persona_fisica  is not null then trim(pf.genero) else  trim(pfa.genero) end 					AS genero,
+		case when pf.id_persona_fisica  is not null then pf.numero_dni else pfa.numero_dni end 					AS numero_dni,
+		case when pf.id_persona_fisica  is not null then pf.id_tratamiento_cortesia else pfa.id_tratamiento_cortesia end AS id_tratamiento_cortesia,
+		trim(tc.tratamiento_cortesia) 	as tratamiento_cortesia,
+		case when pf.id_persona_fisica  is not null then trim(pf.estado_registro) else trim(pfa.estado_registro) end		as estado_registro,
+		case when pf.id_persona_fisica  is not null then trim(pf.alias)	else trim(pfa.alias) end			AS alias,
+		case when pf.id_persona_fisica  is not null then pf.id_pre_registro else pfa.id_pre_registro end	AS id_pre_registro  ,
+		case when pf.id_persona_fisica  is not null then pf.id_estado_civil else pfa.id_estado_civil end 	AS id_estado_Civil,
+		trim(ec.estado_civil)			as estado_civil,
+		case when pf.id_persona_fisica  is not null then TRIM(pf.imagen_path_perfil) else TRIM(pfa.imagen_path_perfil) end  as imagen_path_perfil  ,
+		case when pf.id_persona_fisica  is not null then pf.fecha_defuncion else pfa.fecha_defuncion end 			AS fecha_defuncion,
+		case when pf.id_persona_fisica  is not null then pf.ultima_actualizacion else pfa.ultima_actualizacion end 	AS ultima_actualizacion,
+		case when pf.id_persona_fisica  is not null then pf.fecha_ultima_actualizacion else pfa.fecha_ultima_actualizacion  end 	AS fecha_ultima_actualizacion ,
+		case when pf.id_persona_fisica  is not null then pf.id_ejecucion_proc_act else pfa.id_ejecucion_proc_act end AS id_ejecucion_proc_act,
+		trim(tdoc.nombre) as tipo_documento
+		
+
+FROM personas.indice_persona AS ind
+	LEFT OUTER JOIN personas.persona_fisica  pf 	ON ind.id_persona_fisica = pf.id_persona_fisica
+	LEFT OUTER JOIN personas.persona_fisica_audit pfa 	ON ind.id_persona_fisica = pfa.id_persona_fisica_audit
+	left outer join personas.documento doc				ON ind.id_persona_fisica = doc.id_persona_fisica
+	left outer join personas.tipo_documento tdoc		ON  doc.id_documento  =tdoc.id_tipo_documento 
+	left outer join personas.estado_civil ec 			ON 
+						case when pf.id_persona_fisica  is not null then pf.id_estado_civil else pfa.id_estado_civil end = ec.id_estado_civil 
+	left outer join personas.tratamiento_cortesia tc 	ON 
+						case when pf.id_persona_fisica  is not null then pf.id_tratamiento_cortesia else pfa.id_tratamiento_cortesia end  	= tc.id_tratamiento_cortesia
+	left outer join seguridad.pre_registro pr 			ON 
+						case when pf.id_persona_fisica  is not null then pf.id_pre_registro else pfa.id_pre_registro end = pr.id_pre_registro
+	left outer join personas.tratamiento_cortesia tca 	ON 
+						case when pf.id_persona_fisica  is not null then pf.id_tratamiento_cortesia else pfa.id_tratamiento_cortesia end = tc.id_tratamiento_cortesia
+-- where ind.id_persona_fisica = ? 
+  -- and doc.id_documento = ?
+
+--		case when pf.id_persona_fisica  is not null then 
+--					trim(coalesce(trim(pf.apellido_1),''))  || ' '|| trim(coalesce(trim(pf.apellido_2),''))  ||' ' || trim(coalesce(trim(pf.apellido_3),'')) ELSE
+--					trim(coalesce(trim(pfa.apellido_1),'')) || ' '||  trim(coalesce(trim(pfa.apellido_2),'')) ||' ' || trim(coalesce(trim(pfa.apellido_3),'')) end = trim(?) AND
+--		case when pf.id_persona_fisica  is not null then 
+--					trim(coalesce(trim(pf.nombre_1),''))  ||' ' || trim(coalesce(trim(pf.nombre_2),''))  ||' ' || trim(coalesce(trim(pf.nombre_3),'')) ELSE
+--					trim(coalesce(trim(pfa.nombre_1),'')) ||' ' || trim(coalesce(trim(pfa.nombre_2),'')) ||' ' || trim(coalesce(trim(pfa.nombre_3),'')) END = trim(?) AND
+--
+--		doc.numero_documento = (?) 
+-- where doc.numero_documento in ( 23491)
+order by doc.numero_documento,
+		case when pf.id_persona_fisica  is not null then 
+					trim(coalesce(trim(pf.apellido_1),''))  || ' '|| trim(coalesce(trim(pf.apellido_2),''))  ||' ' || trim(coalesce(trim(pf.apellido_3),'')) ELSE
+					trim(coalesce(trim(pfa.apellido_1),'')) || ' '||  trim(coalesce(trim(pfa.apellido_2),'')) ||' ' || trim(coalesce(trim(pfa.apellido_3),'')) end,
+		case when pf.id_persona_fisica  is not null then 
+					trim(coalesce(trim(pf.nombre_1),''))  ||' ' || trim(coalesce(trim(pf.nombre_2),''))  ||' ' || trim(coalesce(trim(pf.nombre_3),'')) ELSE
+					trim(coalesce(trim(pfa.nombre_1),'')) ||' ' || trim(coalesce(trim(pfa.nombre_2),'')) ||' ' || trim(coalesce(trim(pfa.nombre_3),'')) END 
+
+</sql>
+    <limit>0</limit>
+    <lookup />
+    <execute_each_row>N</execute_each_row>
+    <variables_active>N</variables_active>
+    <lazy_conversion_active>N</lazy_conversion_active>
+    <cluster_schema />
+    <remotesteps>
+      <input>
+      </input>
+      <output>
+      </output>
+    </remotesteps>
+    <GUI>
+      <xloc>1488</xloc>
+      <yloc>512</yloc>
+      <draw>Y</draw>
+    </GUI>
+  </step>
+  <step>
+    <name>dummy</name>
+    <type>Dummy</type>
+    <description />
+    <distribute>Y</distribute>
+    <custom_distribution />
+    <copies>1</copies>
+    <partitioning>
+      <method>none</method>
+      <schema_name />
+    </partitioning>
+    <cluster_schema />
+    <remotesteps>
+      <input>
+      </input>
+      <output>
+      </output>
+    </remotesteps>
+    <GUI>
+      <xloc>1712</xloc>
+      <yloc>0</yloc>
+      <draw>Y</draw>
+    </GUI>
+  </step>
+  <step>
+    <name>dummy 2</name>
+    <type>Dummy</type>
+    <description />
+    <distribute>Y</distribute>
+    <custom_distribution />
+    <copies>1</copies>
+    <partitioning>
+      <method>none</method>
+      <schema_name />
+    </partitioning>
+    <cluster_schema />
+    <remotesteps>
+      <input>
+      </input>
+      <output>
+      </output>
+    </remotesteps>
+    <GUI>
+      <xloc>3120</xloc>
+      <yloc>432</yloc>
+      <draw>Y</draw>
+    </GUI>
+  </step>
+  <step>
+    <name>es Cuit?</name>
+    <type>FilterRows</type>
+    <description />
+    <distribute>Y</distribute>
+    <custom_distribution />
+    <copies>1</copies>
+    <partitioning>
+      <method>none</method>
+      <schema_name />
+    </partitioning>
+    <send_true_to>Documento Cuit</send_true_to>
+    <send_false_to>dummy 2</send_false_to>
+    <compare>
+      <condition>
+        <negated>N</negated>
+        <leftvalue>cuit</leftvalue>
+        <function>&lt;></function>
+        <rightvalue>numero_doc_ori</rightvalue>
+      </condition>
+    </compare>
+    <cluster_schema />
+    <remotesteps>
+      <input>
+      </input>
+      <output>
+      </output>
+    </remotesteps>
+    <GUI>
+      <xloc>3120</xloc>
+      <yloc>336</yloc>
+      <draw>Y</draw>
+    </GUI>
+  </step>
+  <step>
+    <name>fecha_hora 2</name>
+    <type>SystemInfo</type>
+    <description />
+    <distribute>Y</distribute>
+    <custom_distribution />
+    <copies>1</copies>
+    <partitioning>
+      <method>none</method>
+      <schema_name />
+    </partitioning>
+    <fields>
+      <field>
+        <name>Fecha_Ultima_Act</name>
+        <type>system date (variable)</type>
+      </field>
+    </fields>
+    <cluster_schema />
+    <remotesteps>
+      <input>
+      </input>
+      <output>
+      </output>
+    </remotesteps>
+    <GUI>
+      <xloc>624</xloc>
+      <yloc>448</yloc>
+      <draw>Y</draw>
+    </GUI>
+  </step>
+  <step>
+    <name>motivo</name>
+    <type>Constant</type>
+    <description />
+    <distribute>Y</distribute>
+    <custom_distribution />
+    <copies>1</copies>
+    <partitioning>
+      <method>none</method>
+      <schema_name />
+    </partitioning>
+    <fields>
+      <field>
+        <name>motivo</name>
+        <type>String</type>
+        <format />
+        <currency />
+        <decimal />
+        <group />
+        <nullif>Baja</nullif>
+        <length>-1</length>
+        <precision>-1</precision>
+        <set_empty_string>N</set_empty_string>
+      </field>
+      <field>
+        <name>dato</name>
+        <type>String</type>
+        <format />
+        <currency />
+        <decimal />
+        <group />
+        <nullif>Persona Fisica</nullif>
+        <length>-1</length>
+        <precision>-1</precision>
+        <set_empty_string>N</set_empty_string>
+      </field>
+    </fields>
+    <cluster_schema />
+    <remotesteps>
+      <input>
+      </input>
+      <output>
+      </output>
+    </remotesteps>
+    <GUI>
+      <xloc>1616</xloc>
+      <yloc>368</yloc>
+      <draw>Y</draw>
+    </GUI>
+  </step>
+  <step_error_handling>
+    <error>
+      <source_step>Documento 2</source_step>
+      <target_step />
+      <is_enabled>Y</is_enabled>
+      <nr_valuename />
+      <descriptions_valuename />
+      <fields_valuename />
+      <codes_valuename />
+      <max_errors />
+      <max_pct_errors />
+      <min_pct_rows />
+    </error>
+    <error>
+      <source_step>Documento Cuit</source_step>
+      <target_step />
+      <is_enabled>Y</is_enabled>
+      <nr_valuename />
+      <descriptions_valuename />
+      <fields_valuename />
+      <codes_valuename />
+      <max_errors />
+      <max_pct_errors />
+      <min_pct_rows />
+    </error>
+    <error>
+      <source_step>Indice Persona</source_step>
+      <target_step />
+      <is_enabled>Y</is_enabled>
+      <nr_valuename />
+      <descriptions_valuename />
+      <fields_valuename />
+      <codes_valuename />
+      <max_errors />
+      <max_pct_errors />
+      <min_pct_rows />
+    </error>
+    <error>
+      <source_step>Regex Evaluation</source_step>
+      <target_step>Armar Reg 2</target_step>
+      <is_enabled>N</is_enabled>
+      <nr_valuename />
+      <descriptions_valuename />
+      <fields_valuename />
+      <codes_valuename />
+      <max_errors />
+      <max_pct_errors />
+      <min_pct_rows />
+    </error>
+  </step_error_handling>
+  <slave-step-copy-partition-distribution>
+  </slave-step-copy-partition-distribution>
+  <slave_transformation>N</slave_transformation>
+</transformation>
