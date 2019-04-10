@@ -1,0 +1,281 @@
+
+ALTER TABLE	contacto.tr_app_movil_web	RENAME TO 	app_movil_web	;
+ALTER TABLE	contacto.tr_app_movil_web_cuidadano	RENAME TO 	app_movil_web_cuidadano	;
+ALTER TABLE	contacto.tr_categoria_telefono	RENAME TO 	categoria_telefono	;
+ALTER TABLE	contacto.tr_codigo_area_telefonico	RENAME TO 	codigo_area_telefonico	;
+ALTER TABLE	contacto.tr_cuidadano	RENAME TO 	cuidadano	;
+ALTER TABLE	contacto.tr_domicilio	RENAME TO 	domicilio	;
+ALTER TABLE	contacto.tr_email	RENAME TO 	email	;
+ALTER TABLE	contacto.tr_red_social	RENAME TO 	red_social	;
+ALTER TABLE	contacto.tr_registro_ciudadano	RENAME TO 	registro_ciudadano	;
+ALTER TABLE	contacto.tr_role	RENAME TO 	role	;
+ALTER TABLE	contacto.tr_telefono	RENAME TO 	telefono	;
+ALTER TABLE	contacto.tr_tipo_domicilio	RENAME TO 	tipo_domicilio	;
+ALTER TABLE	contacto.tr_validacion	RENAME TO 	validacion	;
+ALTER TABLE	contacto.ti_cuidadano_role	RENAME TO 	cuidadano_role	;
+
+ALTER TABLE contacto.cuidadano RENAME TO ciudadano;
+ALTER TABLE contacto.cuidadano_role RENAME TO ciudadano_rol;
+ALTER TABLE contacto."role" RENAME TO rol;
+
+ALTER TABLE contacto.app_movil_web RENAME COLUMN nombre_app TO nombre;
+ALTER TABLE contacto.rol RENAME COLUMN id_role TO id_rol;
+ALTER TABLE contacto.rol RENAME COLUMN "role" TO rol;
+ALTER TABLE contacto.ciudadano_rol RENAME COLUMN id_role TO id_rol;
+ALTER TABLE contacto.ciudadano_rol RENAME COLUMN id_cuidadano_role TO id_cuidadano_rol;
+ALTER TABLE contacto.ciudadano_rol RENAME COLUMN id_cuidadano_rol TO id_ciudadano_rol;
+ALTER TABLE contacto.red_social_ciudadano RENAME COLUMN id_cuidadano TO id_ciudadano;
+
+
+ALTER SCHEMA landing_area RENAME TO land_territorio;
+ALTER TABLE land_territorio.departamento_idesf RENAME TO departamento;
+ALTER TABLE land_territorio.distrito_idesf RENAME TO distrito;
+ALTER TABLE land_territorio.regiones_idesf RENAME TO regiones;
+ALTER TABLE land_territorio.rmyc_municipios_comunas_idesf RENAME TO rmyc_municipios_comunas;
+
+ALTER TABLE territorio.barrio RENAME COLUMN id_barrio TO codigo;
+ALTER TABLE territorio.barrio RENAME COLUMN gid TO id_barrio;
+ALTER TABLE territorio.barrio RENAME COLUMN gid_vecinal TO id_vecinal;
+ALTER TABLE territorio.barrio RENAME COLUMN gid_municipio_comuna TO id_municipio_comuna;
+ALTER TABLE territorio.barrio RENAME COLUMN gid_manzana TO id_manzana;
+ALTER TABLE territorio.barrio RENAME COLUMN gid_audit TO id_audit;
+
+
+ALTER TABLE territorio.calendario RENAME TO dt_calendario;
+ALTER TABLE territorio.dt_calendario RENAME COLUMN gid TO id_calendario;
+
+ALTER TABLE territorio.calle RENAME COLUMN id_calle TO codigo;
+ALTER TABLE territorio.calle RENAME COLUMN gid TO id_calle;
+ALTER TABLE territorio.calle RENAME COLUMN gid_vecinal TO id_vecinal;
+ALTER TABLE territorio.calle RENAME COLUMN gid_barrio TO id_barrio;
+ALTER TABLE territorio.calle RENAME COLUMN gid_audit TO id_audit;
+COMMENT ON COLUMN territorio.calle.codigo IS 'Codigo de barrio del sistema de origen';
+
+ALTER TABLE territorio.codigo_postal RENAME COLUMN gid_provincia TO id_provincia;
+ALTER TABLE territorio.comuna RENAME COLUMN geometria TO geom;
+
+ALTER TABLE territorio.departamento RENAME COLUMN id_departamento TO codigo;
+ALTER TABLE territorio.departamento RENAME COLUMN gid TO id_departamento;
+ALTER TABLE territorio.departamento RENAME COLUMN gid_provincia TO id_provincia;
+ALTER TABLE territorio.departamento RENAME COLUMN gid_region TO id_region;
+ALTER TABLE territorio.departamento RENAME COLUMN geometria TO geom;
+ALTER TABLE territorio.departamento RENAME COLUMN gid_audit TO id_audit;
+
+ALTER TABLE territorio.distrito RENAME COLUMN id_distrito TO codigo;
+ALTER TABLE territorio.distrito RENAME COLUMN gid TO id_distrito;
+ALTER TABLE territorio.distrito RENAME COLUMN gid_pais TO id_pais;
+ALTER TABLE territorio.distrito RENAME COLUMN gid_region TO id_region;
+ALTER TABLE territorio.distrito RENAME COLUMN gid_departamento TO id_departamento;
+ALTER TABLE territorio.distrito RENAME COLUMN geometria TO geom;
+ALTER TABLE territorio.distrito RENAME COLUMN gid_provincia TO id_provincia;
+ALTER TABLE territorio.distrito RENAME COLUMN gid_audit TO id_audit;
+
+ALTER TABLE territorio.localidad RENAME COLUMN id_localidad TO codigo;
+ALTER TABLE territorio.localidad RENAME COLUMN gid TO id_localidad;
+ALTER TABLE territorio.localidad RENAME COLUMN "gid_Region" TO id_region;
+ALTER TABLE territorio.localidad RENAME COLUMN gid_departamento TO id_departamento;
+ALTER TABLE territorio.localidad RENAME COLUMN gid_distrito TO id_distrito;
+ALTER TABLE territorio.localidad RENAME COLUMN gid_tipo_zona TO id_tipo_zona;
+ALTER TABLE territorio.localidad RENAME COLUMN geometria TO geom;
+ALTER TABLE territorio.localidad RENAME COLUMN gid_audit TO id_audit;
+
+ALTER TABLE territorio.manzana RENAME COLUMN id_manzana TO codigo;
+ALTER TABLE territorio.manzana RENAME COLUMN gid TO id_manzana;
+ALTER TABLE	territorio.manzana	RENAME COLUMN	gid_vecinal	to	id_vecinal	;
+ALTER TABLE	territorio.manzana	RENAME COLUMN	gid_barrio	to	id_barrio	;
+ALTER TABLE	territorio.manzana	RENAME COLUMN	gid_calle_norte	to	id_calle_norte	;
+ALTER TABLE	territorio.manzana	RENAME COLUMN	gid_calle_sur	to	id_calle_sur	;
+ALTER TABLE	territorio.manzana	RENAME COLUMN	gid_calle_este	to	id_calle_este	;
+ALTER TABLE	territorio.manzana	RENAME COLUMN	gid_calle_oeste	to	id_calle_oeste	;
+ALTER TABLE	territorio.manzana	RENAME COLUMN	gid_audit	to	id_audit	;
+
+ALTER TABLE territorio.municipio_comuna RENAME COLUMN id_municipio_comuna TO codigo;
+ALTER TABLE territorio.municipio_comuna RENAME COLUMN gid TO id_municipio_comuna;
+ALTER TABLE	territorio.municipio_comuna	RENAME COLUMN	gid_region	to	id_region	;
+ALTER TABLE	territorio.municipio_comuna	RENAME COLUMN	gid_departamento	to	id_departamento	;
+ALTER TABLE	territorio.municipio_comuna	RENAME COLUMN	gid_tipo_zona	to	id_tipo_zona	;
+ALTER TABLE	territorio.municipio_comuna	RENAME COLUMN	geometria	to	geom	;
+ALTER TABLE	territorio.municipio_comuna	RENAME COLUMN	gid_audit	to	id_audit	;
+ALTER TABLE persona.documento DROP COLUMN iup;
+
+ALTER TABLE territorio.pais RENAME COLUMN id_pais TO codigo;
+ALTER TABLE territorio.pais RENAME COLUMN gid TO id_pais;
+ALTER TABLE territorio.pais RENAME COLUMN geomtria TO geom;
+ALTER TABLE territorio.pais RENAME COLUMN gid_audit TO id_audit;
+ALTER TABLE territorio.paraje RENAME COLUMN geometria TO geom;
+ALTER TABLE territorio.paraje RENAME COLUMN gid_audit TO id_audit;
+ALTER TABLE territorio.paraje RENAME COLUMN gid_audit TO id_audit;
+ALTER TABLE territorio.provincia RENAME COLUMN id_provincia TO codigo;
+ALTER TABLE territorio.provincia RENAME COLUMN gid TO id_provincia;
+ALTER TABLE territorio.provincia RENAME COLUMN gid_pais TO id_pais;
+ALTER TABLE territorio.provincia RENAME COLUMN geometria TO geom;
+ALTER TABLE territorio.provincia RENAME COLUMN gid_region TO id_region;
+ALTER TABLE territorio.provincia RENAME COLUMN gid_audit TO id_audit;
+
+ALTER TABLE territorio.region RENAME COLUMN id_region TO codigo;
+ALTER TABLE territorio.region RENAME COLUMN gid_audit TO id_audit;
+ALTER TABLE territorio.region RENAME COLUMN geometria TO geom;
+ALTER TABLE territorio.region RENAME COLUMN gid TO id_region;
+ALTER TABLE territorio.region RENAME COLUMN gid_tipo_region TO id_tipo_region;
+ALTER TABLE territorio.tipo_region RENAME COLUMN gid_audit TO id_audit;
+ALTER TABLE territorio.tipo_zona RENAME COLUMN gid_audit TO id_audit;
+
+ALTER TABLE territorio.vecinal RENAME COLUMN id_vecinal TO codigo;
+ALTER TABLE territorio.vecinal RENAME COLUMN gid_audit TO id_audit;
+ALTER TABLE territorio.vecinal RENAME COLUMN "Geometria" TO "Geom";
+ALTER TABLE territorio.vecinal RENAME COLUMN gid TO id_vecinal;
+ALTER TABLE	territorio.vecinal	RENAME COLUMN	"gid_Distrito"	to	id_distrito	;
+ALTER TABLE	territorio.vecinal	RENAME COLUMN	"gid_Localidad"	to	id_localidad	;
+ALTER TABLE	territorio.vecinal	RENAME COLUMN	"gid_MunicipioComuna"	to	id_municipiocomuna	;	
+
+
+ALTER TABLE contacto.telefono ADD CONSTRAINT telefono_persona_fisica_fk FOREIGN KEY (id_persona_fisica) REFERENCES persona.persona_fisica(id_persona_fisica) ON DELETE CASCADE ON UPDATE CASCADE;
+
+
+ALTER TABLE telefono RENAME CONSTRAINT tr_telefono_tr_categoria_telefono_fk TO fk_telefono_categoriatelefono;
+ALTER TABLE telefono RENAME CONSTRAINT tr_telefono_tr_codigo_area_telefonico_fk TO fk_telefono_codigoareatelefonico;
+ALTER TABLE telefono RENAME CONSTRAINT tr_telefono_tr_cuidadano_fk TO fk_telefono_cuidadano;
+ALTER TABLE telefono RENAME CONSTRAINT tr_telefono_tr_validacion_fk TO fk_telefono_validacion;
+ALTER TABLE telefono RENAME CONSTRAINT telefono_persona_fisica_fk TO  fk_telefono_persona_fisica;
+
+ALTER TABLE app_movil_web_cuidadano RENAME CONSTRAINT 	tr_app_movil_web_cuidadano_tr_app_movil_web_fk	TO	fk_appmovilwebcuidadano_appmovilweb	;
+ALTER TABLE app_movil_web_cuidadano RENAME CONSTRAINT 	tr_app_movil_web_cuidadano_tr_cuidadano_fk	TO	fk_appmovilwebcuidadano_cuidadano	;
+ALTER TABLE app_movil_web_cuidadano RENAME CONSTRAINT 	tr_app_movil_web_cuidadano_tr_validacion_fk	TO	fk_appmovilwebcuidadano_validacion	;
+
+ALTER TABLE ciudadano_rol RENAME CONSTRAINT 	ti_cuidadano_role_tr_cuidadano_fk	TO	fk_cuidadanorole_cuidadano	;
+ALTER TABLE ciudadano_rol RENAME CONSTRAINT 	ti_cuidadano_role_tr_role_fk	TO	fk_cuidadanorole_role	;
+
+ALTER TABLE contacto.domicilio ADD CONSTRAINT fk_domicilio_personafisica FOREIGN KEY (id_persona_fisica) REFERENCES persona.persona_fisica(id_persona_fisica) ON DELETE CASCADE ON UPDATE CASCADE;
+ALTER TABLE contacto.domicilio ADD CONSTRAINT fk_domicilio_personajuridica FOREIGN KEY (id_persona_juridica) REFERENCES persona.persona_juridica(id_persona_juridica) ON DELETE CASCADE ON UPDATE CASCADE;
+
+
+ALTER TABLE domicilio RENAME CONSTRAINT 	tr_domicilio_distrito_fk	TO	fk_domicilio_distrito	;
+ALTER TABLE domicilio RENAME CONSTRAINT 	tr_domicilio_municipio_comuna_fk	TO	fk_domicilio_municipiocomuna	;
+ALTER TABLE domicilio RENAME CONSTRAINT 	tr_domicilio_tr_cuidadano_fk	TO	fk_domicilio_cuidadano	;
+ALTER TABLE domicilio RENAME CONSTRAINT 	tr_domicilio_tr_tipo_domicilio_fk	TO	fk_domicilio_tipodomicilio	;
+ALTER TABLE domicilio RENAME CONSTRAINT 	tr_domicilio_tr_validacion_fk	TO	fk_domicilio_validacion	;
+
+ALTER TABLE contacto.email ADD CONSTRAINT fk_email_personafisica FOREIGN KEY (id_persona_fisica) REFERENCES persona.persona_fisica(id_persona_fisica) ON DELETE CASCADE ON UPDATE CASCADE;
+ALTER TABLE email RENAME CONSTRAINT 	tr_mail_tr_cuidadano_fk	TO	fk_mail_cuidadano	;
+ALTER TABLE email RENAME CONSTRAINT 	tr_mail_tr_validacion_fk	TO	fk_mail_validacion	;
+				
+ALTER TABLE red_social_ciudadano RENAME CONSTRAINT 	ti_red_social_ciudadano_tr_cuidadano_fk	TO	fk_redsocialciudadano_cuidadano	;
+ALTER TABLE contacto.red_social_ciudadano ADD CONSTRAINT fk_redsocialciudadano_personafisica FOREIGN KEY (id_persona_fisica) REFERENCES persona.persona_fisica(id_persona_fisica) ON DELETE CASCADE ON UPDATE CASCADE;
+
+ALTER TABLE registro_ciudadano RENAME CONSTRAINT 	tr_registro_ciudadano_tr_cuidadano_fk	TO	fk_registrociudadano_ciudadano	;
+ALTER TABLE registro_ciudadano RENAME CONSTRAINT 	tr_registro_ciudadano_tr_validacion_fk	TO	fk_registrociudadano_validacion	;
+
+
+ALTER TABLE app_movil_web RENAME CONSTRAINT	tr_app_movil_web_pk	to	pk_app_movil_web	;
+ALTER TABLE  contacto.ciudadano_rol	RENAME CONSTRAINT ti_cuidadano_role_pk	to	pk_cuidadano_rol	;
+ALTER TABLE  contacto.app_movil_web_cuidadano	RENAME CONSTRAINT tr_app_movil_web_cuidadano_pk	to	pk_app_movil_web_cuidadano	;
+ALTER TABLE  contacto.categoria_telefono	RENAME CONSTRAINT tr_categoria_telefono_pk	to	pk_categoria_telefono	;
+ALTER TABLE  contacto.codigo_area_telefonico	RENAME CONSTRAINT tr_codigo_area_telefonico_pk	to	pk_codigo_area_telefonico	;
+ALTER TABLE  contacto.ciudadano	RENAME CONSTRAINT tr_cuidadano_pk	to	pk_cuidadano	;
+ALTER TABLE  contacto.domicilio	RENAME CONSTRAINT tr_domicilio_pk	to	pk_domicilio	;
+ALTER TABLE  contacto.email	RENAME CONSTRAINT tr_mail_pk	to	pk_mail	;
+ALTER TABLE  contacto.red_social	RENAME CONSTRAINT tr_red_social_pk	to	pk_red_social	;
+ALTER TABLE  contacto.registro_ciudadano	RENAME CONSTRAINT tr_registro_ciudadano_pk	to	pk_registro_ciudadano	;
+ALTER TABLE  contacto.rol	RENAME CONSTRAINT tr_role_pk	to	pk_rol	;
+ALTER TABLE  contacto.telefono	RENAME CONSTRAINT tr_telefono_pk	to	pk_telefono	;
+ALTER TABLE  contacto.tipo_domicilio	RENAME CONSTRAINT tr_tipo_domicilio_pk	to	pk_tipo_domicilio	;
+ALTER TABLE  contacto.validacion	RENAME CONSTRAINT tr_validacion_pk	to	pk_validacion	;
+ALTER TABLE  land_territorio.departamento	RENAME CONSTRAINT departamento_idesf_pkey	to	pk_departamento	;
+ALTER TABLE  land_territorio.distrito	RENAME CONSTRAINT distrito_idesf_pkey	to	pk_distrito	;
+ALTER TABLE  land_territorio.regiones	RENAME CONSTRAINT regiones_idesf_pkey	to	pk_regiones	;
+ALTER TABLE  land_territorio.rmyc_municipios_comunas	RENAME CONSTRAINT rmyc_municipios_comunas_idesf_pkey	to	pk_rmyc_municipios_comunas	;
+ALTER TABLE  persona.pfisica_pjuridica	RENAME CONSTRAINT pfisica_pjuridica_pkey	to	pk_pfisica_pjuridica	;
+ALTER TABLE  persona.documento	RENAME CONSTRAINT pk_id_documento	to	pk_documento	;
+ALTER TABLE  persona.persona_juridica	RENAME CONSTRAINT pk_id_persona_juridica	to	pk_persona_juridica	;
+ALTER TABLE  persona.persona_vinculo_personal	RENAME CONSTRAINT pk_id_persona_vinculo_persnal	to	pk_persona_vinculo_persnal	;
+ALTER TABLE  persona.rol	RENAME CONSTRAINT pk_id_rol	to	pk_rol	;
+ALTER TABLE  persona.rol_pfisica_pjuridica	RENAME CONSTRAINT pk_id_rol_pfisica_pjuridica	to	pk_rol_pfisica_pjuridica	;
+ALTER TABLE  persona.tipo_documento	RENAME CONSTRAINT pk_id_tipo_documento	to	pk_tipo_documento	;
+ALTER TABLE  territorio.barrio	RENAME CONSTRAINT pk_barrio_gid	to	pk_barrio	;
+ALTER TABLE  territorio.calle	RENAME CONSTRAINT pk_calle_gid	to	pk_calle	;
+ALTER TABLE  territorio.codigo_postal	RENAME CONSTRAINT pk_codigo_postal_cp	to	pk_codigo_postal	;
+ALTER TABLE  territorio.departamento	RENAME CONSTRAINT pk_departamento_gid	to	pk_departamento	;
+ALTER TABLE  territorio.distrito	RENAME CONSTRAINT pk_distrito_gid	to	pk_distrito	;
+ALTER TABLE  territorio.localidad	RENAME CONSTRAINT pk_localidad_gid	to	pk_localidad	;
+ALTER TABLE  territorio.manzana	RENAME CONSTRAINT pk_manzana_gid	to	pk_manzana	;
+ALTER TABLE  territorio.municipio_comuna	RENAME CONSTRAINT pk_municipio_comuna_gid	to	pk_municipio_comuna	;
+ALTER TABLE  territorio.pais	RENAME CONSTRAINT pk_pais_gid	to	pk_pais	;
+ALTER TABLE  territorio.provincia	RENAME CONSTRAINT pk_provincia_gid	to	pk_provincia	;
+ALTER TABLE  territorio.region	RENAME CONSTRAINT pk_region_gid	to	pk_region	;
+ALTER TABLE  territorio.tipo_region	RENAME CONSTRAINT pk_tipo_region_id	to	pk_tipo_region	;
+ALTER TABLE  territorio.tipo_zona	RENAME CONSTRAINT pk_tipo_zona_id	to	pk_tipo_zona	;
+ALTER INDEX	contacto.domicilio_personafisica	RENAME TO	idx_perf
+
+ALTER INDEX contacto.domicilio_personajuridica RENAME TO idx_domicilio_perj;
+
+ALTER INDEX contacto.redsocial_personafisica RENAME TO idx_redsocialciudadano_perf;
+ALTER INDEX contacto.redsocial_personajuridica RENAME TO idx_redsocialciudadano_perj;
+ALTER INDEX contacto.redsocial_redsocial RENAME TO idx_redsocialciudadano_reds;
+ALTER INDEX contacto.tr_app_movil_web_cuidadno_id_app_web_movil_idx RENAME TO idx_appmovilwebcuidadano_appw;
+ALTER INDEX contacto.tr_categoria_telefono_codigo_categoria_telefono_idx RENAME TO idx_categoriatelefono_id_codi;
+ALTER INDEX contacto.tr_codigo_area_telefonico_id_codigo_area_idx RENAME TO idx_codigoareatelefonico_codarea_desc;
+ALTER INDEX contacto.tr_codigo_area_telefonico_id_distrito_idx RENAME TO idx_codigoareatelefonico_dist;
+ALTER INDEX contacto.tr_codigo_area_telefonico_id_municipio_comuna_idx RENAME TO idx_codigoareatelefonico_muni;
+ALTER INDEX contacto.tr_cuidadano_cuil_idx RENAME TO idx_ciudadano_cuil;
+ALTER INDEX contacto.tr_domicilio_georeferencia_idx RENAME TO idx_domicilio_geom;
+ALTER INDEX contacto.tr_domicilio_id_domicilio_idx RENAME TO idx_domicilio_domi_ciud_tipdom;
+ALTER INDEX contacto.tr_email_dominio_email RENAME TO idx_email_demail;
+ALTER INDEX contacto.tr_mail_id_mail_idx RENAME TO idx_email_email_ciudadano;
+ALTER INDEX contacto.tr_red_social_cod_red_social_idx RENAME TO idx_redsocial_codrsocial;
+ALTER INDEX contacto.tr_registro_ciudadano_id_ciudadano_idx RENAME TO idx_registrociudadano_ciudadano;
+ALTER INDEX contacto.tr_role_role_idx RENAME TO idx_rol_rol;
+ALTER INDEX contacto.tr_telefono_num_telefono_idx RENAME TO idx_telefono_numtel_codarea_ciu;
+
+
+ALTER INDEX contacto.tr_validacion_fecha_validacion_idx RENAME TO idx_validacion_fechval;
+ALTER INDEX land_territorio.departamento_idesf_geom_idx RENAME TO idx_departamento_geom;
+ALTER INDEX land_territorio.distrito_idesf_geom_idx RENAME TO idx_distrito_geom;
+ALTER INDEX land_territorio.regiones_idesf_geom_idx RENAME TO idx_regiones_geom;
+ALTER INDEX persona.documento_id_persona_fisica RENAME TO idx_documento_perf;
+ALTER INDEX persona.documento_tipo_documento RENAME TO idx_documento_tipdoc;
+
+ALTER INDEX persona.fk_personavinculopersonal_vinculopersonal RENAME TO idx_personavinculopersonal_vinpersonal;
+ALTER INDEX persona.fk_vinculopersonal_personafisica1 RENAME TO idx_personavinculopersonal_perf;
+ALTER INDEX persona.fk_vinculopersonal_personafisica2 RENAME TO idx_personavinculopersonal_vin_pfisica;
+ALTER INDEX persona.pfisica_pjuridica_personajuridica RENAME TO idx_pfisicapjuridica_perj;
+ALTER INDEX persona.pfisicapjuridica_personafisica RENAME TO idx_pfisicapjuridica_perf;
+ALTER INDEX persona.rolpfisicapjuridica_personafisicapersonajuridica RENAME TO idx_rolpfisicapjuridica_pfisica_pjuridica;
+ALTER INDEX persona.rolpfisicapjuridica_rol RENAME TO idx_rolpfisicapjuridica_rol;
+
+
+ALTER INDEX territorio.idx_comuna_geom RENAME TO idx_comuna_geom;
+ALTER INDEX territorio.idx_departamento_geom RENAME TO idx_departamento_geom;
+ALTER INDEX territorio.idx_distrito_geom RENAME TO idx_distrito_geom;
+ALTER INDEX territorio.idx_localidad_geom RENAME TO idx_localidad_geom;
+ALTER INDEX territorio.idx_municipio_comuna_geom RENAME TO idx_municipiocomuna_geom;
+ALTER INDEX territorio.idx_provincia_geom RENAME TO idx_provincia_geom;
+ALTER INDEX territorio.idx_region_geom RENAME TO idx_region_geom;
+ALTER INDEX territorio.pk_barrio_gid_audit RENAME TO idx_barrio_audi;
+ALTER INDEX territorio.pk_calle_gid_audit RENAME TO idx_calle_audi;
+ALTER INDEX territorio.pk_departamento_gid_audit RENAME TO idx_departamento_audi;
+ALTER INDEX territorio.pk_distrito_gid_audit RENAME TO idx_distrito_audi;
+ALTER INDEX territorio.pk_localidad_gid_audit RENAME TO idx_localidad_audi;
+ALTER INDEX territorio.pk_manzana_gid_audit RENAME TO idx_manzana_audi;
+ALTER INDEX territorio.pk_municipio_comuna_gid_audit RENAME TO idx_municipiocomuna_audi;
+ALTER INDEX territorio.pk_pais_gid_audit RENAME TO idx_pais_audi;
+ALTER INDEX territorio.pk_paraje_gid_audit RENAME TO idx_paraje_audi;
+ALTER INDEX territorio.pk_parcela_gid_audit RENAME TO idx_parcela_audi;
+ALTER INDEX territorio.pk_provincia_gid_audit RENAME TO idx_provincia_audi;
+ALTER INDEX territorio.pk_region_gid_audit RENAME TO idx_region_audi;
+ALTER INDEX territorio.pk_tiporegion_gid_audit RENAME TO idx_tiporegion_audi;
+ALTER INDEX territorio.pk_tipozona_gid_audit RENAME TO idx_tipozona_audi;
+ALTER INDEX territorio.pk_vecinal_gid_audit RENAME TO idx_vecinal_audi;
+ALTER INDEX contacto.id_domicilio RENAME TO idx_domicilio_domi;
+ALTER INDEX contacto.ti_red_social_ciudadano_id_red_social_idx RENAME TO idx_redsocialciudadano_redsciu_ciu;
+ALTER INDEX contacto.tr_app_movil_web_cuidadno_id_app_idx RENAME TO idx_appmovilwebcuidadano_app;
+ALTER INDEX contacto.tr_app_movil_web_cuidadno_id_ciudadano_idx RENAME TO idx_appmovilwebcuidadano_ciu_app;
+ALTER INDEX contacto.tr_app_movil_web_id_app_movil_web_idx RENAME TO idx_appmovilweb_app_movil_web;
+ALTER INDEX contacto.tr_categoria_telefono_id_categoria_telefono_idx RENAME TO idx_categoriatelefono_cattel;
+ALTER INDEX contacto.tr_red_social_id_red_social_idx RENAME TO idx_redsocial_redsocial;
+ALTER INDEX contacto.tr_tipo_domicilio_id_tipo_domicilio_idx RENAME TO idx_tipodomicilio_tipdom;
+ALTER INDEX persona.documento_principal RENAME TO idx_documento_prin;
+ALTER INDEX persona.id_dni_unique RENAME TO idx_personafisica_dni;
+ALTER INDEX persona.nombre_persona_juridica RENAME TO idx_personajuridica_nomb;
+ALTER INDEX persona.pfisicapjuridica RENAME TO idx_pfisicapjuridica_perf_perj;
+ALTER INDEX persona.rol_nombre RENAME TO idx_rol_nomb;
+ALTER INDEX territorio.vecinal_gid_idx RENAME TO idx_vecinal_vecinal;
